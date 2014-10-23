@@ -1,0 +1,766 @@
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "communities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "me" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141009023908')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "communities"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "communities" ("me", "created_at", "updated_at", "id") VALUES ('MyString', '2014-10-16 01:23:08', '2014-10-16 01:23:08', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "communities" ("me", "created_at", "updated_at", "id") VALUES ('MyString', '2014-10-16 01:23:08', '2014-10-16 01:23:08', 298486374)[0m
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+CommunitiesControllerTest: test_should_create_community
+-------------------------------------------------------
+  [1m[35mCommunity Load (0.2ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+Processing by CommunitiesController#create as HTML
+  Parameters: {"community"=>{"me"=>"MyString"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "communities" ("created_at", "me", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-10-16 01:23:08.367702"], ["me", "MyString"], ["updated_at", "2014-10-16 01:23:08.367702"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/communities/980190963
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------
+CommunitiesControllerTest: test_should_destroy_community
+--------------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+Processing by CommunitiesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCommunity Load (0.0ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "communities" WHERE "communities"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/communities
+Completed 302 Found in 1ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "communities"
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------
+CommunitiesControllerTest: test_should_get_edit
+-----------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered communities/_form.html.erb (14.5ms)
+Completed 200 OK in 528ms (Views: 527.0ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------
+CommunitiesControllerTest: test_should_get_index
+------------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#index as HTML
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT "communities".* FROM "communities"
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+CommunitiesControllerTest: test_should_get_new
+----------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#new as HTML
+  Rendered communities/_form.html.erb (1.4ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+CommunitiesControllerTest: test_should_show_community
+-----------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CommunitiesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+CommunitiesControllerTest: test_should_update_community
+-------------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CommunitiesController#update as HTML
+  Parameters: {"community"=>{"me"=>"MyString"}, "id"=>"980190962"}
+  [1m[36mCommunity Load (0.0ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/communities/980190962
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "communities"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "communities" ("me", "created_at", "updated_at", "id") VALUES ('MyString', '2014-10-16 01:25:04', '2014-10-16 01:25:04', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "communities" ("me", "created_at", "updated_at", "id") VALUES ('MyString', '2014-10-16 01:25:04', '2014-10-16 01:25:04', 298486374)[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+CommunitiesControllerTest: test_should_create_community
+-------------------------------------------------------
+  [1m[35mCommunity Load (0.2ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+Processing by CommunitiesController#create as HTML
+  Parameters: {"community"=>{"me"=>"MyString"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "communities" ("created_at", "me", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-10-16 01:25:04.411751"], ["me", "MyString"], ["updated_at", "2014-10-16 01:25:04.411751"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/communities/980190963
+Completed 302 Found in 8ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------
+CommunitiesControllerTest: test_should_destroy_community
+--------------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+Processing by CommunitiesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCommunity Load (0.0ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "communities" WHERE "communities"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/communities
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "communities"
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------
+CommunitiesControllerTest: test_should_get_edit
+-----------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered communities/_form.html.erb (12.6ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------
+CommunitiesControllerTest: test_should_get_index
+------------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#index as HTML
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT "communities".* FROM "communities"
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+CommunitiesControllerTest: test_should_get_new
+----------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#new as HTML
+  Rendered communities/_form.html.erb (1.2ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+CommunitiesControllerTest: test_should_show_community
+-----------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CommunitiesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mCommunity Load (0.0ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+CommunitiesControllerTest: test_should_update_community
+-------------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CommunitiesController#update as HTML
+  Parameters: {"community"=>{"me"=>"MyString"}, "id"=>"980190962"}
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/communities/980190962
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+CommunityTest: test_create_community_with_valid_name
+----------------------------------------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "communities"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "communities" ("me", "created_at", "updated_at", "id") VALUES ('MyString', '2014-10-16 01:25:29', '2014-10-16 01:25:29', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "communities" ("me", "created_at", "updated_at", "id") VALUES ('MyString', '2014-10-16 01:25:29', '2014-10-16 01:25:29', 298486374)[0m
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+CommunityTest: test_create_community_with_valid_name
+----------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+CommunitiesControllerTest: test_should_create_community
+-------------------------------------------------------
+  [1m[35mCommunity Load (0.2ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+Processing by CommunitiesController#create as HTML
+  Parameters: {"community"=>{"me"=>"MyString"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "communities" ("created_at", "me", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-10-16 01:25:29.257999"], ["me", "MyString"], ["updated_at", "2014-10-16 01:25:29.257999"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/communities/980190963
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------
+CommunitiesControllerTest: test_should_destroy_community
+--------------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+Processing by CommunitiesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCommunity Load (0.0ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "communities" WHERE "communities"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/communities
+Completed 302 Found in 1ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "communities"
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------
+CommunitiesControllerTest: test_should_get_edit
+-----------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCommunity Load (0.0ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered communities/_form.html.erb (13.8ms)
+Completed 200 OK in 32ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------
+CommunitiesControllerTest: test_should_get_index
+------------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#index as HTML
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT "communities".* FROM "communities"
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------
+CommunitiesControllerTest: test_should_get_new
+----------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#new as HTML
+  Rendered communities/_form.html.erb (1.1ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+CommunitiesControllerTest: test_should_show_community
+-----------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CommunitiesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mCommunity Load (0.0ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+CommunitiesControllerTest: test_should_update_community
+-------------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CommunitiesController#update as HTML
+  Parameters: {"community"=>{"me"=>"MyString"}, "id"=>"980190962"}
+  [1m[36mCommunity Load (0.0ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/communities/980190962
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "communities"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "communities" ("me", "created_at", "updated_at", "id") VALUES ('MyString', '2014-10-16 01:28:29', '2014-10-16 01:28:29', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "communities" ("me", "created_at", "updated_at", "id") VALUES ('MyString', '2014-10-16 01:28:29', '2014-10-16 01:28:29', 298486374)[0m
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+CommunitiesControllerTest: test_should_create_community
+-------------------------------------------------------
+  [1m[35mCommunity Load (0.3ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+Processing by CommunitiesController#create as HTML
+  Parameters: {"community"=>{"me"=>"MyString"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "communities" ("created_at", "me", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-10-16 01:28:29.750681"], ["me", "MyString"], ["updated_at", "2014-10-16 01:28:29.750681"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/communities/980190963
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------
+CommunitiesControllerTest: test_should_destroy_community
+--------------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+Processing by CommunitiesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCommunity Load (0.0ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "communities" WHERE "communities"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/communities
+Completed 302 Found in 1ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "communities"
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------
+CommunitiesControllerTest: test_should_get_edit
+-----------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCommunity Load (0.0ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered communities/_form.html.erb (11.6ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------
+CommunitiesControllerTest: test_should_get_index
+------------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#index as HTML
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT "communities".* FROM "communities"
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------
+CommunitiesControllerTest: test_should_get_new
+----------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#new as HTML
+  Rendered communities/_form.html.erb (1.1ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+CommunitiesControllerTest: test_should_show_community
+-----------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CommunitiesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mCommunity Load (0.0ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+CommunitiesControllerTest: test_should_update_community
+-------------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CommunitiesController#update as HTML
+  Parameters: {"community"=>{"me"=>"MyString"}, "id"=>"980190962"}
+  [1m[36mCommunity Load (0.0ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/communities/980190962
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+CommunityTest: test_create_community_with_valid_name
+----------------------------------------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "communities"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "communities" ("me", "created_at", "updated_at", "id") VALUES ('MyString', '2014-10-16 01:32:55', '2014-10-16 01:32:55', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "communities" ("me", "created_at", "updated_at", "id") VALUES ('MyString', '2014-10-16 01:32:55', '2014-10-16 01:32:55', 298486374)[0m
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+CommunityTest: test_create_community_with_valid_name
+----------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------
+CommunityTest: test_fail_when_comunity_name_is_tio_small
+--------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+CommunitiesControllerTest: test_should_create_community
+-------------------------------------------------------
+  [1m[35mCommunity Load (0.2ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+Processing by CommunitiesController#create as HTML
+  Parameters: {"community"=>{"me"=>"MyString"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "communities" ("created_at", "me", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-10-16 01:32:55.603544"], ["me", "MyString"], ["updated_at", "2014-10-16 01:32:55.603544"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/communities/980190963
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------
+CommunitiesControllerTest: test_should_destroy_community
+--------------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+Processing by CommunitiesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "communities" WHERE "communities"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/communities
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "communities"
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------
+CommunitiesControllerTest: test_should_get_edit
+-----------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered communities/_form.html.erb (10.3ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------
+CommunitiesControllerTest: test_should_get_index
+------------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#index as HTML
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT "communities".* FROM "communities"
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+CommunitiesControllerTest: test_should_get_new
+----------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#new as HTML
+  Rendered communities/_form.html.erb (1.1ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+CommunitiesControllerTest: test_should_show_community
+-----------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CommunitiesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mCommunity Load (0.0ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+CommunitiesControllerTest: test_should_update_community
+-------------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CommunitiesController#update as HTML
+  Parameters: {"community"=>{"me"=>"MyString"}, "id"=>"980190962"}
+  [1m[36mCommunity Load (0.0ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/communities/980190962
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "communities"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "communities" ("me", "created_at", "updated_at", "id") VALUES ('MyString', '2014-10-16 01:33:26', '2014-10-16 01:33:26', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "communities" ("me", "created_at", "updated_at", "id") VALUES ('MyString', '2014-10-16 01:33:26', '2014-10-16 01:33:26', 298486374)[0m
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+CommunitiesControllerTest: test_should_create_community
+-------------------------------------------------------
+  [1m[35mCommunity Load (0.3ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+Processing by CommunitiesController#create as HTML
+  Parameters: {"community"=>{"me"=>"MyString"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "communities" ("created_at", "me", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-10-16 01:33:26.146911"], ["me", "MyString"], ["updated_at", "2014-10-16 01:33:26.146911"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/communities/980190963
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------
+CommunitiesControllerTest: test_should_destroy_community
+--------------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+Processing by CommunitiesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "communities" WHERE "communities"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/communities
+Completed 302 Found in 2ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "communities"
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------
+CommunitiesControllerTest: test_should_get_edit
+-----------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered communities/_form.html.erb (11.0ms)
+Completed 200 OK in 29ms (Views: 28.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------
+CommunitiesControllerTest: test_should_get_index
+------------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#index as HTML
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT "communities".* FROM "communities"
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------
+CommunitiesControllerTest: test_should_get_new
+----------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#new as HTML
+  Rendered communities/_form.html.erb (1.1ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+CommunitiesControllerTest: test_should_show_community
+-----------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CommunitiesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mCommunity Load (0.0ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+CommunitiesControllerTest: test_should_update_community
+-------------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CommunitiesController#update as HTML
+  Parameters: {"community"=>{"me"=>"MyString"}, "id"=>"980190962"}
+  [1m[36mCommunity Load (0.0ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/communities/980190962
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+CommunityTest: test_create_community_with_valid_name
+----------------------------------------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------
+CommunityTest: test_fail_when_comunity_name_is_tio_small
+--------------------------------------------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "communities"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "communities" ("me", "created_at", "updated_at", "id") VALUES ('MyString', '2014-10-16 01:35:05', '2014-10-16 01:35:05', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "communities" ("me", "created_at", "updated_at", "id") VALUES ('MyString', '2014-10-16 01:35:05', '2014-10-16 01:35:05', 298486374)[0m
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+CommunityTest: test_create_community_with_valid_name
+----------------------------------------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------
+CommunityTest: test_fail_when_comunity_name_is_tio_small
+--------------------------------------------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+CommunitiesControllerTest: test_should_create_community
+-------------------------------------------------------
+  [1m[35mCommunity Load (0.2ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+Processing by CommunitiesController#create as HTML
+  Parameters: {"community"=>{"me"=>"MyString"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------
+CommunitiesControllerTest: test_should_destroy_community
+--------------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+Processing by CommunitiesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCommunity Load (0.0ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "communities" WHERE "communities"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/communities
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "communities"
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------
+CommunitiesControllerTest: test_should_get_edit
+-----------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCommunity Load (0.0ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered communities/_form.html.erb (12.4ms)
+Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------
+CommunitiesControllerTest: test_should_get_index
+------------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#index as HTML
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT "communities".* FROM "communities"
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------
+CommunitiesControllerTest: test_should_get_new
+----------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#new as HTML
+  Rendered communities/_form.html.erb (1.1ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+CommunitiesControllerTest: test_should_show_community
+-----------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CommunitiesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mCommunity Load (0.0ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+CommunitiesControllerTest: test_should_update_community
+-------------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CommunitiesController#update as HTML
+  Parameters: {"community"=>{"me"=>"MyString"}, "id"=>"980190962"}
+  [1m[36mCommunity Load (0.0ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "communities"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "communities" ("me", "created_at", "updated_at", "id") VALUES ('MyString', '2014-10-16 01:35:38', '2014-10-16 01:35:38', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "communities" ("me", "created_at", "updated_at", "id") VALUES ('MyString', '2014-10-16 01:35:38', '2014-10-16 01:35:38', 298486374)[0m
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+CommunityTest: test_create_community_with_valid_name
+----------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------
+CommunityTest: test_fail_when_comunity_name_is_tio_small
+--------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+CommunitiesControllerTest: test_should_create_community
+-------------------------------------------------------
+  [1m[35mCommunity Load (0.2ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+Processing by CommunitiesController#create as HTML
+  Parameters: {"community"=>{"me"=>"MyString"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------
+CommunitiesControllerTest: test_should_destroy_community
+--------------------------------------------------------
+  [1m[35mCommunity Load (0.2ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "communities"[0m
+Processing by CommunitiesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "communities" WHERE "communities"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/communities
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "communities"
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------
+CommunitiesControllerTest: test_should_get_edit
+-----------------------------------------------
+  [1m[36mCommunity Load (0.2ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered communities/_form.html.erb (10.2ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------
+CommunitiesControllerTest: test_should_get_index
+------------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#index as HTML
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT "communities".* FROM "communities"
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------
+CommunitiesControllerTest: test_should_get_new
+----------------------------------------------
+  [1m[36mCommunity Load (0.1ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by CommunitiesController#new as HTML
+  Rendered communities/_form.html.erb (1.1ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+CommunitiesControllerTest: test_should_show_community
+-----------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CommunitiesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mCommunity Load (0.0ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+CommunitiesControllerTest: test_should_update_community
+-------------------------------------------------------
+  [1m[35mCommunity Load (0.1ms)[0m  SELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by CommunitiesController#update as HTML
+  Parameters: {"community"=>{"me"=>"MyString"}, "id"=>"980190962"}
+  [1m[36mCommunity Load (0.0ms)[0m  [1mSELECT  "communities".* FROM "communities"  WHERE "communities"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.0ms)[0m  rollback transaction
