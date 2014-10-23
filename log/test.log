@@ -764,3 +764,14 @@ Processing by CommunitiesController#update as HTML
   [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
 Completed 500 Internal Server Error in 1ms
   [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (163.1ms)[0m  [1mCREATE TABLE "communities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "me" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (154.7ms)[0m  CREATE TABLE "parties" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "owner" varchar(255), "time" varchar(255), "location" varchar(255), "description" text, "participants" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (154.7ms)[0m  [1mCREATE TABLE "submissions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url" varchar(255), "community_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (143.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (144.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (155.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141023042838')
+  [1m[36m (155.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141009023908')[0m
+  [1m[35m (155.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141016014552')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
