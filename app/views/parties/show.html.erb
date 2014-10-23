@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @party.name %>
+</p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @party.owner %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @party.time %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @party.location %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @party.description %>
+</p>
+
+<p>
+  <strong>Participants:</strong>
+  <%= @party.participants %>
+</p>
+
+<%= link_to 'Edit', edit_party_path(@party) %> |
+<%= link_to 'Back', parties_path %>
