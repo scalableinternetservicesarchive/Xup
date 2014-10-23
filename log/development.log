@@ -1771,3 +1771,204 @@ Processing by PartiesController#index as HTML
   [1m[36mParty Load (0.1ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
   Rendered parties/index.html.erb within layouts/application (1.3ms)
 Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-22 21:33:13 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.2ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 69ms (Views: 54.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-22 21:33:14 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-22 21:33:14 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-22 21:33:14 -0700
+
+
+Started GET "/assets/communities.js?body=1" for 127.0.0.1 at 2014-10-22 21:33:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-22 21:33:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-22 21:33:14 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-22 21:33:14 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-22 21:33:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-22 21:33:14 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-22 21:33:15 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (37.9ms)
+  Rendered parties/new.html.erb within layouts/application (40.2ms)
+Completed 200 OK in 71ms (Views: 69.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-22 21:33:19 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (3.3ms)
+  Rendered parties/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-22 21:33:19 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-22 21:33:19 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-22 21:33:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-22 21:33:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-22 21:33:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-22 21:33:19 -0700
+
+
+Started GET "/assets/communities.js?body=1" for 127.0.0.1 at 2014-10-22 21:33:19 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-22 21:33:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-22 21:33:19 -0700
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-22 21:34:06 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.1ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 64ms (Views: 49.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-22 21:34:06 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-22 21:34:06 -0700
+
+
+Started GET "/assets/communities.js?body=1" for 127.0.0.1 at 2014-10-22 21:34:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-22 21:34:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-22 21:34:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-22 21:34:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-22 21:34:06 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-22 21:34:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-22 21:34:06 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-22 21:34:08 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (51.1ms)
+  Rendered parties/new.html.erb within layouts/application (53.6ms)
+Completed 200 OK in 85ms (Views: 84.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-22 21:35:27 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-22 21:35:27 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-22 21:35:27 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-22 21:35:27 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-22 21:35:27 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-22 21:35:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-22 21:35:27 -0700
+
+
+Started GET "/assets/communities.js?body=1" for 127.0.0.1 at 2014-10-22 21:35:27 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-22 21:35:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-22 21:35:27 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-22 21:35:29 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.2ms)
+  Rendered parties/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (176.6ms)[0m  DELETE FROM "parties"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "parties" ("created_at", "description", "location", "name", "owner", "participants", "time", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-10-23 04:38:09.689365"], ["description", "A halloween party"], ["location", "Isla Vista"], ["name", "Isla Vista Halloween"], ["owner", "Lars"], ["participants", "Lars, Steffen, YY"], ["time", "Oct-26-2014"], ["updated_at", "2014-10-23 04:38:09.689365"]]
+  [1m[36m (537.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "parties" ("created_at", "description", "location", "name", "owner", "participants", "time", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-10-23 04:38:10.248102"], ["description", "party 1"], ["location", "Isla Vista 1"], ["name", "Party 1"], ["owner", "Bob"], ["participants", "Bob, Lars, Steffen, YY"], ["time", "Oct-29-2014"], ["updated_at", "2014-10-23 04:38:10.248102"]]
+  [1m[35m (142.9ms)[0m  commit transaction
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-22 21:38:15 -0700
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.1ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-22 21:38:16 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-22 21:38:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-22 21:38:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-22 21:38:16 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-22 21:38:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-22 21:38:16 -0700
+
+
+Started GET "/assets/communities.js?body=1" for 127.0.0.1 at 2014-10-22 21:38:16 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-22 21:38:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-22 21:38:16 -0700
