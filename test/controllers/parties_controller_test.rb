@@ -3,6 +3,14 @@ require 'test_helper'
 class PartiesControllerTest < ActionController::TestCase
   setup do
     @party = parties(:one)
+    @update = {
+        name: "party 2",
+        owner: "Peter",
+        time: "Dec-12",
+        location: "Goleta",
+        description: "A good party",
+        participants: "Peter, Alice, Bob"
+    }
   end
 
   test "should get index" do
@@ -18,7 +26,7 @@ class PartiesControllerTest < ActionController::TestCase
 
   test "should create party" do
     assert_difference('Party.count') do
-      post :create, party: { description: @party.description, location: @party.location, name: @party.name, owner: @party.owner, participants: @party.participants, time: @party.time }
+       post :create, party: @update
     end
 
     assert_redirected_to party_path(assigns(:party))
@@ -35,7 +43,7 @@ class PartiesControllerTest < ActionController::TestCase
   end
 
   test "should update party" do
-    patch :update, id: @party, party: { description: @party.description, location: @party.location, name: @party.name, owner: @party.owner, participants: @party.participants, time: @party.time }
+    patch :update, id: @party, party: @update
     assert_redirected_to party_path(assigns(:party))
   end
 
