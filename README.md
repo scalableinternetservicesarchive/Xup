@@ -1,7 +1,13 @@
 Team name: Xup
 
-Name1:
 
-Name2:
+[PivotalTracker](https://www.pivotaltracker.com/s/projects/1193856)
 
-Name3:
+
+
+
+Lars Brusletto
+
+Steffen Birkeland
+
+Yuanyang Zhang
