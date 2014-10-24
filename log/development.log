@@ -2896,3 +2896,1400 @@ Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-23 17:06:35 -07
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-23 17:06:35 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-24 12:06:21 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.1ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 67ms (Views: 51.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 12:06:21 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 12:06:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 12:06:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 12:06:21 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 12:06:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 12:06:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 12:06:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 12:06:21 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-24 12:11:34 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 12:11:34 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 12:11:34 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 12:11:34 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 12:11:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 12:11:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 12:11:34 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 12:11:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 12:11:34 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-24 12:12:12 -0700
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.2ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 12:12:12 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 12:12:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 12:12:12 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 12:12:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 12:12:12 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 12:12:12 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 12:12:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 12:12:12 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-24 12:18:01 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 29ms (Views: 28.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 12:18:02 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 12:18:02 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 12:18:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 12:18:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 12:18:02 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 12:18:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 12:18:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 12:18:02 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 12:19:11 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (10.9ms)
+  Rendered parties/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 12:19:21 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (3.9ms)
+  Rendered parties/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-24 12:20:06 -0700
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.2ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 12:20:08 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.2ms)
+  Rendered parties/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 55ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-24 12:22:55 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 12:23:13 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.5ms)
+  Rendered parties/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 12:59:25 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (1.4ms)
+  Rendered parties/new.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:16: syntax error, unexpected '='
+... f.label :name, "Name:", class="col-md-4 control-label" );@o...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:18: syntax error, unexpected '='
+...nd=( f.text_field :name, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:22: syntax error, unexpected '='
+....label :owner, "Owner:", class="col-md-4 control-label" );@o...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:24: syntax error, unexpected '='
+...d=( f.text_field :owner, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:28: syntax error, unexpected '='
+... f.label :time, "Time:", class="col-md-4 control-label" );@o...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:30: syntax error, unexpected '='
+...nd=( f.text_field :time, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:34: syntax error, unexpected '='
+... :location, "Location:", class="col-md-4 control-label" );@o...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:36: syntax error, unexpected '='
+... f.text_field :location, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:40: syntax error, unexpected '='
+...ription, "Description:", class="col-md-4 control-label" );@o...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:42: syntax error, unexpected '='
+...text_field :description, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:46: syntax error, unexpected '='
+...ipants, "Participants:", class="col-md-4 control-label" );@o...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:48: syntax error, unexpected '='
+...ext_field :participants, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:53: syntax error, unexpected '='
+...end=( f.submit "Submit", class="btn btn-default btn-primary"...
+...                               ^):
+  app/views/parties/_form.html.erb:16: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:18: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:22: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:24: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:28: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:30: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:34: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:36: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:40: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:42: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:46: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:48: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:53: syntax error, unexpected '='
+  app/views/parties/new.html.erb:3:in `_app_views_parties_new_html_erb__2806126159865144379_70229593221480'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.7ms)
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:00:43 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (1.1ms)
+  Rendered parties/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:18: syntax error, unexpected '='
+...nd=( f.text_field :name, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:24: syntax error, unexpected '='
+...d=( f.text_field :owner, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:30: syntax error, unexpected '='
+...nd=( f.text_field :time, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:36: syntax error, unexpected '='
+... f.text_field :location, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:42: syntax error, unexpected '='
+...text_field :description, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:48: syntax error, unexpected '='
+...ext_field :participants, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:53: syntax error, unexpected '='
+...end=( f.submit "Submit", class="btn btn-default btn-primary"...
+...                               ^):
+  app/views/parties/_form.html.erb:18: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:24: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:30: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:36: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:42: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:48: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:53: syntax error, unexpected '='
+  app/views/parties/new.html.erb:3:in `_app_views_parties_new_html_erb__2806126159865144379_70229593221480'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.6ms)
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:02:44 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (1.7ms)
+  Rendered parties/new.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:17: syntax error, unexpected '='
+...nd=( f.text_field :name, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:21: syntax error, unexpected '='
+...d=( f.text_field :owner, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:25: syntax error, unexpected '='
+...nd=( f.text_field :time, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:29: syntax error, unexpected '='
+... f.text_field :location, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:33: syntax error, unexpected '='
+...text_field :description, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:37: syntax error, unexpected '='
+...ext_field :participants, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:41: syntax error, unexpected '='
+...end=( f.submit "Submit", class="btn btn-default btn-primary"...
+...                               ^):
+  app/views/parties/_form.html.erb:17: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:21: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:25: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:29: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:33: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:37: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:41: syntax error, unexpected '='
+  app/views/parties/new.html.erb:3:in `_app_views_parties_new_html_erb__2806126159865144379_70229593221480'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.7ms)
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:02:45 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (1.2ms)
+  Rendered parties/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:17: syntax error, unexpected '='
+...nd=( f.text_field :name, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:21: syntax error, unexpected '='
+...d=( f.text_field :owner, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:25: syntax error, unexpected '='
+...nd=( f.text_field :time, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:29: syntax error, unexpected '='
+... f.text_field :location, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:33: syntax error, unexpected '='
+...text_field :description, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:37: syntax error, unexpected '='
+...ext_field :participants, class="form-control" );@output_buff...
+...                               ^
+/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:41: syntax error, unexpected '='
+...end=( f.submit "Submit", class="btn btn-default btn-primary"...
+...                               ^):
+  app/views/parties/_form.html.erb:17: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:21: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:25: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:29: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:33: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:37: syntax error, unexpected '='
+  app/views/parties/_form.html.erb:41: syntax error, unexpected '='
+  app/views/parties/new.html.erb:3:in `_app_views_parties_new_html_erb__2806126159865144379_70229593221480'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:03:29 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (1.1ms)
+  Rendered parties/new.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/home/yyzhang/program/Xup/app/views/parties/_form.html.erb:41: syntax error, unexpected '='
+...end=( f.submit "Submit", class="btn btn-default btn-primary"...
+...                               ^):
+  app/views/parties/_form.html.erb:41: syntax error, unexpected '='
+  app/views/parties/new.html.erb:3:in `_app_views_parties_new_html_erb__2806126159865144379_70229593221480'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.9ms)
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:03:53 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.7ms)
+  Rendered parties/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 31ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:03:53 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:03:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:03:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:03:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:03:53 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:03:53 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:03:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:03:53 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:03:55 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (1.7ms)
+  Rendered parties/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:03:55 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:03:55 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:03:55 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:03:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:03:55 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:03:55 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:03:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:03:55 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:04:30 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (1.3ms)
+  Rendered parties/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:04:30 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:04:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:04:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:04:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:04:30 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:04:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:04:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:04:30 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:04:52 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (3.4ms)
+  Rendered parties/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 32ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:04:52 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:04:52 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:04:52 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:04:52 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:04:52 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:04:52 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:04:52 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:04:52 -0700
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-24 13:04:55 -0700
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.2ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:04:56 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.1ms)
+  Rendered parties/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:08:29 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (3.2ms)
+  Rendered parties/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:08:29 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:08:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:08:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:08:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:08:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:08:29 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:08:29 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:08:29 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:08:57 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.5ms)
+  Rendered parties/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 33ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:08:57 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:08:57 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:08:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:08:57 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:08:57 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:08:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:08:57 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:08:57 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:08:58 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (1.4ms)
+  Rendered parties/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:08:58 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:08:58 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:08:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:08:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:08:58 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:08:58 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:08:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:08:58 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:09:10 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.2ms)
+  Rendered parties/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 31ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:10 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:09:10 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:09:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:10 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:09:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:10 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:10 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:10 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:09:11 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (1.5ms)
+  Rendered parties/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 37ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:11 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:09:11 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:09:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:11 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:09:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:11 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:11 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:09:39 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.3ms)
+  Rendered parties/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:39 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:09:39 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:09:39 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:09:39 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:39 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:39 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:39 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:09:41 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (1.4ms)
+  Rendered parties/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:41 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:09:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:41 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:09:41 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:09:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:41 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:41 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:09:41 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:10:30 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (1.9ms)
+  Rendered parties/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 30ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:10:30 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:10:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:10:30 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:10:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:10:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:10:30 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:10:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:10:30 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:10:31 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (1.6ms)
+  Rendered parties/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 31ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:10:31 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:10:31 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:10:31 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:10:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:10:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:10:31 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:10:31 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:10:31 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:10:42 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.0ms)
+  Rendered parties/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 30ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:10:42 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:10:42 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:10:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:10:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:10:42 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:10:42 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:10:42 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:10:42 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:11:28 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.0ms)
+  Rendered parties/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 40ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:11:28 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:11:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:11:28 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:11:28 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:11:28 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:11:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:11:28 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:11:28 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:12:36 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.4ms)
+  Rendered parties/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 31ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:12:36 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:12:36 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:12:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:12:36 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:12:36 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:12:36 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:12:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:12:36 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:13:06 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.4ms)
+  Rendered parties/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:13:06 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:13:06 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:13:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:13:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:13:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:13:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:13:06 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:13:06 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:13:08 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (1.4ms)
+  Rendered parties/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:13:08 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:13:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:13:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:13:08 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:13:08 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:13:08 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:13:08 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:13:08 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:13:09 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (1.6ms)
+  Rendered parties/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:13:09 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:13:09 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:13:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:13:09 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:13:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:13:09 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:13:09 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:13:09 -0700
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-24 13:13:39 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:13:40 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.1ms)
+  Rendered parties/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:14:38 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.0ms)
+  Rendered parties/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:14:38 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:14:38 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:14:38 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:14:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:14:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:14:38 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:14:38 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:14:38 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:15:51 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (1.2ms)
+  Rendered parties/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:15:51 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:15:51 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:15:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:15:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:15:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:15:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:15:51 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:15:51 -0700
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-24 13:15:55 -0700
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.1ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:15:56 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.0ms)
+  Rendered parties/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:16:30 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.3ms)
+  Rendered parties/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 32ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:30 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:16:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:30 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:16:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:16:30 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:30 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:16:31 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (1.2ms)
+  Rendered parties/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 31ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:31 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:16:31 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:16:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:32 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:16:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:32 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:32 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:16:44 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.1ms)
+  Rendered parties/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 29ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:44 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:16:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:16:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:44 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:16:44 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:44 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:16:52 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.0ms)
+  Rendered parties/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 41ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:52 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:16:52 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:16:52 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:52 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:52 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:52 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:16:52 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:16:52 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:17:00 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.3ms)
+  Rendered parties/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:17:00 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:17:00 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:17:00 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:17:00 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:17:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:17:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:17:00 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:17:00 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:18:34 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (2.5ms)
+  Rendered parties/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:18:34 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:18:34 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:18:34 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:18:34 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:18:35 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:18:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:18:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:18:35 -0700
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-24 13:18:37 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/parties/1" for 127.0.0.1 at 2014-10-24 13:18:43 -0700
+Processing by PartiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered parties/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-24 13:18:49 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/parties/1" for 127.0.0.1 at 2014-10-24 13:18:51 -0700
+Processing by PartiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered parties/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-24 13:18:52 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/parties/2" for 127.0.0.1 at 2014-10-24 13:18:54 -0700
+Processing by PartiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered parties/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-24 13:18:55 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 30ms (Views: 29.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/parties/1/edit" for 127.0.0.1 at 2014-10-24 13:18:58 -0700
+Processing by PartiesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered parties/_form.html.erb (2.6ms)
+  Rendered parties/edit.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-24 13:19:00 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 28ms (Views: 27.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/parties/1" for 127.0.0.1 at 2014-10-24 13:19:02 -0700
+Processing by PartiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered parties/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-24 13:25:48 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-24 13:25:48 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-24 13:25:48 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-24 13:25:48 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-24 13:25:48 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-24 13:25:48 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-24 13:25:48 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-24 13:25:48 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-24 13:25:48 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-24 13:25:50 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (1.4ms)
+  Rendered parties/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-24 13:25:51 -0700
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.1ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/parties/1" for 127.0.0.1 at 2014-10-24 13:25:52 -0700
+Processing by PartiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered parties/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-24 13:25:58 -0700
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.1ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.1ms)

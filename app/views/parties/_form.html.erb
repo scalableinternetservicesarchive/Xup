@@ -11,31 +11,32 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :owner %><br>
-    <%= f.text_field :owner %>
-  </div>
-  <div class="field">
-    <%= f.label :time %><br>
-    <%= f.text_field :time %>
-  </div>
-  <div class="field">
-    <%= f.label :location %><br>
-    <%= f.text_field :location %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description, rows: 6 %>
-  </div>
-  <div class="field">
-    <%= f.label :participants %><br>
-    <%= f.text_field :participants %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <form role="form">
+    <div class="form-group">
+      <%= f.label :name, "Name:", class: "control-label" %><br>
+      <%= f.text_field :name, class: "form-control", placeholder: "Enter Name" %>       
+    </div>
+    <div class="form-group">
+      <%= f.label :owner, "Owner:", class: "control-label" %><br>
+      <%= f.text_field :owner, class: "form-control", placeholder: "Enter Owner Name" %>  
+    </div>
+    <div class="form-group">
+      <%= f.label :time, "Time:", class: "control-label" %><br>
+      <%= f.text_field :time, class: "form-control", placeholder: "Enter Time" %>  
+    </div>
+    <div class="form-group">
+      <%= f.label :location, "Location:", class: "control-label" %><br>
+      <%= f.text_field :location, class: "form-control", placeholder: "Enter Location" %>  
+    </div>
+    <div class="form-group">
+      <%= f.label :description, "Description:", class: "control-label" %><br>
+      <%= f.text_field :description, class: "form-control", placeholder: "Enter Description" %>  
+    </div>
+    <div class="form-group">
+      <%= f.label :participants, "Participants:", class: "control-label" %><br>
+      <%= f.text_field :participants, class: "form-control", placeholder: "Enter Participants" %>  
+    </div>
+  </form>
+
+  <%= f.submit "Submit", class: "btn btn-default btn-primary" %>
 <% end %>

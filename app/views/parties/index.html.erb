@@ -1,34 +1,36 @@
 <h1>Listing parties</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Owner</th>
-      <th>Time</th>
-      <th>Location</th>
-      <th>Description</th>
-      <th>Participants</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @parties.each do |party| %>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
       <tr>
-        <td><%= party.name %></td>
-        <td><%= party.owner %></td>
-        <td><%= party.time %></td>
-        <td><%= party.location %></td>
-        <td><%= party.description %></td>
-        <td><%= party.participants %></td>
-        <td><%= link_to 'Show', party, class: 'btn btn-info btn-sm' %></td>
-        <td><%= link_to 'Edit', edit_party_path(party), class: 'btn btn-warning btn-sm' %></td>
-        <td><%= link_to 'Destroy', party, class: 'btn btn-danger btn-sm', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Name</th>
+        <th>Owner</th>
+        <th>Time</th>
+        <th>Location</th>
+        <th>Description</th>
+        <th>Participants</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      <% @parties.each do |party| %>
+        <tr>
+          <td><%= party.name %></td>
+          <td><%= party.owner %></td>
+          <td><%= party.time %></td>
+          <td><%= party.location %></td>
+          <td><%= party.description %></td>
+          <td><%= party.participants %></td>
+          <td><%= link_to 'Show', party, class: 'btn btn-info btn-sm' %></td>
+          <td><%= link_to 'Edit', edit_party_path(party), class: 'btn btn-warning btn-sm' %></td>
+          <td><%= link_to 'Destroy', party, class: 'btn btn-danger btn-sm', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 
 <br>
 
