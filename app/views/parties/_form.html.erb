@@ -1,6 +1,6 @@
 <%= form_for(@party) do |f| %>
   <% if @party.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_explanation" class="alert alert-danger">
       <h2><%= pluralize(@party.errors.count, "error") %> prohibited this party from being saved:</h2>
 
       <ul>
@@ -36,7 +36,9 @@
       <%= f.label :participants, "Participants:", class: "control-label" %><br>
       <%= f.text_field :participants, class: "form-control", placeholder: "Enter Participants" %>  
     </div>
-  </form>
 
-  <%= f.submit "Submit", class: "btn btn-default btn-primary" %>
-<% end %>
+    <div class="action">
+      <%= f.submit "Submit", class: "btn btn-default" %>  
+    </div>
+    <% end %>
+  </form>
