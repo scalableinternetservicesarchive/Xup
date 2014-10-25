@@ -40,3 +40,8 @@ gem 'spring',        group: :development
 
 gem 'validate_url', '~> 0.2.2'
 
+gem 'simple_form', '~> 3.1.0.rc1'
+gem 'datetimepicker-rails', :git => 'git://github.com/zpaulovics/datetimepicker-rails.git',  \
+    :branch => 'master', :submodules => true
+gem 'momentjs-rails', '>= 2.8.1', :github => 'derekprior/momentjs-rails'
+

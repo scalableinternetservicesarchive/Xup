@@ -1,4 +1,4 @@
-<%= form_for(@party) do |f| %>
+<%= simple_form_for @party do |f| %>
   <% if @party.errors.any? %>
     <div id="error_explanation" class="alert alert-danger">
       <h2><%= pluralize(@party.errors.count, "error") %> prohibited this party from being saved:</h2>
@@ -13,32 +13,26 @@
 
   <form role="form">
     <div class="form-group">
-      <%= f.label :name, "Name:", class: "control-label" %><br>
-      <%= f.text_field :name, class: "form-control", placeholder: "Enter Name" %>       
+      <%= f.input :name, class: "form-control", placeholder: "Enter Name" %>       
     </div>
     <div class="form-group">
-      <%= f.label :owner, "Owner:", class: "control-label" %><br>
-      <%= f.text_field :owner, class: "form-control", placeholder: "Enter Owner Name" %>  
+      <%= f.input :owner, class: "form-control", placeholder: "Enter Owner Name" %>  
     </div>
     <div class="form-group">
-      <%= f.label :time, "Time:", class: "control-label" %><br>
-      <%= f.text_field :time, class: "form-control", placeholder: "Enter Time" %>  
+    <%# <div> %>
+      <%# <%= f.input :time, :as => :datetime_picker, class: "form-control", placeholder: "Enter Time" %1> %>  
+      <%= f.input :time, :as => :datetime_picker, placeholder: "Enter Time" %>  
     </div>
     <div class="form-group">
-      <%= f.label :location, "Location:", class: "control-label" %><br>
-      <%= f.text_field :location, class: "form-control", placeholder: "Enter Location" %>  
+      <%= f.input :location, class: "form-control", placeholder: "Enter Location" %>  
     </div>
     <div class="form-group">
-      <%= f.label :description, "Description:", class: "control-label" %><br>
-      <%= f.text_field :description, class: "form-control", placeholder: "Enter Description" %>  
+      <%= f.input :description, class: "form-control", placeholder: "Enter Description" %>  
     </div>
     <div class="form-group">
-      <%= f.label :participants, "Participants:", class: "control-label" %><br>
-      <%= f.text_field :participants, class: "form-control", placeholder: "Enter Participants" %>  
+      <%= f.input :participants, class: "form-control", placeholder: "Enter Participants" %>  
     </div>
 
-    <div class="action">
-      <%= f.submit "Submit", class: "btn btn-default" %>  
-    </div>
+      <%= f.button :submit, class: "btn btn-default" %>  
     <% end %>
   </form>
