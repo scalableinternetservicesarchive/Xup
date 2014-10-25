@@ -5656,3 +5656,54 @@ Processing by PartiesController#new as HTML
   Rendered parties/_form.html.erb (10.4ms)
   Rendered parties/new.html.erb within layouts/application (11.4ms)
 Completed 200 OK in 53ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-25 11:59:31 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.2ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 95ms (Views: 78.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-25 11:59:32 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-25 11:59:32 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-25 11:59:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-25 11:59:32 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-25 11:59:32 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-25 11:59:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-25 11:59:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-25 11:59:32 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-25 11:59:32 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-25 11:59:32 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-25 11:59:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-25 11:59:32 -0700
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-25 11:59:33 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (36.8ms)
+  Rendered parties/new.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 85ms (Views: 83.9ms | ActiveRecord: 0.0ms)
