@@ -6521,3 +6521,182 @@ Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-28 15:47:10 -07
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-28 15:47:10 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-28 16:03:22 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.2ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 176ms (Views: 146.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-28 16:03:23 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-28 16:03:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-28 16:03:23 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-28 16:03:23 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-28 16:03:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-28 16:03:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-28 16:03:23 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-28 16:03:23 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-28 16:03:23 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-28 16:03:23 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-28 16:03:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-28 16:03:23 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-28 16:03:28 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 135ms (Views: 133.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-28 16:03:31 -0700
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.2ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 73ms (Views: 72.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-28 16:03:45 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 75ms (Views: 74.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-28 16:06:15 -0700
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.2ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 74ms (Views: 73.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-28 16:06:18 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 102ms (Views: 100.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-28 16:06:25 -0700
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.2ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 87ms (Views: 86.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-28 16:06:31 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.3ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 99ms (Views: 97.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-28 16:13:08 -0700
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.2ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 107ms (Views: 106.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-28 16:13:08 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-28 16:13:08 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-28 16:13:08 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-28 16:13:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-28 16:13:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-28 16:13:08 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-28 16:13:08 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-28 16:13:08 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-28 16:13:08 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-28 16:13:08 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-28 16:13:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-28 16:13:08 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-28 16:13:10 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 84ms (Views: 82.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-28 16:13:10 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-28 16:13:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-28 16:13:10 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-28 16:13:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-28 16:13:10 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-28 16:13:10 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-28 16:13:10 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-28 16:13:10 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-28 16:13:10 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-28 16:13:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-28 16:13:10 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-28 16:13:10 -0700
