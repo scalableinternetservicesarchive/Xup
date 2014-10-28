@@ -6149,3 +6149,331 @@ Processing by PartiesController#index as HTML
   [1m[36mParty Load (0.3ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
   Rendered parties/index.html.erb within layouts/application (3.4ms)
 Completed 200 OK in 84ms (Views: 82.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-27 21:39:02 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.3ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 155ms (Views: 120.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-27 21:39:03 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-27 21:39:03 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-27 21:39:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-27 21:39:03 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-27 21:39:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-27 21:39:03 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-27 21:39:03 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-27 21:39:03 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-27 21:39:03 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-27 21:39:03 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-27 21:39:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-27 21:39:03 -0700
+
+
+Started GET "/landingPage" for 127.0.0.1 at 2014-10-27 21:39:11 -0700
+
+ActionController::RoutingError (No route matches [GET] "/landingPage"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.2ms)
+
+
+Started DELETE "/parties/6" for 127.0.0.1 at 2014-10-27 21:43:46 -0700
+Processing by PartiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WonK6fTiScNWD+QYd1vuL7O+Y6LPqXsHu+FGxa7swOM=", "id"=>"6"}
+  [1m[36mParty Load (0.5ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mDELETE FROM "parties" WHERE "parties"."id" = ?[0m  [["id", 6]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/parties
+Completed 302 Found in 15ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-27 21:43:46 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 79ms (Views: 78.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-27 21:43:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-27 21:43:46 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-27 21:43:46 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-27 21:43:46 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-27 21:43:46 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-27 21:43:46 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-27 21:43:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-27 21:43:46 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-27 21:43:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-27 21:43:46 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-27 21:43:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-27 21:43:46 -0700
+
+
+Started GET "/parties/5/edit" for 127.0.0.1 at 2014-10-27 21:43:50 -0700
+Processing by PartiesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered parties/_form.html.erb (54.0ms)
+  Rendered parties/edit.html.erb within layouts/application (55.4ms)
+Completed 500 Internal Server Error in 59ms
+
+ActionView::Template::Error (Object must be a Date, DateTime or Time object. "25/10/2014 14:45" given.):
+    21:     <div class="form-group">
+    22:     <%# <div> %>
+    23:       <%# <%= f.input :time, :as => :datetime_picker, class: "form-control", placeholder: "Enter Time" %1> %>  
+    24:       <%= f.input :time, :as => :datetime_picker, placeholder: "Enter Time" %>  
+    25:     </div>
+    26:     <div class="form-group">
+    27:       <%= f.input :location, class: "form-control", placeholder: "Enter Location" %>  
+  app/inputs/datetime_picker_input.rb:5:in `input'
+  app/views/parties/_form.html.erb:24:in `block in _app_views_parties__form_html_erb___4056802183486892994_70191818609680'
+  app/views/parties/_form.html.erb:1:in `_app_views_parties__form_html_erb___4056802183486892994_70191818609680'
+  app/views/parties/edit.html.erb:3:in `_app_views_parties_edit_html_erb__4509871903925478037_70191818556360'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.3ms)
+
+
+Started GET "/parties/5/edit" for 127.0.0.1 at 2014-10-27 21:43:51 -0700
+Processing by PartiesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered parties/_form.html.erb (5.9ms)
+  Rendered parties/edit.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (Object must be a Date, DateTime or Time object. "25/10/2014 14:45" given.):
+    21:     <div class="form-group">
+    22:     <%# <div> %>
+    23:       <%# <%= f.input :time, :as => :datetime_picker, class: "form-control", placeholder: "Enter Time" %1> %>  
+    24:       <%= f.input :time, :as => :datetime_picker, placeholder: "Enter Time" %>  
+    25:     </div>
+    26:     <div class="form-group">
+    27:       <%= f.input :location, class: "form-control", placeholder: "Enter Location" %>  
+  app/inputs/datetime_picker_input.rb:5:in `input'
+  app/views/parties/_form.html.erb:24:in `block in _app_views_parties__form_html_erb___4056802183486892994_70191846469600'
+  app/views/parties/_form.html.erb:1:in `_app_views_parties__form_html_erb___4056802183486892994_70191846469600'
+  app/views/parties/edit.html.erb:3:in `_app_views_parties_edit_html_erb__4509871903925478037_70191842848840'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.0ms)
+
+
+Started GET "/parties/new" for 127.0.0.1 at 2014-10-27 21:43:56 -0700
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (13.7ms)
+  Rendered parties/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 70ms (Views: 69.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/parties" for 127.0.0.1 at 2014-10-27 21:44:03 -0700
+Processing by PartiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WonK6fTiScNWD+QYd1vuL7O+Y6LPqXsHu+FGxa7swOM=", "party"=>{"name"=>"", "owner"=>"", "time"=>"14/10/2014 21:43", "location"=>"", "description"=>"", "participants"=>""}, "commit"=>"Create Party"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mParty Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "parties"  WHERE "parties"."name" = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered parties/_form.html.erb (8.4ms)
+  Rendered parties/new.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 29ms
+
+ActionView::Template::Error (Object must be a Date, DateTime or Time object. "14/10/2014 21:43" given.):
+    21:     <div class="form-group">
+    22:     <%# <div> %>
+    23:       <%# <%= f.input :time, :as => :datetime_picker, class: "form-control", placeholder: "Enter Time" %1> %>  
+    24:       <%= f.input :time, :as => :datetime_picker, placeholder: "Enter Time" %>  
+    25:     </div>
+    26:     <div class="form-group">
+    27:       <%= f.input :location, class: "form-control", placeholder: "Enter Location" %>  
+  app/inputs/datetime_picker_input.rb:5:in `input'
+  app/views/parties/_form.html.erb:24:in `block in _app_views_parties__form_html_erb___4056802183486892994_70191846469600'
+  app/views/parties/_form.html.erb:1:in `_app_views_parties__form_html_erb___4056802183486892994_70191846469600'
+  app/views/parties/new.html.erb:3:in `_app_views_parties_new_html_erb___4464277863583253155_70191838712240'
+  app/controllers/parties_controller.rb:34:in `block (2 levels) in create'
+  app/controllers/parties_controller.rb:29:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.5ms)
+
+
+Started POST "/parties" for 127.0.0.1 at 2014-10-27 21:44:11 -0700
+Processing by PartiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WonK6fTiScNWD+QYd1vuL7O+Y6LPqXsHu+FGxa7swOM=", "party"=>{"name"=>"", "owner"=>"", "time"=>"14/10/2014 21:43", "location"=>"", "description"=>"", "participants"=>""}, "commit"=>"Create Party"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mParty Exists (0.2ms)[0m  SELECT  1 AS one FROM "parties"  WHERE "parties"."name" = '' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered parties/_form.html.erb (9.0ms)
+  Rendered parties/new.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (Object must be a Date, DateTime or Time object. "14/10/2014 21:43" given.):
+    21:     <div class="form-group">
+    22:     <%# <div> %>
+    23:       <%# <%= f.input :time, :as => :datetime_picker, class: "form-control", placeholder: "Enter Time" %1> %>  
+    24:       <%= f.input :time, :as => :datetime_picker, placeholder: "Enter Time" %>  
+    25:     </div>
+    26:     <div class="form-group">
+    27:       <%= f.input :location, class: "form-control", placeholder: "Enter Location" %>  
+  app/inputs/datetime_picker_input.rb:5:in `input'
+  app/views/parties/_form.html.erb:24:in `block in _app_views_parties__form_html_erb___4056802183486892994_70191846469600'
+  app/views/parties/_form.html.erb:1:in `_app_views_parties__form_html_erb___4056802183486892994_70191846469600'
+  app/views/parties/new.html.erb:3:in `_app_views_parties_new_html_erb___4464277863583253155_70191838712240'
+  app/controllers/parties_controller.rb:34:in `block (2 levels) in create'
+  app/controllers/parties_controller.rb:29:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.4ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2014-10-27 21:44:21 -0700
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.3ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 81ms (Views: 79.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-27 23:59:18 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.3ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 187ms (Views: 140.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-27 23:59:18 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-27 23:59:18 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-27 23:59:18 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-27 23:59:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-27 23:59:18 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-27 23:59:18 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-27 23:59:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-27 23:59:18 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-27 23:59:19 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-27 23:59:19 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-27 23:59:19 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-27 23:59:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-27 23:59:19 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-28 00:00:14 -0700
+
+ArgumentError (Invalid route name, already in use: 'root' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+http://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  config/routes.rb:5:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.7ms)

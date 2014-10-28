@@ -2,6 +2,11 @@ Rails.application.routes.draw do
   root 'parties#index'
   resources :parties
 
+  root 'parties#upcoming'
+  resources :parties
+
+  #
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

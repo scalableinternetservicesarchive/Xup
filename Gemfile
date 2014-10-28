@@ -45,3 +45,5 @@ gem 'datetimepicker-rails', :git => 'git://github.com/zpaulovics/datetimepicker-
     :branch => 'master', :submodules => true
 gem 'momentjs-rails', '>= 2.8.1', :github => 'derekprior/momentjs-rails'
 
+gem 'bootstrap-sass', '~> 3.2.0.2' # i think we need to add bootstrap
+
