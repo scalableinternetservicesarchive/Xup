@@ -12,6 +12,8 @@ get '/index' => 'parties#index'
 
 get '/past' => 'parties#past'
 
+get '/new' => 'parties#new'
+
  #root 'parties#upcoming'
  
   #resources :parties
