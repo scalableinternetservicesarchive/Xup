@@ -3897,3 +3897,474 @@ Processing by PartiesController#upcoming as HTML
   Rendered parties/upcoming.html.erb within layouts/application (1.9ms)
   Rendered layouts/_header.html.erb (0.0ms)
 Completed 200 OK in 95ms (Views: 94.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/upcoming" for 127.0.0.1 at 2014-10-29 09:23:09 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PartiesController#upcoming as HTML
+  [1m[35mParty Load (0.2ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/upcoming.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 207ms (Views: 181.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/upcoming" for 127.0.0.1 at 2014-10-29 09:23:11 -0700
+Processing by PartiesController#upcoming as HTML
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/upcoming.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 80ms (Views: 79.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/past" for 127.0.0.1 at 2014-10-29 09:23:12 -0700
+Processing by PartiesController#past as HTML
+  Rendered parties/past.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 76ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/upcoming" for 127.0.0.1 at 2014-10-29 09:23:13 -0700
+Processing by PartiesController#upcoming as HTML
+  [1m[35mParty Load (0.2ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/upcoming.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 78ms (Views: 77.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/past" for 127.0.0.1 at 2014-10-29 09:23:14 -0700
+Processing by PartiesController#past as HTML
+  Rendered parties/past.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 132ms (Views: 131.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/upcoming" for 127.0.0.1 at 2014-10-29 09:23:15 -0700
+Processing by PartiesController#upcoming as HTML
+  [1m[36mParty Load (0.3ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/upcoming.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 186ms (Views: 185.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/upcoming" for 127.0.0.1 at 2014-10-29 09:23:17 -0700
+Processing by PartiesController#upcoming as HTML
+  [1m[35mParty Load (0.3ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/upcoming.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 106ms (Views: 105.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/past" for 127.0.0.1 at 2014-10-29 09:23:18 -0700
+Processing by PartiesController#past as HTML
+  Rendered parties/past.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 107ms (Views: 107.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/upcoming" for 127.0.0.1 at 2014-10-29 09:23:19 -0700
+Processing by PartiesController#upcoming as HTML
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/upcoming.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 86ms (Views: 85.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/past" for 127.0.0.1 at 2014-10-29 09:23:20 -0700
+Processing by PartiesController#past as HTML
+  Rendered parties/past.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 82ms (Views: 81.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/upcoming" for 127.0.0.1 at 2014-10-29 09:23:21 -0700
+Processing by PartiesController#upcoming as HTML
+  [1m[35mParty Load (0.3ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/upcoming.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 81ms (Views: 80.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/past" for 127.0.0.1 at 2014-10-29 09:23:22 -0700
+Processing by PartiesController#past as HTML
+  Rendered parties/past.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 108ms (Views: 107.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/upcoming" for 127.0.0.1 at 2014-10-29 09:23:22 -0700
+Processing by PartiesController#upcoming as HTML
+  [1m[36mParty Load (0.3ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/upcoming.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 91ms (Views: 89.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/past" for 127.0.0.1 at 2014-10-29 09:23:23 -0700
+Processing by PartiesController#past as HTML
+  Rendered parties/past.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 79ms (Views: 78.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/upcoming" for 127.0.0.1 at 2014-10-29 09:23:24 -0700
+Processing by PartiesController#upcoming as HTML
+  [1m[35mParty Load (0.2ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/upcoming.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 113ms (Views: 111.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/past" for 127.0.0.1 at 2014-10-29 09:23:25 -0700
+Processing by PartiesController#past as HTML
+  Rendered parties/past.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 94ms (Views: 93.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/past" for 127.0.0.1 at 2014-10-29 09:24:51 -0700
+Processing by PartiesController#past as HTML
+  Rendered parties/past.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    22:   current = DateTime.now
+    23:   seconds=current.to_i
+    24:   @past=[]
+    25:   @parties.each do |party| 
+    26:     if party.time.to_i<seconds
+    27:       @past.push(party)
+    28:     end
+  app/views/parties/past.html.erb:25:in `_app_views_parties_past_html_erb__718495083071334181_70131674999540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-29 09:26:45 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.3ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (16.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 236ms (Views: 208.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-29 09:26:46 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 94ms (Views: 93.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-10-29 09:26:46 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-29 09:26:46 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-29 09:26:46 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-29 09:26:46 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-29 09:26:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-29 09:26:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-29 09:26:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-29 09:26:46 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-29 09:26:46 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-29 09:26:46 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-29 09:26:46 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 09:26:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 09:26:46 -0700
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-29 09:26:50 -0700
+Processing by PartiesController#about as HTML
+  Rendered parties/about.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 96ms (Views: 95.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2014-10-29 09:26:51 -0700
+Processing by PartiesController#help as HTML
+  Rendered parties/help.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 90ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/upcoming" for 127.0.0.1 at 2014-10-29 09:26:53 -0700
+Processing by PartiesController#upcoming as HTML
+  [1m[35mParty Load (0.2ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/upcoming.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 98ms (Views: 97.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/past" for 127.0.0.1 at 2014-10-29 09:26:55 -0700
+Processing by PartiesController#past as HTML
+  Rendered parties/past.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    22:   current = DateTime.now
+    23:   seconds=current.to_i
+    24:   @past=[]
+    25:   @parties.each do |party| 
+    26:     if party.time.to_i<seconds
+    27:       @past.push(party)
+    28:     end
+  app/views/parties/past.html.erb:25:in `_app_views_parties_past_html_erb___2732326683245205449_70223539803160'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.7ms)
+
+
+Started GET "/past" for 127.0.0.1 at 2014-10-29 09:26:55 -0700
+Processing by PartiesController#past as HTML
+  Rendered parties/past.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    22:   current = DateTime.now
+    23:   seconds=current.to_i
+    24:   @past=[]
+    25:   @parties.each do |party| 
+    26:     if party.time.to_i<seconds
+    27:       @past.push(party)
+    28:     end
+  app/views/parties/past.html.erb:25:in `_app_views_parties_past_html_erb___2732326683245205449_70223580093140'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-29 09:31:42 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.3ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (11.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 187ms (Views: 156.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-10-29 09:31:42 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-29 09:31:42 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-29 09:31:42 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-29 09:31:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-29 09:31:42 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-29 09:31:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-29 09:31:42 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-29 09:31:42 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-29 09:31:42 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-29 09:31:42 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-29 09:31:42 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 09:31:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 09:31:42 -0700
+
+
+Started GET "/past" for 127.0.0.1 at 2014-10-29 09:31:44 -0700
+Processing by PartiesController#past as HTML
+  Rendered parties/past.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    22:   current = DateTime.now
+    23:   seconds=current.to_i
+    24:   @pasttime=[]
+    25:   @parties.each do |party| 
+    26:     if party.time.to_i<seconds
+    27:       @pasttime.push(party)
+    28:     end
+  app/views/parties/past.html.erb:25:in `_app_views_parties_past_html_erb__3292051606842142616_70219785425020'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.9ms)
+
+
+Started GET "/past" for 127.0.0.1 at 2014-10-29 09:31:44 -0700
+Processing by PartiesController#past as HTML
+  Rendered parties/past.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    22:   current = DateTime.now
+    23:   seconds=current.to_i
+    24:   @pasttime=[]
+    25:   @parties.each do |party| 
+    26:     if party.time.to_i<seconds
+    27:       @pasttime.push(party)
+    28:     end
+  app/views/parties/past.html.erb:25:in `_app_views_parties_past_html_erb__3292051606842142616_70219780665440'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.1ms)
+
+
+Started GET "/upcoming" for 127.0.0.1 at 2014-10-29 09:32:14 -0700
+Processing by PartiesController#upcoming as HTML
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/upcoming.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 81ms (Views: 80.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/past" for 127.0.0.1 at 2014-10-29 09:32:15 -0700
+Processing by PartiesController#past as HTML
+  Rendered parties/past.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    22:   current = DateTime.now
+    23:   seconds=current.to_i
+    24:   @pasttime=[]
+    25:   @parties.each do |party| 
+    26:     if party.time.to_i<seconds
+    27:       @pasttime.push(party)
+    28:     end
+  app/views/parties/past.html.erb:25:in `_app_views_parties_past_html_erb__3292051606842142616_70219785425020'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.0ms)
+
+
+Started GET "/past" for 127.0.0.1 at 2014-10-29 09:32:15 -0700
+Processing by PartiesController#past as HTML
+  Rendered parties/past.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    22:   current = DateTime.now
+    23:   seconds=current.to_i
+    24:   @pasttime=[]
+    25:   @parties.each do |party| 
+    26:     if party.time.to_i<seconds
+    27:       @pasttime.push(party)
+    28:     end
+  app/views/parties/past.html.erb:25:in `_app_views_parties_past_html_erb__3292051606842142616_70219780665440'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.4ms)
+
+
+Started GET "/past" for 127.0.0.1 at 2014-10-29 09:33:49 -0700
+Processing by PartiesController#past as HTML
+  Rendered parties/past.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 78ms (Views: 77.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-29 09:33:49 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-29 09:33:49 -0700
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-10-29 09:33:49 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-29 09:33:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-29 09:33:49 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-29 09:33:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-29 09:33:49 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-29 09:33:49 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-29 09:33:49 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-29 09:33:49 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-29 09:33:49 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 09:33:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 09:33:49 -0700
+
+
+Started GET "/landingPage" for 127.0.0.1 at 2014-10-29 09:33:51 -0700
+Processing by PartiesController#landingPage as HTML
+  Rendered parties/landingPage.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 107ms (Views: 106.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/upcoming" for 127.0.0.1 at 2014-10-29 09:33:52 -0700
+Processing by PartiesController#upcoming as HTML
+  [1m[35mParty Load (0.2ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/upcoming.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 98ms (Views: 96.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/past" for 127.0.0.1 at 2014-10-29 09:33:52 -0700
+Processing by PartiesController#past as HTML
+  Rendered parties/past.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 87ms (Views: 86.6ms | ActiveRecord: 0.0ms)

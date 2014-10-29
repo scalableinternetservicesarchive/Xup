@@ -10,6 +10,8 @@ get '/help' => 'parties#help'
 
 get '/landingPage' => 'parties#landingPage'
 
+get '/past' => 'parties#past'
+
  #root 'parties#upcoming'
  
   #resources :parties
