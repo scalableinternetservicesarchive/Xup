@@ -8,6 +8,8 @@ get '/about' => 'parties#about'
 
 get '/help' => 'parties#help'
 
+get '/landingPage' => 'parties#landingPage'
+
  #root 'parties#upcoming'
  
   #resources :parties
