@@ -10,41 +10,9 @@
 </head>
 
 <body>
-  <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <%# <%= link_to 'Xup', root_path, class: 'navbar-brand' %1> %>
-        <a class="navbar-brand" href="#">Xup</a>
-      </div>
-      <div class="collapse navbar-collapse">
-        <!-- unorderd list Left hand side -->
-        <ul class="pull-left">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <!-- <li id="nav-home"><a href="#">Home</a></li> -->
-                <li id="nav-find"><a href="#upcoming">Upcoming Parties</a></li>
-                <li id="nav-browse"><a href="#browse">Past Parties</a></li>
-            </ul>
-        </ul>
-        <!-- unorderd list right hand side -->
-        <ul class="pull-right">
-          <ul class="nav navbar-nav">
-              <li id="nav-login"><a href="#login">Login</a></li>   
-              <li id="nav-signup"><a href="#signup">Sign Up</a></li>
-              <li id="nav-logout"><a href="#logout">Logout</a></li>
-              <li id="nav-about"><a href="#about">About</a></li>
-              <li id="nav-help"><a href="#help">Help</a></li>
-          </ul>
-        </ul>
-      </div>
-    </div>
-  </div>
+  
+  <!--The line below inputs the html from _header.html.erb and render it -->
+  <%= render 'layouts/header' %>
 
   <div class ="container"> <!-- this put the html in parties inside this "container" --> 
   	<%= yield %>
