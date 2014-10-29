@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'parties#index'
+  root 'parties#landingPage'
   resources :parties
 
 get '/upcoming' => 'parties#upcoming'
@@ -8,7 +8,7 @@ get '/about' => 'parties#about'
 
 get '/help' => 'parties#help'
 
-get '/landingPage' => 'parties#landingPage'
+get '/index' => 'parties#index'
 
 get '/past' => 'parties#past'
 
