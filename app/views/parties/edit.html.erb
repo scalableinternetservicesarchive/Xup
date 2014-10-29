@@ -1,6 +1,9 @@
 <h1>Editing party</h1>
 
 <%= render 'form' %>
+<br />
 
-<%= link_to 'Show', @party %> |
-<%= link_to 'Back', parties_path %>
+<div class="btn-group">
+    <%= link_to 'Show', @party, :class => "btn btn-default" %>
+    <%= link_to 'Back', parties_path, :class => "btn btn-default" %>
+</div>

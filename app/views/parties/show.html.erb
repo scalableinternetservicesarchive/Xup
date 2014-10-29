@@ -1,10 +1,11 @@
-<p id="notice"><%= notice %></p>
+<%# <p id="notice"><%= notice %1></p> %>
 
+<div class="jumbotron">
 <p>
   <strong>Name:</strong>
   <%= @party.name %>
 </p>
-
+    
 <p>
   <strong>Owner:</strong>
   <%= @party.owner %>
@@ -29,6 +30,9 @@
   <strong>Participants:</strong>
   <%= @party.participants %>
 </p>
+</div>
 
-<%= link_to 'Edit', edit_party_path(@party) %> |
-<%= link_to 'Back', parties_path %>
+<div class="btn-group">
+    <%= link_to 'Edit', edit_party_path(@party), :class => "btn btn-default" %>
+    <%= link_to 'Back', parties_path, :class => "btn btn-default" %>
+</div>
