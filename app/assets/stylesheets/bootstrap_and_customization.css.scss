@@ -1,3 +1,25 @@
- 
+.jumbotron .container .col-md-8{
+  background-image:url('http://www.collectorsweekly.com/articles/wp-content/uploads/2014/02/2699806237_588024c891_o.jpg');
+  height: 300px;
+  width: 500px;
+}
+
+.jumbotron .container {
+  
+
+}
+
+.jumbotron .container .col-md-4{
+
+}
+
+.jumbotron h1 {
+  font-family: 'Shift', sans-serif;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+}
 
 @import 'bootstrap';
