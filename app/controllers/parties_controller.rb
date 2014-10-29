@@ -12,6 +12,13 @@ class PartiesController < ApplicationController
   def show
   end
 
+  def listtest
+    @parties = Party.order(name: :desc)
+    
+    #@stories = Story.find( :all, :order => "created_at DESC" , :limit => 11)
+    
+  end
+
   # GET /parties/new
   def new
     @party = Party.new
@@ -19,6 +26,10 @@ class PartiesController < ApplicationController
 
   # GET /parties/1/edit
   def edit
+  end
+
+  def test
+
   end
 
   # POST /parties
