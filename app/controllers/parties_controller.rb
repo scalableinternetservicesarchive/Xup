@@ -15,8 +15,11 @@ class PartiesController < ApplicationController
   def upcoming
   #some query
   @parties = Party.all
-  
+  end
 
+  def past
+  #some query
+  @parties = Party.all
   end
   
   # GET /parties/new
