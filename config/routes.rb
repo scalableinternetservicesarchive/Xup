@@ -6,6 +6,8 @@ get '/upcoming' => 'parties#upcoming'
 
 get '/about' => 'parties#about'
 
+get '/help' => 'parties#help'
+
  #root 'parties#upcoming'
  
   #resources :parties
