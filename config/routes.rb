@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
 get '/upcoming' => 'parties#upcoming'
 
+get '/about' => 'parties#about'
+
  #root 'parties#upcoming'
  
   #resources :parties

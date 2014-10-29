@@ -47,3 +47,6 @@ gem 'momentjs-rails', '>= 2.8.1', :github => 'derekprior/momentjs-rails'
 
 gem 'bootstrap-sass', '~> 3.2.0.2' # i think we need to add bootstrap
 
+# https://github.com/thoughtbot/paperclip
+gem 'paperclip', '~> 3.0' #Paperclip is a gem that allows you to upload images
+
