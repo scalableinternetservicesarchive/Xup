@@ -2,7 +2,10 @@ Rails.application.routes.draw do
   root 'parties#index'
   resources :parties
 
-  #root 'parties#upcoming'
+get '/upcoming' => 'parties#upcoming'
+
+ #root 'parties#upcoming'
+ 
   #resources :parties
 
   #

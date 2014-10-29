@@ -12,6 +12,13 @@ class PartiesController < ApplicationController
   def show
   end
 
+  def upcoming
+  #some query
+  @parties = Party.all
+  
+
+  end
+  
   # GET /parties/new
   def new
     @party = Party.new
