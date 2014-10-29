@@ -14,6 +14,8 @@ get '/past' => 'parties#past'
 
 get '/new' => 'parties#new'
 
+get '/login' => 'parties#login'
+
  #root 'parties#upcoming'
  
   #resources :parties
