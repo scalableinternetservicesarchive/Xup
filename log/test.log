@@ -1605,3 +1605,288 @@ Processing by PartiesController#update as HTML
 Redirected to http://test.host/parties/980190962
 Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (163.6ms)[0m  DROP TABLE "communities"
+  [1m[36m (143.4ms)[0m  [1mCREATE TABLE "communities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "me" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (153.9ms)[0m  DROP TABLE "parties"
+  [1m[36m (167.1ms)[0m  [1mCREATE TABLE "parties" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "owner" varchar(255), "time" datetime(255), "location" varchar(255), "description" text, "participants" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (153.0ms)[0m  DROP TABLE "submissions"
+  [1m[36m (154.6ms)[0m  [1mCREATE TABLE "submissions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url" varchar(255), "community_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (142.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141029031932')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "parties"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "parties" ("name", "owner", "time", "location", "description", "participants", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2014-10-29 03:22:40', '2014-10-29 03:22:40', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "parties" ("name", "owner", "time", "location", "description", "participants", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2014-10-29 03:22:40', '2014-10-29 03:22:40', 298486374)
+  [1m[36m (148.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+-----------------------------------------------
+PartiesControllerTest: test_should_create_party
+-----------------------------------------------
+  [1m[36mParty Load (0.6ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "parties"
+Processing by PartiesController#create as HTML
+  Parameters: {"party"=>{"name"=>"party 2", "owner"=>"Peter", "time"=>"Dec-12", "location"=>"Goleta", "description"=>"A good party", "participants"=>"Peter, Alice, Bob"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mParty Exists (0.1ms)[0m  SELECT  1 AS one FROM "parties"  WHERE "parties"."name" = 'party 2' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "parties" ("created_at", "description", "location", "name", "owner", "participants", "time", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-10-29 03:22:40.565628"], ["description", "A good party"], ["location", "Goleta"], ["name", "party 2"], ["owner", "Peter"], ["participants", "Peter, Alice, Bob"], ["time", "2014-12-12 00:00:00.000000"], ["updated_at", "2014-10-29 03:22:40.565628"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/parties/980190963
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "parties"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+PartiesControllerTest: test_should_destroy_party
+------------------------------------------------
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "parties"[0m
+Processing by PartiesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mParty Load (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "parties" WHERE "parties"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/parties
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "parties"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+PartiesControllerTest: test_should_get_edit
+-------------------------------------------
+  [1m[36mParty Load (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by PartiesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mParty Load (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered parties/_form.html.erb (31.8ms)
+Completed 200 OK in 262ms (Views: 262.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------
+PartiesControllerTest: test_should_get_index
+--------------------------------------------
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (0.1ms)[0m  SELECT "parties".* FROM "parties"
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------
+PartiesControllerTest: test_should_get_new
+------------------------------------------
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (8.2ms)
+Completed 200 OK in 21ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+PartiesControllerTest: test_should_show_party
+---------------------------------------------
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by PartiesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mParty Load (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+PartiesControllerTest: test_should_update_party
+-----------------------------------------------
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by PartiesController#update as HTML
+  Parameters: {"party"=>{"name"=>"party 2", "owner"=>"Peter", "time"=>"Dec-12", "location"=>"Goleta", "description"=>"A good party", "participants"=>"Peter, Alice, Bob"}, "id"=>"980190962"}
+  [1m[36mParty Load (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mParty Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "parties"  WHERE ("parties"."name" = 'party 2' AND "parties"."id" != 980190962) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "parties" SET "description" = ?, "location" = ?, "name" = ?, "owner" = ?, "participants" = ?, "time" = ?, "updated_at" = ? WHERE "parties"."id" = 980190962  [["description", "A good party"], ["location", "Goleta"], ["name", "party 2"], ["owner", "Peter"], ["participants", "Peter, Alice, Bob"], ["time", "2014-12-12 00:00:00.000000"], ["updated_at", "2014-10-29 03:22:40.871506"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/parties/980190962
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "parties"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "parties" ("name", "owner", "time", "location", "description", "participants", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-10-31 20:22:00.000000', 'MyString', 'MyString', 'MyString', '2014-10-29 03:23:13', '2014-10-29 03:23:13', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "parties" ("name", "owner", "time", "location", "description", "participants", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-10-31 20:22:00.000000', 'MyString', 'MyString', 'MyString', '2014-10-29 03:23:13', '2014-10-29 03:23:13', 298486374)[0m
+  [1m[35m (167.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+PartiesControllerTest: test_should_create_party
+-----------------------------------------------
+  [1m[35mParty Load (0.3ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "parties"[0m
+Processing by PartiesController#create as HTML
+  Parameters: {"party"=>{"name"=>"party 2", "owner"=>"Peter", "time"=>"Dec-12", "location"=>"Goleta", "description"=>"A good party", "participants"=>"Peter, Alice, Bob"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mParty Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "parties"  WHERE "parties"."name" = 'party 2' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "parties" ("created_at", "description", "location", "name", "owner", "participants", "time", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-10-29 03:23:13.508057"], ["description", "A good party"], ["location", "Goleta"], ["name", "party 2"], ["owner", "Peter"], ["participants", "Peter, Alice, Bob"], ["time", "2014-12-12 00:00:00.000000"], ["updated_at", "2014-10-29 03:23:13.508057"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/parties/980190963
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "parties"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------
+PartiesControllerTest: test_should_destroy_party
+------------------------------------------------
+  [1m[36mParty Load (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "parties"
+Processing by PartiesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mParty Load (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "parties" WHERE "parties"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/parties
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "parties"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+PartiesControllerTest: test_should_get_edit
+-------------------------------------------
+  [1m[35mParty Load (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by PartiesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mParty Load (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Rendered parties/_form.html.erb (32.5ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+PartiesControllerTest: test_should_get_index
+--------------------------------------------
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+PartiesControllerTest: test_should_get_new
+------------------------------------------
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (8.1ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------
+PartiesControllerTest: test_should_show_party
+---------------------------------------------
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by PartiesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mParty Load (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 980190962]]
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------
+PartiesControllerTest: test_should_update_party
+-----------------------------------------------
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by PartiesController#update as HTML
+  Parameters: {"party"=>{"name"=>"party 2", "owner"=>"Peter", "time"=>"Dec-12", "location"=>"Goleta", "description"=>"A good party", "participants"=>"Peter, Alice, Bob"}, "id"=>"980190962"}
+  [1m[35mParty Load (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mParty Exists (0.1ms)[0m  SELECT  1 AS one FROM "parties"  WHERE ("parties"."name" = 'party 2' AND "parties"."id" != 980190962) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "parties" SET "description" = ?, "location" = ?, "name" = ?, "owner" = ?, "participants" = ?, "time" = ?, "updated_at" = ? WHERE "parties"."id" = 980190962[0m  [["description", "A good party"], ["location", "Goleta"], ["name", "party 2"], ["owner", "Peter"], ["participants", "Peter, Alice, Bob"], ["time", "2014-12-12 00:00:00.000000"], ["updated_at", "2014-10-29 03:23:13.588330"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/parties/980190962
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "parties"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "parties" ("name", "owner", "time", "location", "description", "participants", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-10-31 20:22:00.000000', 'MyString', 'MyString', 'MyString', '2014-10-29 03:25:22', '2014-10-29 03:25:22', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "parties" ("name", "owner", "time", "location", "description", "participants", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-10-31 20:22:00.000000', 'MyString', 'MyString', 'MyString', '2014-10-29 03:25:22', '2014-10-29 03:25:22', 298486374)[0m
+  [1m[35m (173.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+PartiesControllerTest: test_should_create_party
+-----------------------------------------------
+  [1m[35mParty Load (0.2ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "parties"[0m
+Processing by PartiesController#create as HTML
+  Parameters: {"party"=>{"name"=>"party 2", "owner"=>"Peter", "time"=>"Dec-12", "location"=>"Goleta", "description"=>"A good party", "participants"=>"Peter, Alice, Bob"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mParty Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "parties"  WHERE "parties"."name" = 'party 2' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "parties" ("created_at", "description", "location", "name", "owner", "participants", "time", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-10-29 03:25:22.402659"], ["description", "A good party"], ["location", "Goleta"], ["name", "party 2"], ["owner", "Peter"], ["participants", "Peter, Alice, Bob"], ["time", "2014-12-12 00:00:00.000000"], ["updated_at", "2014-10-29 03:25:22.402659"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/parties/980190963
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "parties"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------
+PartiesControllerTest: test_should_destroy_party
+------------------------------------------------
+  [1m[36mParty Load (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "parties"
+Processing by PartiesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mParty Load (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "parties" WHERE "parties"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/parties
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "parties"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+PartiesControllerTest: test_should_get_edit
+-------------------------------------------
+  [1m[35mParty Load (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by PartiesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mParty Load (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Rendered parties/_form.html.erb (32.3ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+PartiesControllerTest: test_should_get_index
+--------------------------------------------
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+PartiesControllerTest: test_should_get_new
+------------------------------------------
+  [1m[35mParty Load (0.1ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by PartiesController#new as HTML
+  Rendered parties/_form.html.erb (8.2ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------
+PartiesControllerTest: test_should_show_party
+---------------------------------------------
+  [1m[36mParty Load (0.1ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by PartiesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mParty Load (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 980190962]]
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------
+PartiesControllerTest: test_should_update_party
+-----------------------------------------------
+  [1m[36mParty Load (0.0ms)[0m  [1mSELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by PartiesController#update as HTML
+  Parameters: {"party"=>{"name"=>"party 2", "owner"=>"Peter", "time"=>"Dec-12", "location"=>"Goleta", "description"=>"A good party", "participants"=>"Peter, Alice, Bob"}, "id"=>"980190962"}
+  [1m[35mParty Load (0.0ms)[0m  SELECT  "parties".* FROM "parties"  WHERE "parties"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mParty Exists (0.1ms)[0m  SELECT  1 AS one FROM "parties"  WHERE ("parties"."name" = 'party 2' AND "parties"."id" != 980190962) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "parties" SET "description" = ?, "location" = ?, "name" = ?, "owner" = ?, "participants" = ?, "time" = ?, "updated_at" = ? WHERE "parties"."id" = 980190962[0m  [["description", "A good party"], ["location", "Goleta"], ["name", "party 2"], ["owner", "Peter"], ["participants", "Peter, Alice, Bob"], ["time", "2014-12-12 00:00:00.000000"], ["updated_at", "2014-10-29 03:25:22.482730"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/parties/980190962
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m

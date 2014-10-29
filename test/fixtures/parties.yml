@@ -3,7 +3,7 @@
 one:
   name: MyString
   owner: MyString
-  time: MyString
+  time: 2014-10-31 20:22:00
   location: MyString
   description: MyString
   participants: MyString
@@ -11,7 +11,7 @@ one:
 two:
   name: MyString
   owner: MyString
-  time: MyString
+  time: 2014-10-31 20:22:00
   location: MyString
   description: MyString
   participants: MyString

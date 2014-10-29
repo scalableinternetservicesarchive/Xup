@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141023042838) do
+ActiveRecord::Schema.define(version: 20141029031932) do
 
   create_table "communities", force: true do |t|
     t.string   "me"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20141023042838) do
   create_table "parties", force: true do |t|
     t.string   "name"
     t.string   "owner"
-    t.string   "time"
+    t.datetime "time",         limit: 255
     t.string   "location"
     t.text     "description"
     t.text     "participants"
