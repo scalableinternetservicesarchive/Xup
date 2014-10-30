@@ -6,7 +6,7 @@
       <tr>
         <th>Name</th>
         <th>Owner</th>
-        <th>Time</th>
+        <th>Start Time</th>
         <th>Location</th>
         <th>Description</th>
         <th>Participants</th>
@@ -19,7 +19,7 @@
         <tr>
           <td><%= party.name %></td>
           <td><%= party.owner %></td>
-          <td><%= party.time %></td>
+          <td><%= party.time.strftime("%H:%m") %></td>
           <td><%= party.location %></td>
           <td><%= party.description %></td>
           <td><%= party.participants %></td>
