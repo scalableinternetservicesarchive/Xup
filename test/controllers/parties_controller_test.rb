@@ -20,11 +20,13 @@ class PartiesControllerTest < ActionController::TestCase
   end
 
   test "should get new" do
+    sign_in users(:one)
     get :new
     assert_response :success
   end
 
   test "should create party" do
+    sign_in users(:one)
     assert_difference('Party.count') do
        post :create, party: @update
     end
@@ -38,16 +40,19 @@ class PartiesControllerTest < ActionController::TestCase
   end
 
   test "should get edit" do
+    sign_in users(:one)
     get :edit, id: @party
     assert_response :success
   end
 
   test "should update party" do
+    sign_in users(:one)
     patch :update, id: @party, party: @update
     assert_redirected_to party_path(assigns(:party))
   end
 
   test "should destroy party" do
+    sign_in users(:one)
     assert_difference('Party.count', -1) do
       delete :destroy, id: @party
     end

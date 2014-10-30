@@ -3,25 +3,17 @@ Rails.application.routes.draw do
   root 'parties#landingPage'
   resources :parties
 
-get '/upcoming' => 'parties#upcoming'
+  get '/upcoming' => 'parties#upcoming'
+  get '/about' => 'parties#about'
+  get '/help' => 'parties#help'
+  get '/index' => 'parties#index'
+  get '/past' => 'parties#past'
+  get '/new' => 'parties#new'
+  get '/login' => 'parties#login'
+  get '/signup' => 'parties#signup'
+  get '/logout' => 'parties#logout'
 
-get '/about' => 'parties#about'
-
-get '/help' => 'parties#help'
-
-get '/index' => 'parties#index'
-
-get '/past' => 'parties#past'
-
-get '/new' => 'parties#new'
-
-get '/login' => 'parties#login'
-
-get '/signup' => 'parties#signup'
-
-get '/logout' => 'parties#logout'
-
- #root 'parties#upcoming'
+  #root 'parties#upcoming'
  
   #resources :parties
 
