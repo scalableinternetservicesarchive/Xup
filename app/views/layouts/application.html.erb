@@ -10,7 +10,10 @@
 </head>
 
 <body>
-  
+    <%# The two lines below are required by "devise" %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
   <!--The line below inputs the html from _header.html.erb and render it -->
   <%= render 'layouts/header' %>
 
