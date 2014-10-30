@@ -12409,3 +12409,761 @@ Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 16:47:07 -07
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 16:47:07 -0700
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-10-29 16:58:04 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PartiesController#signup as HTML
+  Rendered parties/_signupform.html.erb (0.3ms)
+  Rendered parties/signup.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 1128ms (Views: 1101.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-10-29 16:58:06 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-29 16:58:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-29 16:58:06 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-29 16:58:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:06 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:06 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:06 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:06 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:06 -0700
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-29 16:58:08 -0700
+Processing by PartiesController#about as HTML
+  Rendered parties/about.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 90ms (Views: 89.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-29 16:58:13 -0700
+Processing by PartiesController#landingPage as HTML
+  Rendered parties/_signupform.html.erb (0.2ms)
+  Rendered parties/landingPage.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 88ms (Views: 87.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-29 16:58:15 -0700
+Processing by PartiesController#about as HTML
+  Rendered parties/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 88ms (Views: 87.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-29 16:58:29 -0700
+Processing by PartiesController#about as HTML
+  Rendered parties/about.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 1002ms (Views: 1001.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-10-29 16:58:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:30 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-29 16:58:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-29 16:58:30 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-29 16:58:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:30 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:30 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:30 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:30 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:30 -0700
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-29 16:58:59 -0700
+Processing by PartiesController#about as HTML
+  Rendered parties/about.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 97ms (Views: 96.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-10-29 16:58:59 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-29 16:58:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:59 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-29 16:58:59 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-29 16:58:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:59 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:59 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:59 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:59 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 16:58:59 -0700
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-29 16:59:23 -0700
+Processing by PartiesController#about as HTML
+  Rendered parties/about.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 1016ms (Views: 1015.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-10-29 16:59:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-29 16:59:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-29 16:59:24 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-29 16:59:24 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-29 16:59:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-29 16:59:24 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-29 16:59:24 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-29 16:59:24 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-29 16:59:24 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-29 16:59:24 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 16:59:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 16:59:24 -0700
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-29 16:59:56 -0700
+Processing by PartiesController#about as HTML
+  Rendered parties/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 1050ms (Views: 1049.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-10-29 16:59:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-29 16:59:57 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-29 16:59:57 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-29 16:59:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-29 16:59:57 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-29 16:59:57 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-29 16:59:57 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-29 16:59:57 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-29 16:59:57 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-29 16:59:57 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 16:59:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 16:59:57 -0700
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-29 17:00:06 -0700
+Processing by PartiesController#about as HTML
+  Rendered parties/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 1073ms (Views: 1072.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-10-29 17:00:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-29 17:00:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-29 17:00:08 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-29 17:00:08 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-29 17:00:08 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-29 17:00:08 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-29 17:00:08 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-29 17:00:08 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-29 17:00:08 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-29 17:00:08 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 17:00:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 17:00:08 -0700
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-29 17:04:13 -0700
+Processing by PartiesController#about as HTML
+  Rendered parties/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 1056ms (Views: 1055.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-29 17:04:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:14 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-29 17:04:14 -0700
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-10-29 17:04:14 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-29 17:04:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:14 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:14 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:14 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:14 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:14 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:14 -0700
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-29 17:04:24 -0700
+Processing by PartiesController#about as HTML
+  Rendered parties/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 91ms (Views: 90.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-10-29 17:04:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-29 17:04:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:24 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-29 17:04:24 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-29 17:04:24 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:24 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:24 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:24 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:24 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:24 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-29 17:04:26 -0700
+Processing by PartiesController#landingPage as HTML
+  Rendered parties/_signupform.html.erb (0.0ms)
+  Rendered parties/landingPage.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 85ms (Views: 84.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-29 17:04:27 -0700
+Processing by PartiesController#about as HTML
+  Rendered parties/about.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 88ms (Views: 87.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-29 17:04:49 -0700
+Processing by PartiesController#about as HTML
+  Rendered parties/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 1109ms (Views: 1108.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-10-29 17:04:50 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:50 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-29 17:04:50 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-29 17:04:50 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:50 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-29 17:04:50 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:50 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:50 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:50 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:50 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:50 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 17:04:50 -0700
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-29 17:08:57 -0700
+Processing by PartiesController#about as HTML
+  Rendered parties/about.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 1041ms (Views: 1040.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-10-29 17:08:58 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-29 17:08:58 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-29 17:08:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-29 17:08:58 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-29 17:08:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-29 17:08:58 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-29 17:08:58 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-29 17:08:58 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-29 17:08:58 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-29 17:08:58 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 17:08:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 17:08:58 -0700
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-29 17:09:26 -0700
+Processing by PartiesController#about as HTML
+  Rendered parties/about.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 90ms (Views: 89.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-10-29 17:09:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-29 17:09:26 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-29 17:09:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-29 17:09:26 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-29 17:09:26 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-29 17:09:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-29 17:09:26 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-29 17:09:26 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-29 17:09:26 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-29 17:09:26 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 17:09:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 17:09:26 -0700
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-29 17:09:41 -0700
+Processing by PartiesController#about as HTML
+  Rendered parties/about.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 98ms (Views: 97.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-10-29 17:09:41 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-29 17:09:41 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-29 17:09:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-29 17:09:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-29 17:09:41 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-29 17:09:41 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-29 17:09:41 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-29 17:09:41 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-29 17:09:41 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-29 17:09:41 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 17:09:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 17:09:41 -0700
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-29 17:09:53 -0700
+Processing by PartiesController#about as HTML
+  Rendered parties/about.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 91ms (Views: 90.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-10-29 17:10:00 -0700
+Processing by PartiesController#signup as HTML
+  Rendered parties/_signupform.html.erb (0.0ms)
+  Rendered parties/signup.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 93ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-29 17:10:03 -0700
+Processing by PartiesController#about as HTML
+  Rendered parties/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 86ms (Views: 85.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-29 17:13:54 -0700
+Processing by PartiesController#about as HTML
+  Rendered parties/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 87ms (Views: 85.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-29 17:13:54 -0700
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-10-29 17:13:54 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-29 17:13:54 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-29 17:13:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-29 17:13:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-29 17:13:54 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-29 17:13:54 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-29 17:13:54 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-29 17:13:54 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-29 17:13:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 17:13:54 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 17:13:54 -0700
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-10-29 17:13:55 -0700
+Processing by PartiesController#logout as HTML
+  Rendered parties/logout.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 87ms (Views: 86.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-10-29 17:14:36 -0700
+Processing by PartiesController#logout as HTML
+  Rendered parties/logout.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 86ms (Views: 85.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-29 17:14:36 -0700
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-10-29 17:14:36 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-29 17:14:36 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-29 17:14:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-29 17:14:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-29 17:14:36 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-29 17:14:36 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-29 17:14:36 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-29 17:14:36 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-29 17:14:36 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 17:14:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 17:14:36 -0700
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-10-29 17:14:54 -0700
+Processing by PartiesController#logout as HTML
+  Rendered parties/logout.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 85ms (Views: 84.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-10-29 17:14:54 -0700
+
+
+Started GET "/assets/parties.css?body=1" for 127.0.0.1 at 2014-10-29 17:14:54 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.css?body=1" for 127.0.0.1 at 2014-10-29 17:14:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-29 17:14:54 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-29 17:14:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-29 17:14:54 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-29 17:14:54 -0700
+
+
+Started GET "/assets/parties.js?body=1" for 127.0.0.1 at 2014-10-29 17:14:54 -0700
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-10-29 17:14:54 -0700
+
+
+Started GET "/assets/bootstrap-datetimepicker.js?body=1" for 127.0.0.1 at 2014-10-29 17:14:54 -0700
+
+
+Started GET "/assets/pickers.js?body=1" for 127.0.0.1 at 2014-10-29 17:14:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-29 17:14:54 -0700
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-29 17:14:58 -0700
+Processing by PartiesController#login as HTML
+  Rendered parties/login.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 93ms (Views: 92.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-10-29 17:14:59 -0700
+Processing by PartiesController#signup as HTML
+  Rendered parties/_signupform.html.erb (0.0ms)
+  Rendered parties/signup.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 117ms (Views: 116.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-10-29 17:15:01 -0700
+Processing by PartiesController#logout as HTML
+  Rendered parties/logout.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 98ms (Views: 97.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-10-29 17:15:02 -0700
+Processing by PartiesController#index as HTML
+  [1m[35mParty Load (1.6ms)[0m  SELECT "parties".* FROM "parties"
+  Rendered parties/index.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 107ms (Views: 101.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-10-29 17:15:05 -0700
+Processing by PartiesController#logout as HTML
+  Rendered parties/logout.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 137ms (Views: 136.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-10-29 17:15:06 -0700
+Processing by PartiesController#index as HTML
+  [1m[36mParty Load (0.2ms)[0m  [1mSELECT "parties".* FROM "parties"[0m
+  Rendered parties/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 96ms (Views: 95.7ms | ActiveRecord: 0.2ms)

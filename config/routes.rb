@@ -18,6 +18,8 @@ get '/login' => 'parties#login'
 
 get '/signup' => 'parties#signup'
 
+get '/logout' => 'parties#logout'
+
  #root 'parties#upcoming'
  
   #resources :parties
