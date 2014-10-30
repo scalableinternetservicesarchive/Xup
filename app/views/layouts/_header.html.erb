@@ -24,9 +24,16 @@
         <!-- unorderd list right hand side -->
         <ul class="pull-right">
           <ul class="nav navbar-nav">
-              <li id="nav-login"><a href="/login">Login</a></li>   
-              <li id="nav-signup"><a href="/signup">Sign Up</a></li>
-              <li id="nav-logout"><a href="/logout">Logout</a></li>
+            <% if user_signed_in? %>
+                <li id="nav-logout"><%= link_to 'Logout', destroy_user_session_path,
+                    method: :delete, data: {confirm: 'Are you sure?' }%></li>
+            <% else %>
+              <li id="nav-login"><%= link_to 'Login', new_user_session_path %></li>
+              <li id="nav-signup"><%= link_to 'Signup', new_user_registration_path %></li>
+            <% end %>
+              <%# <li id="nav-login"><a href="/login">Login</a></li> %>   
+              <%# <li id="nav-signup"><a href="/signup">Sign Up</a></li> %>
+              <%# <li id="nav-logout"><a href="/logout">Logout</a></li> %>
               <li id="nav-about"><a href="/about">About</a></li>
               <li id="nav-help"><a href="/help">Help</a></li>
           </ul>
