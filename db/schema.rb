@@ -13,12 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20141030032941) do
 
-  create_table "communities", force: true do |t|
-    t.string   "me"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "parties", force: true do |t|
     t.string   "name"
     t.string   "owner"
@@ -26,14 +20,6 @@ ActiveRecord::Schema.define(version: 20141030032941) do
     t.string   "location"
     t.text     "description"
     t.text     "participants"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "submissions", force: true do |t|
-    t.string   "title"
-    t.string   "url"
-    t.integer  "community_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
