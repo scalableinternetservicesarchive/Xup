@@ -6,6 +6,7 @@
       <tr>
         <th>Name</th>
         <th>Owner</th>
+        <th>Date</th>
         <th>Start Time</th>
         <th>Location</th>
         <th>Description</th>
@@ -19,7 +20,9 @@
         <tr>
           <td><%= party.name %></td>
           <td><%= party.owner %></td>
-          <td><%= party.time.strftime("%H:%m") %></td>
+          <%# <td><%= party.date.strftime("%Y-%m-%d") %1></td> %>
+          <td><%= party.date.strftime("%Y-%m-%d") %></td>
+          <td><%= party.time.strftime("%H:%M") %></td>
           <td><%= party.location %></td>
           <td><%= party.description %></td>
           <td><%= party.participants %></td>

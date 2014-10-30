@@ -6,7 +6,8 @@ class PartiesControllerTest < ActionController::TestCase
     @update = {
         name: "party 2",
         owner: "Peter",
-        time: "Dec-12",
+        date: "2014-10-31 20:22:00",
+        time: "2014-10-31 20:22:00",
         location: "Goleta",
         description: "A good party",
         participants: "Peter, Alice, Bob"

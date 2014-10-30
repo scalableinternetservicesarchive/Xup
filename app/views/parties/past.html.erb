@@ -6,7 +6,8 @@
       <tr>
         <th>Name</th>
         <th>Owner</th>
-        <th>Time</th>
+        <th>Date</th>
+        <th>Start Time</th>
         <th>Location</th>
         <th>Description</th>
         <th>Participants</th>
@@ -19,7 +20,8 @@
   seconds=current.to_i
   @past=[]
   @parties.each do |party| 
-    if party.time.to_i<seconds
+    dt = DateTime.new(party.date.year, party.date.month, party.date.day, party.time.hour, party.time.min, party.time.sec, party.date.zone)
+    if dt.to_i<seconds
       @past.push(party)
     end
   end
@@ -30,7 +32,8 @@
         <tr>
           <td><%= party.name %></td>
           <td><%= party.owner %></td>
-          <td><%= party.time %></td>
+          <td><%= party.date.strftime("%Y-%m-%d") %></td>
+          <td><%= party.time.strftime("%H:%M") %></td>
           <td><%= party.location %></td>
           <td><%= party.description %></td>
           <td><%= party.participants %></td>

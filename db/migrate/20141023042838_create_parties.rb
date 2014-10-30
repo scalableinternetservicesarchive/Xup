@@ -3,6 +3,7 @@ class CreateParties < ActiveRecord::Migration
     create_table :parties do |t|
       t.string :name
       t.string :owner
+      t.string :date
       t.string :time
       t.string :location
       t.text :description

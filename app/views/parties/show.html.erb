@@ -12,8 +12,13 @@
 </p>
 
 <p>
+  <strong>Date:</strong>
+  <%= @party.date.strftime("%Y-%m-%d") %>
+</p>
+
+<p>
   <strong>Start Time:</strong>
-  <%= @party.time.strftime("%H:%m") %>
+  <%= @party.time.strftime("%H:%M") %>
 </p>
 
 <p>
