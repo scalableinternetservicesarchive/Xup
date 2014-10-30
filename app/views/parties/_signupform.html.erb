@@ -1,20 +1,18 @@
 <br>
-<br>
-<%= simple_form_for :user, :url => '/users' do |f| %>
+<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= f.error_notification %>
+    <%# </div> %>
     <div class="form-group">
-        <%= f.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+        <%= f.input :email, required: true, autofocus: true, class: "form-control", placeholder: "Enter Email" %>
     </div>
     <div class="form-group">
-        <%= f.text_field :email, class: "form-control", placeholder: "Enter Email" %>
+        <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @validatable), class: "form-control", placeholder: "Enter Password" %>
     </div>
     <div class="form-group">
-        <%= f.text_field :password, class: "form-control", placeholder: "Enter Password" %>
-    </div>
-    <div class="form-group">
-        <%= f.text_field :password, class: "form-control", placeholder: "Validate Password" %>
+        <%= f.input :password_confirmation, class: "form-control", placeholder: "Validate Password" %>
     </div>
 
     <%= f.button :submit, "Sign Up", class: "btn btn-default" %> 
-    <%= f.button :submit, "Sign In", class: "btn btn-default" %>
+    <%= link_to "Log In", new_user_session_path, :class => "btn btn-default" %>    
 <% end %>
 
