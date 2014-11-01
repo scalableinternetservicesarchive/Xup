@@ -5,7 +5,8 @@ class PartiesController < ApplicationController
   # GET /parties
   # GET /parties.json
   def index
-    @parties = Party.all
+    # @parties = Party.all
+    @parties = Party.order(:time)
   end
 
   # GET /parties/1
@@ -15,12 +16,14 @@ class PartiesController < ApplicationController
 
   def upcoming
   #some query
-  @parties = Party.all
+    @parties = Party.all
+    @parties = Party.order(:time)
   end
 
   def past
   #some query
-  @parties = Party.all
+    @parties = Party.all
+    @parties = Party.order(:time)
   end
   
   # GET /parties/new
@@ -36,6 +39,7 @@ class PartiesController < ApplicationController
   # POST /parties.json
   def create
     @party = Party.new(party_params)
+    @party.time = DateTime.new(@party.date.year, @party.date.month, @party.date.day, @party.time.hour, @party.time.min, @party.time.sec, @party.date.zone)
 
     respond_to do |format|
       if @party.save
