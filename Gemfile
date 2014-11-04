@@ -4,7 +4,12 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
+# Use sqlite3 as the development database for Active Record
+gem 'sqlite3', group: :development
+# Use mysql2 as the production database for Active Record
+gem 'mysql2', group: :production
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -50,3 +55,5 @@ gem 'bootstrap-sass', '~> 3.2.0.2' # i think we need to add bootstrap
 # https://github.com/thoughtbot/paperclip
 gem 'paperclip', '~> 3.0' #Paperclip is a gem that allows you to upload images
 gem 'devise'
+
+gem 'therubyracer',  platforms: :ruby
