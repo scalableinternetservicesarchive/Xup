@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
-  devise_for :users
+  
+   #needed for facebook login, and normal login
+  devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
+
+  match '/users/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], :as => :finish_signup
+
+  # end facebook and normal login
+
   root 'parties#landingPage'
   resources :parties
 
@@ -16,6 +23,10 @@ Rails.application.routes.draw do
   #when the user scaffold is created, 
   #change parties# to user#, and change the location of the html file myaccount.html.erb
   get '/myAccount' => 'parties#myAccount'
+
+
+ 
+  
 
   #root 'parties#upcoming'
  
