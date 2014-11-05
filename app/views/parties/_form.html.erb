@@ -33,8 +33,15 @@
       <%= f.input :description, class: "form-control", placeholder: "Enter Description" %>  
     </div>
     <div class="form-group">
-      <%= f.input :participants, class: "form-control", placeholder: "Enter Participants" %>  
+      <%= f.input :participants, class: "form-control", placeholder: "Enter Participants" %>
     </div>
+    <div class="form-group">
+      <%= f.input :latitude, class: "form-control", placeholder: "enter latitude" %>
+    </div>
+    <div class="form-group">
+      <%= f.input :longitude, class: "form-control", placeholder: "Enter longitude" %>
+    </div>
+
 
       <%= f.button :submit, class: "btn btn-default" %>  
       <%= link_to 'Back', parties_path, :class => "btn btn-default" %>
