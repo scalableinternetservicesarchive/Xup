@@ -57,3 +57,5 @@ gem 'paperclip', '~> 3.0' #Paperclip is a gem that allows you to upload images
 gem 'devise'
 
 gem 'therubyracer',  platforms: :ruby
+
+gem 'aws-sdk', '~> 1.20.0'
