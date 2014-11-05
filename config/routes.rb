@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :users
+  
+   #needed for facebook login, and normal login
+  devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
+
   root 'parties#landingPage'
   resources :parties
 
@@ -18,8 +21,8 @@ Rails.application.routes.draw do
   get '/myAccount' => 'parties#myAccount'
 
 
-  #needed for facebook login
-  devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
+ 
+  
 
   #root 'parties#upcoming'
  
