@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :profiles
+
    #needed for facebook login, and normal login
   devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
 
