@@ -17,6 +17,10 @@ Rails.application.routes.draw do
   #change parties# to user#, and change the location of the html file myaccount.html.erb
   get '/myAccount' => 'parties#myAccount'
 
+
+  #needed for facebook login
+  devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
+
   #root 'parties#upcoming'
  
   #resources :parties
