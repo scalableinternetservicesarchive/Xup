@@ -97,6 +97,9 @@ Rails.application.configure do
     # add when have a domain
     #domain: 'somedomain.com'
 
+  # set the host to localhost:3000
+  config.action_mailer.default_url_options = {:host => "localhost:3000"}
+
   ###########################
 
   # config paperclipp for AWS storage
