@@ -72,7 +72,6 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.2.2)
-    geocoder (1.2.5)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     geocoder (1.2.5)
