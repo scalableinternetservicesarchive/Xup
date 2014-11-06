@@ -9,6 +9,12 @@ class PartiesController < ApplicationController
     @parties = Party.order(:time)
   end
 
+  def close_parties
+    # @parties = Party.all
+    @parties = Party.order(:time)
+    @myloc = request.location
+  end
+
   # GET /parties/1
   # GET /parties/1.json
   def show
