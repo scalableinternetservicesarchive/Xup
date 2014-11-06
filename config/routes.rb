@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :paperclip_images
+
   resources :profiles
 
    #needed for facebook login, and normal login

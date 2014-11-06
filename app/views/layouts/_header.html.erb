@@ -33,6 +33,8 @@
                  <li id="nav-myAccount"><a href=<%=linkname%>>MyAccount</a></li> 
                 <li id="nav-logout"><%= link_to 'Log Out', destroy_user_session_path,
                     method: :delete, data: {confirm: 'Are you sure?' }%></li>
+
+                <li><%= link_to "Paperclip", paperclip_images_path %></li>
             <% else %>
               <li id="nav-login"><%= link_to 'Log In', new_user_session_path %></li>
               <li id="nav-signup"><%= link_to 'Sign Up', new_user_registration_path %></li>

@@ -1,0 +1,23 @@
+<h1>Listing paperclip_images</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @paperclip_images.each do |paperclip_image| %>
+      <tr>
+        <td><%= link_to 'Show', paperclip_image %></td>
+        <td><%= link_to 'Edit', edit_paperclip_image_path(paperclip_image) %></td>
+        <td><%= link_to 'Destroy', paperclip_image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Paperclip image', new_paperclip_image_path %>
