@@ -1,0 +1,57 @@
+<h1>Listing parties</h1>
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Owner</th>
+        <th>Date</th>
+        <th>Start Time</th>
+        <th>Location</th>
+        <th>Description</th>
+        <th>Participants</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+<h1>you are <%@myloc%></h1>
+<%
+<%# can use nearbys if we have it in develop server
+	hardcoded ip only#%>
+    @close=[]
+
+    @parties.near([34.42, -119.86], 20).each do |party| 
+    	@close.push(party)
+
+    
+
+    end
+     %>
+    
+
+
+    <tbody>
+      <% @close.each do |party| %>
+        <tr>
+          <td><%= party.name %></td>
+          <td><%= party.owner %></td>
+          <%# <td><%= party.date.strftime("%Y-%m-%d") %1></td> %>
+          <td><%= party.date.strftime("%Y-%m-%d") %></td>
+          <td><%= party.time.strftime("%H:%M") %></td>
+          <%# <td><%= party.time %1></td> %>
+          <td><%= party.location %></td>
+          <td><%= party.description %></td>
+          <td><%= party.participants %></td>
+          <td><%= link_to 'Show', party, class: 'btn btn-info btn-sm' %></td>
+          <td><%= link_to 'Edit', edit_party_path(party), class: 'btn btn-warning btn-sm' %></td>
+          <td><%= link_to 'Destroy', party, class: 'btn btn-danger btn-sm', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<br>
+
+<%= link_to 'New Party', new_party_path, class: 'btn btn-success btn-sm' %>

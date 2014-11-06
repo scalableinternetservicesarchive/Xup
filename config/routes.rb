@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get '/login' => 'parties#login'
   get '/signup' => 'parties#signup'
   get '/logout' => 'parties#logout'
+  get '/closeparties' => 'parties#close_parties'
 
   #when the user scaffold is created, 
   #change parties# to user#, and change the location of the html file myaccount.html.erb
