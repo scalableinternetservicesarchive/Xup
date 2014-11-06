@@ -17,8 +17,7 @@
 
 <h1>you are <%@myloc%></h1>
 <%
-<%# can use nearbys if we have it in develop server
-	hardcoded ip only#%>
+# can use nearbys if we have it in develop server hardcoded ip only
     @close=[]
 
     @parties.near([34.42, -119.86], 20).each do |party| 
