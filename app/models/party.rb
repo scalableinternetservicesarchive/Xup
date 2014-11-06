@@ -6,4 +6,7 @@ class Party < ActiveRecord::Base
     geocoded_by :location
     after_validation :geocode
     
+    # A party can have many user's
+    has_many :user
+
 end

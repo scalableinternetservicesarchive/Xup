@@ -25,8 +25,10 @@ Rails.application.routes.draw do
 
   #when the user scaffold is created, 
   #change parties# to user#, and change the location of the html file myaccount.html.erb
-  get '/myAccount' => 'profiles#index'
+  
+  #get '/profiles/' => 'profiles#show'
 
+  match '/profiles/:id' => 'profiles#show', via: [:get], :as => :show
 
  
   
