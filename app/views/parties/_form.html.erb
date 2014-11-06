@@ -13,10 +13,10 @@
 
   <form role="form">
     <div class="form-group">
-      <%= f.input :name, class: "form-control", placeholder: current_user.name.to_s %>       
+      <%= f.input :name, class: "form-control", placeholder: "Enter Party Name" %>       
     </div>
     <div class="form-group">
-      <%= f.input :owner, class: "form-control", placeholder: "Enter Owner Name" %>  
+      <%= f.input :owner, class: "form-control", placeholder: current_user.name.to_s %>  
     </div>
     <div class="form-group">
     <%# <div> %>
@@ -33,6 +33,7 @@
       <%= f.input :description, class: "form-control", placeholder: "Enter Description" %>  
     </div>
     <div class="form-group">
+      <!--Should autoadd the owner ass a participant and then be able to chose freinds(other users) from a list , name of owner: current_user.name.to_s-->
       <%= f.input :participants, class: "form-control", placeholder: "Enter Participants" %>
     </div>
     <div class="form-group">

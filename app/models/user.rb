@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   TEMP_EMAIL_PREFIX = 'change@me'
   TEMP_EMAIL_REGEX = /\Achange@me/
 
+  # A user can only have one profile
   has_one :profile
 
   # Include default devise modules. Others available are:
