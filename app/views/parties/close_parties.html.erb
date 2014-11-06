@@ -11,6 +11,7 @@
         <th>Location</th>
         <th>Description</th>
         <th>Participants</th>
+        <th>Distance</th>
         <th colspan="3"></th>
       </tr>
     </thead>
@@ -27,6 +28,8 @@
 
     end
      %>
+
+
     
 
 
@@ -42,6 +45,7 @@
           <td><%= party.location %></td>
           <td><%= party.description %></td>
           <td><%= party.participants %></td>
+          <td><%= party.distance.round(2)%></td>
           <td><%= link_to 'Show', party, class: 'btn btn-info btn-sm' %></td>
           <td><%= link_to 'Edit', edit_party_path(party), class: 'btn btn-warning btn-sm' %></td>
           <td><%= link_to 'Destroy', party, class: 'btn btn-danger btn-sm', method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -54,3 +58,63 @@
 <br>
 
 <%= link_to 'New Party', new_party_path, class: 'btn btn-success btn-sm' %>
+
+
+
+<script type="text/javascript">
+
+     
+
+    for (var i in gon.parties){
+      console.log(gon.parties[i].latitude)
+    }
+     </script>
+
+
+
+     <script>
+function initialize() {
+  var myLatlng = new google.maps.LatLng(34.42, -119.86);
+  var mapOptions = {
+    zoom: 4,
+    center: myLatlng
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'This is you'
+  });
+
+  for (var i in gon.parties){
+      console.log(gon.parties[i].latitude)
+      tlatling=new google.maps.LatLng(gon.parties[i].latitude, gon.parties[i].longitude);
+
+      var m1=new google.maps.Marker({
+      position: tlatling,
+      map: map,
+      
+      title: gon.parties[i].name
+  });
+    }
+
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+
+    <div id="map-canvas"></div>
+
+
+
+
+
+
+
+
+
+
+

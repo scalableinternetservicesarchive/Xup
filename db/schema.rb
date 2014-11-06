@@ -13,14 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20141106012646) do
 
-  create_table "friendly_id_slugs", force: true do |t|
-    t.string   "slug",                      null: false
-    t.integer  "sluggable_id",              null: false
-    t.string   "sluggable_type", limit: 50
-    t.string   "scope"
-    t.datetime "created_at"
-  end
-
   create_table "identities", force: true do |t|
     t.integer  "user_id"
     t.string   "provider"

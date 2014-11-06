@@ -13,7 +13,11 @@ class PartiesController < ApplicationController
     # @parties = Party.all
     @parties = Party.order(:time)
     @myloc = request.location
+
+    gon.parties=@parties
   end
+
+
 
   # GET /parties/1
   # GET /parties/1.json

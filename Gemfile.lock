@@ -44,10 +44,6 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.3.6)
     arel (5.0.1.20140414130214)
-    aws-sdk (1.20.0)
-      json (~> 1.4)
-      nokogiri (>= 1.4.4, < 1.6.0)
-      uuidtools (~> 2.1)
     bcrypt (3.1.9)
     bootstrap-sass (3.2.0.2)
       sass (~> 3.2)
@@ -75,6 +71,11 @@ GEM
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     geocoder (1.2.5)
+    gon (5.2.3)
+      actionpack (>= 2.3.0)
+      json
+      multi_json
+      request_store (>= 1.0.5)
     hashie (3.3.1)
     hike (1.2.3)
     i18n (0.6.11)
@@ -95,7 +96,6 @@ GEM
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     mysql2 (0.3.16)
-    nokogiri (1.5.11)
     oauth2 (1.0.0)
       faraday (>= 0.8, < 0.10)
       jwt (~> 1.0)
@@ -140,6 +140,7 @@ GEM
     rdoc (4.1.2)
       json (~> 1.4)
     ref (1.0.5)
+    request_store (1.1.0)
     responders (1.1.1)
       railties (>= 3.2, < 4.2)
     sass (3.2.19)
@@ -178,7 +179,6 @@ GEM
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    uuidtools (2.1.5)
     validate_url (0.2.2)
       activemodel (>= 3.0.0)
       addressable
@@ -189,12 +189,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aws-sdk (~> 1.20.0)
   bootstrap-sass (~> 3.2.0.2)
   coffee-rails (~> 4.0.0)
   datetimepicker-rails!
   devise
   geocoder
+  gon
   jbuilder (~> 2.0)
   jquery-rails
   momentjs-rails (>= 2.8.1)!
