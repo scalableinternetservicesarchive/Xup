@@ -60,8 +60,6 @@ gem 'devise'
 
 gem 'therubyracer',  platforms: :ruby
 
-gem 'aws-sdk', '~> 1.20.0'
-
 gem "geocoder"
 
 gem 'omniauth'
