@@ -10,6 +10,9 @@ class ProfilesController < ApplicationController
   # GET /profiles/1
   # GET /profiles/1.json
   def show
+
+
+
   end
 
   # GET /profiles/new
@@ -65,7 +68,16 @@ class ProfilesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_profile
       #profile = Profile.find(82542335)
+      #@profile = Profile.find(params[:id])
+
+      #Business.exists?(:user_id => current_user.id)
+     if Profile.exists?(params[:id])
       @profile = Profile.find(params[:id])
+
+    else
+        redirect_to new
+        
+      end 
     end
 
      def get_profileUser
