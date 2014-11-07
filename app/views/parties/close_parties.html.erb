@@ -64,7 +64,7 @@
 <script type="text/javascript">
 
      
-
+    // if we want this to be secure
     for (var i in gon.parties){
       console.log(gon.parties[i].latitude)
     }
@@ -73,31 +73,73 @@
 
 
      <script>
-function initialize() {
-  var myLatlng = new google.maps.LatLng(34.42, -119.86);
-  var mapOptions = {
-    zoom: 4,
-    center: myLatlng
-  }
-  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-  var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: 'This is you'
-  });
+function logshit(shit){
+
+  console.log('this is the shit '+ shit);
+}
+      
+function mapCallback(position, map){
+
 
   for (var i in gon.parties){
       console.log(gon.parties[i].latitude)
       tlatling=new google.maps.LatLng(gon.parties[i].latitude, gon.parties[i].longitude);
 
-      var m1=new google.maps.Marker({
-      position: tlatling,
-      map: map,
+
+       var infowindow = new google.maps.InfoWindow({
+        map: map,
+        position: tlatling,
+        content: "<p style='color:green'>"+gon.parties[i].name+"</p>"
+      });
       
-      title: gon.parties[i].name
-  });
+      
     }
+}
+
+function initialize() {// you location should be center
+  
+  var mapOptions = {
+          zoom: 14
+        };
+
+ var map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+  // gives location as variable pos
+ if(navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var pos = new google.maps.LatLng(position.coords.latitude,
+                                         position.coords.longitude);
+        console.log(pos.k);
+
+        logshit(pos);
+        mapCallback(pos,map);
+
+
+
+         map.setCenter(pos);
+
+         var infowindow = new google.maps.InfoWindow({
+        map: map,
+        position: pos,
+        content: 'This is you partyboy!'
+      });
+
+        
+
+        
+      }, function() {
+        handleNoGeolocation(true);
+      });
+      } else {
+        // Browser doesn't support Geolocation
+        handleNoGeolocation(false);
+      }
+
+
+ 
+
+  
 
 
 }
