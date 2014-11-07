@@ -75,7 +75,7 @@ class ProfilesController < ApplicationController
       @profile = Profile.find(params[:id])
 
     else
-        redirect_to new
+        redirect_to action: :new
         
       end 
     end
