@@ -21,8 +21,12 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
   def after_sign_in_path_for(resource)
     if resource.email_verified?
-      super resource
+      
+      stored_location_for(resource) || request.env['omniauth.origin'] || root_path
+      #super resource
+      #'profiles#new'
     else
+
       finish_signup_path(resource)
     end
   end
