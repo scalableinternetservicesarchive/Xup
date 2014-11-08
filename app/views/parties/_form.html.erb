@@ -16,15 +16,18 @@
       <%= f.input :name, class: "form-control", placeholder: "Enter Party Name" %>       
     </div>
     <div class="form-group">
-      <%= f.input :owner, class: "form-control", placeholder: current_user.name.to_s %>  
+      <%# <%= f.input :owner, class: "form-control", placeholder: current_user.name.to_s %1> %>  
+      <%= f.input :owner, class: "form-control", input_html: {value: current_user.name.to_s} %>  
     </div>
     <div class="form-group">
     <%# <div> %>
-      <%= f.input :date, :as => :date_picker, placeholder: "Enter Date" %>  
+      <%# <%= f.input :date, :as => :date_picker, placeholder: "Enter Date" %1> %>  
+      <%= f.input :date, :as => :date_picker, input_html: {value: Date.today.to_s} %>  
     </div>
     <div class="form-group">
     <%# <div> %>
-      <%= f.input :time, label: "Start time", :as => :time_picker, placeholder: "Enter Time" %>  
+      <%# <%= f.input :time, label: "Start time", :as => :time_picker, placeholder: "Enter Time" %1> %>  
+      <%= f.input :time, label: "Start time", :as => :time_picker, input_html: {value: Time.now.strftime("%H:%M")} %>  
     </div>
     <div class="form-group">
       <%= f.input :location, class: "form-control", placeholder: "Enter Location" %>  
