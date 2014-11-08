@@ -81,7 +81,7 @@ Rails.application.configure do
 
   # General Settings
   # add when have a domain
-  #config.app_domain = 'somedomain.com'
+  config.app_domain = 'somedomain.com'
 
   # Email
   config.action_mailer.delivery_method = :smtp
