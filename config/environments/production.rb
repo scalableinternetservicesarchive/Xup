@@ -98,7 +98,7 @@ Rails.application.configure do
     #domain: 'somedomain.com'
 
   # set the host to localhost:3000
-  config.action_mailer.default_url_options = {:host => "localhost:3000"}
+  config.action_mailer.default_url_options = { host: "localhost:3000"}
 
   ###########################
 
