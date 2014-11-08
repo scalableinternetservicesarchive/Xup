@@ -43,6 +43,10 @@ class User < ActiveRecord::Base
         )
         user.skip_confirmation!
         user.save!
+        user.profile = Profile.new(
+          first_name: user.name.split[0],
+          last_name: user.name.split[1]
+        )
       end
     end
 
