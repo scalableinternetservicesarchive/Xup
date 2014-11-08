@@ -93,12 +93,13 @@ Rails.application.configure do
     enable_starttls_auto: true,
     user_name: 'someuser',
     password: 'somepass',
-    authentication: :plain,
+    authentication: :plain
+  }
     # add when have a domain
     #domain: 'somedomain.com'
 
   # set the host to localhost:3000
-  config.action_mailer.default_url_options = { host: "localhost:3000"}
+  config.action_mailer.default_url_options = {:host => "somedomain.com"}
 
   ###########################
 
