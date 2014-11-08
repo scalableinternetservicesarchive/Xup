@@ -33,7 +33,7 @@
 
 <p>
   <strong>Participants:</strong>
-  <%= @party.participants %>
+  <%= User.find(@party.participants).name %>
 </p>
 <p>
   <strong>Longitude:</strong>

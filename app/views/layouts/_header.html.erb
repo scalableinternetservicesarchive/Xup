@@ -30,7 +30,7 @@
                 <div class = "linknameVariable">
                   <%= linkname = "/profiles/" + current_user.id.to_s %>
                 </div>
-                 <li id="nav-myAccount"><a href=<%=linkname%>>MyAccount</a></li> 
+                 <li id="nav-myAccount"><a href=<%=linkname%>>My Account</a></li> 
                 <li id="nav-logout"><%= link_to 'Log Out', destroy_user_session_path,
                     method: :delete, data: {confirm: 'Are you sure?' }%></li>
 
