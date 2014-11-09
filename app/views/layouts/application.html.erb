@@ -48,7 +48,9 @@
             <% end %>
           </li>
           <li>
-            <a href="#">My Parties</a>
+            <% if user_signed_in? %>
+              <a href="/myparties">My Parties</a>
+            <% end %>
           </li>
           <li>
             <a href="#">My Invitations</a>

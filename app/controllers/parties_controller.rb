@@ -17,7 +17,9 @@ class PartiesController < ApplicationController
     gon.parties=@parties
   end
 
-
+  def myparties
+      @parties = Party.order(:time)
+  end
 
   # GET /parties/1
   # GET /parties/1.json
@@ -26,13 +28,13 @@ class PartiesController < ApplicationController
 
   def upcoming
   #some query
-    @parties = Party.all
+    # @parties = Party.all
     @parties = Party.order(:time)
   end
 
   def past
   #some query
-    @parties = Party.all
+    # @parties = Party.all
     @parties = Party.order(:time)
   end
   
