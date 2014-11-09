@@ -43,7 +43,9 @@
       <div class="col-sm-3 col-md-2 sidebar">
         <ul class="nav nav-sidebar">
           <li>
-            <%= link_to "My Account", profile_path(current_user.id.to_s) %>
+            <% if user_signed_in?  %>
+                <%= link_to "My Account", profile_path(current_user.id) %>
+            <% end %>
           </li>
           <li>
             <a href="#">My Parties</a>
