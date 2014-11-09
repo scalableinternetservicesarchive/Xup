@@ -30,6 +30,8 @@
   <%# <%= @profile.user %1> %>
 <%# </p> %>
 
-<%= link_to 'Edit', edit_profile_path(@profile) %> 
+<% if user_signed_in? && current_user.profile.id == @profile.id %>
+    <%= link_to 'Edit', edit_profile_path(@profile) %> 
+<% end %>
 <%# <%= link_to 'Edit', edit_profile_path(@profile) %1> | %>
 <%# <%= link_to 'Back', profiles_path %1> %>
