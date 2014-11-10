@@ -9,4 +9,6 @@ class Party < ActiveRecord::Base
     # A party can have many user's
     has_many :user
 
+    has_many :join_members, dependent: :destroy
+
 end

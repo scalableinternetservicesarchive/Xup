@@ -1,0 +1,27 @@
+<h1>Listing join_members</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Party</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @join_members.each do |join_member| %>
+      <tr>
+        <td><%= join_member.user %></td>
+        <td><%= join_member.party %></td>
+        <td><%= link_to 'Show', join_member %></td>
+        <td><%= link_to 'Edit', edit_join_member_path(join_member) %></td>
+        <td><%= link_to 'Destroy', join_member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Join member', new_join_member_path %>

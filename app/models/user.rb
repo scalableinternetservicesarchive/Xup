@@ -5,6 +5,10 @@ class User < ActiveRecord::Base
   # A user can only have one profile
   has_one :profile
 
+  has_many :join_members
+
+  before_destroy :ensure_not_referenced_by_any_join_member
+
   # Include default devise modules. Others available are:
   # :lockable, :timeoutable
   devise :database_authenticatable, :registerable, :confirmable,
@@ -60,5 +64,15 @@ class User < ActiveRecord::Base
 
   def email_verified?
     self.email && self.email !~ TEMP_EMAIL_REGEX
+  end
+
+  private
+  def ensure_not_referenced_by_any_join_member
+    if join_members.empty?
+        return true
+    else
+        errors.add(:base, 'User still exist in some parties.')
+        return false
+    end
   end
 end
