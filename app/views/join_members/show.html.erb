@@ -2,12 +2,12 @@
 
 <p>
   <strong>User:</strong>
-  <%= @join_member.user %>
+  <%= User.find(@join_member.user_id).name %>
 </p>
 
 <p>
   <strong>Party:</strong>
-  <%= @join_member.party %>
+  <%= Party.find(@join_member.party_id).name %>
 </p>
 
 <%= link_to 'Edit', edit_join_member_path(@join_member) %> |

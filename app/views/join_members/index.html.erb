@@ -12,8 +12,8 @@
   <tbody>
     <% @join_members.each do |join_member| %>
       <tr>
-        <td><%= join_member.user %></td>
-        <td><%= join_member.party %></td>
+        <td><%= User.find(join_member.user_id).name %></td>
+        <td><%= Party.find(join_member.party_id).name %></td>
         <td><%= link_to 'Show', join_member %></td>
         <td><%= link_to 'Edit', edit_join_member_path(join_member) %></td>
         <td><%= link_to 'Destroy', join_member, method: :delete, data: { confirm: 'Are you sure?' } %></td>

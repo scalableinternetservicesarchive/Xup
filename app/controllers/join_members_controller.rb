@@ -1,5 +1,5 @@
 class JoinMembersController < ApplicationController
-
+  respond_to :html, :xml, :json
   before_action :set_join_member, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -20,7 +20,10 @@ class JoinMembersController < ApplicationController
   end
 
   def create
-    @join_member = JoinMember.new(join_member_params)
+    # @join_member = JoinMember.new(join_member_params)
+    user = User.find(params[:user_id])
+    party = Party.find(params[:party_id])
+    @join_member = party.join_members.build(user: user)
     @join_member.save
     respond_with(@join_member)
   end
