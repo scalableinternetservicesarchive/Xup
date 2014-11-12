@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Party.delete_all
-
+=begin
 @d=Date.today
 
 Party.create!(name: 'Isla Vista Halloween',
@@ -28,6 +28,7 @@ Party.create!(name: 'Party 1',
              date: @d,
              )
 
+=end
 
 user = User.create! :name => 'First User', :email => 'user@example.com', :password => 'pleaseeee', :password_confirmation => 'pleaseeee'
 user.confirm!

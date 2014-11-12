@@ -21,8 +21,8 @@ class JoinMembersController < ApplicationController
 
   def create
     # @join_member = JoinMember.new(join_member_params)
-    user = User.find(params[:user_id])
-    party = Party.find(params[:party_id])
+    user = User.find(params[:join_member][:user_id])
+    party = Party.find(params[:join_member][:party_id])
     @join_member = party.join_members.build(user: user)
     
     # status indicate the request, 0 means pending, 1 means accepted, 2 means rejected.
