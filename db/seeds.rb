@@ -34,6 +34,25 @@ user.confirm!
 
 user.profile = Profile.new(
           first_name: user.name.split[0],
-          last_name: user.name.split[1]
+          last_name: user.name.split[1],
+
+        )
+
+user = User.create! :name => 'Second User', :email => 'user2@example.com', :password => 'pleaseeee', :password_confirmation => 'pleaseeee'
+user.confirm!
+
+user.profile = Profile.new(
+          first_name: user.name.split[0],
+          last_name: user.name.split[1],
+
+        )
+
+user = User.create! :name => 'Third User', :email => 'user3@example.com', :password => 'pleaseeee', :password_confirmation => 'pleaseeee'
+user.confirm!
+
+user.profile = Profile.new(
+          first_name: user.name.split[0],
+          last_name: user.name.split[1],
+
         )
 
