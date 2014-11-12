@@ -33,16 +33,6 @@ ActiveRecord::Schema.define(version: 20141110004447) do
   add_index "join_members", ["party_id"], name: "index_join_members_on_party_id"
   add_index "join_members", ["user_id"], name: "index_join_members_on_user_id"
 
-  create_table "join_people", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "party_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "join_people", ["party_id"], name: "index_join_people_on_party_id"
-  add_index "join_people", ["user_id"], name: "index_join_people_on_user_id"
-
   create_table "paperclip_images", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -51,16 +41,6 @@ ActiveRecord::Schema.define(version: 20141110004447) do
     t.integer  "asset_file_size"
     t.datetime "asset_updated_at"
   end
-
-  create_table "participants", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "party_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "participants", ["party_id"], name: "index_participants_on_party_id"
-  add_index "participants", ["user_id"], name: "index_participants_on_user_id"
 
   create_table "parties", force: true do |t|
     t.string   "name"
