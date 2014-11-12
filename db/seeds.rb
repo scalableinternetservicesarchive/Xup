@@ -8,16 +8,27 @@
 
 Party.delete_all
 
+@d=Date.today
+
 Party.create!(name: 'Isla Vista Halloween',
              owner: 'Lars',
              time: 'Oct-26-2014',
              location: 'Isla Vista',
              description: 'A halloween party',
-             participants: 'Lars, Steffen, YY')
+             participants: 'Steffen',
+             date: @d
+             )
 
 Party.create!(name: 'Party 1',
              owner: 'Bob',
              time: 'Oct-29-2014',
              location: 'Isla Vista 1',
              description: 'party 1',
-             participants: 'Bob, Lars, Steffen, YY')
+             participants: 'Bob, Lars, Steffen, YY',
+             date: @d,
+             )
+
+
+user = User.create! :name => 'First User', :email => 'user@example.com', :password => 'pleaseeee', :password_confirmation => 'pleaseeee'
+user.confirm!
+

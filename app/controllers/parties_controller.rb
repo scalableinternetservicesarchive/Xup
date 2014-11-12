@@ -13,7 +13,7 @@ class PartiesController < ApplicationController
     # @parties = Party.all
     @parties = Party.order(:time)
     @myloc = request.location
-
+    p 'this is close parties'
     gon.parties=@parties
   end
 

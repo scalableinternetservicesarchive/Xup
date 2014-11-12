@@ -17,7 +17,7 @@ class User < ActiveRecord::Base
   validates_format_of :email, :without => TEMP_EMAIL_REGEX, on: :update
 
   def self.find_for_oauth(auth, signed_in_resource = nil)
-
+    p 'omni'
     # Get the identity and user if they exist
     identity = Identity.find_for_oauth(auth)
 
@@ -29,6 +29,8 @@ class User < ActiveRecord::Base
 
     # Create the user if needed
     if user.nil?
+
+      p 'usernil'
 
       # Get the existing user by email if the provider gives us a verified email.
       # If no verified email was provided we assign a temporary email and ask the
@@ -63,6 +65,7 @@ class User < ActiveRecord::Base
   end
 
   def email_verified?
+    p ' email verifired'
     self.email && self.email !~ TEMP_EMAIL_REGEX
   end
 
