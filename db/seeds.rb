@@ -32,3 +32,8 @@ Party.create!(name: 'Party 1',
 user = User.create! :name => 'First User', :email => 'user@example.com', :password => 'pleaseeee', :password_confirmation => 'pleaseeee'
 user.confirm!
 
+user.profile = Profile.new(
+          first_name: user.name.split[0],
+          last_name: user.name.split[1]
+        )
+
