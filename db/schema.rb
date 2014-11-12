@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141110004447) do
+ActiveRecord::Schema.define(version: 20141112043754) do
 
   create_table "identities", force: true do |t|
     t.integer  "user_id"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20141110004447) do
     t.integer  "party_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "status"
   end
 
   add_index "join_members", ["party_id"], name: "index_join_members_on_party_id"
@@ -84,9 +85,6 @@ ActiveRecord::Schema.define(version: 20141110004447) do
     t.datetime "updated_at"
     t.string   "name"
     t.string   "confirmation_token"
-    t.datetime "confirmed_at"
-    t.datetime "confirmation_sent_at"
-    t.string   "unconfirmed_email"
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true

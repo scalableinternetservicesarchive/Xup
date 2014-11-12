@@ -24,6 +24,9 @@ class JoinMembersController < ApplicationController
     user = User.find(params[:user_id])
     party = Party.find(params[:party_id])
     @join_member = party.join_members.build(user: user)
+    
+    # status indicate the request, 0 means pending, 1 means accepted, 2 means rejected.
+    @join_member.status = 0
     @join_member.save
     respond_with(@join_member)
   end
