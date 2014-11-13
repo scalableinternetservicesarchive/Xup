@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
   resources :join_members
+  match "/partyrequest" => "join_members#accept", via: [:post], :as => :accept
 
   resources :paperclip_images
 
