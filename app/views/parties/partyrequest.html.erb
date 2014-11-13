@@ -25,8 +25,13 @@
           <td><%= User.find(request).name %></td>
           <td><%= User.find(request).name%> wants to join this party: <%= party.name%></td>
           <td><%= party.join_members.find_by_user_id(request).status %></td>
-          <td><%= link_to 'Add', edit_join_member_path(party.join_members.find_by_user_id(request)), class: 'btn btn-info btn-sm' %></td>
-          <td><%= link_to 'Reject', edit_join_member_path(party.join_members.find_by_user_id(request)), class: 'btn btn-info btn-sm' %></td>
+          <% if party.join_members.find_by_user_id(request).status == 0 %>
+            <td><%= link_to 'Accept', edit_join_member_path(party.join_members.find_by_user_id(request)), class: 'btn btn-info btn-sm' %></td>
+            <%# <td><%= button_to 'Accept', :method => accept(party.join_members.find_by_user_id(request)), class: 'btn btn-info btn-sm' %1></td> %>
+            <td><%= link_to 'Reject', edit_join_member_path(party.join_members.find_by_user_id(request)), class: 'btn btn-info btn-sm' %></td>
+          <% else %>
+            <td><%= link_to 'Edit', edit_join_member_path(party.join_members.find_by_user_id(request)), class: 'btn btn-info btn-sm' %></td>
+          <% end %>
         </tr>
         <% end %>
       <% end %>

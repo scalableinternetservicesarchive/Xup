@@ -20,6 +20,10 @@ class JoinMembersController < ApplicationController
 
   end
 
+  def accept
+    @join_member.status = 2
+  end
+
   def make2
     
 
