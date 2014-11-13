@@ -27,17 +27,19 @@
              <% @jm.each do |m| %>
 
              
-              <% if m.party_id == party.id%>
+              <% if m.party_id == party.id && m.status == 0%>
                   <%= @user.find(m.user_id).name%>
                 <td> <%= @user.find(m.user_id).name%> wants to join this party: <%= party.name%></td>
+                <td><%=m.status%> is status</td>
                 <td><%= link_to 'add', edit_join_member_path(m.id), class: 'btn btn-info btn-sm' %></td>
                 <td><%= link_to 'reject', edit_join_member_path(m.id), class: 'btn btn-danger btn-sm' %></td>
 
                 <%end%>
                 <% end %>
           </tr>
+          <%end%>
         <% end %>
-      <% end %>
+      
     </tbody>
   </table>
 

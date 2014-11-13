@@ -56,6 +56,12 @@ class PartiesController < ApplicationController
      @user = User.all
   end
 
+    def partyinvites
+     @parties = Party.order(:time)
+     @jm = JoinMember.all
+     @user = User.all
+  end
+
   # POST /parties
   # POST /parties.json
   def create

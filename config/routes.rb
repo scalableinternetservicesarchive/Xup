@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   get '/myparties' => 'parties#myparties'
   get '/closeparties' => 'parties#close_parties'
   get '/partyrequest' => 'parties#partyrequest'
+  get '/myinvites' => 'parties#partyinvites'
 
   #when the user scaffold is created, 
   #change parties# to user#, and change the location of the html file myaccount.html.erb
