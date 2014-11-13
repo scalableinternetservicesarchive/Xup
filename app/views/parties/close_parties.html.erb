@@ -22,11 +22,16 @@
     @close=[]
 
     @parties.near([34.42, -119.86], 20).each do |party| 
-    	@close.push(party)
+      if close.size <= 50
 
-    
+    	@close.push(party)
+    end
+    #list needs to be sorted
 
     end
+
+    
+    
      %>
 
 
