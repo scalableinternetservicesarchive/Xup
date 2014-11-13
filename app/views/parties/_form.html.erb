@@ -22,7 +22,7 @@
     <div class="form-group">
     <%# <div> %>
       <%# <%= f.input :date, :as => :date_picker, placeholder: "Enter Date" %1> %>  
-      <%= f.input :date, :as => :date_picker, input_html: {value: Date.today.to_s} %>  
+      <%= f.input :date, label: "Date",  :as => :date_picker, input_html: {value: Date.today.strftime("%d/%m/%Y")} %>  
     </div>
     <div class="form-group">
     <%# <div> %>
