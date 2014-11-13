@@ -27,6 +27,13 @@ class JoinMembersController < ApplicationController
     respond_with(@join_member)
   end
 
+  def reject
+    @join_member = JoinMember.where(user_id: params[:user_id], party_id: params[:party_id]).first
+    @join_member.status = 4
+    @join_member.save
+    respond_with(@join_member)
+  end
+
   def make2
     
 

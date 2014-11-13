@@ -1,5 +1,7 @@
 <h1>Requests</h1>
 
+<% status_all = ["Pending", "Invited", "Accepted", "Rejected"] %>
+
 <h4>Requests by other users</h4>
 <%# This table shows all the requests the current user get. %>
 <%# Notice that these requests are sent by other users. %>
@@ -24,11 +26,10 @@
           <td><%= party.name %></td>
           <td><%= User.find(request).name %></td>
           <td><%= User.find(request).name%> wants to join this party: <%= party.name%></td>
-          <td><%= party.join_members.find_by_user_id(request).status %></td>
+          <td><%= status_all[party.join_members.find_by_user_id(request).status] %></td>
           <% if party.join_members.find_by_user_id(request).status == 0 %>
-            <%# <td><%= link_to 'Accept', edit_join_member_path(party.join_members.find_by_user_id(request)), class: 'btn btn-info btn-sm' %1></td> %>
             <td><%= button_to 'Accept', { :controller => :join_members, :action => 'accept', :user_id => request, :party_id => party.id}, class: 'btn btn-info btn-sm' %></td>
-            <td><%= link_to 'Reject', edit_join_member_path(party.join_members.find_by_user_id(request)), class: 'btn btn-info btn-sm' %></td>
+            <td><%= button_to 'Reject', { :controller => :join_members, :action => 'reject', :user_id => request, :party_id => party.id}, class: 'btn btn-info btn-sm' %></td>
           <% else %>
             <td><%= link_to 'Edit', edit_join_member_path(party.join_members.find_by_user_id(request)), class: 'btn btn-info btn-sm' %></td>
           <% end %>
@@ -66,7 +67,7 @@
           <td><%= party.owner %></td>
           <td><%= party.location %></td>
           <td><%= party.time %></td>
-          <td><%= JoinMember.where(user_id: current_user.id, party_id: party_id).first.status %></td>
+          <td><%= status_all[JoinMember.where(user_id: current_user.id, party_id: party_id).first.status] %></td>
           <td><%= link_to 'Edit', edit_join_member_path(JoinMember.where(user_id: current_user.id, party_id: party_id).first), class: 'btn btn-info btn-sm' %></td>
         </tr>
       <% end %>
