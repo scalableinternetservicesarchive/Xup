@@ -34,7 +34,7 @@ class JoinMembersController < ApplicationController
 
     @join_member = party.join_members.build(user: user)
     
-    # status indicate the request, 0 means pending, 1 means accepted, 2 means rejected.
+    # status indicate the request, 0 means pending, 1 means invited, 2 means accepted, 3 means rejected.
     @join_member.status = 0
     @join_member.save
     respond_with(@join_member)

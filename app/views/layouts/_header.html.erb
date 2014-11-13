@@ -27,7 +27,7 @@
         <ul class="pull-right">
           <ul class="nav navbar-nav">
             <% if user_signed_in? %>
-                <li id="nav-myAccount"><%= link_to "My Account", profile_path(current_user.id) %></li> 
+                <li id="nav-myAccount"><%= link_to current_user.name, profile_path(current_user.id) %></li> 
                 <li id="nav-logout"><%= link_to 'Log Out', destroy_user_session_path,
                     method: :delete, data: {confirm: 'Are you sure?' }%></li>
 
