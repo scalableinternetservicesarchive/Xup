@@ -28,9 +28,8 @@ class JoinMembersController < ApplicationController
   def create
     # @join_member = JoinMember.new(join_member_params)
     
-       user = User.find(params[:user_id])
-       party = Party.find(params[:party_id])
-    
+    user = User.find(params[:user_id])
+    party = Party.find(params[:party_id])
 
     @join_member = party.join_members.build(user: user)
     

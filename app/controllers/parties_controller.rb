@@ -51,12 +51,12 @@ class PartiesController < ApplicationController
   end
 
   def partyrequest
-     @parties = Party.order(:time)
-     @jm = JoinMember.all
-     @user = User.all
+     # @parties = Party.order(:time)
+     # @jm = JoinMember.all
+     # @user = User.all
   end
 
-    def partyinvites
+  def partyinvites
      @parties = Party.order(:time)
      @jm = JoinMember.all
      @user = User.all
