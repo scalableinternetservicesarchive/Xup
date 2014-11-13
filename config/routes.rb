@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 
   root 'parties#landingPage'
   resources :parties
-
+  
   get '/upcoming' => 'parties#upcoming'
   get '/about' => 'parties#about'
   get '/help' => 'parties#help'
@@ -27,6 +27,7 @@ Rails.application.routes.draw do
   get '/logout' => 'parties#logout'
   get '/myparties' => 'parties#myparties'
   get '/closeparties' => 'parties#close_parties'
+  get '/partyrequest' => 'parties#partyrequest'
 
   #when the user scaffold is created, 
   #change parties# to user#, and change the location of the html file myaccount.html.erb

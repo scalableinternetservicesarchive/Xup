@@ -19,7 +19,10 @@ class PartiesController < ApplicationController
 
   def myparties
       @parties = Party.order(:time)
+      
   end
+
+
 
   # GET /parties/1
   # GET /parties/1.json
@@ -45,6 +48,12 @@ class PartiesController < ApplicationController
 
   # GET /parties/1/edit
   def edit
+  end
+
+  def partyrequest
+     @parties = Party.order(:time)
+     @jm = JoinMember.all
+     @user = User.all
   end
 
   # POST /parties

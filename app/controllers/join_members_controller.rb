@@ -17,6 +17,12 @@ class JoinMembersController < ApplicationController
   end
 
   def edit
+
+  end
+
+  def make2
+    
+
   end
 
   def create
@@ -24,7 +30,7 @@ class JoinMembersController < ApplicationController
     
        user = User.find(params[:user_id])
        party = Party.find(params[:party_id])
-   
+    
 
     @join_member = party.join_members.build(user: user)
     
@@ -50,6 +56,6 @@ class JoinMembersController < ApplicationController
     end
 
     def join_member_params
-      params.require(:join_member).permit(:user_id, :party_id)
+      params.require(:join_member).permit(:user_id, :party_id,:status)
     end
 end
