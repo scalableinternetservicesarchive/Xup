@@ -24,19 +24,14 @@ class JoinMembersController < ApplicationController
     @join_member = JoinMember.where(user_id: params[:user_id], party_id: params[:party_id]).first
     @join_member.status = 2
     @join_member.save
-    respond_with(@join_member)
+    redirect_to partyrequest_path
   end
 
   def reject
     @join_member = JoinMember.where(user_id: params[:user_id], party_id: params[:party_id]).first
     @join_member.status = 3
     @join_member.save
-    respond_with(@join_member)
-  end
-
-  def make2
-    
-
+    redirect_to partyrequest_path
   end
 
   def create
@@ -60,7 +55,8 @@ class JoinMembersController < ApplicationController
 
   def destroy
     @join_member.destroy
-    respond_with(@join_member)
+    redirect_to partyrequest_path
+    # respond_with(@join_member)
   end
 
   private

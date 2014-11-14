@@ -28,8 +28,8 @@
           <td><%= User.find(request).name%> wants to join this party: <%= party.name%></td>
           <td><%= status_all[party.join_members.find_by_user_id(request).status] %></td>
           <% if party.join_members.find_by_user_id(request).status == 0 %>
-            <td><%= button_to 'Accept', { :controller => :join_members, :action => 'accept', :user_id => request, :party_id => party.id}, class: 'btn btn-info btn-sm' %></td>
-            <td><%= button_to 'Reject', { :controller => :join_members, :action => 'reject', :user_id => request, :party_id => party.id}, class: 'btn btn-info btn-sm' %></td>
+            <td><%= button_to 'Accept', { :controller => :join_members, :action => 'accept', :user_id => request, :party_id => party.id}, class: 'btn btn-success btn-sm' %></td>
+            <td><%= button_to 'Reject', { :controller => :join_members, :action => 'reject', :user_id => request, :party_id => party.id}, class: 'btn btn-danger btn-sm' %></td>
           <% else %>
             <td><%= link_to 'Edit', edit_join_member_path(party.join_members.find_by_user_id(request)), class: 'btn btn-info btn-sm' %></td>
           <% end %>
@@ -67,8 +67,8 @@
           <td><%= party.owner %></td>
           <td><%= party.location %></td>
           <td><%= party.time %></td>
-          <td><%= status_all[JoinMember.where(user_id: current_user.id, party_id: party_id).first.status] %></td>
-          <td><%= link_to 'Edit', edit_join_member_path(JoinMember.where(user_id: current_user.id, party_id: party_id).first), class: 'btn btn-info btn-sm' %></td>
+          <td><%= status_all[JoinMember.find_by(user_id: current_user.id, party_id: party_id).status] %></td>
+          <td><%= link_to 'Remove', JoinMember.find_by(user_id: current_user.id, party_id: party_id), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-danger btn-sm' %></td>
         </tr>
       <% end %>
     </tbody>
