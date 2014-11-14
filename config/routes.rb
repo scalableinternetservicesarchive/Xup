@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :join_members
   match "/partyrequest/reject" => "join_members#reject", via: [:post], :as => :reject
   match "/partyrequest/accept" => "join_members#accept", via: [:post], :as => :accept
+  match "/partyrequest/join" => "join_members#join", via: [:post], :as => :join
 
   resources :paperclip_images
 

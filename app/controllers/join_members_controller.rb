@@ -24,6 +24,7 @@ class JoinMembersController < ApplicationController
     @join_member = JoinMember.where(user_id: params[:user_id], party_id: params[:party_id]).first
     @join_member.status = 2
     @join_member.save
+    flash[:notice] = "Successfully accepted."
     redirect_to partyrequest_path
   end
 
@@ -31,6 +32,15 @@ class JoinMembersController < ApplicationController
     @join_member = JoinMember.where(user_id: params[:user_id], party_id: params[:party_id]).first
     @join_member.status = 3
     @join_member.save
+    flash[:notice] = "Successfully rejected."
+    redirect_to partyrequest_path
+  end
+
+  def join
+    @join_member = JoinMember.where(user_id: params[:user_id], party_id: params[:party_id]).first
+    @join_member.status = 2
+    @join_member.save
+    flash[:notice] = "Successfully joined."
     redirect_to partyrequest_path
   end
 

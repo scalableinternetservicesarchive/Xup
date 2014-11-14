@@ -22,6 +22,7 @@
       <% @parties.each do |party| %>
         <% @requests = party.join_members.pluck(:user_id) %>
         <% @requests.each do |request| %>
+        <% if JoinMember.find_by(user_id: request, party_id: party.id).status != 1 %>
         <tr>
           <td><%= party.name %></td>
           <td><%= User.find(request).name %></td>
@@ -31,8 +32,10 @@
             <td><%= button_to 'Accept', { :controller => :join_members, :action => 'accept', :user_id => request, :party_id => party.id}, class: 'btn btn-success btn-sm' %></td>
             <td><%= button_to 'Reject', { :controller => :join_members, :action => 'reject', :user_id => request, :party_id => party.id}, class: 'btn btn-danger btn-sm' %></td>
           <% else %>
-            <td><%= link_to 'Edit', edit_join_member_path(party.join_members.find_by_user_id(request)), class: 'btn btn-info btn-sm' %></td>
+            <%# <td><%= link_to 'Edit', edit_join_member_path(party.join_members.find_by_user_id(request)), class: 'btn btn-info btn-sm' %1></td> %>
+          <td><%= link_to 'Remove', JoinMember.find_by(user_id: request, party_id: party.id), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-danger btn-sm' %></td>
           <% end %>
+        <% end %>
         </tr>
         <% end %>
       <% end %>
@@ -61,6 +64,7 @@
     <tbody>
       <% @party_ids = JoinMember.where(user_id: current_user.id).pluck(:party_id) %>
       <% @party_ids.each do |party_id| %>
+      <% if JoinMember.find_by(user_id: current_user.id, party_id: party_id).status != 1 %>
       <% party = Party.find(party_id) %>
         <tr>
           <td><%= party.name %></td>
@@ -70,6 +74,7 @@
           <td><%= status_all[JoinMember.find_by(user_id: current_user.id, party_id: party_id).status] %></td>
           <td><%= link_to 'Remove', JoinMember.find_by(user_id: current_user.id, party_id: party_id), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-danger btn-sm' %></td>
         </tr>
+      <% end %>
       <% end %>
     </tbody>
   </table>

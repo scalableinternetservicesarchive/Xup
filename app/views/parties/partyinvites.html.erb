@@ -1,55 +1,78 @@
-<h1>Listing  Invites</h1>
+<h1>Invitations</h1>
 
+<% status_all = ["Pending", "Invited", "Accepted", "Rejected"] %>
+
+<h4>Invitations by other users</h4>
+<%# This table shows all invitations sent from other users. %>
+<%# After user accepted the invitation, it will be moved to my parties. %>
 <div class="table-responsive">
   <table class="table table-striped">
     <thead>
       <tr>
-        <th>PartyName</th>
+        <th>Party Name</th>
         <th>Owner</th>
-        <th>Message</th>
-        <th>Start Time</th>
         <th>Location</th>
-        <th>Description</th>
-        <th>Participants</th>
+        <th>Time</th>
+        <%# <th>Description</th> %>
+        <%# <th>Participants</th> %>
         <th colspan="3"></th>
       </tr>
     </thead>
-<%# This is the table%>
 	
     <tbody>
-
-      <% @parties.each do |party| %>
-        
-        <% @jm.each do |j| %>
-
-
-
-
-        <% if j.party_id == party.id  && j.user_id == current_user.id && j.status == 1  %>
+      <% @party_ids = JoinMember.where(user_id: current_user.id).pluck(:party_id) %>
+      <% @party_ids.each do |party_id| %>
+      <% if JoinMember.find_by(user_id: current_user.id, party_id: party_id).status == 1 %>
+      <% party = Party.find(party_id) %>
          <tr>
-                   
             <td><%= party.name %></td>
-            
-
-            <td> this is <%=party.owner%>s party</td>'
-            <td>you are invited</td>
-            <td><%=j.status%></td>
-
-            <td><%= link_to 'add', edit_join_member_path(j.id), class: 'btn btn-info btn-sm' %></td>
-                <td><%= link_to 'reject', edit_join_member_path(j.id), class: 'btn btn-danger btn-sm' %></td>
-             
-
-                <%end%>
-
-                <%end%>
-                <% end %>
+            <td><%= party.owner %></td>
+            <td><%= party.location %></td>
+            <td><%= party.time%></td>
+            <td><%= status_all[JoinMember.find_by(user_id: current_user.id, party_id: party_id).status] %></td>
+            <td><%= button_to 'Join', {:controller => :join_members, :action => 'join', :user_id => current_user.id, :party_id => party.id}, class: 'btn btn-info btn-sm' %></td>
+            <td><%= button_to 'Reject', { :controller => :join_members, :action => 'reject', :user_id => current_user.id, :party_id => party.id}, class: 'btn btn-danger btn-sm' %></td>
           </tr>
-       
-     
+          <%end%>
+        <% end %>
     </tbody>
   </table>
+</div>
 
+<br>
 
+<h4>Invitations I sent out</h4>
+<%# This table shows all the invitations that current user sent out. %>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Party Name</th>
+        <th>User</th>
+        <th>Message</th>
+        <th>Status</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+	
+    <tbody>
+      <% @parties = Party.where(owner: current_user.name) %>
+      <% @parties.each do |party| %>
+        <% @requests = party.join_members.pluck(:user_id) %>
+        <% @requests.each do |request| %>
+        <% if JoinMember.find_by(user_id: request, party_id: party.id).status == 1 %>
+        <tr>
+          <td><%= party.name %></td>
+          <td><%= User.find(request).name %></td>
+          <td><%= User.find(request).name%> wants to join this party: <%= party.name%></td>
+          <td><%= status_all[party.join_members.find_by_user_id(request).status] %></td>
+          <td><%= link_to 'Remove', JoinMember.find_by(user_id: request, party_id: party.id), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-danger btn-sm' %></td>
+          </tr>
+          <% end %>
+        <% end %>
+      <% end %>
+    </tbody>
+  </table>
 </div>
 
 <br>
