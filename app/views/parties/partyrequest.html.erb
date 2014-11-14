@@ -68,7 +68,9 @@
           <td><%= party.location %></td>
           <td><%= party.time %></td>
           <td><%= status_all[JoinMember.find_by(user_id: current_user.id, party_id: party_id).status] %></td>
-          <td><%= link_to 'Remove', JoinMember.find_by(user_id: current_user.id, party_id: party_id), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-danger btn-sm' %></td>
+          <% if JoinMember.find_by(user_id: current_user.id, party_id: party_id).status != 3 %>
+            <td><%= link_to 'Remove', JoinMember.find_by(user_id: current_user.id, party_id: party_id), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-danger btn-sm' %></td>
+          <% end %>
         </tr>
       <% end %>
     </tbody>
