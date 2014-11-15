@@ -31,9 +31,9 @@
   <%= @party.description %>
 </p>
 
-<p>
+<!--<p>
   <strong>Participants:</strong>
-  <%= User.find(@party.participants).name %>
+  <%#= User.find(@party.participants).name %>
 </p>
 <p>
   <strong>Longitude:</strong>
@@ -43,7 +43,7 @@
   <strong>Latitude:</strong>
   <%= @party.latitude %>
 </p>
-</div>
+</div>-->
 
 <div class="btn-group">
     <%= link_to 'Edit', edit_party_path(@party), :class => "btn btn-default" %> 

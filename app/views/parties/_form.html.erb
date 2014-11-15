@@ -40,12 +40,7 @@
       <%# <%= f.input :participants, class: "form-control", placeholder: "Enter Participants" %1> %>
       <%= f.input :participants, class: "form-control", collection: User.all, placeholder: "Enter Participants" %>
     </div>
-    <div class="form-group">
-      <%= f.input :latitude, class: "form-control", placeholder: "enter latitude" %>
-    </div>
-    <div class="form-group">
-      <%= f.input :longitude, class: "form-control", placeholder: "Enter longitude" %>
-    </div>
+    
 
 
       <%= f.button :submit, class: "btn btn-default" %>  

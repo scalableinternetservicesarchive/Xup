@@ -1,5 +1,5 @@
 class Party < ActiveRecord::Base
-    validates :name, :owner, :date, :time, :location, :description, :participants, presence: true
+    validates :name, :owner, :date, :time, :location, :description, presence: true
     validates :name, uniqueness: true
     validates :name, length: { maximum: 20 }
 
