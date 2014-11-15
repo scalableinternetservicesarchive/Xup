@@ -26,7 +26,7 @@
             <td><%= party.time.strftime("%H:%M") %></td>
             <td><%= party.location %></td>
             <td><%= party.description %></td>
-            <td><%= User.find(party.participants).name %></td>
+            <td><%#= User.find(party.participants).name %></td>
             <td><%= link_to 'Show', party, class: 'btn btn-info btn-sm' %></td>
             <td><%= link_to 'Edit', edit_party_path(party), class: 'btn btn-warning btn-sm' %></td>
             <td><%= link_to 'Destroy', party, class: 'btn btn-danger btn-sm', method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -27,7 +27,7 @@
           <%# <td><%= party.time %1></td> %>
           <td><%= party.location %></td>
           <td><%= party.description %></td>
-          <td><%= User.find(party.participants).name %></td>
+          <td><%#= User.find(party.participants).name %></td>
           <td><%= link_to 'Show', party, class: 'btn btn-info btn-sm' %></td>
           <% if user_signed_in? %>
               <% if party.owner == current_user.name %>
