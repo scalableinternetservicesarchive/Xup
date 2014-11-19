@@ -42,6 +42,11 @@
   <!--The line below inputs the html from _sidebar.html.erb and render it -->
   <%= render 'layouts/sidebar' %>
 
+  <!-- Here we render the code from the links that are clicked in header and sidebar-->
+  <!-- yield code-->
+  <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <%= yield %>
+  </div>
     
   <%# The two lines below are required by "devise" %>
   <p class="notice"><%= notice %></p>
