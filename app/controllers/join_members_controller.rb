@@ -44,6 +44,17 @@ class JoinMembersController < ApplicationController
     redirect_to partyrequest_path
   end
 
+  def createasinvite
+    user = User.find(params[:user_id])
+    party = Party.find(params[:party_id])
+
+    @join_member = party.join_members.build(user: user)
+    @join_member.status = 1
+    @join_member.save
+    respond_with(@join_member)
+
+  end
+
   def create
     # @join_member = JoinMember.new(join_member_params)
     

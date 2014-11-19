@@ -34,6 +34,7 @@ Rails.application.routes.draw do
   get '/partyrequest' => 'parties#partyrequest'
   get '/myinvites' => 'parties#partyinvites'
   get '/profiles' => 'profiles#show'
+  post '/createasinvite' => 'join_members#createasinvite'
 
   #when the user scaffold is created, 
   #change parties# to user#, and change the location of the html file myaccount.html.erb
