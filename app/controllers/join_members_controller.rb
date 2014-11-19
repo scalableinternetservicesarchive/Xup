@@ -51,7 +51,8 @@ class JoinMembersController < ApplicationController
     @join_member = party.join_members.build(user: user)
     @join_member.status = 1
     @join_member.save
-    respond_with(@join_member)
+    #respond_with(@join_member)
+    redirect_to party_path(params[:party_id])
 
   end
 
