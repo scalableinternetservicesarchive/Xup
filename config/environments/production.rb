@@ -103,6 +103,8 @@ Rails.application.configure do
 
   ###########################
 
+  Paperclip.options[:command_path] = "/usr/bin/"
+
   # config paperclipp for AWS storage
   # config.paperclip_defaults = {
   #   :storage => :s3,
