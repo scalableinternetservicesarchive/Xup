@@ -28,6 +28,7 @@ class PartiesController < ApplicationController
   # GET /parties/1.json
   def show
     @users= User.all
+    
   end
 
   def upcoming
