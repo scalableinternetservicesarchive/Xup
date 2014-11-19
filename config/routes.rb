@@ -38,7 +38,7 @@ Rails.application.routes.draw do
   
   #get '/profiles/' => 'profiles#show'
 
-  resources :profiles
+  #resources :profiles
 
   match '/profiles/:id' => 'profiles#show', via: [:get], :as => :show
 

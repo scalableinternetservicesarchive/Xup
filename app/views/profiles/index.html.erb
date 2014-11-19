@@ -4,6 +4,7 @@
 <table>
   <thead>
     <tr>
+      <th>Image</th>
       <th>First name</th>
       <th>Last name</th>
       <th>Gender</th>
@@ -17,10 +18,9 @@
   <tbody>
     <% @profiles.each do |profile| %>
       <tr>
-        <%=if profile.object.p_image? %>
+        
            <!-- to show thumbnail picture -->
-          <td><%= link_to image_tag(profile.p_image.url(:thumb), class "img-thumbnail") , profile) %></td>
-        <%= end %>
+        <td><%= link_to image_tag(profile.p_image.url(:thumb)) %></td>
         <td><%= profile.first_name %></td>
         <td><%= profile.last_name %></td>
         <td><%= profile.gender %></td>
