@@ -58,14 +58,16 @@
 <% p 'before'
  related = JoinMember.where party_id: @party.id
  prel= related.pluck(:user_id)
- p 'here comes prel'
- p prel
+ prel.push(current_user.id)
+ 
 @currentusers=[]
  @users.each do |u|
 
   if !prel.include?(u.id)
     p 'found '
     p u.id
+
+
     @currentusers.push(u)
 
   end
