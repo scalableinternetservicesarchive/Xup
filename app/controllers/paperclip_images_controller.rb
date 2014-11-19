@@ -1,4 +1,5 @@
 class PaperclipImagesController < ApplicationController
+  respond_to :xml, :json, :html
   before_action :set_paperclip_image, only: [:show, :edit, :update, :destroy]
 
   def index
