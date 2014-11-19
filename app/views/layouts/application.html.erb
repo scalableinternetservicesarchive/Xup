@@ -42,20 +42,20 @@
     <div class="row">
       <div class="col-sm-3 col-md-2 sidebar">
         <ul class="nav nav-sidebar">
-          <li>
+          <li <%if current_page?(controller: 'profiles', action: 'show')%> class="active"<%end%>>
             <% if user_signed_in?  %>
                 <%= link_to "My Account", profile_path(current_user.id) %>
             <% end %>
           </li>
-          <li>
+          <li <%if current_page?(myparties_path)%> class="active"<%end%>>
             <% if user_signed_in? %>
-              <a href="/myparties">My Parties</a>
+              <a href="/myparties" >My Parties</a>
             <% end %>
           </li>
-          <li>
+          <li <%if current_page?(myinvites_path)%> class="active"<%end%>>
             <a href="/myinvites">My Invitations</a>
           </li>
-          <li>
+          <li <%if current_page?(partyrequest_path)%> class="active"<%end%>>
             <a href="/partyrequest">Requests</a>
           </li>
           <li>
