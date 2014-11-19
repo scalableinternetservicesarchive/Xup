@@ -14,12 +14,34 @@
         <!-- unorderd list Left hand side -->
         <ul class="pull-left">
             <ul class="nav navbar-nav">
-                <!-- <li class="active"><a href="/index">Home</a></li> -->
-                 <li id="nav-home"><a href="/new">Host party</a></li>
-                 <li id="nav-home"><a href="/index">Index</a></li> 
-                <li id="nav-find"><a href="/upcoming">Upcoming Parties</a></li>
-                <li id="nav-browse"><a href="/past">Past Parties</a></li>
+             
+              <% if current_page?(new_path)
+                p "should be active "
+               %><li class="active"><a href="/new">Host party</a></li>
+             <%else%>
+              <li ><a href="/new">Host party</a></li>
+               <% end%>
 
+                <!-- <li class="active"><a href="/index">Home</a></li> -->
+                 <% if current_page?(root_path) or current_page?(index_path) %>
+                 <li id="nav-home" class="active"><a href="/index">Index</a></li> 
+                 <%else%>
+                 <li id="nav-home"><a href="/index">Index</a></li> 
+                <%end%>
+
+                 <% if current_page?(upcoming_path) %>
+                <li id="nav-find" class="active"><a href="/upcoming">Upcoming Parties</a></li>
+                <% else %>
+                <li id="nav-find"><a href="/upcoming">Upcoming Parties</a></li>
+                <% end %>
+
+
+              <% if current_page?(past_path) %>
+                <li id="nav-browse" class= "active"><a href="/past">Past Parties</a></li>
+                <%else %>
+
+                <li id="nav-browse"><a href="/past">Past Parties</a></li>
+                <% end %>
 
             </ul>
         </ul>
@@ -27,7 +49,13 @@
         <ul class="pull-right">
           <ul class="nav navbar-nav">
             <% if user_signed_in? %>
+
+            <% if current_page?(controller: 'profiles', action: 'show') %>
+                <li id="nav-myAccount" class="active"><%= link_to current_user.name, profile_path(current_user.id) %></li> 
+                <%else %>
                 <li id="nav-myAccount"><%= link_to current_user.name, profile_path(current_user.id) %></li> 
+                
+                <%end%>
                 <li id="nav-logout"><%= link_to 'Log Out', destroy_user_session_path,
                     method: :delete, data: {confirm: 'Are you sure?' }%></li>
 
@@ -39,8 +67,9 @@
               <%# <li id="nav-login"><a href="/login">Login</a></li> %>   
               <%# <li id="nav-signup"><a href="/signup">Sign Up</a></li> %>
               <%# <li id="nav-logout"><a href="/logout">Logout</a></li> %>
-              <li id="nav-about"><a href="/about">About</a></li>
-              <li id="nav-help"><a href="/help">Help</a></li>
+              
+              <li id="nav-about" <%if current_page?(about_path)%> class="active"<%end%>><a href="/about">About</a></li>
+              <li id="nav-help"<%if current_page?(help_path)%> class="active"<%end%>><a href="/help">Help</a></li>
                <li><a><%=request.location.city%></a></li>
           </ul>
         </ul>

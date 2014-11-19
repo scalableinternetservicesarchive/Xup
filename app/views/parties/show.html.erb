@@ -52,3 +52,30 @@
 <div class="btn-group">
     <%= link_to 'Back', parties_path, :class => "btn btn-default" %>
 </div>
+
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        
+        <th>Invite</th>
+       
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <% @users.each do |u| %>
+      <tr>
+      <td><%=u.name%></td>
+      <td><%=u.email%></td>
+      <td><%= button_to 'Invite',{ :controller => :join_members, :action => 'createasinvite', :user_id => u.id, :party_id => @party.id}, class: 'btn btn-success' %></td>
+      </tr>
+      <%end%>
+
+      </tbody>
+  </table>
+</div>
