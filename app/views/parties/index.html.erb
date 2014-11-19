@@ -15,8 +15,21 @@
       </tr>
     </thead>
 
+    <%
+  current = DateTime.now
+  seconds=current.to_i%>
+  
+  
+    
+     
+    end
+  
+
+
     <tbody>
-      <% @parties.each do |party| %>
+      <% @parties.each do |party| 
+        dt = DateTime.new(party.date.year, party.date.month, party.date.day, party.time.hour, party.time.min, party.time.sec, party.date.zone)
+        %>
         <tr>
           <td><%= party.name %></td>
           <%# <td><%= party.owner %1></td> %>
@@ -36,7 +49,12 @@
               <% else %>
                   <% if !current_user.join_members.find_by_party_id(party.id) %>
                       <%# current user is not in this party, then we show join. %>
+
+                      <% if dt.to_i>seconds %>
+   
                       <td><%= button_to 'Join', join_members_path(user_id: current_user.id, party_id: party.id), class: 'btn btn-warning btn-sm' %></td>
+
+                      <%end%>
                   <% elsif current_user.join_members.find_by_party_id(party.id).status == 0  %>
                       <%# current user has joined in this party, but still waiting. %>
                       <td><button type="button" class="btn btn-warning btn-sm" disabled="disable">Pending</button></td>
