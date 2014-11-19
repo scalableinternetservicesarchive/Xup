@@ -17,14 +17,17 @@
   <tbody>
     <% @profiles.each do |profile| %>
       <tr>
+        <%=if profile.object.p_image? %>
+           <!-- to show thumbnail picture -->
+          <td><%= link_to image_tag(profile.p_image.url(:thumb), class "img-thumbnail") , profile) %></td>
+        <%= end %>
         <td><%= profile.first_name %></td>
         <td><%= profile.last_name %></td>
         <td><%= profile.gender %></td>
         <td><%= profile.age %></td>
         <td><%= profile.description %></td>
         <td><%= profile.user %></td>
-
-        <td><%= link_to image_tag(profile.p_image.url(:thumb), class "img-thumbnail") , profile) %></td>
+       
         
         <td><%= link_to 'Show', profile %></td>
         <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
