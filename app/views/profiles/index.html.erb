@@ -23,6 +23,9 @@
         <td><%= profile.age %></td>
         <td><%= profile.description %></td>
         <td><%= profile.user %></td>
+
+        <td><%= link_to image_tag(profile.p_image.url(:thumb), class "img-thumbnail") , profile) %></td>
+        
         <td><%= link_to 'Show', profile %></td>
         <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
         <td><%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
