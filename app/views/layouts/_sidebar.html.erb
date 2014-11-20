@@ -1,7 +1,7 @@
   <%# add sidebar %>    
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-3 col-md-2 sidebar">
+    <div class="col-sm-1 col-md-2  sidebar"> <!-- col-lg-1 -->
       <ul class="nav nav-sidebar">
         <li <%if current_page?(profile_path(:id))%> class="active"<%end%>>
           <% if user_signed_in?  %>

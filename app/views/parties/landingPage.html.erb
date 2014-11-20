@@ -2,14 +2,17 @@
 <div class="jumbotron">
       
       <div class="container">
-		<h1>Find a place to preparty!</h1>
-		<div class="col-md-8">	 
-     	</div>
-     	<div class="col-md-4">
-     		<%= render 'signupform' %>
-     	</div> 
+		<h2>Find a place to preparty!</h2>
+		<div class="col-md-8">
+
+     	</div>	
      </div>
-     <h3>Connect with cool people, and have a good time.</h3> 
+     <h3>Connect with cool people, and have a good time!</h3> 
+     <div class="container">
+	     <div class="col-md-12">
+	     		<%= render "devise/shared/signup" %>
+	     </div> 
+     </div> 
 </div> 
     
 <div class="neighborhood-guides">
@@ -19,7 +22,7 @@
 	        Not sure where to to go? Here are som preparty's in your area
 	    </p>
 		
-		<!-- render the javascript yhat handeles the map -->
+		<!-- render the javascript that handeles the map -->
 		<div class="col-md-10">
 			<%= render 'mapScript' %>
 		</div>
