@@ -54,7 +54,8 @@ class JoinMembersController < ApplicationController
     @join_member.status = 1
     @join_member.save
     #respond_with(@join_member)
-    redirect_to party_path(params[:party_id])
+    #redirect_to party_path(params[:party_id])
+    redirect_to :back
 
   end
 

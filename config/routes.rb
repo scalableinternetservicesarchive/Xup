@@ -35,6 +35,7 @@ Rails.application.routes.draw do
   get '/myinvites' => 'parties#partyinvites'
   get '/profiles' => 'profiles#show'
   post '/createasinvite' => 'join_members#createasinvite'
+  match '/invitetoparty/:id' => 'parties#invitetoparty' , via: [:get], :as => :invitetoparty
   
 
   #when the user scaffold is created, 
