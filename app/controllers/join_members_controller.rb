@@ -4,7 +4,9 @@ class JoinMembersController < ApplicationController
 
   def index
     @join_members = JoinMember.all
+    
     respond_with(@join_members)
+    
   end
 
   def show
@@ -57,6 +59,7 @@ class JoinMembersController < ApplicationController
   end
 
   def create
+    p 'running create'
     # @join_member = JoinMember.new(join_member_params)
     
     user = User.find(params[:user_id])
@@ -67,7 +70,8 @@ class JoinMembersController < ApplicationController
     # status indicate the request, 0 means pending, 1 means invited, 2 means accepted, 3 means rejected.
     @join_member.status = 0
     @join_member.save
-    respond_with(@join_member)
+    #respond_with(@join_member)
+    redirect_to parties_path
   end
 
   def update
