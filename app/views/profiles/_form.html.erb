@@ -1,4 +1,4 @@
-<%= simple_form_for @profile, :url => profiles_path(@profile), :html => { :multipart => true } do |f| %>
+<%= simple_form_for @profile, :html => { :multipart => true } do |f| %>
   <%= f.error_notification %>
 
   <% if @profile.errors.any? %>
