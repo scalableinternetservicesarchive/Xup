@@ -27,7 +27,7 @@ class JoinMembersController < ApplicationController
     @join_member.status = 2
     @join_member.save
     flash[:notice] = "Successfully accepted."
-    redirect_to partyrequest_path
+    redirect_to :back
   end
 
   def reject
@@ -35,7 +35,7 @@ class JoinMembersController < ApplicationController
     @join_member.status = 3
     @join_member.save
     flash[:notice] = "Successfully rejected."
-    redirect_to partyrequest_path
+    redirect_to :back
   end
 
   def join
@@ -43,7 +43,7 @@ class JoinMembersController < ApplicationController
     @join_member.status = 2
     @join_member.save
     flash[:notice] = "Successfully joined."
-    redirect_to partyrequest_path
+    redirect_to :back
   end
 
   def createasinvite
@@ -53,8 +53,6 @@ class JoinMembersController < ApplicationController
     @join_member = party.join_members.build(user: user)
     @join_member.status = 1
     @join_member.save
-    #respond_with(@join_member)
-    #redirect_to party_path(params[:party_id])
     redirect_to :back
 
   end
@@ -82,8 +80,7 @@ class JoinMembersController < ApplicationController
 
   def destroy
     @join_member.destroy
-    redirect_to partyrequest_path
-    # respond_with(@join_member)
+    redirect_to :back
   end
 
   private
