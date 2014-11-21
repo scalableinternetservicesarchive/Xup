@@ -16,6 +16,8 @@ class User < ActiveRecord::Base
 
   validates_format_of :email, :without => TEMP_EMAIL_REGEX, on: :update
 
+  after_create :skip_conf!
+
 
   def self.find_for_oauth(auth, signed_in_resource = nil)
     p 'omni'
@@ -73,6 +75,10 @@ class User < ActiveRecord::Base
   def email_verified?
     p ' email verifired'
     self.email && self.email !~ TEMP_EMAIL_REGEX
+  end
+
+  def skip_conf!
+    self.confirm!
   end
 
   private
