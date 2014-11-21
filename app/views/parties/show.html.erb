@@ -56,5 +56,50 @@
 <%= link_to 'Invite People', myparties_path, class: 'btn btn-success btn-sm' %>
 
 
+<% related = JoinMember.where(party_id: @party.id)
+
+p 'this is related'
+p related
+
+%>
+
+<h2>These Awesome people are coming:</h2>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+
+      <tr>
+        <th>Name</th>
+        
+        
+        <th>Comment ?</th>
+       
+      </tr>
+    </thead>
+
+<tbody>
+<%related.each do |r|
+  
+  if (r.status == 2)%>
+
+    <tr>
+    <td>
+       <%=@users.find(r.user_id).name %>
+
+       </td>
+  </tr>
+ <%
+
+end
+end%>
+
+  
+
+</tobdy>
+    </table>
+    </div>
+
+
+
 
 
