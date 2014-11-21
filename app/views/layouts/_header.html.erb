@@ -35,6 +35,12 @@
                 <li id="nav-find"><a href="/upcoming">Upcoming Parties</a></li>
                 <% end %>
 
+                 <% if current_page?(closeparties_path) %>
+                <li id="nav-find" class="active"><a href="/closeparties">Close Parties</a></li>
+                <% else %>
+                <li id="nav-find"><a href="/closeparties">Close Parties</a></li>
+                <% end %>
+
 
               <% if current_page?(past_path) %>
                 <li id="nav-browse" class= "active"><a href="/past">Past Parties</a></li>
