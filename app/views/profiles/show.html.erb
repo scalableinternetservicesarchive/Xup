@@ -33,12 +33,6 @@
   <%# <strong>User:</strong> %>
   <%# <%= @profile.user %1> %>
 <%# </p> %>
-<% p 'hello'
-p user_signed_in?
-p @profile.id
-p current_user.id
-# Made current_user.profile.id to current_user.id
-%>
 <% if user_signed_in? && current_user.id == @profile.id %>
     <%= link_to 'Edit', edit_profile_path(@profile) %> 
 <% end %>

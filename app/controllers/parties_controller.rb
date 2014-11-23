@@ -1,5 +1,5 @@
 class PartiesController < ApplicationController
-  before_action :set_party, only: [:show, :edit, :update, :destroy]
+  before_action :set_party, only: [:show, :edit, :update, :destroy,:invitetoparty]
   before_action :authenticate_user!, only: [:create, :edit, :new, :update, :destroy]
 
   # GET /parties
@@ -27,7 +27,14 @@ class PartiesController < ApplicationController
   # GET /parties/1
   # GET /parties/1.json
   def show
+    @users= User.all
+    
   end
+
+  def invitetoparty
+  
+  end
+
 
   def upcoming
   #some query

@@ -30,7 +30,7 @@ Party.create!(name: 'Party 1',
 
 =end
 
-user = User.create! :name => 'First User', :email => 'user@example.com', :password => 'pleaseeee', :password_confirmation => 'pleaseeee'
+user = User.create! :name => 'First User', :email => 'user@example.com', :password => 'asdfasdf', :password_confirmation => 'asdfasdf'
 user.confirm!
 
 user.profile = Profile.new(
@@ -39,7 +39,7 @@ user.profile = Profile.new(
 
         )
 
-user = User.create! :name => 'Second User', :email => 'user2@example.com', :password => 'pleaseeee', :password_confirmation => 'pleaseeee'
+user = User.create! :name => 'Second User', :email => 'user2@example.com', :password => 'asdfasdf', :password_confirmation => 'asdfasdf'
 user.confirm!
 
 user.profile = Profile.new(
@@ -48,7 +48,7 @@ user.profile = Profile.new(
 
         )
 
-user = User.create! :name => 'Third User', :email => 'user3@example.com', :password => 'pleaseeee', :password_confirmation => 'pleaseeee'
+user = User.create! :name => 'Third User', :email => 'user3@example.com', :password => 'asdfasdf', :password_confirmation => 'asdfasdf'
 user.confirm!
 
 user.profile = Profile.new(

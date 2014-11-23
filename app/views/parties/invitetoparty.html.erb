@@ -1,0 +1,53 @@
+<h1 id="invites">Do your want to invite someone?</h1>
+
+<% p 'before'
+ related = JoinMember.where party_id: @party.id
+ prel= related.pluck(:user_id)
+ prel.push(current_user.id)
+ @users = User.all
+ 
+@currentusers=[]
+ @users.each do |u|
+
+  if !prel.include?(u.id)
+    p 'found '
+    p u.id
+
+
+    @currentusers.push(u)
+
+  end
+  
+end
+p 'after'
+
+ %>
+
+
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+
+      <tr>
+        <th>Name</th>
+        
+        
+        <th>Invite</th>
+       
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <% @currentusers.each do |u| %>
+      <tr>
+      <td><%=u.name%></td>
+      
+      <td><%= button_to 'Invite',{ :controller => :join_members, :action => 'createasinvite', :user_id => u.id, :party_id => @party.id}, class: 'btn btn-success' %></td>
+      </tr>
+      <%end%>
+
+      </tbody>
+  </table>
+</div>

@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
 
+<h2>You have <strong>invited</strong> <%= User.find(@join_member.user_id).name %> 
+<br> to your <strong>party </strong> <%= Party.find(@join_member.party_id).name %> </h2>
+
 <p>
   <strong>User:</strong>
   <%= User.find(@join_member.user_id).name %>

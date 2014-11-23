@@ -16,6 +16,9 @@ class User < ActiveRecord::Base
 
   validates_format_of :email, :without => TEMP_EMAIL_REGEX, on: :update
 
+  after_create :skip_conf!
+
+
   def self.find_for_oauth(auth, signed_in_resource = nil)
     p 'omni'
     # Get the identity and user if they exist
@@ -38,6 +41,11 @@ class User < ActiveRecord::Base
       email_is_verified = auth.info.email && (auth.info.verified || auth.info.verified_email)
       email = auth.info.email if email_is_verified
       user = User.where(:email => email).first if email
+
+      #if !user.email_is_verified
+      #  user.skip_confirmation!
+      #  user.save!
+      #end
 
       # Create the user if it's a new registration
       if user.nil?
@@ -67,6 +75,10 @@ class User < ActiveRecord::Base
   def email_verified?
     p ' email verifired'
     self.email && self.email !~ TEMP_EMAIL_REGEX
+  end
+
+  def skip_conf!
+    self.confirm!
   end
 
   private

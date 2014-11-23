@@ -32,46 +32,26 @@
      <%# <%= link_to 'Log In', new_user_session_path %1> | %>
      <%# <%= link_to 'Sign Up', new_user_registration_path %1> %>
   <%# <% end %1> %>
-
+  
+  <%# add header %> 
   <!--The line below inputs the html from _header.html.erb and render it -->
   <%= render 'layouts/header' %>
 
-  <%# add sidebar %>
-      
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-3 col-md-2 sidebar">
-        <ul class="nav nav-sidebar">
-          <li>
-            <% if user_signed_in?  %>
-                <%= link_to "My Account", profile_path(current_user.id) %>
-            <% end %>
-          </li>
-          <li>
-            <% if user_signed_in? %>
-              <a href="/myparties">My Parties</a>
-            <% end %>
-          </li>
-          <li>
-            <a href="/myinvites">My Invitations</a>
-          </li>
-          <li>
-            <a href="/partyrequest">Requests</a>
-          </li>
-          <li>
-            <a href="#">Friends</a>
-          </li>
-        </ul>
-      </div>
 
-      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-    	<%= yield %>
-      </div>
-    </div>
+  <%# add sidebar %>  
+  <!--The line below inputs the html from _sidebar.html.erb and render it -->
+  <%= render 'layouts/sidebar' %>
+
+  <!-- Here we render the code from the links that are clicked in header and sidebar-->
+  <!-- yield code-->
+  <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <%= yield %>
   </div>
     
   <%# The two lines below are required by "devise" %>
-  <p class="notice"><%= notice %></p>
+  
+  <p class="notice"><%= #notice # put notice here if you want it to print that the user has to log inn
+   %></p>
   <p class="alert"><%= alert %></p>
 
 </body>

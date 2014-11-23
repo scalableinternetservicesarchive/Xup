@@ -14,4 +14,4 @@ Steffen Birkeland
 
 
 YY (Yuanyang) Zhang ([@zhangyy1209] (https://github.com/zhangyy1209))
-![zhangyy1209 photo] (https://lh5.googleusercontent.com/-OXv3JlCM3ks/U87zM1ATtdI/AAAAAAAAArM/5usLjq5_U7M/w547-h549-no/ee3d9d7e-29ed-4844-87de-5685feeddc6f)
+![zhangyy1209 photo] (https://avatars3.githubusercontent.com/u/1384273?v=3&s=460)

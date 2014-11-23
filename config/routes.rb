@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   resources :profiles
 
+
    #needed for facebook login, and normal login
   devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
 
@@ -32,6 +33,10 @@ Rails.application.routes.draw do
   get '/closeparties' => 'parties#close_parties'
   get '/partyrequest' => 'parties#partyrequest'
   get '/myinvites' => 'parties#partyinvites'
+  get '/profiles' => 'profiles#show'
+  post '/createasinvite' => 'join_members#createasinvite'
+  match '/invitetoparty/:id' => 'parties#invitetoparty' , via: [:get], :as => :invitetoparty
+  
 
   #when the user scaffold is created, 
   #change parties# to user#, and change the location of the html file myaccount.html.erb

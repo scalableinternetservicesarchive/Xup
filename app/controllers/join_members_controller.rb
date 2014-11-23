@@ -4,7 +4,9 @@ class JoinMembersController < ApplicationController
 
   def index
     @join_members = JoinMember.all
+    
     respond_with(@join_members)
+    
   end
 
   def show
@@ -25,7 +27,7 @@ class JoinMembersController < ApplicationController
     @join_member.status = 2
     @join_member.save
     flash[:notice] = "Successfully accepted."
-    redirect_to partyrequest_path
+    redirect_to :back
   end
 
   def reject
@@ -33,7 +35,7 @@ class JoinMembersController < ApplicationController
     @join_member.status = 3
     @join_member.save
     flash[:notice] = "Successfully rejected."
-    redirect_to partyrequest_path
+    redirect_to :back
   end
 
   def join
@@ -41,10 +43,22 @@ class JoinMembersController < ApplicationController
     @join_member.status = 2
     @join_member.save
     flash[:notice] = "Successfully joined."
-    redirect_to partyrequest_path
+    redirect_to :back
+  end
+
+  def createasinvite
+    user = User.find(params[:user_id])
+    party = Party.find(params[:party_id])
+
+    @join_member = party.join_members.build(user: user)
+    @join_member.status = 1
+    @join_member.save
+    redirect_to :back
+
   end
 
   def create
+    p 'running create'
     # @join_member = JoinMember.new(join_member_params)
     
     user = User.find(params[:user_id])
@@ -55,7 +69,8 @@ class JoinMembersController < ApplicationController
     # status indicate the request, 0 means pending, 1 means invited, 2 means accepted, 3 means rejected.
     @join_member.status = 0
     @join_member.save
-    respond_with(@join_member)
+    #respond_with(@join_member)
+    redirect_to parties_path
   end
 
   def update
@@ -65,8 +80,7 @@ class JoinMembersController < ApplicationController
 
   def destroy
     @join_member.destroy
-    redirect_to partyrequest_path
-    # respond_with(@join_member)
+    redirect_to :back
   end
 
   private
