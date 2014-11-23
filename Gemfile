@@ -56,6 +56,7 @@ gem 'bootstrap-sass', '~> 3.2.0.2' # i think we need to add bootstrap
 
 # https://github.com/thoughtbot/paperclip
 gem "paperclip", "~> 4.2" #Paperclip is a gem that allows you to upload images
+
 gem 'devise'
 
 gem 'therubyracer',  platforms: :ruby
