@@ -1,7 +1,6 @@
 class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def self.provides_callback_for(provider)
 
-    p 'halla2'
     class_eval %Q{
       def #{provider}
         @user = User.find_for_oauth(env["omniauth.auth"], current_user)
