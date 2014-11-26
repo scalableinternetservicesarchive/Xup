@@ -41,6 +41,7 @@ class PaperclipImagesController < ApplicationController
     end
 
     def paperclip_image_params
-      params[:paperclip_image]
+      # params[:paperclip_image]
+      params.require(:paperclip_image).permit(:p_image)
     end
 end
