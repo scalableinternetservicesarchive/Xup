@@ -2,6 +2,8 @@ class RegistrationsController < Devise::RegistrationsController
 
   def create
     super
+    
+    resource.skip_confirmation!
 
     resource.profile = Profile.new(
       first_name: resource.name.split[0],
