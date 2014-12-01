@@ -1,16 +1,16 @@
 class RegistrationsController < Devise::RegistrationsController
 
-  def create
-    super
+  # def create
+    # super
 
-    resource.skip_confirmation!
+    # resource.skip_confirmation!
     
-    resource.profile = Profile.new(
-      first_name: resource.name.split[0],
-      last_name: resource.name.split[1]
-    )
+    # resource.profile = Profile.new(
+      # first_name: resource.name.split[0],
+      # last_name: resource.name.split[1]
+    # )
 
-  end
+  # end
  
   private
 
