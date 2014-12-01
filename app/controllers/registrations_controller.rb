@@ -1,8 +1,6 @@
 class RegistrationsController < Devise::RegistrationsController
 
-  def confirm!
-    super
-    resource.skip_confirmation!
+  def send_on_create_confirmation_instructions
   end
 
   def create
