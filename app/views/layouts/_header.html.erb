@@ -57,9 +57,9 @@
             <% if user_signed_in? %>
 
             <% if current_page?(controller: 'profiles', action: 'show') %>
-                <li id="nav-myAccount" class="active"><%= link_to current_user.name, profile_path(current_user.id) %></li> 
+                <li id="nav-myAccount" class="active"><%= link_to current_user.name, profile_path(current_user.profile.id) %></li> 
                 <%else %>
-                <li id="nav-myAccount"><%= link_to current_user.name, profile_path(current_user.id) %></li> 
+                <li id="nav-myAccount"><%= link_to current_user.name, profile_path(current_user.profile.id) %></li> 
                 
                 <%end%>
                 <li id="nav-logout"><%= link_to 'Log Out', destroy_user_session_path,

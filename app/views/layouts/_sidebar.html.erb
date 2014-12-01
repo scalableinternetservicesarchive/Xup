@@ -5,7 +5,7 @@
       <ul class="nav nav-sidebar">
         <li <%if current_page?(profile_path(:id))%> class="active"<%end%>>
           <% if user_signed_in?  %>
-              <%= link_to "My Account", profile_path(current_user.id) %>
+              <%= link_to "My Account", profile_path(current_user.profile.id) %>
           <% end %>
         </li>
         <li <%if current_page?(myparties_path)%> class="active"<%end%>>
