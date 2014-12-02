@@ -1,0 +1,10 @@
+#!/Users/larsbrusletto/Documents/UCSB_classes/Xup/loadtest/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'funkload==1.16.1','console_scripts','fl-install-demo'
+__requires__ = 'funkload==1.16.1'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('funkload==1.16.1', 'console_scripts', 'fl-install-demo')()
+    )
