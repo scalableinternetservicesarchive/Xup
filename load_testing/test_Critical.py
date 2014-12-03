@@ -33,9 +33,11 @@ class Critical(FunkLoadTestCase):
 	      ['commit', 'Sign up']],
 	    description="Create New User")
 
+	# redirect comunity
 	self.get(server_url + "/communities/new", description="View the new communities page")
 	auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
 
+	# create new community
 	community_name = Lipsum().getSentence()
 	self.post(self.server_url + "/communities",
 	    params=[['community[name]', community_name],
@@ -80,10 +82,10 @@ class Critical(FunkLoadTestCase):
     def test_critical_path_readonly(self):
 	server_url = self.server_url
 	self.get(server_url, description='View root URL')
-	self.get(server_url + "/users/sign_up", description="View the user signup page")
-	self.get(server_url + "/communities/", description="View the communities page")
-	self.get(server_url + "/submissions/", description="View the new submissions page")
-	self.get(server_url + "/comments/", description="View the new comments page")
+	#self.get(server_url + "/users/sign_up", description="View the user signup page")
+	#self.get(server_url + "/communities/", description="View the communities page")
+	#self.get(server_url + "/submissions/", description="View the new submissions page")
+	#self.get(server_url + "/comments/", description="View the new comments page")
 
 
 
