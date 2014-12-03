@@ -16,6 +16,17 @@
  */
 
 /*
+ * Header
+ */
+
+body {
+  min-height: 2000px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+
+/*
  * Sidebar
  */
 
