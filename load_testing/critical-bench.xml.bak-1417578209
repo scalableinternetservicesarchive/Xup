@@ -1,0 +1,42 @@
+<funkload version="1.16.1" time="2014-12-02T19:17:13.817440">
+<config key="sleep_time_min" value="0.0" />
+<config key="node" value="169-231-104-143.wireless.ucsb.edu" />
+<config key="startup_delay" value="0.01" />
+<config key="cycles" value="[2, 4, 6]" />
+<config key="cycle_time" value="1.0" />
+<config key="description" value="No test description" />
+<config key="configuration_file" value="/Users/steffenfb/programming/xup/load_testing/Critical.conf" />
+<config key="class_title" value="Critical Path FunkLoad tests" />
+<config key="server_url" value="http://vg.no/" />
+<config key="module" value="test_Critical" />
+<config key="id" value="test_critical_path" />
+<config key="class_description" value="Testing the critical path of the lab app" />
+<config key="sleep_time" value="0.01" />
+<config key="sleep_time_max" value="0.5" />
+<config key="duration" value="30" />
+<config key="method" value="test_critical_path" />
+<config key="log_xml" value="/Users/steffenfb/programming/xup/load_testing/critical-bench.xml" />
+<config key="class" value="Critical" />
+<config key="python_version" value="2.7.5" />
+<response cycle="000" cvus="002" thread="001" suite="Critical" name="test_critical_path" step="001" number="001" type="get" result="Successful" url="/" code="301" description="Get root URL" time="1417576633.83" duration="1.00167798996" />
+<response cycle="000" cvus="002" thread="000" suite="Critical" name="test_critical_path" step="001" number="001" type="get" result="Successful" url="/" code="301" description="Get root URL" time="1417576633.82" duration="1.22178387642" />
+<response cycle="000" cvus="002" thread="001" suite="Critical" name="test_critical_path" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1417576634.83" duration="8.03319597244" />
+<response cycle="000" cvus="002" thread="000" suite="Critical" name="test_critical_path" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1417576635.04" duration="9.19553589821" />
+<response cycle="000" cvus="002" thread="001" suite="Critical" name="test_critical_path" step="001" number="003" type="link" result="Successful" url="/rss/feed/forsiden/?format=rss" code="200" description="" time="1417576642.87" duration="1.6767039299" />
+<response cycle="000" cvus="002" thread="000" suite="Critical" name="test_critical_path" step="001" number="003" type="link" result="Successful" url="/rss/feed/forsiden/?format=rss" code="200" description="" time="1417576644.24" duration="1.07371902466" />
+<response cycle="000" cvus="002" thread="001" suite="Critical" name="test_critical_path" step="001" number="004" type="link" result="Successful" url="/rss/feed/forsiden/?format=atom" code="200" description="" time="1417576644.55" duration="0.839507102966" />
+<response cycle="000" cvus="002" thread="000" suite="Critical" name="test_critical_path" step="001" number="004" type="link" result="Successful" url="/rss/feed/forsiden/?format=atom" code="200" description="" time="1417576645.31" duration="1.34719586372" />
+<response cycle="000" cvus="002" thread="001" suite="Critical" name="test_critical_path" step="001" number="005" type="link" result="Successful" url="/rss/feed/?categories=&amp;keywords=&amp;format=rss&amp;limit=10" code="200" description="" time="1417576645.39" duration="2.00017094612" />
+<response cycle="000" cvus="002" thread="000" suite="Critical" name="test_critical_path" step="001" number="005" type="link" result="Successful" url="/rss/feed/?categories=&amp;keywords=&amp;format=rss&amp;limit=10" code="200" description="" time="1417576646.66" duration="2.22598791122" />
+<response cycle="000" cvus="002" thread="001" suite="Critical" name="test_critical_path" step="001" number="006" type="link" result="Successful" url="/rss/feed/?categories=&amp;keywords=&amp;format=atom&amp;limit=10" code="200" description="" time="1417576647.39" duration="1.91621518135" />
+<response cycle="000" cvus="002" thread="000" suite="Critical" name="test_critical_path" step="001" number="006" type="link" result="Successful" url="/rss/feed/?categories=&amp;keywords=&amp;format=atom&amp;limit=10" code="200" description="" time="1417576648.89" duration="2.18852901459" />
+<response cycle="000" cvus="002" thread="000" suite="Critical" name="test_critical_path" step="001" number="007" type="link" result="Successful" url="/rss/feed/?categories=1068&amp;keywords=&amp;format=rss&amp;limit=10" code="200" description="" time="1417576651.08" duration="1.24074602127" />
+<response cycle="000" cvus="002" thread="001" suite="Critical" name="test_critical_path" step="001" number="007" type="link" result="Successful" url="/rss/feed/?categories=1068&amp;keywords=&amp;format=rss&amp;limit=10" code="200" description="" time="1417576649.3" duration="5.2089369297" />
+<response cycle="000" cvus="002" thread="000" suite="Critical" name="test_critical_path" step="001" number="008" type="link" result="Successful" url="/rss/feed/?categories=1068&amp;keywords=&amp;format=atom&amp;limit=10" code="200" description="" time="1417576652.32" duration="9.87156605721" />
+<response cycle="000" cvus="002" thread="001" suite="Critical" name="test_critical_path" step="001" number="008" type="link" result="Successful" url="/rss/feed/?categories=1068&amp;keywords=&amp;format=atom&amp;limit=10" code="200" description="" time="1417576654.51" duration="7.86083912849" />
+<response cycle="001" cvus="004" thread="000" suite="Critical" name="test_critical_path" step="001" number="001" type="get" result="Successful" url="/" code="301" description="Get root URL" time="1417576750.33" duration="2.14625191689" />
+<response cycle="001" cvus="004" thread="001" suite="Critical" name="test_critical_path" step="001" number="001" type="get" result="Successful" url="/" code="301" description="Get root URL" time="1417576750.34" duration="2.21802592278" />
+<response cycle="001" cvus="004" thread="002" suite="Critical" name="test_critical_path" step="001" number="001" type="get" result="Successful" url="/" code="301" description="Get root URL" time="1417576750.36" duration="2.31454396248" />
+<response cycle="001" cvus="004" thread="003" suite="Critical" name="test_critical_path" step="001" number="001" type="get" result="Successful" url="/" code="301" description="Get root URL" time="1417576750.37" duration="2.30735898018" />
+<response cycle="001" cvus="004" thread="000" suite="Critical" name="test_critical_path" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1417576752.48" duration="17.8773910999" />
+<response cycle="001" cvus="004" thread="000" suite="Critical" name="test_critical_path" step="001" number="003" type="link" result="Successful" url="/rss/feed/forsiden/?format=rss" code="200" description="" time="1417576770.36" duration="5.49005198479" />
