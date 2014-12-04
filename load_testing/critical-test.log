@@ -441,3 +441,23 @@
 2014-12-03 23:42:49,581 DEBUG test_create_party:  Done in 0.140s
 2014-12-03 23:42:49,581 DEBUG test_create_party:  Load css and images...
 2014-12-03 23:42:49,588 DEBUG test_create_party:   Done in 0.000s
+2014-12-04 00:05:10,303 INFO test_editProfile_user: [test_editProfile_user] description not found
+2014-12-04 00:05:10,303 DEBUG test_editProfile_user: Starting -----------------------------------
+	
+2014-12-04 00:05:10,304 DEBUG test_editProfile_user: GET: http://localhost:3000
+	Page 1: Get root URL ...
+2014-12-04 00:05:10,498 DEBUG test_editProfile_user:  Done in 0.194s
+2014-12-04 00:05:10,498 DEBUG test_editProfile_user:  Load css and images...
+2014-12-04 00:05:16,690 DEBUG test_editProfile_user:   Done in 6.182s
+2014-12-04 00:05:16,690 DEBUG test_editProfile_user: GET: http://localhost:3000/users/sign_up
+	Page 2: View the user signup page ...
+2014-12-04 00:05:16,858 DEBUG test_editProfile_user:  Done in 0.168s
+2014-12-04 00:05:16,858 DEBUG test_editProfile_user:  Load css and images...
+2014-12-04 00:05:16,863 DEBUG test_editProfile_user:   Done in 0.000s
+2014-12-04 00:05:16,863 DEBUG test_editProfile_user: POST: http://localhost:3000/users [('user[name]', 'khsyhmwa'), ('user[email]', 't796sg@it.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('authenticity_token', '7qEBKwY/uZZfFHVjcjQJIlAaf3wG/UGkHP3z+u0p0sM='), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-04 00:05:18,048 DEBUG test_editProfile_user:  Done in 1.185s
+2014-12-04 00:05:18,048 DEBUG test_editProfile_user:  Load redirect link: http://localhost:3000/
+2014-12-04 00:05:18,200 DEBUG test_editProfile_user:  Done in 0.152s
+2014-12-04 00:05:18,200 DEBUG test_editProfile_user:  Load css and images...
+2014-12-04 00:05:18,207 DEBUG test_editProfile_user:   Done in 0.000s

@@ -93,11 +93,39 @@ class Critical(FunkLoadTestCase):
 		# description="username deleted the New Party")
 		# end delete created party
 
-		
-
-
 	# end write test: create party, delete party
 
+
+	#write test: User signup, edit profile
+    def test_editProfile_user(self):
+		#my_test()
+		server_url = self.server_url
+		self.get(server_url, description='Get root URL')
+		
+		self.get(server_url + "/users/sign_up", description="View the user signup page")
+		auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+		
+		email = Lipsum().getUniqWord() + "@" + Lipsum().getWord() + ".com"
+		username = Lipsum().getUniqWord();
+
+		self.post(self.server_url + "/users",
+			params=[['user[name]',username],
+		    ['user[email]', email],
+		      ['user[password]', 'alphabet'],
+		      ['user[password_confirmation]', 'alphabet'],
+		      ['authenticity_token', auth_token],
+		      ['commit', 'Sign up']],
+		    description="Create New User")
+		# end my_test()
+		# start edit profile
+
+		myID = "number that i will get from code"
+
+		#self.get(server_url + "/profiles/" + myID+"/edit", description="View the edit profile page")
+
+		# end edit profile
+
+###########################################################################################################
     def test_critical_path(self):
 	server_url = self.server_url
 	self.get(server_url, description='Get root URL')
