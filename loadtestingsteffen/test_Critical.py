@@ -25,18 +25,41 @@ class Critical(FunkLoadTestCase):
 	self.get(server_url + "/users/sign_up", description="View the user signup page")
 	auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
 	email = Lipsum().getUniqWord() + "@" + Lipsum().getWord() + ".com"
-
+	name = Lipsum().getUniqWord()
 	self.post(self.server_url + "/users",
-		params=[['user[name]',Lipsum().getUniqWord()],
+		params=[['user[name]',name],
 	    ['user[email]', email],
 	      ['user[password]', 'alphabet'],
 	      ['user[password_confirmation]', 'alphabet'],
 	      ['authenticity_token', auth_token],
 	      ['commit', 'Sign up']],
 	    description="Create New User")
-	#self.get(server_url + "/new", description="View the new partypage")
-	self.get(server_url + "/index", description="View the indexpage2")
+	
+
+	#self.get(server_url + "/index", description="View the indexpage2")
 	#auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+	self.get(server_url + "/new", description="View the past page2")
+	auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+
+	self.post(self.server_url + "/parties",
+	    params=[['party[name]', Lipsum().getUniqWord()],
+	      ['party[owner]', name],
+	      ['party[date]', '2014-12-03'],
+	      ['party[time]', '17:00'],
+	      ['party[location]',Lipsum().getUniqWord()],
+	      ['party[description]',Lipsum().getUniqWord()],
+	      ['authenticity_token', auth_token],
+	      ['commit', 'Sign up']],
+	    description="Create New party")
+	self.get(server_url, description="back to indexpage")
+	
+
+
+	
+
+
+
+
 
     def test_critical_path(self):
 	server_url = self.server_url
