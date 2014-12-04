@@ -83,8 +83,18 @@ class Critical(FunkLoadTestCase):
 	      ['commit', 'Create Party']], # ['commit', 'Create Party']]
 	    description="username created a New Party")
 		self.get(server_url, description="back to indexpage")
-
 		# end create party
+
+		# start delete created party
+		# self.get(server_url + "/myparties", description="View the myparties page") # dont now if i need this yet
+		
+		# self.delete(self.server_url + "/parties"),
+		# params=['party[name]',partyname],
+		# description="username deleted the New Party")
+		# end delete created party
+
+		
+
 
 	# end write test: create party, delete party
 
