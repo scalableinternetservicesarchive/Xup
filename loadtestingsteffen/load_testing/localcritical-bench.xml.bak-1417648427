@@ -1,0 +1,29 @@
+<funkload version="1.16.1" time="2014-12-03T15:07:31.511668">
+<config key="sleep_time_min" value="0.0" />
+<config key="node" value="169-231-102-239.wireless.ucsb.edu" />
+<config key="startup_delay" value="0.01" />
+<config key="cycles" value="[2, 6]" />
+<config key="cycle_time" value="1.0" />
+<config key="description" value="No test description" />
+<config key="configuration_file" value="/Users/steffenfb/programming/load_testing/Critical.conf" />
+<config key="class_title" value="Critical Path FunkLoad tests" />
+<config key="server_url" value="http://localhost:3000" />
+<config key="module" value="test_Critical" />
+<config key="id" value="my_test" />
+<config key="class_description" value="Testing the critical path of the lab app" />
+<config key="sleep_time" value="0.01" />
+<config key="sleep_time_max" value="0.5" />
+<config key="duration" value="10" />
+<config key="method" value="my_test" />
+<config key="log_xml" value="/Users/steffenfb/programming/load_testing/localcritical-bench.xml" />
+<config key="class" value="Critical" />
+<config key="python_version" value="2.7.5" />
+<response cycle="000" cvus="002" thread="000" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417648051.51" duration="0.193860054016" />
+<response cycle="000" cvus="002" thread="001" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417648051.53" duration="0.316443920135" />
+<response cycle="001" cvus="006" thread="000" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417648084.18" duration="0.153537034988" />
+<response cycle="001" cvus="006" thread="001" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417648084.19" duration="0.227236032486" />
+<response cycle="001" cvus="006" thread="002" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417648084.2" duration="0.350811958313" />
+<response cycle="001" cvus="006" thread="003" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417648084.22" duration="0.474155902863" />
+<response cycle="001" cvus="006" thread="004" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417648084.23" duration="0.594939947128" />
+<response cycle="001" cvus="006" thread="005" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417648084.24" duration="0.666108846664" />
+</funkload>

@@ -1,0 +1,22 @@
+<funkload version="1.16.1" time="2014-12-03T15:04:48.835691">
+<config key="sleep_time_min" value="0.0" />
+<config key="node" value="169-231-102-239.wireless.ucsb.edu" />
+<config key="startup_delay" value="0.01" />
+<config key="cycles" value="[2, 6]" />
+<config key="cycle_time" value="1.0" />
+<config key="description" value="No test description" />
+<config key="configuration_file" value="/Users/steffenfb/programming/load_testing/Critical.conf" />
+<config key="class_title" value="Critical Path FunkLoad tests" />
+<config key="server_url" value="http://ec2-54-149-86-183.us-west-2.compute.amazonaws.com/" />
+<config key="module" value="test_Critical" />
+<config key="id" value="test_critical_path" />
+<config key="class_description" value="Testing the critical path of the lab app" />
+<config key="sleep_time" value="0.01" />
+<config key="sleep_time_max" value="0.5" />
+<config key="duration" value="10" />
+<config key="method" value="test_critical_path" />
+<config key="log_xml" value="/Users/steffenfb/programming/load_testing/localcritical-bench.xml" />
+<config key="class" value="Critical" />
+<config key="python_version" value="2.7.5" />
+<response cycle="000" cvus="002" thread="001" suite="Critical" name="test_critical_path" step="001" number="001" type="get" result="Successful" url="/" code="200" description="Get root URL" time="1417647888.85" duration="0.4620449543" />
+<response cycle="000" cvus="002" thread="000" suite="Critical" name="test_critical_path" step="001" number="001" type="get" result="Successful" url="/" code="200" description="Get root URL" time="1417647888.84" duration="7.68940806389" />

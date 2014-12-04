@@ -1,0 +1,374 @@
+<funkload version="1.16.1" time="2014-12-03T18:24:33.421830">
+<config key="sleep_time_min" value="0.0" />
+<config key="node" value="169-231-102-239.wireless.ucsb.edu" />
+<config key="startup_delay" value="0.01" />
+<config key="cycles" value="[1, 5, 10]" />
+<config key="cycle_time" value="1.0" />
+<config key="description" value="No test description" />
+<config key="configuration_file" value="/Users/steffenfb/programming/load_testing/Critical.conf" />
+<config key="class_title" value="Critical Path FunkLoad tests" />
+<config key="server_url" value="http://ec2-54-149-86-183.us-west-2.compute.amazonaws.com" />
+<config key="module" value="test_Critical" />
+<config key="id" value="my_test" />
+<config key="class_description" value="Testing the critical path of the lab app" />
+<config key="sleep_time" value="0.01" />
+<config key="sleep_time_max" value="0.5" />
+<config key="duration" value="10" />
+<config key="method" value="my_test" />
+<config key="log_xml" value="/Users/steffenfb/programming/load_testing/localcritical-bench.xml" />
+<config key="class" value="Critical" />
+<config key="python_version" value="2.7.5" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417659873.42" duration="0.101186037064" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659873.52" duration="0.443048000336" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659873.97" duration="0.20125412941" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="002" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page again" time="1417659874.23" duration="0.085037946701" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="003" number="001" type="get" result="Successful" url="" code="200" description="Get root URL" time="1417659874.56" duration="0.10053896904" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="003" number="002" type="image" result="Successful" url="/2013/05/img_1380.jpg" code="200" description="" time="1417659874.66" duration="1.1703350544" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="003" number="003" type="image" result="Successful" url="/2014/04/maxresdefault.jpg" code="200" description="" time="1417659875.83" duration="0.548192977905" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="003" number="004" type="image" result="Successful" url="/_-tDuDhxev0k/TLKuMBwh6sI/AAAAAAAAACc/hjNcFNVbBEI/s1600/IMG_0091-1.jpg" code="200" description="" time="1417659876.38" duration="0.498472929001" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="003" number="005" type="image" result="Successful" url="/img/photos/2009/04/08/P4040977_t479.jpg?6626f76dcd72edc2e28f46812c7026450162bdb2" code="200" description="" time="1417659876.88" duration="0.69268488884" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="003" number="006" type="image" result="Successful" url="/rapgenius/beer_pong1.jpg" code="200" description="" time="1417659877.57" duration="1.00043606758" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="003" number="007" type="image" result="Successful" url="/images/drink.19_1.jpg" code="200" description="" time="1417659878.58" duration="0.472864151001" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="004" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1417659879.42" duration="0.131808042526" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="005" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1417659879.94" duration="0.267042160034" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="005" number="002" type="get" result="Successful" url="/" code="200" description="" time="1417659880.21" duration="0.110326051712" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="006" number="001" type="get" result="Successful" url="/new" code="200" description="View the past page2" time="1417659880.33" duration="0.117454051971" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="007" number="001" type="post" result="Successful" url="/parties" code="302" description="Create New party" time="1417659880.69" duration="0.334365129471" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="007" number="002" type="get" result="Successful" url="/parties/3" code="200" description="" time="1417659881.02" duration="0.0898060798645" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="008" number="001" type="get" result="Successful" url="" code="200" description="back to indexpage" time="1417659881.38" duration="0.109049081802" />
+<testResult cycle="000" cvus="001" thread="000" suite="Critical" name="my_test"  time="1417659873.42" result="Successful" steps="8" duration="8.35185885429" connection_duration="6.47390174866" requests="18" pages="8" xmlrpc="0" redirects="2" images="6" links="2" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417659881.79" duration="0.0925619602203" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659881.88" duration="0.040069103241" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659881.92" duration="0.193146944046" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="002" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page again" time="1417659882.54" duration="0.0993340015411" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="003" number="001" type="get" result="Successful" url="" code="200" description="Get root URL" time="1417659882.91" duration="0.100029230118" />
+<response cycle="001" cvus="005" thread="000" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417659888.65" duration="0.0882670879364" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417659888.66" duration="0.0951781272888" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417659888.67" duration="0.0961790084839" />
+<response cycle="001" cvus="005" thread="000" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659888.74" duration="0.0435080528259" />
+<response cycle="001" cvus="005" thread="003" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417659888.68" duration="0.0999400615692" />
+<response cycle="001" cvus="005" thread="004" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417659888.7" duration="0.0919020175934" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659888.76" duration="0.0632781982422" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659888.77" duration="0.08802318573" />
+<response cycle="001" cvus="005" thread="003" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659888.78" duration="0.125530004501" />
+<response cycle="001" cvus="005" thread="004" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659888.79" duration="0.122570991516" />
+<response cycle="001" cvus="005" thread="000" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659888.78" duration="0.244957923889" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659888.82" duration="0.229061841965" />
+<response cycle="001" cvus="005" thread="004" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659888.91" duration="0.228770017624" />
+<response cycle="001" cvus="005" thread="003" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659888.91" duration="0.235774040222" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659888.86" duration="0.291694879532" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="002" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page again" time="1417659889.2" duration="0.0925052165985" />
+<response cycle="001" cvus="005" thread="003" suite="Critical" name="my_test" step="002" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page again" time="1417659889.25" duration="0.091943025589" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="002" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page again" time="1417659889.29" duration="0.0969669818878" />
+<response cycle="001" cvus="005" thread="000" suite="Critical" name="my_test" step="002" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page again" time="1417659889.37" duration="0.0956978797913" />
+<response cycle="001" cvus="005" thread="004" suite="Critical" name="my_test" step="002" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page again" time="1417659889.42" duration="0.100780010223" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="003" number="001" type="get" result="Successful" url="" code="200" description="Get root URL" time="1417659889.54" duration="0.128973007202" />
+<response cycle="001" cvus="005" thread="003" suite="Critical" name="my_test" step="003" number="001" type="get" result="Successful" url="" code="200" description="Get root URL" time="1417659889.59" duration="0.138428926468" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="003" number="001" type="get" result="Successful" url="" code="200" description="Get root URL" time="1417659889.64" duration="0.194368124008" />
+<response cycle="001" cvus="005" thread="000" suite="Critical" name="my_test" step="003" number="001" type="get" result="Successful" url="" code="200" description="Get root URL" time="1417659889.76" duration="0.218667030334" />
+<response cycle="001" cvus="005" thread="004" suite="Critical" name="my_test" step="003" number="001" type="get" result="Successful" url="" code="200" description="Get root URL" time="1417659889.99" duration="0.176056146622" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="003" number="002" type="image" result="Successful" url="/2013/05/img_1380.jpg" code="200" description="" time="1417659889.84" duration="2.33501505852" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="003" number="002" type="image" result="Successful" url="/2013/05/img_1380.jpg" code="200" description="" time="1417659889.67" duration="2.55726909637" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="003" number="003" type="image" result="Successful" url="/2014/04/maxresdefault.jpg" code="200" description="" time="1417659892.17" duration="0.158753871918" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="003" number="003" type="image" result="Successful" url="/2014/04/maxresdefault.jpg" code="200" description="" time="1417659892.23" duration="0.283503055573" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="003" number="004" type="image" result="Successful" url="/_-tDuDhxev0k/TLKuMBwh6sI/AAAAAAAAACc/hjNcFNVbBEI/s1600/IMG_0091-1.jpg" code="200" description="" time="1417659892.33" duration="0.255724906921" />
+<response cycle="001" cvus="005" thread="003" suite="Critical" name="my_test" step="003" number="002" type="image" result="Successful" url="/2013/05/img_1380.jpg" code="200" description="" time="1417659889.73" duration="2.88117980957" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="003" number="004" type="image" result="Successful" url="/_-tDuDhxev0k/TLKuMBwh6sI/AAAAAAAAACc/hjNcFNVbBEI/s1600/IMG_0091-1.jpg" code="200" description="" time="1417659892.51" duration="0.160485029221" />
+<response cycle="001" cvus="005" thread="003" suite="Critical" name="my_test" step="003" number="003" type="image" result="Successful" url="/2014/04/maxresdefault.jpg" code="200" description="" time="1417659892.61" duration="0.193480014801" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="003" number="005" type="image" result="Successful" url="/img/photos/2009/04/08/P4040977_t479.jpg?6626f76dcd72edc2e28f46812c7026450162bdb2" code="200" description="" time="1417659892.59" duration="0.277933835983" />
+<response cycle="001" cvus="005" thread="003" suite="Critical" name="my_test" step="003" number="004" type="image" result="Successful" url="/_-tDuDhxev0k/TLKuMBwh6sI/AAAAAAAAACc/hjNcFNVbBEI/s1600/IMG_0091-1.jpg" code="200" description="" time="1417659892.81" duration="0.159963130951" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="003" number="005" type="image" result="Successful" url="/img/photos/2009/04/08/P4040977_t479.jpg?6626f76dcd72edc2e28f46812c7026450162bdb2" code="200" description="" time="1417659892.67" duration="0.300210952759" />
+<response cycle="001" cvus="005" thread="003" suite="Critical" name="my_test" step="003" number="005" type="image" result="Successful" url="/img/photos/2009/04/08/P4040977_t479.jpg?6626f76dcd72edc2e28f46812c7026450162bdb2" code="200" description="" time="1417659892.97" duration="0.324095964432" />
+<response cycle="001" cvus="005" thread="004" suite="Critical" name="my_test" step="003" number="002" type="image" result="Successful" url="/2013/05/img_1380.jpg" code="200" description="" time="1417659890.17" duration="3.3793990612" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="003" number="006" type="image" result="Successful" url="/rapgenius/beer_pong1.jpg" code="200" description="" time="1417659892.97" duration="0.655906915665" />
+<response cycle="001" cvus="005" thread="004" suite="Critical" name="my_test" step="003" number="003" type="image" result="Successful" url="/2014/04/maxresdefault.jpg" code="200" description="" time="1417659893.55" duration="0.147698879242" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="003" number="007" type="image" result="Successful" url="/images/drink.19_1.jpg" code="200" description="" time="1417659893.63" duration="0.0945408344269" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="003" number="006" type="image" result="Successful" url="/rapgenius/beer_pong1.jpg" code="200" description="" time="1417659892.87" duration="0.890231132507" />
+<response cycle="001" cvus="005" thread="004" suite="Critical" name="my_test" step="003" number="004" type="image" result="Successful" url="/_-tDuDhxev0k/TLKuMBwh6sI/AAAAAAAAACc/hjNcFNVbBEI/s1600/IMG_0091-1.jpg" code="200" description="" time="1417659893.7" duration="0.100139141083" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="003" number="007" type="image" result="Successful" url="/images/drink.19_1.jpg" code="200" description="" time="1417659893.76" duration="0.0753710269928" />
+<response cycle="001" cvus="005" thread="003" suite="Critical" name="my_test" step="003" number="006" type="image" result="Successful" url="/rapgenius/beer_pong1.jpg" code="200" description="" time="1417659893.29" duration="0.645403146744" />
+<response cycle="001" cvus="005" thread="003" suite="Critical" name="my_test" step="003" number="007" type="image" result="Successful" url="/images/drink.19_1.jpg" code="200" description="" time="1417659893.94" duration="0.0853178501129" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="004" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1417659893.9" duration="0.122836112976" />
+<response cycle="001" cvus="005" thread="004" suite="Critical" name="my_test" step="003" number="005" type="image" result="Successful" url="/img/photos/2009/04/08/P4040977_t479.jpg?6626f76dcd72edc2e28f46812c7026450162bdb2" code="200" description="" time="1417659893.8" duration="0.234385967255" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="005" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1417659894.06" duration="0.264019012451" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="005" number="002" type="get" result="Successful" url="/" code="200" description="" time="1417659894.33" duration="0.139765024185" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="004" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1417659894.2" duration="0.305480003357" />
+<response cycle="001" cvus="005" thread="003" suite="Critical" name="my_test" step="004" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1417659894.42" duration="0.11393404007" />
+<response cycle="001" cvus="005" thread="004" suite="Critical" name="my_test" step="003" number="006" type="image" result="Successful" url="/rapgenius/beer_pong1.jpg" code="200" description="" time="1417659894.03" duration="0.575622081757" />
+<response cycle="001" cvus="005" thread="004" suite="Critical" name="my_test" step="003" number="007" type="image" result="Successful" url="/images/drink.19_1.jpg" code="200" description="" time="1417659894.61" duration="0.0579741001129" />
+<response cycle="001" cvus="005" thread="000" suite="Critical" name="my_test" step="003" number="002" type="image" result="Successful" url="/2013/05/img_1380.jpg" code="200" description="" time="1417659889.98" duration="4.70174312592" />
+<response cycle="001" cvus="005" thread="000" suite="Critical" name="my_test" step="003" number="003" type="image" result="Successful" url="/2014/04/maxresdefault.jpg" code="200" description="" time="1417659894.69" duration="0.111349105835" />
+<response cycle="001" cvus="005" thread="000" suite="Critical" name="my_test" step="003" number="004" type="image" result="Successful" url="/_-tDuDhxev0k/TLKuMBwh6sI/AAAAAAAAACc/hjNcFNVbBEI/s1600/IMG_0091-1.jpg" code="200" description="" time="1417659894.8" duration="0.0872941017151" />
+<response cycle="001" cvus="005" thread="000" suite="Critical" name="my_test" step="003" number="005" type="image" result="Successful" url="/img/photos/2009/04/08/P4040977_t479.jpg?6626f76dcd72edc2e28f46812c7026450162bdb2" code="200" description="" time="1417659894.89" duration="0.227286100388" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="005" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1417659894.66" duration="0.513329029083" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="006" number="001" type="get" result="Successful" url="/new" code="200" description="View the past page2" time="1417659894.73" duration="0.580500841141" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="005" number="002" type="get" result="Successful" url="/" code="200" description="" time="1417659895.17" duration="0.276881217957" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="006" number="001" type="get" result="Successful" url="/new" code="200" description="View the past page2" time="1417659895.5" duration="0.233249187469" />
+<response cycle="001" cvus="005" thread="000" suite="Critical" name="my_test" step="003" number="006" type="image" result="Successful" url="/rapgenius/beer_pong1.jpg" code="200" description="" time="1417659895.11" duration="0.743709087372" />
+<response cycle="001" cvus="005" thread="000" suite="Critical" name="my_test" step="003" number="007" type="image" result="Successful" url="/images/drink.19_1.jpg" code="200" description="" time="1417659895.86" duration="0.0629651546478" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="007" number="001" type="post" result="Successful" url="/parties" code="302" description="Create New party" time="1417659895.69" duration="0.304017782211" />
+<response cycle="001" cvus="005" thread="004" suite="Critical" name="my_test" step="004" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1417659894.77" duration="1.22054505348" />
+<response cycle="001" cvus="005" thread="000" suite="Critical" name="my_test" step="004" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1417659896.02" duration="0.214818000793" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="007" number="002" type="get" result="Successful" url="/parties/5" code="200" description="" time="1417659895.99" duration="0.448935985565" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="008" number="001" type="get" result="Successful" url="" code="200" description="back to indexpage" time="1417659896.48" duration="0.282121896744" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="007" number="001" type="post" result="Successful" url="/parties" code="302" description="Create New party" time="1417659895.9" duration="0.891645908356" />
+<response cycle="001" cvus="005" thread="004" suite="Critical" name="my_test" step="005" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1417659896.05" duration="0.866250991821" />
+<testResult cycle="001" cvus="005" thread="002" suite="Critical" name="my_test"  time="1417659888.67" result="Successful" steps="8" duration="8.34934306145" connection_duration="6.89594960213" requests="18" pages="8" xmlrpc="0" redirects="2" images="6" links="2" />
+<response cycle="001" cvus="005" thread="004" suite="Critical" name="my_test" step="005" number="002" type="get" result="Successful" url="/" code="200" description="" time="1417659896.92" duration="0.246755838394" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="007" number="002" type="get" result="Successful" url="/parties/6" code="200" description="" time="1417659896.8" duration="0.375764131546" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417659897.03" duration="0.141837835312" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659897.18" duration="0.0466020107269" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659897.22" duration="0.193645000458" />
+<response cycle="001" cvus="005" thread="004" suite="Critical" name="my_test" step="006" number="001" type="get" result="Successful" url="/new" code="200" description="View the past page2" time="1417659897.25" duration="0.284291028976" />
+<response cycle="001" cvus="005" thread="003" suite="Critical" name="my_test" step="005" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1417659894.61" duration="2.96397900581" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="008" number="001" type="get" result="Successful" url="" code="200" description="back to indexpage" time="1417659897.31" duration="0.302946090698" />
+<response cycle="001" cvus="005" thread="003" suite="Critical" name="my_test" step="005" number="002" type="get" result="Successful" url="/" code="200" description="" time="1417659897.57" duration="0.150459051132" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="002" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page again" time="1417659897.69" duration="0.0998260974884" />
+<testResult cycle="001" cvus="005" thread="001" suite="Critical" name="my_test"  time="1417659888.66" result="Successful" steps="8" duration="9.36074185371" connection_duration="7.56671690941" requests="18" pages="8" xmlrpc="0" redirects="2" images="6" links="2" />
+<response cycle="001" cvus="005" thread="004" suite="Critical" name="my_test" step="007" number="001" type="post" result="Successful" url="/parties" code="302" description="Create New party" time="1417659897.63" duration="0.473135948181" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417659898.03" duration="0.179952144623" />
+<response cycle="001" cvus="005" thread="004" suite="Critical" name="my_test" step="007" number="002" type="get" result="Successful" url="/parties/7" code="200" description="" time="1417659898.1" duration="0.148451089859" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659898.21" duration="0.0540108680725" />
+<response cycle="001" cvus="005" thread="002" suite="Critical" name="my_test" step="003" number="001" type="get" result="Successful" url="" code="200" description="Get root URL" time="1417659898.09" duration="0.20387506485" />
+<response cycle="001" cvus="005" thread="003" suite="Critical" name="my_test" step="006" number="001" type="get" result="Successful" url="/new" code="200" description="View the past page2" time="1417659898.17" duration="0.207718849182" />
+<response cycle="001" cvus="005" thread="001" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659898.27" duration="0.197965860367" />
+<response cycle="002" cvus="010" thread="000" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659905.08" duration="0.0382828712463" />
+<response cycle="002" cvus="010" thread="001" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417659904.98" duration="0.134518861771" />
+<response cycle="002" cvus="010" thread="002" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417659904.99" duration="0.155508995056" />
+<response cycle="002" cvus="010" thread="001" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659905.11" duration="0.0449991226196" />
+<response cycle="002" cvus="010" thread="003" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417659905.0" duration="0.175953149796" />
+<response cycle="002" cvus="010" thread="002" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659905.15" duration="0.0477180480957" />
+<response cycle="002" cvus="010" thread="005" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417659905.03" duration="0.194545984268" />
+<response cycle="002" cvus="010" thread="006" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417659905.04" duration="0.185266971588" />
+<response cycle="002" cvus="010" thread="003" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659905.18" duration="0.0606999397278" />
+<response cycle="002" cvus="010" thread="007" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417659905.05" duration="0.199699163437" />
+<response cycle="002" cvus="010" thread="008" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417659905.07" duration="0.196087837219" />
+<response cycle="002" cvus="010" thread="004" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417659905.02" duration="0.282698154449" />
+<response cycle="002" cvus="010" thread="009" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417659905.08" duration="0.222954034805" />
+<response cycle="002" cvus="010" thread="005" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659905.22" duration="0.0952248573303" />
+<response cycle="002" cvus="010" thread="006" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659905.23" duration="0.104427099228" />
+<response cycle="002" cvus="010" thread="007" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659905.25" duration="0.109853029251" />
+<response cycle="002" cvus="010" thread="008" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659905.26" duration="0.143359899521" />
+<response cycle="002" cvus="010" thread="001" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659905.16" duration="0.286108970642" />
+<response cycle="002" cvus="010" thread="004" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659905.3" duration="0.151880025864" />
+<response cycle="002" cvus="010" thread="009" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417659905.3" duration="0.158341884613" />
+<response cycle="002" cvus="010" thread="002" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659905.2" duration="0.280977010727" />
+<response cycle="002" cvus="010" thread="003" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659905.24" duration="0.282582044601" />
+<response cycle="002" cvus="010" thread="000" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659905.11" duration="0.646957159042" />
+<response cycle="002" cvus="010" thread="006" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659905.33" duration="0.693279027939" />
+<response cycle="002" cvus="010" thread="005" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659905.32" duration="0.769815921783" />
+<response cycle="002" cvus="010" thread="007" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659905.36" duration="0.729396104813" />
+<response cycle="002" cvus="010" thread="008" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659905.41" duration="0.736581087112" />
+<response cycle="002" cvus="010" thread="004" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659905.45" duration="0.857675075531" />
+<response cycle="002" cvus="010" thread="009" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417659905.46" duration="0.855236053467" />
+<response cycle="002" cvus="010" thread="003" suite="Critical" name="my_test" step="002" number="001" type="get" result="Failure" url="/past" code="502" description="View the past page again" time="1417659905.66" duration="2.17724609375">
+  <headers>
+    <header name="date" value="Thu, 04 Dec 2014 02:25:08 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="002" cvus="010" thread="003" suite="Critical" name="my_test"  time="1417659905.0" result="Failure" steps="2" duration="2.83626794815" connection_duration="2.69648122787" requests="4" pages="1" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/load_testing/test_Critical.py", line 23, in my_test&#10;    self.get(server_url + "/past", description="View the past page again")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /past&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="002" cvus="010" thread="006" suite="Critical" name="my_test" step="002" number="001" type="get" result="Failure" url="/past" code="502" description="View the past page again" time="1417659906.34" duration="1.50274515152">
+  <headers>
+    <header name="date" value="Thu, 04 Dec 2014 02:25:08 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<response cycle="002" cvus="010" thread="000" suite="Critical" name="my_test" step="002" number="001" type="get" result="Failure" url="/past" code="502" description="View the past page again" time="1417659905.89" duration="1.95560503006">
+  <headers>
+    <header name="date" value="Thu, 04 Dec 2014 02:25:08 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<response cycle="002" cvus="010" thread="009" suite="Critical" name="my_test" step="002" number="001" type="get" result="Failure" url="/past" code="502" description="View the past page again" time="1417659906.61" duration="1.23863387108">
+  <headers>
+    <header name="date" value="Thu, 04 Dec 2014 02:25:08 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="002" cvus="010" thread="000" suite="Critical" name="my_test"  time="1417659904.97" result="Failure" steps="2" duration="2.88137984276" connection_duration="2.74821400642" requests="4" pages="1" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/load_testing/test_Critical.py", line 23, in my_test&#10;    self.get(server_url + "/past", description="View the past page again")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /past&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="002" cvus="010" thread="007" suite="Critical" name="my_test" step="002" number="001" type="get" result="Failure" url="/past" code="502" description="View the past page again" time="1417659906.27" duration="1.57567310333">
+  <headers>
+    <header name="date" value="Thu, 04 Dec 2014 02:25:08 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="002" cvus="010" thread="009" suite="Critical" name="my_test"  time="1417659905.08" result="Failure" steps="2" duration="2.77237701416" connection_duration="2.47516584396" requests="4" pages="1" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/load_testing/test_Critical.py", line 23, in my_test&#10;    self.get(server_url + "/past", description="View the past page again")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /past&#10;HTTP Response 502: Bad Gateway&#10;' />
+<testResult cycle="002" cvus="010" thread="006" suite="Critical" name="my_test"  time="1417659905.04" result="Failure" steps="2" duration="2.80879592896" connection_duration="2.48571825027" requests="4" pages="1" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/load_testing/test_Critical.py", line 23, in my_test&#10;    self.get(server_url + "/past", description="View the past page again")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /past&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="002" cvus="010" thread="001" suite="Critical" name="my_test" step="002" number="001" type="get" result="Failure" url="/past" code="502" description="View the past page again" time="1417659905.75" duration="2.10364294052">
+  <headers>
+    <header name="date" value="Thu, 04 Dec 2014 02:25:08 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<response cycle="002" cvus="010" thread="002" suite="Critical" name="my_test" step="002" number="001" type="get" result="Failure" url="/past" code="502" description="View the past page again" time="1417659905.84" duration="2.01437997818">
+  <headers>
+    <header name="date" value="Thu, 04 Dec 2014 02:25:08 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="002" cvus="010" thread="007" suite="Critical" name="my_test"  time="1417659905.05" result="Failure" steps="2" duration="2.79853487015" connection_duration="2.61462140083" requests="4" pages="1" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/load_testing/test_Critical.py", line 23, in my_test&#10;    self.get(server_url + "/past", description="View the past page again")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /past&#10;HTTP Response 502: Bad Gateway&#10;' />
+<testResult cycle="002" cvus="010" thread="001" suite="Critical" name="my_test"  time="1417659904.98" result="Failure" steps="2" duration="2.87259197235" connection_duration="2.56926989555" requests="4" pages="1" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/load_testing/test_Critical.py", line 23, in my_test&#10;    self.get(server_url + "/past", description="View the past page again")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /past&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="002" cvus="010" thread="008" suite="Critical" name="my_test" step="002" number="001" type="get" result="Failure" url="/past" code="502" description="View the past page again" time="1417659906.24" duration="1.61115503311">
+  <headers>
+    <header name="date" value="Thu, 04 Dec 2014 02:25:08 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<response cycle="002" cvus="010" thread="004" suite="Critical" name="my_test" step="002" number="001" type="get" result="Failure" url="/past" code="502" description="View the past page again" time="1417659906.6" duration="1.25291490555">
+  <headers>
+    <header name="date" value="Thu, 04 Dec 2014 02:25:08 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="002" cvus="010" thread="002" suite="Critical" name="my_test"  time="1417659904.99" result="Failure" steps="2" duration="2.86116313934" connection_duration="2.49858403206" requests="4" pages="1" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/load_testing/test_Critical.py", line 23, in my_test&#10;    self.get(server_url + "/past", description="View the past page again")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /past&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="002" cvus="010" thread="005" suite="Critical" name="my_test" step="002" number="001" type="get" result="Failure" url="/past" code="502" description="View the past page again" time="1417659906.36" duration="1.49412989616">
+  <headers>
+    <header name="date" value="Thu, 04 Dec 2014 02:25:08 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="002" cvus="010" thread="008" suite="Critical" name="my_test"  time="1417659905.07" result="Failure" steps="2" duration="2.7883348465" connection_duration="2.68718385696" requests="4" pages="1" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/load_testing/test_Critical.py", line 23, in my_test&#10;    self.get(server_url + "/past", description="View the past page again")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /past&#10;HTTP Response 502: Bad Gateway&#10;' />
+<testResult cycle="002" cvus="010" thread="004" suite="Critical" name="my_test"  time="1417659905.02" result="Failure" steps="2" duration="2.83803892136" connection_duration="2.54516816139" requests="4" pages="1" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/load_testing/test_Critical.py", line 23, in my_test&#10;    self.get(server_url + "/past", description="View the past page again")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /past&#10;HTTP Response 502: Bad Gateway&#10;' />
+<testResult cycle="002" cvus="010" thread="005" suite="Critical" name="my_test"  time="1417659905.03" result="Failure" steps="2" duration="2.82667589188" connection_duration="2.55371665955" requests="4" pages="1" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/load_testing/test_Critical.py", line 23, in my_test&#10;    self.get(server_url + "/past", description="View the past page again")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /past&#10;HTTP Response 502: Bad Gateway&#10;' />
+</funkload>

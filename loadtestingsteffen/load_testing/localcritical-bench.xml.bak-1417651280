@@ -1,0 +1,39 @@
+<funkload version="1.16.1" time="2014-12-03T16:00:14.075411">
+<config key="sleep_time_min" value="0.0" />
+<config key="node" value="169-231-102-239.wireless.ucsb.edu" />
+<config key="startup_delay" value="0.01" />
+<config key="cycles" value="[1]" />
+<config key="cycle_time" value="1.0" />
+<config key="description" value="No test description" />
+<config key="configuration_file" value="/Users/steffenfb/programming/load_testing/Critical.conf" />
+<config key="class_title" value="Critical Path FunkLoad tests" />
+<config key="server_url" value="http://localhost:3000" />
+<config key="module" value="test_Critical" />
+<config key="id" value="my_test" />
+<config key="class_description" value="Testing the critical path of the lab app" />
+<config key="sleep_time" value="0.01" />
+<config key="sleep_time_max" value="0.5" />
+<config key="duration" value="5" />
+<config key="method" value="my_test" />
+<config key="log_xml" value="/Users/steffenfb/programming/load_testing/localcritical-bench.xml" />
+<config key="class" value="Critical" />
+<config key="python_version" value="2.7.5" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417651214.08" duration="0.140395879745" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417651214.22" duration="1.11346697807" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1417651215.33" duration="0.00695204734802" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1417651215.34" duration="0.00518107414246" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1417651215.34" duration="0.00483512878418" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1417651215.35" duration="0.00488495826721" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1417651215.35" duration="0.00490498542786" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1417651215.36" duration="0.00552701950073" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1417651215.37" duration="0.00488996505737" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="002" number="001" type="get" result="Successful" url="" code="200" description="Get root URL" time="1417651215.6" duration="0.149509906769" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="002" number="002" type="image" result="Successful" url="/2013/05/img_1380.jpg" code="200" description="" time="1417651215.75" duration="0.789328098297" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="002" number="003" type="image" result="Successful" url="/2014/04/maxresdefault.jpg" code="200" description="" time="1417651216.54" duration="0.126369953156" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="002" number="004" type="image" result="Successful" url="/_-tDuDhxev0k/TLKuMBwh6sI/AAAAAAAAACc/hjNcFNVbBEI/s1600/IMG_0091-1.jpg" code="200" description="" time="1417651216.67" duration="0.0460340976715" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="002" number="005" type="image" result="Successful" url="/img/photos/2009/04/08/P4040977_t479.jpg?6626f76dcd72edc2e28f46812c7026450162bdb2" code="200" description="" time="1417651216.71" duration="0.744005203247" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="002" number="006" type="image" result="Successful" url="/rapgenius/beer_pong1.jpg" code="200" description="" time="1417651217.46" duration="0.704761981964" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="002" number="007" type="image" result="Successful" url="/images/drink.19_1.jpg" code="200" description="" time="1417651218.16" duration="0.0695478916168" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="003" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1417651218.6" duration="0.154756069183" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="004" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1417651218.99" duration="0.100938081741" />
+</funkload>

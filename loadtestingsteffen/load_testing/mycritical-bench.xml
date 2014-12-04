@@ -1,0 +1,53 @@
+<funkload version="1.16.1" time="2014-12-03T14:39:26.047530">
+<config key="sleep_time_min" value="0.0" />
+<config key="node" value="169-231-102-239.wireless.ucsb.edu" />
+<config key="startup_delay" value="0.01" />
+<config key="cycles" value="[2, 6]" />
+<config key="cycle_time" value="1.0" />
+<config key="description" value="No test description" />
+<config key="configuration_file" value="/Users/steffenfb/programming/load_testing/Critical.conf" />
+<config key="class_title" value="Critical Path FunkLoad tests" />
+<config key="server_url" value="http://ec2-54-149-86-183.us-west-2.compute.amazonaws.com/" />
+<config key="module" value="test_Critical" />
+<config key="id" value="my_test" />
+<config key="class_description" value="Testing the critical path of the lab app" />
+<config key="sleep_time" value="0.01" />
+<config key="sleep_time_max" value="0.5" />
+<config key="duration" value="10" />
+<config key="method" value="my_test" />
+<config key="log_xml" value="/Users/steffenfb/programming/load_testing/mycritical-bench.xml" />
+<config key="class" value="Critical" />
+<config key="python_version" value="2.7.5" />
+<response cycle="000" cvus="002" thread="000" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="//past" code="200" description="View the past page" time="1417646366.05" duration="0.87970995903" />
+<response cycle="000" cvus="002" thread="001" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="//past" code="200" description="View the past page" time="1417646366.06" duration="0.870296001434" />
+<response cycle="000" cvus="002" thread="000" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417646366.93" duration="3.37126207352" />
+<response cycle="000" cvus="002" thread="001" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417646366.93" duration="3.42824697495" />
+<response cycle="000" cvus="002" thread="000" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417646370.3" duration="2.54961895943" />
+<response cycle="000" cvus="002" thread="001" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417646370.36" duration="2.82263612747" />
+<response cycle="000" cvus="002" thread="000" suite="Critical" name="my_test" step="002" number="001" type="get" result="Successful" url="/" code="200" description="Get root URL" time="1417646373.1" duration="1.29630684853" />
+<response cycle="000" cvus="002" thread="001" suite="Critical" name="my_test" step="002" number="001" type="get" result="Successful" url="/" code="200" description="Get root URL" time="1417646373.55" duration="0.940350055695" />
+<response cycle="001" cvus="006" thread="000" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="//past" code="200" description="View the past page" time="1417646406.82" duration="0.247811079025" />
+<response cycle="001" cvus="006" thread="003" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="//past" code="200" description="View the past page" time="1417646406.86" duration="0.228823184967" />
+<response cycle="001" cvus="006" thread="002" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="//past" code="200" description="View the past page" time="1417646406.85" duration="0.24112200737" />
+<response cycle="001" cvus="006" thread="001" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="//past" code="200" description="View the past page" time="1417646406.83" duration="0.254906892776" />
+<response cycle="001" cvus="006" thread="004" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="//past" code="200" description="View the past page" time="1417646406.87" duration="0.266453027725" />
+<response cycle="001" cvus="006" thread="005" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="//past" code="200" description="View the past page" time="1417646406.88" duration="0.258152961731" />
+<response cycle="001" cvus="006" thread="000" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417646407.07" duration="1.08800792694" />
+<response cycle="001" cvus="006" thread="005" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417646407.14" duration="1.32370114326" />
+<response cycle="001" cvus="006" thread="004" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417646407.14" duration="1.32736992836" />
+<response cycle="001" cvus="006" thread="003" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417646407.09" duration="1.38755297661" />
+<response cycle="001" cvus="006" thread="000" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417646408.16" duration="1.10238695145" />
+<response cycle="001" cvus="006" thread="003" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417646408.48" duration="0.943378925323" />
+<response cycle="001" cvus="006" thread="005" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417646408.46" duration="0.981567144394" />
+<response cycle="001" cvus="006" thread="004" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417646408.47" duration="1.03112411499" />
+<response cycle="001" cvus="006" thread="000" suite="Critical" name="my_test" step="002" number="001" type="get" result="Successful" url="/" code="200" description="Get root URL" time="1417646409.37" duration="0.151283979416" />
+<response cycle="001" cvus="006" thread="002" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417646407.09" duration="2.54562592506" />
+<response cycle="001" cvus="006" thread="005" suite="Critical" name="my_test" step="002" number="001" type="get" result="Successful" url="/" code="200" description="Get root URL" time="1417646409.5" duration="0.20404791832" />
+<response cycle="001" cvus="006" thread="001" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417646407.09" duration="2.67592716217" />
+<response cycle="001" cvus="006" thread="003" suite="Critical" name="my_test" step="002" number="001" type="get" result="Successful" url="/" code="200" description="Get root URL" time="1417646409.85" duration="0.530944108963" />
+<response cycle="001" cvus="006" thread="004" suite="Critical" name="my_test" step="002" number="001" type="get" result="Successful" url="/" code="200" description="Get root URL" time="1417646409.98" duration="0.462949037552" />
+<response cycle="001" cvus="006" thread="002" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417646409.63" duration="2.95518922806" />
+<response cycle="001" cvus="006" thread="001" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417646409.77" duration="3.6240260601" />
+<response cycle="001" cvus="006" thread="002" suite="Critical" name="my_test" step="002" number="001" type="get" result="Successful" url="/" code="200" description="Get root URL" time="1417646412.83" duration="0.923902988434" />
+<response cycle="001" cvus="006" thread="001" suite="Critical" name="my_test" step="002" number="001" type="get" result="Successful" url="/" code="200" description="Get root URL" time="1417646413.65" duration="1.3519589901" />
+</funkload>
