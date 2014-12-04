@@ -19,24 +19,36 @@ class Critical(FunkLoadTestCase):
 
     def my_test(self):
 	server_url = self.server_url
-	self.get(server_url + "/past", description="View the past page")
-	self.get(server_url + "/past", description="View the past page again")
 	self.get(server_url, description='Get root URL')
+	
 	self.get(server_url + "/users/sign_up", description="View the user signup page")
 	auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+	
 	email = Lipsum().getUniqWord() + "@" + Lipsum().getWord() + ".com"
+<<<<<<< HEAD
 	name = Lipsum().getUniqWord()
 	self.post(self.server_url + "/users",
 		params=[['user[name]',name],
+=======
+	username = Lipsum().getUniqWord();
+
+	self.post(self.server_url + "/users",
+		params=[['user[name]',username],
+>>>>>>> 066396b06b93f69da0f67c5d25bf47fad207a0b2
 	    ['user[email]', email],
 	      ['user[password]', 'alphabet'],
 	      ['user[password_confirmation]', 'alphabet'],
 	      ['authenticity_token', auth_token],
 	      ['commit', 'Sign up']],
 	    description="Create New User")
+<<<<<<< HEAD
 	
 
 	#self.get(server_url + "/index", description="View the indexpage2")
+=======
+	#self.get(server_url + "/new", description="View the new partypage")
+	self.get(server_url + "/index", description="View the indexpage")
+>>>>>>> 066396b06b93f69da0f67c5d25bf47fad207a0b2
 	#auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
 	self.get(server_url + "/new", description="View the past page2")
 	auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')

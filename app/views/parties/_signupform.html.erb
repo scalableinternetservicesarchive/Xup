@@ -1,6 +1,6 @@
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
-    <%# </div> %>
+    
     <%= f.fields_for :profile do |profile_form| %>
     <div class="form-group">
         <%= profile_form.input :first_name, required: true, autofocus: true, class: "form-control", placeholder: "Enter First Name" %>
