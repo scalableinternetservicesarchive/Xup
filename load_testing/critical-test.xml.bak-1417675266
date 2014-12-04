@@ -1,0 +1,1424 @@
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="001" number="001" type="get" result="Successful" url="" code="200" description="Get root URL" time="1417675157.84" duration="0.176707029343" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417675158.02" duration="0.565497875214" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1417675158.59" duration="0.0125291347504" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1417675158.6" duration="0.00725197792053" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1417675158.61" duration="0.0069100856781" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1417675158.61" duration="0.00703501701355" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1417675158.62" duration="0.00678515434265" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1417675158.63" duration="0.00746297836304" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1417675158.64" duration="0.00693583488464" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="001" number="010" type="image" result="Successful" url="/2013/05/img_1380.jpg" code="200" description="" time="1417675158.65" duration="3.14009594917" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="001" number="011" type="image" result="Successful" url="/2014/04/maxresdefault.jpg" code="200" description="" time="1417675161.79" duration="0.136853933334" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="001" number="012" type="image" result="Successful" url="/_-tDuDhxev0k/TLKuMBwh6sI/AAAAAAAAACc/hjNcFNVbBEI/s1600/IMG_0091-1.jpg" code="200" description="" time="1417675161.92" duration="0.167362928391" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="001" number="013" type="image" result="Successful" url="/img/photos/2009/04/08/P4040977_t479.jpg?6626f76dcd72edc2e28f46812c7026450162bdb2" code="200" description="" time="1417675162.09" duration="0.665046930313" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="001" number="014" type="image" result="Successful" url="/rapgenius/beer_pong1.jpg" code="200" description="" time="1417675162.76" duration="1.79463505745" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="001" number="015" type="image" result="Successful" url="/images/drink.19_1.jpg" code="200" description="" time="1417675164.55" duration="0.154177188873" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="002" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1417675164.71" duration="0.14018702507" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="003" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1417675164.85" duration="0.124519824982" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="003" number="002" type="get" result="Successful" url="/" code="200" description="" time="1417675164.98" duration="0.153470993042" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="004" number="001" type="get" result="Successful" url="/index" code="200" description="View the indexpage" time="1417675165.14" duration="0.15515089035" />
+<response cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party" step="005" number="001" type="post" result="Failure" url="/new" code="404" description="username created a New Party" time="1417675165.3" duration="0.0600411891937">
+  <headers>
+    <header name="content-length" value="39649" />
+    <header name="connection" value="close" />
+    <header name="x-request-id" value="af17e64a-715f-427f-8d09-436db686b747" />
+    <header name="server" value="WEBrick/1.3.1 (Ruby/2.1.3/2014-09-19)" />
+    <header name="x-runtime" value="0.055635" />
+    <header name="date" value="Thu, 04 Dec 2014 06:39:25 GMT" />
+    <header name="content-type" value="text/html; charset=utf-8" />
+  </headers>
+  <body><![CDATA[
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Action Controller: Exception caught</title>
+  <style>
+    body {
+      background-color: #FAFAFA;
+      color: #333;
+      margin: 0px;
+    }
+
+    body, p, ol, ul, td {
+      font-family: helvetica, verdana, arial, sans-serif;
+      font-size:   13px;
+      line-height: 18px;
+    }
+
+    pre {
+      font-size: 11px;
+      white-space: pre-wrap;
+    }
+
+    pre.box {
+      border: 1px solid #EEE;
+      padding: 10px;
+      margin: 0px;
+      width: 958px;
+    }
+
+    header {
+      color: #F0F0F0;
+      background: #C52F24;
+      padding: 0.5em 1.5em;
+    }
+
+    h1 {
+      margin: 0.2em 0;
+      line-height: 1.1em;
+      font-size: 2em;
+    }
+
+    h2 {
+      color: #C52F24;
+      line-height: 25px;
+    }
+
+    .details {
+      border: 1px solid #D0D0D0;
+      border-radius: 4px;
+      margin: 1em 0px;
+      display: block;
+      width: 978px;
+    }
+
+    .summary {
+      padding: 8px 15px;
+      border-bottom: 1px solid #D0D0D0;
+      display: block;
+    }
+
+    .details pre {
+      margin: 5px;
+      border: none;
+    }
+
+    #container {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 1.5em;
+    }
+
+    .source * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .source {
+      border: 1px solid #D9D9D9;
+      background: #ECECEC;
+      width: 978px;
+    }
+
+    .source pre {
+      padding: 10px 0px;
+      border: none;
+    }
+
+    .source .data {
+      font-size: 80%;
+      overflow: auto;
+      background-color: #FFF;
+    }
+
+    .info {
+      padding: 0.5em;
+    }
+
+    .source .data .line_numbers {
+      background-color: #ECECEC;
+      color: #AAA;
+      padding: 1em .5em;
+      border-right: 1px solid #DDD;
+      text-align: right;
+    }
+
+    .line {
+      padding-left: 10px;
+    }
+
+    .line:hover {
+      background-color: #F6F6F6;
+    }
+
+    .line.active {
+      background-color: #FFCCCC;
+    }
+
+    a { color: #980905; }
+    a:visited { color: #666; }
+    a:hover { color: #C52F24; }
+
+      #route_table {
+    margin: 0 auto 0;
+    border-collapse: collapse;
+  }
+
+  #route_table td {
+    padding: 0 30px;
+  }
+
+  #route_table tr.bottom th {
+    padding-bottom: 10px;
+    line-height: 15px;
+  }
+
+  #route_table .matched_paths {
+    background-color: LightGoldenRodYellow;
+  }
+
+  #route_table .matched_paths {
+    border-bottom: solid 3px SlateGrey;
+  }
+
+  #path_search {
+    width: 80%;
+    font-size: inherit;
+  }
+
+  </style>
+
+  <script>
+    var toggle = function(id) {
+      var s = document.getElementById(id).style;
+      s.display = s.display == 'none' ? 'block' : 'none';
+      return false;
+    }
+    var show = function(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+    var hide = function(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+    var toggleTrace = function() {
+      return toggle('blame_trace');
+    }
+    var toggleSessionDump = function() {
+      return toggle('session_dump');
+    }
+    var toggleEnvDump = function() {
+      return toggle('env_dump');
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>Routing Error</h1>
+</header>
+<div id="container">
+  <h2>No route matches [POST] &quot;/new&quot;</h2>
+
+  
+<p><code>Rails.root: /Users/larsbrusletto/Documents/UCSB_classes/Xup</code></p>
+
+<div id="traces">
+    <a href="#" onclick="hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);; return false;">Application Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);; return false;">Framework Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);; return false;">Full Trace</a> 
+
+    <div id="Application-Trace" style="display: block;">
+      <pre><code></code></pre>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+      <pre><code>actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service&#39;
+/usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run&#39;
+/usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+    <div id="Full-Trace" style="display: none;">
+      <pre><code>actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service&#39;
+/usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run&#39;
+/usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+</div>
+
+
+    <h2>
+      Routes
+    </h2>
+
+    <p>
+      Routes match in priority from top to bottom
+    </p>
+
+    
+<table id='route_table' class='route_table'>
+  <thead>
+    <tr>
+      <th>Helper</th>
+      <th>HTTP Verb</th>
+      <th>Path</th>
+      <th>Controller#Action</th>
+    </tr>
+    <tr class='bottom'>
+      <th>
+        <a data-route-helper="_path" href="#" title="Returns a relative path (without the http or domain)">Path</a> /
+        <a data-route-helper="_url" href="#" title="Returns an absolute url (with the http and domain)">Url</a>
+      </th>
+      <th>
+      </th>
+      <th>
+        <input id="path_search" name="path[]" placeholder="Path Match" type="search" />
+      </th>
+      <th>
+      </th>
+    </tr>
+  </thead>
+  <tbody class='matched_paths' id='matched_paths'>
+  </tbody>
+  <tbody>
+    <tr class='route_row' data-helper='path'>
+  <td data-route-name='join_members'>
+      join_members<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/join_members(.:format)' data-regexp='^\/join_members(?:\.([^\/.?]+))?$'>
+    /join_members(.:format)
+  </td>
+  <td data-route-reqs='join_members#index'>
+    join_members#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/join_members(.:format)' data-regexp='^\/join_members(?:\.([^\/.?]+))?$'>
+    /join_members(.:format)
+  </td>
+  <td data-route-reqs='join_members#create'>
+    join_members#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_join_member'>
+      new_join_member<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/join_members/new(.:format)' data-regexp='^\/join_members\/new(?:\.([^\/.?]+))?$'>
+    /join_members/new(.:format)
+  </td>
+  <td data-route-reqs='join_members#new'>
+    join_members#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_join_member'>
+      edit_join_member<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/join_members/:id/edit(.:format)' data-regexp='^\/join_members\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /join_members/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='join_members#edit'>
+    join_members#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='join_member'>
+      join_member<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/join_members/:id(.:format)' data-regexp='^\/join_members\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /join_members/:id(.:format)
+  </td>
+  <td data-route-reqs='join_members#show'>
+    join_members#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/join_members/:id(.:format)' data-regexp='^\/join_members\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /join_members/:id(.:format)
+  </td>
+  <td data-route-reqs='join_members#update'>
+    join_members#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/join_members/:id(.:format)' data-regexp='^\/join_members\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /join_members/:id(.:format)
+  </td>
+  <td data-route-reqs='join_members#update'>
+    join_members#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/join_members/:id(.:format)' data-regexp='^\/join_members\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /join_members/:id(.:format)
+  </td>
+  <td data-route-reqs='join_members#destroy'>
+    join_members#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='reject'>
+      reject<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/partyrequest/reject(.:format)' data-regexp='^\/partyrequest\/reject(?:\.([^\/.?]+))?$'>
+    /partyrequest/reject(.:format)
+  </td>
+  <td data-route-reqs='join_members#reject'>
+    join_members#reject
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='accept'>
+      accept<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/partyrequest/accept(.:format)' data-regexp='^\/partyrequest\/accept(?:\.([^\/.?]+))?$'>
+    /partyrequest/accept(.:format)
+  </td>
+  <td data-route-reqs='join_members#accept'>
+    join_members#accept
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='join'>
+      join<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/partyrequest/join(.:format)' data-regexp='^\/partyrequest\/join(?:\.([^\/.?]+))?$'>
+    /partyrequest/join(.:format)
+  </td>
+  <td data-route-reqs='join_members#join'>
+    join_members#join
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='paperclip_images'>
+      paperclip_images<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/paperclip_images(.:format)' data-regexp='^\/paperclip_images(?:\.([^\/.?]+))?$'>
+    /paperclip_images(.:format)
+  </td>
+  <td data-route-reqs='paperclip_images#index'>
+    paperclip_images#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/paperclip_images(.:format)' data-regexp='^\/paperclip_images(?:\.([^\/.?]+))?$'>
+    /paperclip_images(.:format)
+  </td>
+  <td data-route-reqs='paperclip_images#create'>
+    paperclip_images#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_paperclip_image'>
+      new_paperclip_image<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/paperclip_images/new(.:format)' data-regexp='^\/paperclip_images\/new(?:\.([^\/.?]+))?$'>
+    /paperclip_images/new(.:format)
+  </td>
+  <td data-route-reqs='paperclip_images#new'>
+    paperclip_images#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_paperclip_image'>
+      edit_paperclip_image<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/paperclip_images/:id/edit(.:format)' data-regexp='^\/paperclip_images\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /paperclip_images/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='paperclip_images#edit'>
+    paperclip_images#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='paperclip_image'>
+      paperclip_image<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/paperclip_images/:id(.:format)' data-regexp='^\/paperclip_images\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /paperclip_images/:id(.:format)
+  </td>
+  <td data-route-reqs='paperclip_images#show'>
+    paperclip_images#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/paperclip_images/:id(.:format)' data-regexp='^\/paperclip_images\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /paperclip_images/:id(.:format)
+  </td>
+  <td data-route-reqs='paperclip_images#update'>
+    paperclip_images#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/paperclip_images/:id(.:format)' data-regexp='^\/paperclip_images\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /paperclip_images/:id(.:format)
+  </td>
+  <td data-route-reqs='paperclip_images#update'>
+    paperclip_images#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/paperclip_images/:id(.:format)' data-regexp='^\/paperclip_images\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /paperclip_images/:id(.:format)
+  </td>
+  <td data-route-reqs='paperclip_images#destroy'>
+    paperclip_images#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='profiles'>
+      profiles<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/profiles(.:format)' data-regexp='^\/profiles(?:\.([^\/.?]+))?$'>
+    /profiles(.:format)
+  </td>
+  <td data-route-reqs='profiles#index'>
+    profiles#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/profiles(.:format)' data-regexp='^\/profiles(?:\.([^\/.?]+))?$'>
+    /profiles(.:format)
+  </td>
+  <td data-route-reqs='profiles#create'>
+    profiles#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_profile'>
+      new_profile<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/profiles/new(.:format)' data-regexp='^\/profiles\/new(?:\.([^\/.?]+))?$'>
+    /profiles/new(.:format)
+  </td>
+  <td data-route-reqs='profiles#new'>
+    profiles#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_profile'>
+      edit_profile<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/profiles/:id/edit(.:format)' data-regexp='^\/profiles\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /profiles/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='profiles#edit'>
+    profiles#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='profile'>
+      profile<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/profiles/:id(.:format)' data-regexp='^\/profiles\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /profiles/:id(.:format)
+  </td>
+  <td data-route-reqs='profiles#show'>
+    profiles#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/profiles/:id(.:format)' data-regexp='^\/profiles\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /profiles/:id(.:format)
+  </td>
+  <td data-route-reqs='profiles#update'>
+    profiles#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/profiles/:id(.:format)' data-regexp='^\/profiles\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /profiles/:id(.:format)
+  </td>
+  <td data-route-reqs='profiles#update'>
+    profiles#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/profiles/:id(.:format)' data-regexp='^\/profiles\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /profiles/:id(.:format)
+  </td>
+  <td data-route-reqs='profiles#destroy'>
+    profiles#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_user_session'>
+      new_user_session<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/users/sign_in(.:format)' data-regexp='^\/users\/sign_in(?:\.([^\/.?]+))?$'>
+    /users/sign_in(.:format)
+  </td>
+  <td data-route-reqs='devise/sessions#new'>
+    devise/sessions#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='user_session'>
+      user_session<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/users/sign_in(.:format)' data-regexp='^\/users\/sign_in(?:\.([^\/.?]+))?$'>
+    /users/sign_in(.:format)
+  </td>
+  <td data-route-reqs='devise/sessions#create'>
+    devise/sessions#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='destroy_user_session'>
+      destroy_user_session<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/users/sign_out(.:format)' data-regexp='^\/users\/sign_out(?:\.([^\/.?]+))?$'>
+    /users/sign_out(.:format)
+  </td>
+  <td data-route-reqs='devise/sessions#destroy'>
+    devise/sessions#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='user_omniauth_authorize'>
+      user_omniauth_authorize<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET|POST'>
+    GET|POST
+  </td>
+  <td data-route-path='/users/auth/:provider(.:format)' data-regexp='^\/users\/auth\/((facebook))(?:\.([^\/.?]+))?$'>
+    /users/auth/:provider(.:format)
+  </td>
+  <td data-route-reqs='omniauth_callbacks#passthru {:provider=&gt;/facebook/}'>
+    omniauth_callbacks#passthru {:provider=&gt;/facebook/}
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='user_omniauth_callback'>
+      user_omniauth_callback<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET|POST'>
+    GET|POST
+  </td>
+  <td data-route-path='/users/auth/:action/callback(.:format)' data-regexp='^\/users\/auth\/((facebook))\/callback(?:\.([^\/.?]+))?$'>
+    /users/auth/:action/callback(.:format)
+  </td>
+  <td data-route-reqs='omniauth_callbacks#:action'>
+    omniauth_callbacks#:action
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='user_password'>
+      user_password<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/users/password(.:format)' data-regexp='^\/users\/password(?:\.([^\/.?]+))?$'>
+    /users/password(.:format)
+  </td>
+  <td data-route-reqs='devise/passwords#create'>
+    devise/passwords#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_user_password'>
+      new_user_password<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/users/password/new(.:format)' data-regexp='^\/users\/password\/new(?:\.([^\/.?]+))?$'>
+    /users/password/new(.:format)
+  </td>
+  <td data-route-reqs='devise/passwords#new'>
+    devise/passwords#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_user_password'>
+      edit_user_password<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/users/password/edit(.:format)' data-regexp='^\/users\/password\/edit(?:\.([^\/.?]+))?$'>
+    /users/password/edit(.:format)
+  </td>
+  <td data-route-reqs='devise/passwords#edit'>
+    devise/passwords#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/users/password(.:format)' data-regexp='^\/users\/password(?:\.([^\/.?]+))?$'>
+    /users/password(.:format)
+  </td>
+  <td data-route-reqs='devise/passwords#update'>
+    devise/passwords#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/users/password(.:format)' data-regexp='^\/users\/password(?:\.([^\/.?]+))?$'>
+    /users/password(.:format)
+  </td>
+  <td data-route-reqs='devise/passwords#update'>
+    devise/passwords#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='cancel_user_registration'>
+      cancel_user_registration<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/users/cancel(.:format)' data-regexp='^\/users\/cancel(?:\.([^\/.?]+))?$'>
+    /users/cancel(.:format)
+  </td>
+  <td data-route-reqs='registrations#cancel'>
+    registrations#cancel
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='user_registration'>
+      user_registration<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/users(.:format)' data-regexp='^\/users(?:\.([^\/.?]+))?$'>
+    /users(.:format)
+  </td>
+  <td data-route-reqs='registrations#create'>
+    registrations#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_user_registration'>
+      new_user_registration<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/users/sign_up(.:format)' data-regexp='^\/users\/sign_up(?:\.([^\/.?]+))?$'>
+    /users/sign_up(.:format)
+  </td>
+  <td data-route-reqs='registrations#new'>
+    registrations#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_user_registration'>
+      edit_user_registration<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/users/edit(.:format)' data-regexp='^\/users\/edit(?:\.([^\/.?]+))?$'>
+    /users/edit(.:format)
+  </td>
+  <td data-route-reqs='registrations#edit'>
+    registrations#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/users(.:format)' data-regexp='^\/users(?:\.([^\/.?]+))?$'>
+    /users(.:format)
+  </td>
+  <td data-route-reqs='registrations#update'>
+    registrations#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/users(.:format)' data-regexp='^\/users(?:\.([^\/.?]+))?$'>
+    /users(.:format)
+  </td>
+  <td data-route-reqs='registrations#update'>
+    registrations#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/users(.:format)' data-regexp='^\/users(?:\.([^\/.?]+))?$'>
+    /users(.:format)
+  </td>
+  <td data-route-reqs='registrations#destroy'>
+    registrations#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='user_confirmation'>
+      user_confirmation<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/users/confirmation(.:format)' data-regexp='^\/users\/confirmation(?:\.([^\/.?]+))?$'>
+    /users/confirmation(.:format)
+  </td>
+  <td data-route-reqs='devise/confirmations#create'>
+    devise/confirmations#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_user_confirmation'>
+      new_user_confirmation<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/users/confirmation/new(.:format)' data-regexp='^\/users\/confirmation\/new(?:\.([^\/.?]+))?$'>
+    /users/confirmation/new(.:format)
+  </td>
+  <td data-route-reqs='devise/confirmations#new'>
+    devise/confirmations#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/users/confirmation(.:format)' data-regexp='^\/users\/confirmation(?:\.([^\/.?]+))?$'>
+    /users/confirmation(.:format)
+  </td>
+  <td data-route-reqs='devise/confirmations#show'>
+    devise/confirmations#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='finish_signup'>
+      finish_signup<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET|PATCH'>
+    GET|PATCH
+  </td>
+  <td data-route-path='/users/:id/finish_signup(.:format)' data-regexp='^\/users\/([^\/.?]+)\/finish_signup(?:\.([^\/.?]+))?$'>
+    /users/:id/finish_signup(.:format)
+  </td>
+  <td data-route-reqs='users#finish_signup'>
+    users#finish_signup
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='root'>
+      root<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/' data-regexp='^\/$'>
+    /
+  </td>
+  <td data-route-reqs='parties#landingPage'>
+    parties#landingPage
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='parties'>
+      parties<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/parties(.:format)' data-regexp='^\/parties(?:\.([^\/.?]+))?$'>
+    /parties(.:format)
+  </td>
+  <td data-route-reqs='parties#index'>
+    parties#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/parties(.:format)' data-regexp='^\/parties(?:\.([^\/.?]+))?$'>
+    /parties(.:format)
+  </td>
+  <td data-route-reqs='parties#create'>
+    parties#create
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new_party'>
+      new_party<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/parties/new(.:format)' data-regexp='^\/parties\/new(?:\.([^\/.?]+))?$'>
+    /parties/new(.:format)
+  </td>
+  <td data-route-reqs='parties#new'>
+    parties#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='edit_party'>
+      edit_party<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/parties/:id/edit(.:format)' data-regexp='^\/parties\/([^\/.?]+)\/edit(?:\.([^\/.?]+))?$'>
+    /parties/:id/edit(.:format)
+  </td>
+  <td data-route-reqs='parties#edit'>
+    parties#edit
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='party'>
+      party<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/parties/:id(.:format)' data-regexp='^\/parties\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /parties/:id(.:format)
+  </td>
+  <td data-route-reqs='parties#show'>
+    parties#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PATCH'>
+    PATCH
+  </td>
+  <td data-route-path='/parties/:id(.:format)' data-regexp='^\/parties\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /parties/:id(.:format)
+  </td>
+  <td data-route-reqs='parties#update'>
+    parties#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='PUT'>
+    PUT
+  </td>
+  <td data-route-path='/parties/:id(.:format)' data-regexp='^\/parties\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /parties/:id(.:format)
+  </td>
+  <td data-route-reqs='parties#update'>
+    parties#update
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='DELETE'>
+    DELETE
+  </td>
+  <td data-route-path='/parties/:id(.:format)' data-regexp='^\/parties\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /parties/:id(.:format)
+  </td>
+  <td data-route-reqs='parties#destroy'>
+    parties#destroy
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='upcoming'>
+      upcoming<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/upcoming(.:format)' data-regexp='^\/upcoming(?:\.([^\/.?]+))?$'>
+    /upcoming(.:format)
+  </td>
+  <td data-route-reqs='parties#upcoming'>
+    parties#upcoming
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='about'>
+      about<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/about(.:format)' data-regexp='^\/about(?:\.([^\/.?]+))?$'>
+    /about(.:format)
+  </td>
+  <td data-route-reqs='parties#about'>
+    parties#about
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='help'>
+      help<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/help(.:format)' data-regexp='^\/help(?:\.([^\/.?]+))?$'>
+    /help(.:format)
+  </td>
+  <td data-route-reqs='parties#help'>
+    parties#help
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='index'>
+      index<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/index(.:format)' data-regexp='^\/index(?:\.([^\/.?]+))?$'>
+    /index(.:format)
+  </td>
+  <td data-route-reqs='parties#index'>
+    parties#index
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='past'>
+      past<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/past(.:format)' data-regexp='^\/past(?:\.([^\/.?]+))?$'>
+    /past(.:format)
+  </td>
+  <td data-route-reqs='parties#past'>
+    parties#past
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='new'>
+      new<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/new(.:format)' data-regexp='^\/new(?:\.([^\/.?]+))?$'>
+    /new(.:format)
+  </td>
+  <td data-route-reqs='parties#new'>
+    parties#new
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='login'>
+      login<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/login(.:format)' data-regexp='^\/login(?:\.([^\/.?]+))?$'>
+    /login(.:format)
+  </td>
+  <td data-route-reqs='parties#login'>
+    parties#login
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='signup'>
+      signup<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/signup(.:format)' data-regexp='^\/signup(?:\.([^\/.?]+))?$'>
+    /signup(.:format)
+  </td>
+  <td data-route-reqs='parties#signup'>
+    parties#signup
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='logout'>
+      logout<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/logout(.:format)' data-regexp='^\/logout(?:\.([^\/.?]+))?$'>
+    /logout(.:format)
+  </td>
+  <td data-route-reqs='parties#logout'>
+    parties#logout
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='myparties'>
+      myparties<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/myparties(.:format)' data-regexp='^\/myparties(?:\.([^\/.?]+))?$'>
+    /myparties(.:format)
+  </td>
+  <td data-route-reqs='parties#myparties'>
+    parties#myparties
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='closeparties'>
+      closeparties<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/closeparties(.:format)' data-regexp='^\/closeparties(?:\.([^\/.?]+))?$'>
+    /closeparties(.:format)
+  </td>
+  <td data-route-reqs='parties#close_parties'>
+    parties#close_parties
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='partyrequest'>
+      partyrequest<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/partyrequest(.:format)' data-regexp='^\/partyrequest(?:\.([^\/.?]+))?$'>
+    /partyrequest(.:format)
+  </td>
+  <td data-route-reqs='parties#partyrequest'>
+    parties#partyrequest
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='myinvites'>
+      myinvites<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/myinvites(.:format)' data-regexp='^\/myinvites(?:\.([^\/.?]+))?$'>
+    /myinvites(.:format)
+  </td>
+  <td data-route-reqs='parties#partyinvites'>
+    parties#partyinvites
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name=''>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/profiles(.:format)' data-regexp='^\/profiles(?:\.([^\/.?]+))?$'>
+    /profiles(.:format)
+  </td>
+  <td data-route-reqs='profiles#show'>
+    profiles#show
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='createasinvite'>
+      createasinvite<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='POST'>
+    POST
+  </td>
+  <td data-route-path='/createasinvite(.:format)' data-regexp='^\/createasinvite(?:\.([^\/.?]+))?$'>
+    /createasinvite(.:format)
+  </td>
+  <td data-route-reqs='join_members#createasinvite'>
+    join_members#createasinvite
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='invitetoparty'>
+      invitetoparty<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/invitetoparty/:id(.:format)' data-regexp='^\/invitetoparty\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /invitetoparty/:id(.:format)
+  </td>
+  <td data-route-reqs='parties#invitetoparty'>
+    parties#invitetoparty
+  </td>
+</tr>
+<tr class='route_row' data-helper='path'>
+  <td data-route-name='show'>
+      show<span class='helper'>_path</span>
+  </td>
+  <td data-route-verb='GET'>
+    GET
+  </td>
+  <td data-route-path='/profiles/:id(.:format)' data-regexp='^\/profiles\/([^\/.?]+)(?:\.([^\/.?]+))?$'>
+    /profiles/:id(.:format)
+  </td>
+  <td data-route-reqs='profiles#show'>
+    profiles#show
+  </td>
+</tr>
+
+  </tbody>
+</table>
+
+<script type='text/javascript'>
+  function each(elems, func) {
+    if (!elems instanceof Array) { elems = [elems]; }
+    for (var i = 0, len = elems.length; i < len; i++) {
+      func(elems[i]);
+    }
+  }
+
+  function setValOn(elems, val) {
+    each(elems, function(elem) {
+      elem.innerHTML = val;
+    });
+  }
+
+  function onClick(elems, func) {
+    each(elems, function(elem) {
+      elem.onclick = func;
+    });
+  }
+
+  // Enables functionality to toggle between `_path` and `_url` helper suffixes
+  function setupRouteToggleHelperLinks() {
+    var toggleLinks = document.querySelectorAll('#route_table [data-route-helper]');
+    onClick(toggleLinks, function(){
+      var helperTxt   = this.getAttribute("data-route-helper"),
+          helperElems = document.querySelectorAll('[data-route-name] span.helper');
+      setValOn(helperElems, helperTxt);
+    });
+  }
+
+  // takes an array of elements with a data-regexp attribute and
+  // passes their parent <tr> into the callback function
+  // if the regexp matches a given path
+  function eachElemsForPath(elems, path, func) {
+    each(elems, function(e){
+      var reg = e.getAttribute("data-regexp");
+      if (path.match(RegExp(reg))) {
+        func(e.parentNode.cloneNode(true));
+      }
+    })
+  }
+
+  // Ensure path always starts with a slash "/" and remove params or fragments
+  function sanitizePath(path) {
+    var path = path.charAt(0) == '/' ? path : "/" + path;
+    return path.replace(/\#.*|\?.*/, '');
+  }
+
+  // Enables path search functionality
+  function setupMatchPaths() {
+    var regexpElems     = document.querySelectorAll('#route_table [data-regexp]'),
+        pathElem        = document.querySelector('#path_search'),
+        selectedSection = document.querySelector('#matched_paths'),
+        noMatchText     = '<tr><th colspan="4">None</th></tr>';
+
+
+    // Remove matches if no path is present
+    pathElem.onblur = function(e) {
+      if (pathElem.value === "") selectedSection.innerHTML = "";
+    }
+
+    // On key press perform a search for matching paths
+    pathElem.onkeyup = function(e){
+      var path        = sanitizePath(pathElem.value),
+          defaultText = '<tr><th colspan="4">Paths Matching (' + escape(path) + '):</th></tr>';
+
+      // Clear out results section
+      selectedSection.innerHTML= defaultText;
+
+      // Display matches if they exist
+      eachElemsForPath(regexpElems, path, function(e){
+        selectedSection.appendChild(e);
+      });
+
+      // If no match present, tell the user
+      if (selectedSection.innerHTML === defaultText) {
+        selectedSection.innerHTML = selectedSection.innerHTML + noMatchText;
+      }
+    }
+  }
+
+  setupMatchPaths();
+  setupRouteToggleHelperLinks();
+</script>
+
+</div>
+
+
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="000" thread="001" suite="Critical" name="test_create_party"  time="1417675157.84" result="Failure" steps="5" duration="7.52075219154" connection_duration="7.48865699768" requests="20" pages="4" xmlrpc="0" redirects="1" images="6" links="8" traceback='Traceback (most recent call last):&#10;   File "/Users/larsbrusletto/Documents/UCSB_classes/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/larsbrusletto/Documents/UCSB_classes/Xup/load_testing/test_Critical.py", line 83, in test_create_party&#10;    description="username created a New Party")&#10;   File "/Users/larsbrusletto/Documents/UCSB_classes/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/larsbrusletto/Documents/UCSB_classes/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/larsbrusletto/Documents/UCSB_classes/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /new&#10;HTTP Response 404: Not Found&#10;' />

@@ -21,9 +21,7 @@ class Critical(FunkLoadTestCase):
     
 
     def my_test(self):
-
-
-	server_url = self.server_url
+    server_url = self.server_url
 	self.get(server_url + "/past", description="View the past page")
 	self.get(server_url + "/past", description="View the past page again")
 	self.get(server_url, description='Get root URL')
