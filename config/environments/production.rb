@@ -105,13 +105,4 @@ Rails.application.configure do
 
   Paperclip.options[:command_path] = "/usr/bin/"
 
-  # config paperclipp for AWS storage
-  # config.paperclip_defaults = {
-  #   :storage => :s3,
-  #   :s3_credentials => {
-  #     :bucket => ENV['AWS_BUCKET'],
-  #     :access_key_id => ENV['AKIAID7OJZWS6PCSA4JQ'],
-  #     :secret_access_key => ENV['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']
-  #   }
-  # }
 end
