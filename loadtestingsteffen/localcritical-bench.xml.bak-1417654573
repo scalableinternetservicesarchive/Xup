@@ -1,0 +1,36 @@
+<funkload version="1.16.1" time="2014-12-03T16:52:18.550801">
+<config key="sleep_time_min" value="0.0" />
+<config key="node" value="169-231-153-90.wireless.ucsb.edu" />
+<config key="startup_delay" value="0.01" />
+<config key="cycles" value="[1]" />
+<config key="cycle_time" value="1.0" />
+<config key="description" value="No test description" />
+<config key="configuration_file" value="/Users/larsbrusletto/Documents/UCSB_classes/Xup/loadtestingsteffen/Critical.conf" />
+<config key="class_title" value="Critical Path FunkLoad tests" />
+<config key="server_url" value="http://localhost:3000" />
+<config key="module" value="test_Critical" />
+<config key="id" value="test_critical_path" />
+<config key="class_description" value="Testing the critical path of the lab app" />
+<config key="sleep_time" value="0.01" />
+<config key="sleep_time_max" value="0.5" />
+<config key="duration" value="5" />
+<config key="method" value="test_critical_path" />
+<config key="log_xml" value="/Users/larsbrusletto/Documents/UCSB_classes/Xup/loadtestingsteffen/localcritical-bench.xml" />
+<config key="class" value="Critical" />
+<config key="python_version" value="2.7.6" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="test_critical_path" step="001" number="001" type="get" result="Successful" url="" code="200" description="Get root URL" time="1417654338.55" duration="0.160354852676" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="test_critical_path" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417654338.71" duration="0.0587718486786" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="test_critical_path" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1417654338.77" duration="0.00845813751221" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="test_critical_path" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1417654338.78" duration="0.00695991516113" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="test_critical_path" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1417654338.79" duration="0.00687694549561" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="test_critical_path" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1417654338.8" duration="0.00731682777405" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="test_critical_path" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1417654338.8" duration="0.00679516792297" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="test_critical_path" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1417654338.81" duration="0.00796604156494" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="test_critical_path" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1417654338.82" duration="0.00679683685303" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="test_critical_path" step="001" number="010" type="image" result="Successful" url="/2013/05/img_1380.jpg" code="200" description="" time="1417654338.83" duration="1.70737886429" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="test_critical_path" step="001" number="011" type="image" result="Successful" url="/2014/04/maxresdefault.jpg" code="200" description="" time="1417654340.54" duration="0.517868995667" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="test_critical_path" step="001" number="012" type="image" result="Successful" url="/_-tDuDhxev0k/TLKuMBwh6sI/AAAAAAAAACc/hjNcFNVbBEI/s1600/IMG_0091-1.jpg" code="200" description="" time="1417654341.05" duration="0.457415103912" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="test_critical_path" step="001" number="013" type="image" result="Successful" url="/img/photos/2009/04/08/P4040977_t479.jpg?6626f76dcd72edc2e28f46812c7026450162bdb2" code="200" description="" time="1417654341.51" duration="0.195422887802" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="test_critical_path" step="001" number="014" type="image" result="Successful" url="/rapgenius/beer_pong1.jpg" code="200" description="" time="1417654341.71" duration="1.12142086029" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="test_critical_path" step="001" number="015" type="image" result="Successful" url="/images/drink.19_1.jpg" code="200" description="" time="1417654342.83" duration="0.483803033829" />
+</funkload>

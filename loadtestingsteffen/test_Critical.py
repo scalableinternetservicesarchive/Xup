@@ -19,15 +19,16 @@ class Critical(FunkLoadTestCase):
 
     def my_test(self):
 	server_url = self.server_url
-	self.get(server_url + "/past", description="View the past page")
-	self.get(server_url + "/past", description="View the past page again")
 	self.get(server_url, description='Get root URL')
+	
 	self.get(server_url + "/users/sign_up", description="View the user signup page")
 	auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+	
 	email = Lipsum().getUniqWord() + "@" + Lipsum().getWord() + ".com"
+	username = Lipsum().getUniqWord();
 
 	self.post(self.server_url + "/users",
-		params=[['user[name]',Lipsum().getUniqWord()],
+		params=[['user[name]',username],
 	    ['user[email]', email],
 	      ['user[password]', 'alphabet'],
 	      ['user[password_confirmation]', 'alphabet'],
@@ -35,7 +36,7 @@ class Critical(FunkLoadTestCase):
 	      ['commit', 'Sign up']],
 	    description="Create New User")
 	#self.get(server_url + "/new", description="View the new partypage")
-	self.get(server_url + "/index", description="View the indexpage2")
+	self.get(server_url + "/index", description="View the indexpage")
 	#auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
 
     def test_critical_path(self):

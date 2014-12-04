@@ -65,7 +65,6 @@
                 <li id="nav-logout"><%= link_to 'Log Out', destroy_user_session_path,
                     method: :delete, data: {confirm: 'Are you sure?' }%></li>
 
-                <!-- <li><%= link_to "Paperclip", paperclip_images_path %></li> -->
             <% else %>
               <li id="nav-login"><%= link_to 'Log In', new_user_session_path %></li>
               <li id="nav-signup"><%= link_to 'Sign Up', new_user_registration_path %></li>
@@ -76,7 +75,6 @@
               
               <li id="nav-about" <%if current_page?(about_path)%> class="active"<%end%>><a href="/about">About</a></li>
               <li id="nav-help"<%if current_page?(help_path)%> class="active"<%end%>><a href="/help">Help</a></li>
-               <%# <li><a><%=request.location.city%></a></li> %>
           </ul>
         </ul>
       </div>
