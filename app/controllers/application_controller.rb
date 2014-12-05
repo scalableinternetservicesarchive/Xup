@@ -16,10 +16,11 @@ class ApplicationController < ActionController::Base
     # Redirect to the 'finish_signup' page if the user
     # email hasn't been verified yet
     if current_user && !current_user.email_verified?
-
+      # change the redirect to:
+      # # redirect to '/profiles/4/edit'  after signing up first time
+      # if user allready exist redirect to '/upcoming'
 
       redirect_to finish_signup_path(current_user)
-      
     end
   end
 

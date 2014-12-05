@@ -57,7 +57,9 @@ gem 'bootstrap-sass', '~> 3.2.0.2' # i think we need to add bootstrap
 # https://github.com/thoughtbot/paperclip
 gem "paperclip", "~> 4.2" #Paperclip is a gem that allows you to upload images
 
-gem 'aws-sdk'
+# aws-sdk will give errors on ec2, until we now how to fix it, we will not use aws-sdk
+# aws-sdk is used for uploading pictures to s3 on aws
+#gem 'aws-sdk'
 
 gem 'devise'
 

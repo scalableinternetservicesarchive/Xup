@@ -169,6 +169,7 @@ class Critical(FunkLoadTestCase):
 	      ['authenticity_token', auth_token],
 	      ['commit', 'Create Submission']],
 	    description="Create New Submission")
+	
 	last_url = self.getLastUrl()
 	created_submission_id = last_url.split('/')[-1]
 
