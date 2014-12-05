@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
-
   # GET /users/:id.:format
   def show
     # authorize! :read, @user
@@ -28,6 +27,7 @@ class UsersController < ApplicationController
   end
 
   # GET/PATCH /users/:id/finish_signup
+  # def finish_signup == def create
   def finish_signup
     # authorize! :update, @user 
     if request.patch? && params[:user] #&& params[:user][:email]
@@ -36,6 +36,9 @@ class UsersController < ApplicationController
         #then just comment out the current_user.skip_reconfirmation! line below.
         # The real question is; do you trust Facebook users to provide you with a valid email address?
         @user.skip_reconfirmation!
+
+        @profile.update(profile_params)
+        #redirect_to profiles_url
       }
         sign_in(@user, :bypass => true)
         redirect_to @user, notice: 'Your profile was successfully updated.'

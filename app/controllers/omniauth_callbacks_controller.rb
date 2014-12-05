@@ -27,6 +27,7 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
       #'profiles#new'
     else
       finish_signup_path(resource)
+      # finish_signup_path is inside the users_controller.rb
     end
   end
 end
