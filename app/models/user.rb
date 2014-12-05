@@ -32,7 +32,6 @@ class User < ActiveRecord::Base
 
     # Create the user if needed
     if user.nil?
-
       p 'usernil'
 
       # Get the existing user by email if the provider gives us a verified email.
@@ -41,11 +40,6 @@ class User < ActiveRecord::Base
       email_is_verified = auth.info.email && (auth.info.verified || auth.info.verified_email)
       email = auth.info.email if email_is_verified
       user = User.where(:email => email).first if email
-
-      #if !user.email_is_verified
-      #  user.skip_confirmation!
-      #  user.save!
-      #end
 
       # Create the user if it's a new registration
       if user.nil?
