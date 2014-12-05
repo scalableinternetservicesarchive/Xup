@@ -5,6 +5,7 @@ $Id$
 """
 import unittest
 from random import random
+import random
 from funkload.FunkLoadTestCase import FunkLoadTestCase
 from funkload.utils import extract_token
 from funkload.Lipsum import Lipsum
@@ -49,6 +50,48 @@ class Critical(FunkLoadTestCase):
                   
                 description="Joining party")
 
+    def create_a_close_parties(self):
+
+        #creates many parties close to UCSB
+        server_url = self.server_url
+        self.get(server_url + "/users/sign_up", description="View the user signup page")
+        auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+        email = Lipsum().getUniqWord() + "@" + Lipsum().getWord() + ".com"
+        name = Lipsum().getUniqWord()
+       
+        self.post(self.server_url + "/users",
+                params=[['user[name]',name],
+                ['user[email]', email],
+                  ['user[password]', 'alphabet'],
+                  ['user[password_confirmation]', 'alphabet'],
+                  ['authenticity_token', auth_token],
+                  ['commit', 'Sign up']],
+                description="Create New User")
+        
+        self.get(server_url + "/new", description="create party page")
+        auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+       
+        rand = random.random()
+        
+        ran=rand/10
+        
+        lat=34.42
+        
+        lon=119.8+ran
+        
+        self.post(self.server_url + "/parties",
+            params=[['party[name]', Lipsum().getUniqWord()],
+              ['party[owner]', name],
+              ['party[date]', '2016-12-03'],
+              ['party[time]', '17:00'],
+              ['party[location]',''+str(lat)+', -'+str(lon)],
+              ['party[description]',Lipsum().getUniqWord()],
+              ['authenticity_token', auth_token],
+              ['commit', 'Sign up']],
+            description="Create New party")
+        
+
+        
 
     def join_all_parties(self):
         
