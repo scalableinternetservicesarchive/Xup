@@ -1,0 +1,581 @@
+<funkload version="1.16.1" time="2014-12-04T12:08:09.892137">
+<config key="sleep_time_min" value="0.0" />
+<config key="node" value="169-231-102-217.wireless.ucsb.edu" />
+<config key="startup_delay" value="0.01" />
+<config key="cycles" value="[1]" />
+<config key="cycle_time" value="2.0" />
+<config key="description" value="No test description" />
+<config key="configuration_file" value="/Users/steffenfb/programming/xup/load_testing/Critical.conf" />
+<config key="class_title" value="Critical Path FunkLoad tests" />
+<config key="server_url" value="http://localhost:3000" />
+<config key="module" value="test_Critical" />
+<config key="id" value="my_test" />
+<config key="class_description" value="Testing the critical path of the lab app" />
+<config key="sleep_time" value="0.01" />
+<config key="sleep_time_max" value="0.5" />
+<config key="duration" value="50" />
+<config key="method" value="my_test" />
+<config key="log_xml" value="/Users/steffenfb/programming/xup/load_testing/localcritical-bench.xml" />
+<config key="class" value="Critical" />
+<config key="python_version" value="2.7.5" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="Get root URL" time="1417723689.89" duration="0.146343946457" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417723690.04" duration="1.36135101318" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1417723691.4" duration="0.00739097595215" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1417723691.41" duration="0.00499701499939" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1417723691.41" duration="0.00480985641479" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1417723691.42" duration="0.00484991073608" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1417723691.42" duration="0.0049159526825" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1417723691.43" duration="0.00537800788879" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1417723691.44" duration="0.00482821464539" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="010" type="image" result="Successful" url="/2013/05/img_1380.jpg" code="200" description="" time="1417723691.44" duration="1.38518500328" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="011" type="image" result="Successful" url="/2014/04/maxresdefault.jpg" code="200" description="" time="1417723692.83" duration="0.578615188599" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="012" type="image" result="Successful" url="/_-tDuDhxev0k/TLKuMBwh6sI/AAAAAAAAACc/hjNcFNVbBEI/s1600/IMG_0091-1.jpg" code="200" description="" time="1417723693.41" duration="0.12174487114" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="013" type="image" result="Successful" url="/img/photos/2009/04/08/P4040977_t479.jpg?6626f76dcd72edc2e28f46812c7026450162bdb2" code="200" description="" time="1417723693.53" duration="0.193141937256" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="014" type="image" result="Successful" url="/rapgenius/beer_pong1.jpg" code="200" description="" time="1417723693.72" duration="0.890285015106" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="015" type="image" result="Successful" url="/images/drink.19_1.jpg" code="200" description="" time="1417723694.61" duration="0.0946321487427" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="002" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1417723694.85" duration="0.147266864777" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="003" number="001" type="post" result="Failure" url="/users" code="500" description="Create New User" time="1417723695.21" duration="0.179105043411">
+  <headers>
+    <header name="content-length" value="27992" />
+    <header name="connection" value="close" />
+    <header name="x-request-id" value="a6603422-ca94-49bf-a8e2-88a618228212" />
+    <header name="server" value="WEBrick/1.3.1 (Ruby/2.0.0/2014-05-08)" />
+    <header name="x-runtime" value="0.175012" />
+    <header name="date" value="Thu, 04 Dec 2014 20:08:15 GMT" />
+    <header name="content-type" value="text/html; charset=utf-8" />
+  </headers>
+  <body><![CDATA[
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Action Controller: Exception caught</title>
+  <style>
+    body {
+      background-color: #FAFAFA;
+      color: #333;
+      margin: 0px;
+    }
+
+    body, p, ol, ul, td {
+      font-family: helvetica, verdana, arial, sans-serif;
+      font-size:   13px;
+      line-height: 18px;
+    }
+
+    pre {
+      font-size: 11px;
+      white-space: pre-wrap;
+    }
+
+    pre.box {
+      border: 1px solid #EEE;
+      padding: 10px;
+      margin: 0px;
+      width: 958px;
+    }
+
+    header {
+      color: #F0F0F0;
+      background: #C52F24;
+      padding: 0.5em 1.5em;
+    }
+
+    h1 {
+      margin: 0.2em 0;
+      line-height: 1.1em;
+      font-size: 2em;
+    }
+
+    h2 {
+      color: #C52F24;
+      line-height: 25px;
+    }
+
+    .details {
+      border: 1px solid #D0D0D0;
+      border-radius: 4px;
+      margin: 1em 0px;
+      display: block;
+      width: 978px;
+    }
+
+    .summary {
+      padding: 8px 15px;
+      border-bottom: 1px solid #D0D0D0;
+      display: block;
+    }
+
+    .details pre {
+      margin: 5px;
+      border: none;
+    }
+
+    #container {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 1.5em;
+    }
+
+    .source * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .source {
+      border: 1px solid #D9D9D9;
+      background: #ECECEC;
+      width: 978px;
+    }
+
+    .source pre {
+      padding: 10px 0px;
+      border: none;
+    }
+
+    .source .data {
+      font-size: 80%;
+      overflow: auto;
+      background-color: #FFF;
+    }
+
+    .info {
+      padding: 0.5em;
+    }
+
+    .source .data .line_numbers {
+      background-color: #ECECEC;
+      color: #AAA;
+      padding: 1em .5em;
+      border-right: 1px solid #DDD;
+      text-align: right;
+    }
+
+    .line {
+      padding-left: 10px;
+    }
+
+    .line:hover {
+      background-color: #F6F6F6;
+    }
+
+    .line.active {
+      background-color: #FFCCCC;
+    }
+
+    a { color: #980905; }
+    a:visited { color: #666; }
+    a:hover { color: #C52F24; }
+
+    
+  </style>
+
+  <script>
+    var toggle = function(id) {
+      var s = document.getElementById(id).style;
+      s.display = s.display == 'none' ? 'block' : 'none';
+      return false;
+    }
+    var show = function(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+    var hide = function(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+    var toggleTrace = function() {
+      return toggle('blame_trace');
+    }
+    var toggleSessionDump = function() {
+      return toggle('session_dump');
+    }
+    var toggleEnvDump = function() {
+      return toggle('env_dump');
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>
+    LoadError
+      in RegistrationsController#create
+  </h1>
+</header>
+
+<div id="container">
+  <h2>cannot load such file -- aws-sdk (You may need to install the aws-sdk gem)</h2>
+
+  <div class="source">
+<div class="info">
+  Extracted source (around line <strong>#8</strong>):
+</div>
+<div class="data">
+  <table cellpadding="0" cellspacing="0" class="lines">
+      <tr>
+        <td>
+          <pre class="line_numbers">
+<span>6</span>
+<span>7</span>
+<span>8</span>
+<span>9</span>
+<span>10</span>
+<span>11</span>
+          </pre>
+        </td>
+<td width="100%">
+<pre>
+<div class="line">    resource.skip_confirmation!
+</div><div class="line">    
+</div><div class="line active">    resource.profile = Profile.new(
+</div><div class="line">      first_name: resource.name.split[0],
+</div><div class="line">      last_name: resource.name.split[1]
+</div><div class="line">    )
+</div>
+</pre>
+</td>
+    </tr>
+  </table>
+</div>
+</div>
+
+  
+<p><code>Rails.root: /Users/steffenfb/programming/xup</code></p>
+
+<div id="traces">
+    <a href="#" onclick="hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);; return false;">Application Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);; return false;">Framework Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);; return false;">Full Trace</a> 
+
+    <div id="Application-Trace" style="display: block;">
+      <pre><code>app/controllers/registrations_controller.rb:8:in `create&#39;</code></pre>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+      <pre><code>activesupport (4.1.6) lib/active_support/dependencies.rb:247:in `require&#39;
+activesupport (4.1.6) lib/active_support/dependencies.rb:247:in `block in require&#39;
+activesupport (4.1.6) lib/active_support/dependencies.rb:232:in `load_dependency&#39;
+activesupport (4.1.6) lib/active_support/dependencies.rb:247:in `require&#39;
+paperclip (4.2.0) lib/paperclip/storage/s3.rb:116:in `extended&#39;
+paperclip (4.2.0) lib/paperclip/attachment.rb:425:in `extend&#39;
+paperclip (4.2.0) lib/paperclip/attachment.rb:425:in `initialize_storage&#39;
+paperclip (4.2.0) lib/paperclip/attachment.rb:86:in `initialize&#39;
+paperclip (4.2.0) lib/paperclip/has_attached_file.rb:47:in `new&#39;
+paperclip (4.2.0) lib/paperclip/has_attached_file.rb:47:in `block in define_instance_getter&#39;
+activemodel (4.1.6) lib/active_model/validator.rb:165:in `block in validate&#39;
+activemodel (4.1.6) lib/active_model/validator.rb:164:in `each&#39;
+activemodel (4.1.6) lib/active_model/validator.rb:164:in `validate&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:447:in `public_send&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:447:in `block in make_lambda&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:184:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:184:in `block in simple&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+activemodel (4.1.6) lib/active_model/validations.rb:376:in `run_validations!&#39;
+activemodel (4.1.6) lib/active_model/validations/callbacks.rb:111:in `block in run_validations!&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+activemodel (4.1.6) lib/active_model/validations/callbacks.rb:111:in `run_validations!&#39;
+activemodel (4.1.6) lib/active_model/validations.rb:317:in `valid?&#39;
+activerecord (4.1.6) lib/active_record/validations.rb:70:in `valid?&#39;
+activerecord (4.1.6) lib/active_record/validations.rb:77:in `perform_validations&#39;
+activerecord (4.1.6) lib/active_record/validations.rb:51:in `save&#39;
+activerecord (4.1.6) lib/active_record/attribute_methods/dirty.rb:21:in `save&#39;
+activerecord (4.1.6) lib/active_record/transactions.rb:268:in `block (2 levels) in save&#39;
+activerecord (4.1.6) lib/active_record/transactions.rb:329:in `block in with_transaction_returning_status&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/database_statements.rb:199:in `transaction&#39;
+activerecord (4.1.6) lib/active_record/transactions.rb:208:in `transaction&#39;
+activerecord (4.1.6) lib/active_record/transactions.rb:326:in `with_transaction_returning_status&#39;
+activerecord (4.1.6) lib/active_record/transactions.rb:268:in `block in save&#39;
+activerecord (4.1.6) lib/active_record/transactions.rb:283:in `rollback_active_record_state!&#39;
+activerecord (4.1.6) lib/active_record/transactions.rb:267:in `save&#39;
+activerecord (4.1.6) lib/active_record/associations/has_one_association.rb:41:in `block in replace&#39;
+activerecord (4.1.6) lib/active_record/associations/has_one_association.rb:99:in `block in transaction_if&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/database_statements.rb:201:in `block in transaction&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/database_statements.rb:209:in `within_new_transaction&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/database_statements.rb:201:in `transaction&#39;
+activerecord (4.1.6) lib/active_record/transactions.rb:208:in `transaction&#39;
+activerecord (4.1.6) lib/active_record/associations/has_one_association.rb:99:in `transaction_if&#39;
+activerecord (4.1.6) lib/active_record/associations/has_one_association.rb:34:in `replace&#39;
+activerecord (4.1.6) lib/active_record/associations/singular_association.rb:17:in `writer&#39;
+activerecord (4.1.6) lib/active_record/associations/builder/association.rb:118:in `profile=&#39;
+actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process&#39;
+actionview (4.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/mapper.rb:45:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call&#39;
+warden (1.2.3) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `catch&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `call&#39;
+rack (1.5.2) lib/rack/etag.rb:23:in `call&#39;
+rack (1.5.2) lib/rack/conditionalget.rb:35:in `call&#39;
+rack (1.5.2) lib/rack/head.rb:11:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;
+activerecord (4.1.6) lib/active_record/migration.rb:380:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+    <div id="Full-Trace" style="display: none;">
+      <pre><code>activesupport (4.1.6) lib/active_support/dependencies.rb:247:in `require&#39;
+activesupport (4.1.6) lib/active_support/dependencies.rb:247:in `block in require&#39;
+activesupport (4.1.6) lib/active_support/dependencies.rb:232:in `load_dependency&#39;
+activesupport (4.1.6) lib/active_support/dependencies.rb:247:in `require&#39;
+paperclip (4.2.0) lib/paperclip/storage/s3.rb:116:in `extended&#39;
+paperclip (4.2.0) lib/paperclip/attachment.rb:425:in `extend&#39;
+paperclip (4.2.0) lib/paperclip/attachment.rb:425:in `initialize_storage&#39;
+paperclip (4.2.0) lib/paperclip/attachment.rb:86:in `initialize&#39;
+paperclip (4.2.0) lib/paperclip/has_attached_file.rb:47:in `new&#39;
+paperclip (4.2.0) lib/paperclip/has_attached_file.rb:47:in `block in define_instance_getter&#39;
+activemodel (4.1.6) lib/active_model/validator.rb:165:in `block in validate&#39;
+activemodel (4.1.6) lib/active_model/validator.rb:164:in `each&#39;
+activemodel (4.1.6) lib/active_model/validator.rb:164:in `validate&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:447:in `public_send&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:447:in `block in make_lambda&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:184:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:184:in `block in simple&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+activemodel (4.1.6) lib/active_model/validations.rb:376:in `run_validations!&#39;
+activemodel (4.1.6) lib/active_model/validations/callbacks.rb:111:in `block in run_validations!&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+activemodel (4.1.6) lib/active_model/validations/callbacks.rb:111:in `run_validations!&#39;
+activemodel (4.1.6) lib/active_model/validations.rb:317:in `valid?&#39;
+activerecord (4.1.6) lib/active_record/validations.rb:70:in `valid?&#39;
+activerecord (4.1.6) lib/active_record/validations.rb:77:in `perform_validations&#39;
+activerecord (4.1.6) lib/active_record/validations.rb:51:in `save&#39;
+activerecord (4.1.6) lib/active_record/attribute_methods/dirty.rb:21:in `save&#39;
+activerecord (4.1.6) lib/active_record/transactions.rb:268:in `block (2 levels) in save&#39;
+activerecord (4.1.6) lib/active_record/transactions.rb:329:in `block in with_transaction_returning_status&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/database_statements.rb:199:in `transaction&#39;
+activerecord (4.1.6) lib/active_record/transactions.rb:208:in `transaction&#39;
+activerecord (4.1.6) lib/active_record/transactions.rb:326:in `with_transaction_returning_status&#39;
+activerecord (4.1.6) lib/active_record/transactions.rb:268:in `block in save&#39;
+activerecord (4.1.6) lib/active_record/transactions.rb:283:in `rollback_active_record_state!&#39;
+activerecord (4.1.6) lib/active_record/transactions.rb:267:in `save&#39;
+activerecord (4.1.6) lib/active_record/associations/has_one_association.rb:41:in `block in replace&#39;
+activerecord (4.1.6) lib/active_record/associations/has_one_association.rb:99:in `block in transaction_if&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/database_statements.rb:201:in `block in transaction&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/database_statements.rb:209:in `within_new_transaction&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/database_statements.rb:201:in `transaction&#39;
+activerecord (4.1.6) lib/active_record/transactions.rb:208:in `transaction&#39;
+activerecord (4.1.6) lib/active_record/associations/has_one_association.rb:99:in `transaction_if&#39;
+activerecord (4.1.6) lib/active_record/associations/has_one_association.rb:34:in `replace&#39;
+activerecord (4.1.6) lib/active_record/associations/singular_association.rb:17:in `writer&#39;
+activerecord (4.1.6) lib/active_record/associations/builder/association.rb:118:in `profile=&#39;
+app/controllers/registrations_controller.rb:8:in `create&#39;
+actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process&#39;
+actionview (4.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/mapper.rb:45:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call&#39;
+warden (1.2.3) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `catch&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `call&#39;
+rack (1.5.2) lib/rack/etag.rb:23:in `call&#39;
+rack (1.5.2) lib/rack/conditionalget.rb:35:in `call&#39;
+rack (1.5.2) lib/rack/head.rb:11:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;
+activerecord (4.1.6) lib/active_record/migration.rb:380:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+</div>
+
+    <pre id="blame_trace" ><code>This error occurred while loading the following files:
+   aws-sdk</code></pre>
+
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><b>Parameters</b>:</p> <pre>{&quot;user&quot;=&gt;{&quot;name&quot;=&gt;&quot;kqmmx&quot;,
+ &quot;email&quot;=&gt;&quot;3bydbfs@rufus.com&quot;,
+ &quot;password&quot;=&gt;&quot;[FILTERED]&quot;,
+ &quot;password_confirmation&quot;=&gt;&quot;[FILTERED]&quot;},
+ &quot;authenticity_token&quot;=&gt;&quot;uJq/W/xliav0Htmzd+IU++3erMtGjtAIrVCKrDz186c=&quot;,
+ &quot;commit&quot;=&gt;&quot;Sign up&quot;}</pre>
+
+<div class="details">
+  <div class="summary"><a href="#" onclick="return toggleSessionDump()">Toggle session dump</a></div>
+  <div id="session_dump" style="display:none"><pre>_csrf_token: &quot;uJq/W/xliav0Htmzd+IU++3erMtGjtAIrVCKrDz186c=&quot;
+flash: {&quot;discard&quot;=&gt;[], &quot;flashes&quot;=&gt;{&quot;notice&quot;=&gt;&quot;Welcome! You have signed up successfully.&quot;}}
+session_id: &quot;162ba7ac756a0204f923a1a720306832&quot;
+warden.user.user.key: [[121], &quot;$2a$10$F441cVPo5JJCTYQIqXcZW.&quot;]</pre></div>
+</div>
+
+<div class="details">
+  <div class="summary"><a href="#" onclick="return toggleEnvDump()">Toggle env dump</a></div>
+  <div id="env_dump" style="display:none"><pre>GATEWAY_INTERFACE: &quot;CGI/1.1&quot;
+REMOTE_ADDR: &quot;127.0.0.1&quot;
+REMOTE_HOST: &quot;127.0.0.1&quot;
+SERVER_NAME: &quot;localhost&quot;
+SERVER_PROTOCOL: &quot;HTTP/1.1&quot;</pre></div>
+</div>
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:</p> <pre>None</pre>
+
+</div>
+
+
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="000" cvus="001" thread="000" suite="Critical" name="my_test"  time="1417723689.89" result="Failure" steps="3" duration="5.49301195145" connection_duration="5.13484096527" requests="17" pages="2" xmlrpc="0" redirects="0" images="6" links="8" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/load_testing/test_Critical.py", line 37, in my_test&#10;    description="Create New User")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /users&#10;HTTP Response 500: Internal Server Error&#10;' />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="Get root URL" time="1417723695.4" duration="0.0996069908142" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417723695.5" duration="2.00591206551" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1417723697.5" duration="0.0544230937958" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1417723697.56" duration="0.00582909584045" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1417723697.56" duration="0.0051121711731" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1417723697.57" duration="0.0050048828125" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1417723697.57" duration="0.00499606132507" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1417723697.58" duration="0.00555992126465" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="my_test" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1417723697.59" duration="0.00499892234802" />

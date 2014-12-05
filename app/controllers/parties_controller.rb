@@ -1,6 +1,7 @@
 class PartiesController < ApplicationController
   before_action :set_party, only: [:show, :edit, :update, :destroy,:invitetoparty]
   before_action :authenticate_user!, only: [:create, :edit, :new, :update, :destroy]
+  protect_from_forgery :except => :destroy 
 
   # GET /parties
   # GET /parties.json
