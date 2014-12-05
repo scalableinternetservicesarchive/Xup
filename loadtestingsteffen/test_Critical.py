@@ -18,56 +18,60 @@ class Critical(FunkLoadTestCase):
     def setUp(self):
       """Setting up test."""
       self.server_url = self.conf_get('main', 'url')
+
+    def view_close_parties(self):
+    	server_url = self.server_url
+    	self.get(server_url + "/closeparties", description="Watching the close parties")
     
 
     def create_and_delete_party(self):
-	self.logd( "message")
-	server_url = self.server_url
-	self.get(server_url + "/past", description="View the past page")
-	self.get(server_url + "/past", description="View the past page again")
-	self.get(server_url, description='Get root URL')
-	self.get(server_url + "/users/sign_up", description="View the user signup page")
-	auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
-	email = Lipsum().getUniqWord() + "@" + Lipsum().getWord() + ".com"
-	name = Lipsum().getUniqWord()
-	self.post(self.server_url + "/users",
-		params=[['user[name]',name],
-	    ['user[email]', email],
-	      ['user[password]', 'alphabet'],
-	      ['user[password_confirmation]', 'alphabet'],
-	      ['authenticity_token', auth_token],
-	      ['commit', 'Sign up']],
-	    description="Create New User")
-	
+		self.logd( "message")
+		server_url = self.server_url
+		self.get(server_url + "/past", description="View the past page")
+		self.get(server_url + "/past", description="View the past page again")
+		self.get(server_url, description='Get root URL')
+		self.get(server_url + "/users/sign_up", description="View the user signup page")
+		auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+		email = Lipsum().getUniqWord() + "@" + Lipsum().getWord() + ".com"
+		name = Lipsum().getUniqWord()
+		self.post(self.server_url + "/users",
+			params=[['user[name]',name],
+		    ['user[email]', email],
+		      ['user[password]', 'alphabet'],
+		      ['user[password_confirmation]', 'alphabet'],
+		      ['authenticity_token', auth_token],
+		      ['commit', 'Sign up']],
+		    description="Create New User")
+		
 
-	#self.get(server_url + "/index", description="View the indexpage2")
-	#auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
-	self.get(server_url + "/new", description="create party page")
-	auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+		#self.get(server_url + "/index", description="View the indexpage2")
+		#auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+		self.get(server_url + "/new", description="create party page")
+		auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
 
-	self.post(self.server_url + "/parties",
-	    params=[['party[name]', Lipsum().getUniqWord()],
-	      ['party[owner]', name],
-	      ['party[date]', '2016-12-03'],
-	      ['party[time]', '17:00'],
-	      ['party[location]',Lipsum().getUniqWord()],
-	      ['party[description]',Lipsum().getUniqWord()],
-	      ['authenticity_token', auth_token],
-	      ['commit', 'Sign up']],
-	    description="Create New party")
-	
-	last_url = self.getLastUrl()
+		self.post(self.server_url + "/parties",
+		    params=[['party[name]', Lipsum().getUniqWord()],
+		      ['party[owner]', name],
+		      ['party[date]', '2016-12-03'],
+		      ['party[time]', '17:00'],
+		      ['party[location]',Lipsum().getUniqWord()],
+		      ['party[description]',Lipsum().getUniqWord()],
+		      ['authenticity_token', auth_token],
+		      ['commit', 'Sign up']],
+		    description="Create New party")
+		
+		last_url = self.getLastUrl()
 
-	created_party_id = last_url.split('/')[-1]
+		created_party_id = last_url.split('/')[-1]
 
-	self.get(server_url + "/myparties", description="Going to my parties page")
-	auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
-	
+		self.get(server_url + "/myparties", description="Going to my parties page")
+		auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+		
 
-	self.delete(self.server_url + '/parties/'+created_party_id, description="Delete the party",)
-	self.get(server_url + "/", description="Back to index page")
+		self.delete(self.server_url + '/parties/'+created_party_id, description="Delete the party",)
+		self.get(server_url + "/", description="Back to index page")
 
-	
+		
 
 
 
