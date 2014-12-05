@@ -23,7 +23,7 @@ class Critical(FunkLoadTestCase):
     	server_url = self.server_url
     	self.get(server_url + "/closeparties", description="Watching the close parties")
     
-    def join_all_parties(self):
+    def join_a_partie(self):
         server_url = self.server_url    
         self.get(server_url, description='Get root URL')
         self.get(server_url + "/users/sign_up", description="View the user signup page")
@@ -39,8 +39,16 @@ class Critical(FunkLoadTestCase):
                   ['commit', 'Sign up']],
                 description="Create New User")
 
-        self.get(server_url + "/index", description="watch all parties")
+        last_url = self.getLastUrl()
+
+        user_id = last_url.split('/')[-1]
+        self.get(server_url + "/index", description="watching parties to join")
         auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+        self.post(self.server_url + "/join_members",
+                params=[['party_id', 1],['user_id',user_id],['authenticity_token', auth_token]],
+                  
+                description="Joining party")
+
 
        
 
