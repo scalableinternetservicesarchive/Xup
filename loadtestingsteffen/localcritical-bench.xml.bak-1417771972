@@ -1,0 +1,41 @@
+<funkload version="1.16.1" time="2014-12-05T01:31:32.224805">
+<config key="sleep_time_min" value="0.0" />
+<config key="node" value="Steffens-MacBook-Pro.local" />
+<config key="startup_delay" value="0.01" />
+<config key="cycles" value="[1]" />
+<config key="cycle_time" value="1.0" />
+<config key="description" value="No test description" />
+<config key="configuration_file" value="/Users/steffenfb/programming/xup/loadtestingsteffen/Critical.conf" />
+<config key="class_title" value="Critical Path FunkLoad tests" />
+<config key="server_url" value="http://localhost:3000" />
+<config key="module" value="test_Critical" />
+<config key="id" value="invite_steffen" />
+<config key="class_description" value="Testing the critical path of the lab app" />
+<config key="sleep_time" value="0.01" />
+<config key="sleep_time_max" value="0.5" />
+<config key="duration" value="10" />
+<config key="method" value="invite_steffen" />
+<config key="log_xml" value="/Users/steffenfb/programming/xup/loadtestingsteffen/localcritical-bench.xml" />
+<config key="class" value="Critical" />
+<config key="python_version" value="2.7.5" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="001" number="001" type="get" result="Successful" url="/past" code="200" description="View the past page" time="1417771892.23" duration="0.163342952728" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417771892.39" duration="0.61891412735" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1417771893.01" duration="0.00728392601013" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1417771893.02" duration="0.00524806976318" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1417771893.02" duration="0.00484395027161" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1417771893.03" duration="0.00478005409241" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1417771893.03" duration="0.00517296791077" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1417771893.04" duration="0.00562620162964" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1417771893.04" duration="0.00504016876221" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="002" number="001" type="get" result="Successful" url="" code="200" description="Get root URL" time="1417771893.24" duration="0.167490005493" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="002" number="002" type="image" result="Successful" url="/2013/05/img_1380.jpg" code="200" description="" time="1417771893.41" duration="4.01142883301" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="002" number="003" type="image" result="Successful" url="/2014/04/maxresdefault.jpg" code="200" description="" time="1417771897.43" duration="0.621402025223" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="002" number="004" type="image" result="Successful" url="/_-tDuDhxev0k/TLKuMBwh6sI/AAAAAAAAACc/hjNcFNVbBEI/s1600/IMG_0091-1.jpg" code="200" description="" time="1417771898.05" duration="1.0271320343" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="002" number="005" type="image" result="Successful" url="/img/photos/2009/04/08/P4040977_t479.jpg?6626f76dcd72edc2e28f46812c7026450162bdb2" code="200" description="" time="1417771899.07" duration="0.308483123779" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="002" number="006" type="image" result="Successful" url="/rapgenius/beer_pong1.jpg" code="200" description="" time="1417771899.38" duration="0.74466919899" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="002" number="007" type="image" result="Successful" url="/images/drink.19_1.jpg" code="200" description="" time="1417771900.13" duration="0.589689016342" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="003" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1417771900.86" duration="0.173516988754" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="004" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1417771901.16" duration="0.120552062988" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="004" number="002" type="get" result="Successful" url="/" code="200" description="" time="1417771901.28" duration="0.10259604454" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_steffen" step="005" number="001" type="get" result="Successful" url="/new" code="200" description="create party page" time="1417771901.82" duration="0.161109924316" />
+</funkload>
