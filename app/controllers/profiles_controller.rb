@@ -61,7 +61,6 @@ class ProfilesController < ApplicationController
       format.html { redirect_to profiles_url, notice: 'Profile was successfully destroyed.' }
       format.json { head :no_content }
 
-
     #@profile.p_image = nil
     #@profile.save
     end
@@ -78,8 +77,7 @@ class ProfilesController < ApplicationController
       @profile = Profile.find(params[:id])
 
     else
-        redirect_to action: :new
-        
+        redirect_to action: :new     
       end 
     end
 

@@ -28,15 +28,8 @@
  
     #list needs to be sorted
 
-    end
-
-    
-    
+    end 
      %>
-
-
-    
-
 
     <tbody>
       <% @close.each do |party| %>
@@ -120,8 +113,6 @@ function initialize() {// you location should be center
         logshit(pos);
         mapCallback(pos,map);
 
-
-
          map.setCenter(pos);
 
          var infowindow = new google.maps.InfoWindow({
@@ -129,10 +120,7 @@ function initialize() {// you location should be center
         position: pos,
         content: 'This is you partyboy!'
       });
-
-        
-
-        
+ 
       }, function() {
         handleNoGeolocation(true);
       });
@@ -147,14 +135,4 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 
     <div id="map-canvas"></div>
-
-
-
-
-
-
-
-
-
-
 

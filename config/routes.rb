@@ -9,10 +9,10 @@ Rails.application.routes.draw do
 
   resources :profiles
 
-
-   #needed for facebook login, and normal login
+  #needed for facebook login, and normal login
   devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' , registrations: 'registrations'}
 
+  # this send the user to the finnish signup page, a link that he gets from email
   match '/users/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], :as => :finish_signup
 
   # end facebook and normal login
