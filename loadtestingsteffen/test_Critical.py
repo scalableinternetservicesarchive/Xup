@@ -23,7 +23,7 @@ class Critical(FunkLoadTestCase):
     	server_url = self.server_url
     	self.get(server_url + "/closeparties", description="Watching the close parties")
     
-    def join_a_partie(self):
+    def join_a_party(self):
         server_url = self.server_url    
         self.get(server_url, description='Get root URL')
         self.get(server_url + "/users/sign_up", description="View the user signup page")
@@ -40,14 +40,45 @@ class Critical(FunkLoadTestCase):
                 description="Create New User")
 
         last_url = self.getLastUrl()
-
+        party_to_join=1
         user_id = last_url.split('/')[-1]
         self.get(server_url + "/index", description="watching parties to join")
         auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
         self.post(self.server_url + "/join_members",
-                params=[['party_id', 1],['user_id',user_id],['authenticity_token', auth_token]],
+                params=[['party_id', party_to_join],['user_id',user_id],['authenticity_token', auth_token]],
                   
                 description="Joining party")
+
+
+    def join_all_parties(self):
+        
+        server_url = self.server_url    
+        self.get(server_url, description='Get root URL')
+        self.get(server_url + "/users/sign_up", description="View the user signup page")
+        auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+        email = Lipsum().getUniqWord() + "@" + Lipsum().getWord() + ".com"
+        name = Lipsum().getUniqWord()
+        self.post(self.server_url + "/users",
+                params=[['user[name]',name],
+                ['user[email]', email],
+                  ['user[password]', 'alphabet'],
+                  ['user[password_confirmation]', 'alphabet'],
+                  ['authenticity_token', auth_token],
+                  ['commit', 'Sign up']],
+                description="Create New User")
+
+        last_url = self.getLastUrl()
+        party_range=3
+        user_id = last_url.split('/')[-1]
+        self.get(server_url + "/index", description="watching parties to join")
+        auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+        for i in range (1,party_range):
+            self.post(self.server_url + "/join_members",
+                    params=[['party_id', i],['user_id',user_id],['authenticity_token', auth_token]],
+                      
+                    description="Joining party")
+
+
 
 
        
@@ -56,7 +87,7 @@ class Critical(FunkLoadTestCase):
 
 
 
-    def invite_steffen(self):
+    def invite_a_user(self):
        	server_url = self.server_url	
     	self.get(server_url, description='Get root URL')
     	self.get(server_url + "/users/sign_up", description="View the user signup page")
@@ -93,10 +124,11 @@ class Critical(FunkLoadTestCase):
 
     	created_party_id = last_url.split('/')[-1]
 
+        userid=4
     		
 
     	self.post(self.server_url + "/createasinvite/",
-    		    params=[['party_id', created_party_id],['user_id',4],['authenticity_token',auth_token]],
+    		    params=[['party_id', created_party_id],['user_id',userid],['authenticity_token',auth_token]],
     		      
     		    description="Create New party")
 
