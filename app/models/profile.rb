@@ -5,10 +5,11 @@ class Profile < ActiveRecord::Base
 									    :small => '140x140>',
 									    :thumb => '64x64!'
   							},
-  							:storage => :s3,
-	          				:s3_credentials => "#{Rails.root}/config/aws.yml",
-	          				:path => "Xup/:class/:attachment/:id/:style/:filename",
-            				:bucket => "cs290"
+                # Here place code for uploading photos on AWS
+  							# :storage => :s3,
+	        #   				:s3_credentials => "#{Rails.root}/config/aws.yml",
+	        #   				:path => "Xup/:class/:attachment/:id/:style/:filename",
+         #    				:bucket => "cs290"
 	
 
 

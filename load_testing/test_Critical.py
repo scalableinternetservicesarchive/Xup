@@ -39,7 +39,6 @@ class Critical(FunkLoadTestCase):
 	
 	#auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
 
-
 	#write test: create party, delete party
     def test_create_party(self):
 		#my_test()
@@ -119,9 +118,11 @@ class Critical(FunkLoadTestCase):
 		# end my_test()
 		# start edit profile
 
-		myID = "number that i will get from code"
-
-		#self.get(server_url + "/profiles/" + myID+"/edit", description="View the edit profile page")
+		#myID = "number that i will get from code"
+		
+		#user_id = last_url.split('/')[-1]
+		
+		self.get(server_url + "/profiles/" + user_id +"/edit", description="View the edit profile page")
 
 		# end edit profile
 
@@ -194,8 +195,6 @@ class Critical(FunkLoadTestCase):
 	#self.get(server_url + "/submissions/", description="View the new submissions page")
 	self.get(server_url + "/past", description="View the past page") 
 	self.get(server_url + "/closeparties", description="View the closeparties")
-
-
 
 
 if __name__ in ('main', '__main__'):

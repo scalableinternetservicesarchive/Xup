@@ -13,8 +13,6 @@ from funkload.Lipsum import Lipsum
 class Critical(FunkLoadTestCase):
     """This test use a configuration file Simple.conf."""
 
-
-
     def setUp(self):
       """Setting up test."""
       self.server_url = self.conf_get('main', 'url')
@@ -55,8 +53,6 @@ class Critical(FunkLoadTestCase):
 	      ['commit', 'Sign up']],
 	    description="Create New party")
 	self.get(server_url, description="back to indexpage")
-
-
 
     def test_critical_path(self):
 	server_url = self.server_url
@@ -118,8 +114,6 @@ class Critical(FunkLoadTestCase):
 	    description="Create New Comment")
 
 
-
-
     def test_critical_path_readonly(self):
 	server_url = self.server_url
 	self.get(server_url, description='View root URL')
@@ -141,10 +135,6 @@ class Critical(FunkLoadTestCase):
     	
     	self.get(server_url , description="View the past page again")
     	fast_test(self)
-
-
-
-
 
 
 if __name__ in ('main', '__main__'):
