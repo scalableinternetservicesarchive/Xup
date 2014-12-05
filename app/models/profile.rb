@@ -12,7 +12,7 @@ class Profile < ActiveRecord::Base
          #    				:bucket => "cs290"
 
   #validates_attachment_content_type :p_image, :content_type => /\Aimage\/.*\Z/
-  validates_attachment_content_type :p_image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/jfif"]
+  validates_attachment_content_type :p_image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/jfif", "image/gif"]
 
   # only one user to one Profile
   belongs_to :user
