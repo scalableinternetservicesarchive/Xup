@@ -26,6 +26,11 @@ class ApplicationController < ActionController::Base
   end 
 
   def after_sign_in_path_for(resource)
-    parties_path
+    p resource
+    p resource.email
+    p resource.id
+    #'profiles/:resource.id'
+    #profiles_path
+    profile_path(resource)
   end
 end
