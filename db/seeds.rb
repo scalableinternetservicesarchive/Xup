@@ -57,3 +57,29 @@ user.profile = Profile.new(
 
         )
 
+
+user_list = [
+  ["Peter", "user1@abc.com", "asdfasdf", "asdfasdf"],
+  ["Mary", "user2@abc.com", "asdfasdf", "asdfasdf"],
+  ["Harry", "user3@abc.com", "asdfasdf", "asdfasdf"],
+  ["Jack", "user4@abc.com", "asdfasdf", "asdfasdf"]
+]
+
+user_list do |name, email, password, password_confirmation|
+    User.create(name: name, email: email, password: password, password_confirmation: password_confirmation)
+end
+
+party_list = [
+  ["Party 1", "Peter", "2016-12-30", "17:00", "Los Angeles", "Good party"],
+  ["Party 2", "Peter", "2016-10-30", "17:00", "Los Angeles", "Good party"],
+  ["Party 3", "Mary", "2015-12-30", "17:00", "Los Angeles", "Good party"],
+  ["Party 4", "Harry", "2015-01-30", "17:00", "Los Angeles", "Good party"],
+  ["Party 5", "Harry", "2016-02-30", "17:00", "Los Angeles", "Good party"],
+  ["Party 6", "Jack", "2015-11-30", "17:00", "Los Angeles", "Good party"],
+  ["Party 7", "Jack", "2014-12-30", "17:00", "Los Angeles", "Good party"],
+  ["Party 8", "Jack", "2016-11-30", "17:00", "Los Angeles", "Good party"]
+]
+
+party_list do |name, owner, date, time, location, description|
+    Party.create(name: name, owner: owner, date: date, time: time, location: location, description: description)
+end
