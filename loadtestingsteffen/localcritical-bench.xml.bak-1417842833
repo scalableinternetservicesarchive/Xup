@@ -1,0 +1,67 @@
+<funkload version="1.16.1" time="2014-12-05T21:13:16.656786">
+<config key="sleep_time_min" value="0.0" />
+<config key="node" value="169-231-98-160.wireless.ucsb.edu" />
+<config key="startup_delay" value="0.01" />
+<config key="cycles" value="[1]" />
+<config key="cycle_time" value="1.0" />
+<config key="description" value="No test description" />
+<config key="configuration_file" value="/Users/steffenfb/programming/xup/loadtestingsteffen/Critical.conf" />
+<config key="class_title" value="Critical Path FunkLoad tests" />
+<config key="server_url" value="http://localhost:3000" />
+<config key="module" value="test_Critical" />
+<config key="id" value="create_a_close_parties" />
+<config key="class_description" value="Testing the critical path of the lab app" />
+<config key="sleep_time" value="0.01" />
+<config key="sleep_time_max" value="0.5" />
+<config key="duration" value="10" />
+<config key="method" value="create_a_close_parties" />
+<config key="log_xml" value="/Users/steffenfb/programming/xup/loadtestingsteffen/localcritical-bench.xml" />
+<config key="class" value="Critical" />
+<config key="python_version" value="2.7.5" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1417842796.66" duration="0.150274991989" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417842796.81" duration="0.546797990799" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1417842797.36" duration="0.00748896598816" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1417842797.36" duration="0.00564813613892" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1417842797.37" duration="0.00496888160706" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1417842797.37" duration="0.00565981864929" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1417842797.38" duration="0.00546407699585" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1417842797.39" duration="0.00587296485901" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1417842797.39" duration="0.00487804412842" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1417842797.41" duration="0.112383842468" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="002" number="002" type="get" result="Successful" url="/profiles/63" code="200" description="" time="1417842797.52" duration="0.148522138596" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="003" number="001" type="get" result="Successful" url="/new" code="200" description="create party page" time="1417842798.1" duration="0.166167974472" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="004" number="001" type="post" result="Successful" url="/parties" code="302" description="Create New party" time="1417842798.37" duration="1.90027093887" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="004" number="002" type="get" result="Successful" url="/parties/19" code="200" description="" time="1417842800.27" duration="0.0933198928833" />
+<testResult cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties"  time="1417842796.66" result="Successful" steps="4" duration="3.89763402939" connection_duration="3.15771865845" requests="14" pages="4" xmlrpc="0" redirects="2" images="0" links="8" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1417842800.57" duration="0.14944601059" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417842800.72" duration="1.17987298965" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1417842801.9" duration="0.00848603248596" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1417842801.9" duration="0.00516295433044" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1417842801.91" duration="0.0047128200531" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1417842801.92" duration="0.00475907325745" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1417842801.92" duration="0.00514984130859" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1417842801.93" duration="0.00602793693542" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1417842801.93" duration="0.00488805770874" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1417842802.4" duration="0.116544961929" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="002" number="002" type="get" result="Successful" url="/profiles/64" code="200" description="" time="1417842802.52" duration="0.153632164001" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="003" number="001" type="get" result="Successful" url="/new" code="200" description="create party page" time="1417842803.13" duration="0.157230854034" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="004" number="001" type="post" result="Successful" url="/parties" code="302" description="Create New party" time="1417842803.37" duration="0.209264039993" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="004" number="002" type="get" result="Successful" url="/parties/20" code="200" description="" time="1417842803.58" duration="0.0911390781403" />
+<testResult cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties"  time="1417842800.57" result="Successful" steps="4" duration="3.41915488243" connection_duration="2.09631681442" requests="14" pages="4" xmlrpc="0" redirects="2" images="0" links="8" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1417842804.0" duration="0.157423019409" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417842804.15" duration="0.462789058685" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1417842804.62" duration="0.00776886940002" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1417842804.63" duration="0.00510382652283" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1417842804.63" duration="0.00478982925415" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1417842804.64" duration="0.00497794151306" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1417842804.64" duration="0.00536394119263" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1417842804.65" duration="0.00596213340759" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1417842804.65" duration="0.0069580078125" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1417842805.03" duration="0.102822780609" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="002" number="002" type="get" result="Successful" url="/profiles/65" code="200" description="" time="1417842805.13" duration="0.145432949066" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="003" number="001" type="get" result="Successful" url="/new" code="200" description="create party page" time="1417842805.58" duration="0.100767850876" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="004" number="001" type="post" result="Successful" url="/parties" code="302" description="Create New party" time="1417842805.69" duration="0.250565052032" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="004" number="002" type="get" result="Successful" url="/parties/21" code="200" description="" time="1417842805.94" duration="0.0943670272827" />
+<testResult cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties"  time="1417842804.0" result="Successful" steps="4" duration="2.49844694138" connection_duration="1.35509228706" requests="14" pages="4" xmlrpc="0" redirects="2" images="0" links="8" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1417842806.51" duration="0.151350975037" />
+</funkload>
