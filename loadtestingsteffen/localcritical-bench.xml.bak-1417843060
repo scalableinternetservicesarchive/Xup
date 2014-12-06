@@ -1,0 +1,39 @@
+<funkload version="1.16.1" time="2014-12-05T21:15:44.417389">
+<config key="sleep_time_min" value="0.0" />
+<config key="node" value="169-231-98-160.wireless.ucsb.edu" />
+<config key="startup_delay" value="0.01" />
+<config key="cycles" value="[1]" />
+<config key="cycle_time" value="1.0" />
+<config key="description" value="No test description" />
+<config key="configuration_file" value="/Users/steffenfb/programming/xup/loadtestingsteffen/Critical.conf" />
+<config key="class_title" value="Critical Path FunkLoad tests" />
+<config key="server_url" value="http://localhost:3000" />
+<config key="module" value="test_Critical" />
+<config key="id" value="accept_a_invite" />
+<config key="class_description" value="Testing the critical path of the lab app" />
+<config key="sleep_time" value="0.01" />
+<config key="sleep_time_max" value="0.5" />
+<config key="duration" value="10" />
+<config key="method" value="accept_a_invite" />
+<config key="log_xml" value="/Users/steffenfb/programming/xup/loadtestingsteffen/localcritical-bench.xml" />
+<config key="class" value="Critical" />
+<config key="python_version" value="2.7.5" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="accept_a_invite" step="001" number="001" type="get" result="Successful" url="/" code="200" description="Go to log in page" time="1417842944.42" duration="0.151885032654" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="accept_a_invite" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417842944.57" duration="0.217459917068" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="accept_a_invite" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1417842944.79" duration="0.00701594352722" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="accept_a_invite" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1417842944.8" duration="0.00481104850769" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="accept_a_invite" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1417842944.8" duration="0.00530099868774" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="accept_a_invite" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1417842944.81" duration="0.00513291358948" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="accept_a_invite" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1417842944.81" duration="0.00499320030212" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="accept_a_invite" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1417842944.82" duration="0.00700187683105" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="accept_a_invite" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1417842944.82" duration="0.00506496429443" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="accept_a_invite" step="001" number="010" type="image" result="Successful" url="/2013/05/img_1380.jpg" code="200" description="" time="1417842944.83" duration="5.71257281303" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="accept_a_invite" step="001" number="011" type="image" result="Successful" url="/2014/04/maxresdefault.jpg" code="200" description="" time="1417842950.54" duration="0.353009939194" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="accept_a_invite" step="001" number="012" type="image" result="Successful" url="/_-tDuDhxev0k/TLKuMBwh6sI/AAAAAAAAACc/hjNcFNVbBEI/s1600/IMG_0091-1.jpg" code="200" description="" time="1417842950.9" duration="0.37658405304" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="accept_a_invite" step="001" number="013" type="image" result="Successful" url="/img/photos/2009/04/08/P4040977_t479.jpg?6626f76dcd72edc2e28f46812c7026450162bdb2" code="200" description="" time="1417842951.27" duration="0.341145992279" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="accept_a_invite" step="001" number="014" type="image" result="Successful" url="/rapgenius/beer_pong1.jpg" code="200" description="" time="1417842951.62" duration="1.18353700638" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="accept_a_invite" step="001" number="015" type="image" result="Successful" url="/images/drink.19_1.jpg" code="200" description="" time="1417842952.8" duration="0.406905889511" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="accept_a_invite" step="002" number="001" type="get" result="Successful" url="/users/sign_in" code="200" description="Go to log in page" time="1417842953.7" duration="0.150860071182" />
+<testResult cycle="000" cvus="001" thread="000" suite="Critical" name="accept_a_invite"  time="1417842944.42" result="Error" steps="2" duration="9.61773610115" connection_duration="8.93328166008" requests="16" pages="2" xmlrpc="0" redirects="0" images="6" links="8" traceback="Traceback (most recent call last):&#10;   File &quot;/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py&quot;, line 946, in __call__&#10;    testMethod()&#10;   File &quot;/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py&quot;, line 141, in accept_a_invite&#10;    params=[['user[email]', email],&#10; NameError: global name 'email' is not defined&#10;" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="accept_a_invite" step="001" number="001" type="get" result="Successful" url="/" code="200" description="Go to log in page" time="1417842954.05" duration="0.153583049774" />
+</funkload>
