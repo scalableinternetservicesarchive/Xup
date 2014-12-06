@@ -30,62 +30,6 @@ Party.create!(name: 'Party 1',
 
 =end
 
-user = User.create! :name => 'First User', :email => 'user@example.com', :password => 'asdfasdf', :password_confirmation => 'asdfasdf'
-user.confirm!
-
-user.profile = Profile.new(
-          first_name: user.name.split[0],
-          last_name: user.name.split[1],
-
-        )
-
-user = User.create! :name => 'Second User', :email => 'user2@example.com', :password => 'asdfasdf', :password_confirmation => 'asdfasdf'
-user.confirm!
-
-user.profile = Profile.new(
-          first_name: user.name.split[0],
-          last_name: user.name.split[1],
-
-        )
-
-user = User.create! :name => 'Third User', :email => 'user3@example.com', :password => 'asdfasdf', :password_confirmation => 'asdfasdf'
-user.confirm!
-
-user.profile = Profile.new(
-          first_name: user.name.split[0],
-          last_name: user.name.split[1],
-
-        )
-
-
-user_list = [
-  ["Peter", "user1@abc.com", "asdfasdf", "asdfasdf"],
-  ["Mary", "user2@abc.com", "asdfasdf", "asdfasdf"],
-  ["Harry", "user3@abc.com", "asdfasdf", "asdfasdf"],
-  ["Jack", "user4@abc.com", "asdfasdf", "asdfasdf"]
-]
-
-user_list.each do |name, email, password, password_confirmation|
-    user = User.create(name: name, email: email, password: password, password_confirmation: password_confirmation)
-    user.profile = Profile.new(first_name: name.split[0], last_name: name.split[1])
-end
-
-party_list = [
-  ["Party 1", "Peter", "2016-12-30", "17:00", "Los Angeles", "Good party"],
-  ["Party 2", "Peter", "2016-10-30", "17:00", "Los Angeles", "Good party"],
-  ["Party 3", "Mary", "2015-12-30", "17:00", "Los Angeles", "Good party"],
-  ["Party 4", "Harry", "2015-01-30", "17:00", "Los Angeles", "Good party"],
-  ["Party 5", "Harry", "2016-02-30", "17:00", "Los Angeles", "Good party"],
-  ["Party 6", "Jack", "2015-11-30", "17:00", "Los Angeles", "Good party"],
-  ["Party 7", "Jack", "2014-12-30", "17:00", "Los Angeles", "Good party"],
-  ["Party 8", "Jack", "2016-11-30", "17:00", "Los Angeles", "Good party"]
-]
-
-party_list.each do |name, owner, date, time, location, description|
-    Party.create(name: name, owner: owner, date: date, time: time, location: location, description: description)
-end
-
-
 open("./db/user.txt") do |users|
     users.read.each_line do |user|
         name, email, ps, psconfirm = user.chomp.split("|")
@@ -98,6 +42,9 @@ end
 open("./db/party.txt") do |parties|
     parties.read.each_line do |party|
         pname, name, date, time, location, description = party.chomp.split("|")
-        Party.create(name: pname, owner: name, date: date, time: time, location: location, description: description)
+        date = DateTime.strptime(date, "%Y-%m-%d")
+        time = DateTime.strptime(time, "%H:%M")
+        time = DateTime.new(date.year, date.month, date.day, time.hour, time.min, time.sec, date.zone)
+        party = Party.create(name: pname, owner: name, date: date, time: time, location: location, description: description)
     end
 end
