@@ -33,7 +33,13 @@
   <%# <strong>User:</strong> %>
   <%# <%= @profile.user %1> %>
 <%# </p> %>
-<% if user_signed_in? && current_user.id == @profile.id %>
+<%= link_to 'Edit', edit_profile_path(@profile) %> 
+
+<% if (user_signed_in?) %>
+  <%= link_to 'Edit', edit_profile_path(@profile) %> 
+<% end %>
+
+<% if (user_signed_in?) && (current_user.id == @profile.id) %>
     <%= link_to 'Edit', edit_profile_path(@profile) %> 
 <% end %>
 <%# <%= link_to 'Edit', edit_profile_path(@profile) %1> | %>
