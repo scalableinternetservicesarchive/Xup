@@ -65,8 +65,9 @@ user_list = [
   ["Jack", "user4@abc.com", "asdfasdf", "asdfasdf"]
 ]
 
-user_list do |name, email, password, password_confirmation|
-    User.create(name: name, email: email, password: password, password_confirmation: password_confirmation)
+user_list.each do |name, email, password, password_confirmation|
+    user = User.create(name: name, email: email, password: password, password_confirmation: password_confirmation)
+    user.profile = Profile.new(first_name: name.split[0], last_name: name.split[1])
 end
 
 party_list = [
@@ -80,6 +81,23 @@ party_list = [
   ["Party 8", "Jack", "2016-11-30", "17:00", "Los Angeles", "Good party"]
 ]
 
-party_list do |name, owner, date, time, location, description|
+party_list.each do |name, owner, date, time, location, description|
     Party.create(name: name, owner: owner, date: date, time: time, location: location, description: description)
+end
+
+
+open("./db/user.txt") do |users|
+    users.read.each_line do |user|
+        name, email, ps, psconfirm = user.chomp.split("|")
+        user = User.create(name: name, email: email, password: ps, password_confirmation: psconfirm)
+        user.profile = Profile.new(first_name: name.split[0], last_name: name.split[1])
+    end
+end
+
+
+open("./db/party.txt") do |parties|
+    parties.read.each_line do |party|
+        pname, name, date, time, location, description = party.chomp.split("|")
+        Party.create(name: pname, owner: name, date: date, time: time, location: location, description: description)
+    end
 end
