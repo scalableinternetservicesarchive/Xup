@@ -4,7 +4,7 @@ from random import randrange
 userfile = open('user.txt', 'w')
 partyfile = open('party.txt', 'w')
 
-for i in xrange(1,10000):
+for i in xrange(1,100):
     email = Lipsum().getUniqWord() + "@" + Lipsum().getWord() + ".com"
     name = Lipsum().getUniqWord()
     password = "asdfasdf"
