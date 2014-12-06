@@ -1,10 +1,10 @@
 from funkload.Lipsum import Lipsum
 from random import randrange
 
-userfile = open('user.txt', 'w')
-partyfile = open('party.txt', 'w')
+userfile = open('user_sm.txt', 'w')
+partyfile = open('party_sm.txt', 'w')
 
-for i in xrange(0,100):
+for i in xrange(0,1000):
     email = Lipsum().getUniqWord() + "@" + Lipsum().getWord() + ".com"
     name = Lipsum().getUniqWord()
     password = "asdfasdf"
