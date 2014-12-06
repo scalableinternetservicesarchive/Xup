@@ -30,7 +30,7 @@ Party.create!(name: 'Party 1',
 
 =end
 
-open("./db/user.txt") do |users|
+open("./db/user_mini.txt") do |users|
     users.read.each_line do |user|
         name, email, ps, psconfirm = user.chomp.split("|")
         user = User.create(name: name, email: email, password: ps, password_confirmation: psconfirm)
@@ -39,7 +39,7 @@ open("./db/user.txt") do |users|
 end
 
 
-open("./db/party.txt") do |parties|
+open("./db/party_mini.txt") do |parties|
     parties.read.each_line do |party|
         pname, name, date, time, location, description = party.chomp.split("|")
         date = DateTime.strptime(date, "%Y-%m-%d")
