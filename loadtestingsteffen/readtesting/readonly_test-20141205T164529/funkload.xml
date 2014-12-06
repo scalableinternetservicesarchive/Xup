@@ -1,0 +1,50 @@
+<funkload version="1.17.0" time="2014-12-05T16:45:29.312837">
+<config key="sleep_time_min" value="0.0" />
+<config key="node" value="yyzhang" />
+<config key="startup_delay" value="0.01" />
+<config key="cycles" value="[20]" />
+<config key="cycle_time" value="1.0" />
+<config key="description" value="No test description" />
+<config key="configuration_file" value="/home/yyzhang/program/Xup/loadtestingsteffen/readtesting/Critical.conf" />
+<config key="class_title" value="Critical Path FunkLoad tests" />
+<config key="server_url" value="http://ec2-54-149-108-34.us-west-2.compute.amazonaws.com" />
+<config key="module" value="test_Critical" />
+<config key="id" value="readonly_test" />
+<config key="class_description" value="Testing the critical path of the lab app" />
+<config key="sleep_time" value="0.01" />
+<config key="sleep_time_max" value="0.5" />
+<config key="duration" value="10" />
+<config key="method" value="readonly_test" />
+<config key="log_xml" value="/home/yyzhang/program/Xup/loadtestingsteffen/readtesting/localcritical-bench.xml" />
+<config key="class" value="Critical" />
+<config key="python_version" value="2.7.3" />
+<response cycle="000" cvus="020" thread="001" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.33" duration="1.24419403076" />
+<response cycle="000" cvus="020" thread="000" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.32" duration="1.28993391991" />
+<response cycle="000" cvus="020" thread="003" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.36" duration="1.29229211807" />
+<response cycle="000" cvus="020" thread="002" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.35" duration="1.37155199051" />
+<response cycle="000" cvus="020" thread="012" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.5" duration="1.24655199051" />
+<response cycle="000" cvus="020" thread="005" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.39" duration="1.37524008751" />
+<response cycle="000" cvus="020" thread="015" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.54" duration="1.31617307663" />
+<response cycle="000" cvus="020" thread="010" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.47" duration="1.49675011635" />
+<response cycle="000" cvus="020" thread="014" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.52" duration="1.46789383888" />
+<response cycle="000" cvus="020" thread="004" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.38" duration="1.67973804474" />
+<response cycle="000" cvus="020" thread="017" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.57" duration="1.56509900093" />
+<response cycle="000" cvus="020" thread="018" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.58" duration="1.75048089027" />
+<response cycle="000" cvus="020" thread="009" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.45" duration="1.9493291378" />
+<response cycle="000" cvus="020" thread="016" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.56" duration="1.91147208214" />
+<response cycle="000" cvus="020" thread="006" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.41" duration="2.1396780014" />
+<response cycle="000" cvus="020" thread="008" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.44" duration="2.13219189644" />
+<response cycle="000" cvus="020" thread="011" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.48" duration="2.12558889389" />
+<response cycle="000" cvus="020" thread="019" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.6" duration="2.04651212692" />
+<response cycle="000" cvus="020" thread="013" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.51" duration="2.17291116714" />
+<response cycle="000" cvus="020" thread="007" suite="Critical" name="readonly_test" step="001" number="001" type="get" result="Successful" url="" code="200" description="View the main page." time="1417826729.42" duration="2.32137203217" />
+<response cycle="000" cvus="020" thread="001" suite="Critical" name="readonly_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417826730.58" duration="1.81954193115" />
+<response cycle="000" cvus="020" thread="000" suite="Critical" name="readonly_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417826730.61" duration="1.95580101013" />
+<response cycle="000" cvus="020" thread="003" suite="Critical" name="readonly_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417826730.66" duration="3.43430495262" />
+<response cycle="000" cvus="020" thread="002" suite="Critical" name="readonly_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417826730.72" duration="5.45670008659" />
+<response cycle="000" cvus="020" thread="012" suite="Critical" name="readonly_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417826730.74" duration="6.4322271347" />
+<response cycle="000" cvus="020" thread="005" suite="Critical" name="readonly_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417826730.77" duration="6.67943906784" />
+<response cycle="000" cvus="020" thread="015" suite="Critical" name="readonly_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417826730.86" duration="7.48520898819" />
+<response cycle="000" cvus="020" thread="010" suite="Critical" name="readonly_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417826730.96" duration="8.28474807739" />
+<response cycle="000" cvus="020" thread="014" suite="Critical" name="readonly_test" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417826730.99" duration="8.41303110123" />
+</funkload>
