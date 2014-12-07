@@ -240,13 +240,26 @@ class Critical(FunkLoadTestCase):
     		    description="Create New party")
 
 
+    def create_a_user(self):
+        
+        server_url = self.server_url
+        self.get(server_url + "/users/sign_up", description="View the user signup page")
+        auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+        email = Lipsum().getUniqWord() + "@" + Lipsum().getWord() + ".com"
+        name = Lipsum().getUniqWord()
+        self.post(self.server_url + "/users",
+            params=[['user[name]',name],
+            ['user[email]', email],
+              ['user[password]', 'alphabet'],
+              ['user[password_confirmation]', 'alphabet'],
+              ['authenticity_token', auth_token],
+              ['commit', 'Sign up']],
+            description="Create New User")
+
 
     def create_and_delete_party(self):
-		self.logd( "message")
+		
 		server_url = self.server_url
-		self.get(server_url + "/past", description="View the past page")
-		self.get(server_url + "/past", description="View the past page again")
-		self.get(server_url, description='Get root URL')
 		self.get(server_url + "/users/sign_up", description="View the user signup page")
 		auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
 		email = Lipsum().getUniqWord() + "@" + Lipsum().getWord() + ".com"
