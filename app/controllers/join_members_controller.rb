@@ -1,4 +1,5 @@
 class JoinMembersController < ApplicationController
+  # status indicate the request, 0 means pending, 1 means invited, 2 means accepted, 3 means rejected, 4 means owner.
   respond_to :html, :xml, :json
   before_action :set_join_member, only: [:show, :edit, :update, :destroy]
 
@@ -66,12 +67,24 @@ class JoinMembersController < ApplicationController
 
     @join_member = party.join_members.build(user: user)
     
-    # status indicate the request, 0 means pending, 1 means invited, 2 means accepted, 3 means rejected.
+    # status indicate the request, 0 means pending, 1 means invited, 2 means accepted, 3 means rejected, 4 means owner.
     @join_member.status = 0
     @join_member.save
     #respond_with(@join_member)
     redirect_to parties_path
   end
+
+  # def createaspartyowner
+    
+    # user = User.find(params[:user_id])
+    # party = Party.find(params[:party_id])
+
+    # @join_member = party.join_members.build(user: user)
+    # @join_member.status = 4
+    # @join_member.save
+    
+    # redirect_to parties_show_path
+  # end
 
   def update
     @join_member.update(join_member_params)

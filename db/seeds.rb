@@ -46,5 +46,9 @@ open("./loadtestingsteffen/generate_dataset/party_mini.txt") do |parties|
         time = DateTime.strptime(time, "%H:%M")
         time = DateTime.new(date.year, date.month, date.day, time.hour, time.min, time.sec, date.zone)
         party = Party.create(name: pname, owner: name, date: date, time: time, location: location, description: description)
+        owner = User.find_by_name(name)
+        join_member = party.join_members.build(user: owner)
+        join_member.status = 4
+        join_member.save
     end
 end

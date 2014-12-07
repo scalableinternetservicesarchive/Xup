@@ -77,6 +77,10 @@ class PartiesController < ApplicationController
   def create
     @party = Party.new(party_params)
     @party.time = DateTime.new(@party.date.year, @party.date.month, @party.date.day, @party.time.hour, @party.time.min, @party.time.sec, @party.date.zone)
+    owner = User.find(current_user.id)
+    @join_member = @party.join_members.build(user: owner)
+    @join_member.status = 4
+    @join_member.save
 
     respond_to do |format|
       if @party.save

@@ -19,8 +19,10 @@
 <%# This is the table%>
 	
     <tbody>
-      <% @parties.each do |party| %>
-        <% if current_user.name == party.owner %>
+      <% owners = JoinMember.where('status == ?', 4) %>
+      <% @ownparties = owners.where('user_id == ?', current_user.id).pluck(:party_id) %>
+      <% @ownparties.each do |ownparty| %>
+          <% party = Party.find(ownparty) %>
           <tr>
             <td><%= party.name %></td>
             <td><%= party.owner %></td>
@@ -35,7 +37,7 @@
             <td><%= link_to 'Edit', edit_party_path(party), class: 'btn btn-warning btn-sm' %></td>
             <td><%= link_to 'Destroy', party, class: 'btn btn-danger btn-sm', method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
-        <% end %>
+        <%# <% end %1> %>
       <% end %>
     </tbody>
   </table>
