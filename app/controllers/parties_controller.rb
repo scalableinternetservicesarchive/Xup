@@ -50,7 +50,7 @@ class PartiesController < ApplicationController
     @parties = @parties.order(:time)
     @parties = @parties.paginate(:page => params[:page], :per_page => 20)
   end
-  
+
   # GET /parties/new
   def new
     @party = Party.new
