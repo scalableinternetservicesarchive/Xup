@@ -19,8 +19,8 @@
 <%# This is the table%>
 	
     <tbody>
-      <% owners = JoinMember.where('status == ?', 4) %>
-      <% @ownparties = owners.where('user_id == ?', current_user.id).pluck(:party_id) %>
+      <% owners = JoinMember.where(status: 4) %>
+      <% @ownparties = owners.where(user_id:  current_user.id).pluck(:party_id) %>
       <% @ownparties.each do |ownparty| %>
           <% party = Party.find(ownparty) %>
           <tr>
