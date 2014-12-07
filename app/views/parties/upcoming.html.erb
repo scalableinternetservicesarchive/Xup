@@ -15,20 +15,10 @@
       </tr>
     </thead>
 <%# This is the table%>
-<%
-  current = DateTime.now
-  seconds=current.to_i
-  @future=[]
-  @parties.each do |party| 
-    dt = DateTime.new(party.date.year, party.date.month, party.date.day, party.time.hour, party.time.min, party.time.sec, party.date.zone)
-    if dt.to_i>seconds
-      @future.push(party)
-    end
-  end
-%>
 	
     <tbody>
-      <% @future.each do |party| %>
+      <%= will_paginate @parties  %>
+      <% @parties.each do |party| %>
         <tr>
           <td><%= party.name %></td>
           <td><%= party.owner %></td>

@@ -6,7 +6,6 @@ class PartiesController < ApplicationController
   # GET /parties
   # GET /parties.json
   def index
-    # @parties = Party.all
     @parties = Party.order(:time)
     @parties = @parties.paginate(:page => params[:page], :per_page => 20)
   end
@@ -39,15 +38,17 @@ class PartiesController < ApplicationController
 
 
   def upcoming
-  #some query
-    # @parties = Party.all
-    @parties = Party.order(:time)
+    current = DateTime.now
+    @parties = Party.where("time >= ?", current)
+    @parties = @parties.order(:time)
+    @parties = @parties.paginate(:page => params[:page], :per_page => 20)
   end
 
   def past
-  #some query
-    # @parties = Party.all
-    @parties = Party.order(:time)
+    current = DateTime.now
+    @parties = Party.where("time < ?", current)
+    @parties = @parties.order(:time)
+    @parties = @parties.paginate(:page => params[:page], :per_page => 20)
   end
   
   # GET /parties/new

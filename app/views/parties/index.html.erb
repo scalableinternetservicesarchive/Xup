@@ -15,9 +15,8 @@
       </tr>
     </thead>
 
-    <% current = DateTime.now
-      seconds=current.to_i%>
-    end
+    <% current = DateTime.now %>
+    <% seconds=current.to_i%>
   
     <tbody>
       <%= will_paginate @parties  %>
