@@ -20,6 +20,7 @@
     end
   
     <tbody>
+      <%= will_paginate @parties  %>
       <% @parties.each do |party| 
         dt = DateTime.new(party.date.year, party.date.month, party.date.day, party.time.hour, party.time.min, party.time.sec, party.date.zone)
         %>

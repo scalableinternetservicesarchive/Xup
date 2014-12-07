@@ -8,6 +8,7 @@ class PartiesController < ApplicationController
   def index
     # @parties = Party.all
     @parties = Party.order(:time)
+    @parties = @parties.paginate(:page => params[:page], :per_page => 20)
   end
 
   def close_parties
