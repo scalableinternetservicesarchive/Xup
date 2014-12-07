@@ -1,0 +1,719 @@
+<funkload version="1.16.1" time="2014-12-05T23:15:42.797077">
+<config key="sleep_time_min" value="0.0" />
+<config key="node" value="169-231-98-160.wireless.ucsb.edu" />
+<config key="startup_delay" value="0.01" />
+<config key="cycles" value="[10, 50]" />
+<config key="cycle_time" value="1.0" />
+<config key="description" value="No test description" />
+<config key="configuration_file" value="/Users/steffenfb/programming/xup/loadtestingsteffen/Critical.conf" />
+<config key="class_title" value="Critical Path FunkLoad tests" />
+<config key="server_url" value="http://ec2-54-69-253-209.us-west-2.compute.amazonaws.com/" />
+<config key="module" value="test_Critical" />
+<config key="id" value="create_a_close_parties" />
+<config key="class_description" value="Testing the critical path of the lab app" />
+<config key="sleep_time" value="0.01" />
+<config key="sleep_time_max" value="0.5" />
+<config key="duration" value="30" />
+<config key="method" value="create_a_close_parties" />
+<config key="log_xml" value="/Users/steffenfb/programming/xup/loadtestingsteffen/steffreports/critical-bench.xml" />
+<config key="class" value="Critical" />
+<config key="python_version" value="2.7.5" />
+<response cycle="000" cvus="010" thread="001" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850142.81" duration="0.142732143402" />
+<response cycle="000" cvus="010" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850142.8" duration="0.195699930191" />
+<response cycle="000" cvus="010" thread="002" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850142.82" duration="0.187488079071" />
+<response cycle="000" cvus="010" thread="003" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850142.83" duration="0.273502111435" />
+<response cycle="000" cvus="010" thread="004" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850142.85" duration="0.438554048538" />
+<response cycle="000" cvus="010" thread="005" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850142.86" duration="0.623739004135" />
+<response cycle="000" cvus="010" thread="006" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850142.87" duration="0.651903152466" />
+<response cycle="000" cvus="010" thread="007" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850142.89" duration="0.84935092926" />
+<response cycle="000" cvus="010" thread="008" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850142.9" duration="1.01147699356" />
+<response cycle="000" cvus="010" thread="009" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850142.91" duration="1.01830387115" />
+<response cycle="000" cvus="010" thread="001" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850142.95" duration="1.30308413506" />
+<response cycle="000" cvus="010" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850142.99" duration="1.59638094902" />
+<response cycle="000" cvus="010" thread="002" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850143.01" duration="1.62856793404" />
+<response cycle="000" cvus="010" thread="003" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850143.11" duration="2.1419570446" />
+<response cycle="000" cvus="010" thread="004" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850143.29" duration="2.13900995255" />
+<response cycle="000" cvus="010" thread="005" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850143.48" duration="2.09562397003" />
+<response cycle="000" cvus="010" thread="006" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850143.52" duration="2.1155230999" />
+<response cycle="000" cvus="010" thread="007" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850143.74" duration="1.91539001465" />
+<response cycle="000" cvus="010" thread="008" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850143.91" duration="1.82409214973" />
+<response cycle="000" cvus="010" thread="009" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850143.93" duration="1.86008000374" />
+<response cycle="000" cvus="010" thread="001" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850144.26" duration="1.92247986794" />
+<response cycle="000" cvus="010" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850144.59" duration="2.19682002068" />
+<response cycle="000" cvus="010" thread="002" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850144.64" duration="2.29599690437" />
+<response cycle="000" cvus="010" thread="003" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850145.25" duration="2.26779007912" />
+<response cycle="000" cvus="010" thread="004" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850145.43" duration="2.23835802078" />
+<response cycle="000" cvus="010" thread="005" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850145.58" duration="2.40297985077" />
+<response cycle="000" cvus="010" thread="006" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850145.64" duration="2.46872091293" />
+<response cycle="000" cvus="010" thread="007" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850145.65" duration="2.53024291992" />
+<response cycle="000" cvus="010" thread="008" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850145.74" duration="2.47415494919" />
+<response cycle="000" cvus="010" thread="001" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Successful" url="//users" code="302" description="Create New User" time="1417850146.55" duration="1.66614603996" />
+<response cycle="000" cvus="010" thread="000" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Successful" url="//users" code="302" description="Create New User" time="1417850146.88" duration="1.35168600082" />
+<response cycle="000" cvus="010" thread="009" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850145.79" duration="2.51342701912" />
+<response cycle="000" cvus="010" thread="002" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Successful" url="//users" code="302" description="Create New User" time="1417850147.43" duration="1.21889305115" />
+<response cycle="000" cvus="010" thread="004" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Successful" url="//users" code="302" description="Create New User" time="1417850148.16" duration="1.1337761879" />
+<response cycle="000" cvus="010" thread="000" suite="Critical" name="create_a_close_parties" step="002" number="002" type="get" result="Successful" url="/profiles/3" code="200" description="" time="1417850148.23" duration="1.09114289284" />
+<response cycle="000" cvus="010" thread="001" suite="Critical" name="create_a_close_parties" step="002" number="002" type="get" result="Successful" url="/profiles/2" code="200" description="" time="1417850148.22" duration="1.78472018242" />
+<response cycle="000" cvus="010" thread="003" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Successful" url="//users" code="302" description="Create New User" time="1417850147.81" duration="8.07405900955" />
+<response cycle="000" cvus="010" thread="005" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Successful" url="//users" code="302" description="Create New User" time="1417850148.35" duration="7.54436016083" />
+<response cycle="000" cvus="010" thread="002" suite="Critical" name="create_a_close_parties" step="002" number="002" type="get" result="Failure" url="/profiles/4" code="502" description="" time="1417850148.65" duration="7.33400893211">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:15:56 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="000" cvus="010" thread="002" suite="Critical" name="create_a_close_parties"  time="1417850142.82" result="Failure" steps="2" duration="13.1611559391" connection_duration="12.6649549007" requests="5" pages="2" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 69, in create_a_close_parties&#10;    description="Create New User")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 320, in _browse&#10;    description=None, redirect=True)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /profiles/4&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="000" cvus="010" thread="004" suite="Critical" name="create_a_close_parties" step="002" number="002" type="get" result="Failure" url="/profiles/5" code="502" description="" time="1417850149.29" duration="6.69215607643">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:15:56 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="000" cvus="010" thread="004" suite="Critical" name="create_a_close_parties"  time="1417850142.85" result="Failure" steps="2" duration="13.1382770538" connection_duration="12.6418542862" requests="5" pages="2" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 69, in create_a_close_parties&#10;    description="Create New User")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 320, in _browse&#10;    description=None, redirect=True)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /profiles/5&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="000" cvus="010" thread="000" suite="Critical" name="create_a_close_parties" step="003" number="001" type="get" result="Failure" url="//new" code="502" description="create party page" time="1417850149.36" duration="6.62257695198">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:15:56 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="000" cvus="010" thread="000" suite="Critical" name="create_a_close_parties"  time="1417850142.8" result="Failure" steps="3" duration="13.188863039" connection_duration="13.0543067455" requests="6" pages="2" xmlrpc="0" redirects="1" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 71, in create_a_close_parties&#10;    self.get(server_url + "/new", description="create party page")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //new&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="000" cvus="010" thread="001" suite="Critical" name="create_a_close_parties" step="003" number="001" type="get" result="Failure" url="//new" code="502" description="create party page" time="1417850150.18" duration="5.81177186966">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:15:56 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="000" cvus="010" thread="001" suite="Critical" name="create_a_close_parties"  time="1417850142.81" result="Failure" steps="3" duration="13.1775500774" connection_duration="12.6309342384" requests="6" pages="2" xmlrpc="0" redirects="1" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 71, in create_a_close_parties&#10;    self.get(server_url + "/new", description="create party page")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //new&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="000" cvus="010" thread="006" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Failure" url="//users" code="502" description="Create New User" time="1417850148.31" duration="7.68997311592">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:15:56 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="000" cvus="010" thread="006" suite="Critical" name="create_a_close_parties"  time="1417850142.87" result="Failure" steps="2" duration="13.1300280094" connection_duration="12.9261202812" requests="4" pages="1" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 69, in create_a_close_parties&#10;    description="Create New User")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //users&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="000" cvus="010" thread="007" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Failure" url="//users" code="502" description="Create New User" time="1417850148.34" duration="7.68454003334">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:15:56 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="000" cvus="010" thread="007" suite="Critical" name="create_a_close_parties"  time="1417850142.89" result="Failure" steps="2" duration="13.1348130703" connection_duration="12.9795238972" requests="4" pages="1" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 69, in create_a_close_parties&#10;    description="Create New User")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //users&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="000" cvus="010" thread="008" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Failure" url="//users" code="502" description="Create New User" time="1417850148.42" duration="7.60969090462">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:15:56 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="000" cvus="010" thread="008" suite="Critical" name="create_a_close_parties"  time="1417850142.9" result="Failure" steps="2" duration="13.129475832" connection_duration="12.9194149971" requests="4" pages="1" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 69, in create_a_close_parties&#10;    description="Create New User")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //users&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="000" cvus="010" thread="009" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Failure" url="//users" code="502" description="Create New User" time="1417850148.45" duration="7.58302807808">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:15:56 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="000" cvus="010" thread="009" suite="Critical" name="create_a_close_parties"  time="1417850142.91" result="Failure" steps="2" duration="13.1208798885" connection_duration="12.9748389721" requests="4" pages="1" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 69, in create_a_close_parties&#10;    description="Create New User")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //users&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="000" cvus="010" thread="003" suite="Critical" name="create_a_close_parties" step="002" number="002" type="get" result="Failure" url="/profiles/7" code="502" description="" time="1417850155.88" duration="0.168426990509">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:15:56 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<response cycle="000" cvus="010" thread="005" suite="Critical" name="create_a_close_parties" step="002" number="002" type="get" result="Failure" url="/profiles/8" code="502" description="" time="1417850155.9" duration="0.15097117424">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:15:56 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="000" cvus="010" thread="003" suite="Critical" name="create_a_close_parties"  time="1417850142.83" result="Failure" steps="2" duration="13.2153110504" connection_duration="12.9257352352" requests="5" pages="2" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 69, in create_a_close_parties&#10;    description="Create New User")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 320, in _browse&#10;    description=None, redirect=True)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /profiles/7&#10;HTTP Response 502: Bad Gateway&#10;' />
+<testResult cycle="000" cvus="010" thread="005" suite="Critical" name="create_a_close_parties"  time="1417850142.86" result="Failure" steps="2" duration="13.1908400059" connection_duration="12.81767416" requests="5" pages="2" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 69, in create_a_close_parties&#10;    description="Create New User")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 320, in _browse&#10;    description=None, redirect=True)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /profiles/8&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="000" cvus="010" thread="002" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850156.0" duration="9.27538299561" />
+<response cycle="000" cvus="010" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850156.0" duration="9.37952208519" />
+<response cycle="000" cvus="010" thread="006" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850156.01" duration="9.55746102333" />
+<response cycle="000" cvus="010" thread="004" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850156.0" duration="9.61150097847" />
+<response cycle="000" cvus="010" thread="007" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850156.03" duration="9.60384392738" />
+<response cycle="000" cvus="010" thread="009" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850156.05" duration="9.65921998024" />
+<response cycle="000" cvus="010" thread="008" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850156.04" duration="9.72348999977" />
+<response cycle="000" cvus="010" thread="005" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850156.06" duration="9.90624189377" />
+<response cycle="000" cvus="010" thread="003" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850156.06" duration="10.1232600212" />
+<response cycle="000" cvus="010" thread="001" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850156.0" duration="10.4950270653" />
+<response cycle="000" cvus="010" thread="002" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850165.27" duration="3.8663418293" />
+<response cycle="000" cvus="010" thread="005" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850165.97" duration="3.68185591698" />
+<response cycle="000" cvus="010" thread="003" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850166.19" duration="3.61391210556" />
+<response cycle="000" cvus="010" thread="001" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850166.49" duration="4.64418697357" />
+<response cycle="000" cvus="010" thread="002" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850169.14" duration="2.01810407639" />
+<response cycle="000" cvus="010" thread="005" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850169.65" duration="2.95054888725" />
+<response cycle="000" cvus="010" thread="008" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850165.77" duration="6.86847805977" />
+<response cycle="000" cvus="010" thread="003" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850169.8" duration="2.86198806763" />
+<response cycle="000" cvus="010" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850165.38" duration="7.36252593994" />
+<response cycle="001" cvus="050" thread="004" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850192.98" duration="0.760547876358" />
+<response cycle="001" cvus="050" thread="003" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850192.97" duration="0.791435956955" />
+<response cycle="001" cvus="050" thread="006" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.01" duration="0.913202047348" />
+<response cycle="001" cvus="050" thread="005" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850192.99" duration="1.00015711784" />
+<response cycle="001" cvus="050" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850193.17" duration="0.907169103622" />
+<response cycle="001" cvus="050" thread="008" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.03" duration="1.11756682396" />
+<response cycle="001" cvus="050" thread="009" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.04" duration="1.12730097771" />
+<response cycle="001" cvus="050" thread="010" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.05" duration="1.14803004265" />
+<response cycle="001" cvus="050" thread="011" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.07" duration="1.16240596771" />
+<response cycle="001" cvus="050" thread="012" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.08" duration="1.17922115326" />
+<response cycle="001" cvus="050" thread="013" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.09" duration="1.61049509048" />
+<response cycle="001" cvus="050" thread="014" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.1" duration="1.64095902443" />
+<response cycle="001" cvus="050" thread="016" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.13" duration="1.68878006935" />
+<response cycle="001" cvus="050" thread="015" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.11" duration="1.77515912056" />
+<response cycle="001" cvus="050" thread="018" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.15" duration="1.83808493614" />
+<response cycle="001" cvus="050" thread="020" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.18" duration="1.9607899189" />
+<response cycle="001" cvus="050" thread="019" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.16" duration="2.56018090248" />
+<response cycle="001" cvus="050" thread="021" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.19" duration="2.71632409096" />
+<response cycle="001" cvus="050" thread="022" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.2" duration="2.82732796669" />
+<response cycle="001" cvus="050" thread="023" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.21" duration="2.86000394821" />
+<response cycle="001" cvus="050" thread="007" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.02" duration="3.19017505646" />
+<response cycle="001" cvus="050" thread="025" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.24" duration="3.21540594101" />
+<response cycle="001" cvus="050" thread="024" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.23" duration="3.27230787277" />
+<response cycle="001" cvus="050" thread="026" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.25" duration="3.30934906006" />
+<response cycle="001" cvus="050" thread="028" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.27" duration="3.79685401917" />
+<response cycle="001" cvus="050" thread="029" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.29" duration="3.86355209351" />
+<response cycle="001" cvus="050" thread="030" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.3" duration="3.9799618721" />
+<response cycle="001" cvus="050" thread="031" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.31" duration="4.55818581581" />
+<response cycle="001" cvus="050" thread="032" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.32" duration="4.74625706673" />
+<response cycle="001" cvus="050" thread="033" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.33" duration="5.25947999954" />
+<response cycle="001" cvus="050" thread="034" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.35" duration="5.27493000031" />
+<response cycle="001" cvus="050" thread="047" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Failure" url="//users/sign_up" code="502" description="View the user signup page" time="1417850193.51" duration="5.63414716721">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:16:36 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="050" thread="047" suite="Critical" name="create_a_close_parties"  time="1417850193.5" result="Failure" steps="1" duration="5.63670706749" connection_duration="5.63414716721" requests="1" pages="0" xmlrpc="0" redirects="0" images="0" links="0" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 57, in create_a_close_parties&#10;    self.get(server_url + "/users/sign_up", description="View the user signup page")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //users/sign_up&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="001" cvus="050" thread="039" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Failure" url="//users/sign_up" code="502" description="View the user signup page" time="1417850193.41" duration="5.79439020157">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:16:36 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="050" thread="039" suite="Critical" name="create_a_close_parties"  time="1417850193.41" result="Failure" steps="1" duration="5.79498314857" connection_duration="5.79439020157" requests="1" pages="0" xmlrpc="0" redirects="0" images="0" links="0" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 57, in create_a_close_parties&#10;    self.get(server_url + "/users/sign_up", description="View the user signup page")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //users/sign_up&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="001" cvus="050" thread="045" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Failure" url="//users/sign_up" code="502" description="View the user signup page" time="1417850193.48" duration="5.72715997696">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:16:36 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="050" thread="045" suite="Critical" name="create_a_close_parties"  time="1417850193.48" result="Failure" steps="1" duration="5.7275698185" connection_duration="5.72715997696" requests="1" pages="0" xmlrpc="0" redirects="0" images="0" links="0" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 57, in create_a_close_parties&#10;    self.get(server_url + "/users/sign_up", description="View the user signup page")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //users/sign_up&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="001" cvus="050" thread="027" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Failure" url="//users/sign_up" code="502" description="View the user signup page" time="1417850193.26" duration="5.98612689972">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:16:36 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="050" thread="027" suite="Critical" name="create_a_close_parties"  time="1417850193.26" result="Failure" steps="1" duration="5.98671317101" connection_duration="5.98612689972" requests="1" pages="0" xmlrpc="0" redirects="0" images="0" links="0" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 57, in create_a_close_parties&#10;    self.get(server_url + "/users/sign_up", description="View the user signup page")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //users/sign_up&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="001" cvus="050" thread="041" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Failure" url="//users/sign_up" code="502" description="View the user signup page" time="1417850193.43" duration="5.85447692871">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:16:36 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="050" thread="041" suite="Critical" name="create_a_close_parties"  time="1417850193.43" result="Failure" steps="1" duration="5.85518193245" connection_duration="5.85447692871" requests="1" pages="0" xmlrpc="0" redirects="0" images="0" links="0" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 57, in create_a_close_parties&#10;    self.get(server_url + "/users/sign_up", description="View the user signup page")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //users/sign_up&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="001" cvus="050" thread="042" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Failure" url="//users/sign_up" code="502" description="View the user signup page" time="1417850193.44" duration="5.85020112991">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:16:36 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="050" thread="042" suite="Critical" name="create_a_close_parties"  time="1417850193.44" result="Failure" steps="1" duration="5.85068082809" connection_duration="5.85020112991" requests="1" pages="0" xmlrpc="0" redirects="0" images="0" links="0" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 57, in create_a_close_parties&#10;    self.get(server_url + "/users/sign_up", description="View the user signup page")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //users/sign_up&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="001" cvus="050" thread="044" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Failure" url="//users/sign_up" code="502" description="View the user signup page" time="1417850193.47" duration="5.87587881088">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:16:36 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="050" thread="044" suite="Critical" name="create_a_close_parties"  time="1417850193.47" result="Failure" steps="1" duration="5.87629890442" connection_duration="5.87587881088" requests="1" pages="0" xmlrpc="0" redirects="0" images="0" links="0" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 57, in create_a_close_parties&#10;    self.get(server_url + "/users/sign_up", description="View the user signup page")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //users/sign_up&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="001" cvus="050" thread="040" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Failure" url="//users/sign_up" code="502" description="View the user signup page" time="1417850193.42" duration="5.97131299973">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:16:36 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="050" thread="040" suite="Critical" name="create_a_close_parties"  time="1417850193.42" result="Failure" steps="1" duration="5.97170591354" connection_duration="5.97131299973" requests="1" pages="0" xmlrpc="0" redirects="0" images="0" links="0" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 57, in create_a_close_parties&#10;    self.get(server_url + "/users/sign_up", description="View the user signup page")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //users/sign_up&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="001" cvus="050" thread="049" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Failure" url="//users/sign_up" code="502" description="View the user signup page" time="1417850193.53" duration="5.86489391327">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:16:36 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="050" thread="049" suite="Critical" name="create_a_close_parties"  time="1417850193.53" result="Failure" steps="1" duration="5.86530399323" connection_duration="5.86489391327" requests="1" pages="0" xmlrpc="0" redirects="0" images="0" links="0" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 57, in create_a_close_parties&#10;    self.get(server_url + "/users/sign_up", description="View the user signup page")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //users/sign_up&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="001" cvus="050" thread="046" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Failure" url="//users/sign_up" code="502" description="View the user signup page" time="1417850193.49" duration="5.92326688766">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:16:36 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="050" thread="046" suite="Critical" name="create_a_close_parties"  time="1417850193.49" result="Failure" steps="1" duration="5.92368817329" connection_duration="5.92326688766" requests="1" pages="0" xmlrpc="0" redirects="0" images="0" links="0" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 57, in create_a_close_parties&#10;    self.get(server_url + "/users/sign_up", description="View the user signup page")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //users/sign_up&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="001" cvus="050" thread="043" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Failure" url="//users/sign_up" code="502" description="View the user signup page" time="1417850193.46" duration="5.96854805946">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:16:36 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="050" thread="043" suite="Critical" name="create_a_close_parties"  time="1417850193.46" result="Failure" steps="1" duration="5.96912097931" connection_duration="5.96854805946" requests="1" pages="0" xmlrpc="0" redirects="0" images="0" links="0" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 57, in create_a_close_parties&#10;    self.get(server_url + "/users/sign_up", description="View the user signup page")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //users/sign_up&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="001" cvus="050" thread="007" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Failure" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="-1" description="" time="1417850196.21" duration="4.01283979416">
+  <headers>
+
+  </headers>
+  <body><![CDATA[
+None
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="050" thread="007" suite="Critical" name="create_a_close_parties"  time="1417850193.02" result="Failure" steps="1" duration="7.20368790627" connection_duration="3.19017505646" requests="2" pages="1" xmlrpc="0" redirects="0" images="0" links="0" traceback="Traceback (most recent call last):&#10;   File &quot;/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py&quot;, line 946, in __call__&#10;    testMethod()&#10;   File &quot;/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py&quot;, line 57, in create_a_close_parties&#10;    self.get(server_url + &quot;/users/sign_up&quot;, description=&quot;View the user signup page&quot;)&#10;   File &quot;/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py&quot;, line 391, in get&#10;    method=&quot;get&quot;, load_auto_links=load_auto_links)&#10;   File &quot;/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py&quot;, line 348, in _browse&#10;    raise self.failureException, str(error)&#10; AssertionError: ERROR: /bootstrap/3.2.0/css/bootstrap.min.css&#10;HTTP Response -1: ''&#10;" />
+<response cycle="001" cvus="050" thread="025" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Failure" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="-1" description="" time="1417850196.45" duration="4.00283002853">
+  <headers>
+
+  </headers>
+  <body><![CDATA[
+None
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="050" thread="025" suite="Critical" name="create_a_close_parties"  time="1417850193.24" result="Failure" steps="1" duration="7.21879005432" connection_duration="3.21540594101" requests="2" pages="1" xmlrpc="0" redirects="0" images="0" links="0" traceback="Traceback (most recent call last):&#10;   File &quot;/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py&quot;, line 946, in __call__&#10;    testMethod()&#10;   File &quot;/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py&quot;, line 57, in create_a_close_parties&#10;    self.get(server_url + &quot;/users/sign_up&quot;, description=&quot;View the user signup page&quot;)&#10;   File &quot;/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py&quot;, line 391, in get&#10;    method=&quot;get&quot;, load_auto_links=load_auto_links)&#10;   File &quot;/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py&quot;, line 348, in _browse&#10;    raise self.failureException, str(error)&#10; AssertionError: ERROR: /bootstrap/3.2.0/css/bootstrap.min.css&#10;HTTP Response -1: ''&#10;" />
+<response cycle="001" cvus="050" thread="024" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Failure" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="-1" description="" time="1417850196.5" duration="4.00274610519">
+  <headers>
+
+  </headers>
+  <body><![CDATA[
+None
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="050" thread="024" suite="Critical" name="create_a_close_parties"  time="1417850193.23" result="Failure" steps="1" duration="7.27576899529" connection_duration="3.27230787277" requests="2" pages="1" xmlrpc="0" redirects="0" images="0" links="0" traceback="Traceback (most recent call last):&#10;   File &quot;/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py&quot;, line 946, in __call__&#10;    testMethod()&#10;   File &quot;/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py&quot;, line 57, in create_a_close_parties&#10;    self.get(server_url + &quot;/users/sign_up&quot;, description=&quot;View the user signup page&quot;)&#10;   File &quot;/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py&quot;, line 391, in get&#10;    method=&quot;get&quot;, load_auto_links=load_auto_links)&#10;   File &quot;/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py&quot;, line 348, in _browse&#10;    raise self.failureException, str(error)&#10; AssertionError: ERROR: /bootstrap/3.2.0/css/bootstrap.min.css&#10;HTTP Response -1: ''&#10;" />
+<response cycle="001" cvus="050" thread="017" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.14" duration="10.6203510761" />
+<response cycle="001" cvus="050" thread="048" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Failure" url="//users/sign_up" code="502" description="View the user signup page" time="1417850193.52" duration="10.3311858177">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:16:36 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="050" thread="048" suite="Critical" name="create_a_close_parties"  time="1417850193.52" result="Failure" steps="1" duration="10.3315870762" connection_duration="10.3311858177" requests="1" pages="0" xmlrpc="0" redirects="0" images="0" links="0" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 57, in create_a_close_parties&#10;    self.get(server_url + "/users/sign_up", description="View the user signup page")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 391, in get&#10;    method="get", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //users/sign_up&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="001" cvus="050" thread="010" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850194.2" duration="9.91992497444" />
+<response cycle="001" cvus="050" thread="011" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850194.23" duration="9.94439411163" />
+<response cycle="001" cvus="050" thread="035" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.36" duration="10.9855241776" />
+<response cycle="001" cvus="050" thread="037" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.38" duration="10.9734289646" />
+<response cycle="001" cvus="050" thread="036" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.37" duration="10.9938950539" />
+<response cycle="001" cvus="050" thread="000" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850194.08" duration="10.6899979115" />
+<response cycle="001" cvus="050" thread="004" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850193.74" duration="11.0553429127" />
+<response cycle="001" cvus="050" thread="005" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850193.99" duration="11.2144079208" />
+<response cycle="001" cvus="050" thread="021" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850195.91" duration="11.529613018" />
+<response cycle="001" cvus="050" thread="023" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850196.07" duration="11.6568579674" />
+<response cycle="001" cvus="050" thread="017" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850203.76" duration="4.12757992744" />
+<response cycle="001" cvus="050" thread="000" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Successful" url="//users" code="302" description="Create New User" time="1417850204.93" duration="3.38225507736" />
+<response cycle="001" cvus="050" thread="027" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850199.26" duration="9.09110879898" />
+<response cycle="001" cvus="050" thread="010" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850204.12" duration="4.29076290131" />
+<response cycle="001" cvus="050" thread="038" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850193.4" duration="15.0859310627" />
+<response cycle="001" cvus="050" thread="041" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850199.3" duration="9.28737187386" />
+<response cycle="001" cvus="050" thread="047" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850199.15" duration="9.43854212761" />
+<response cycle="001" cvus="050" thread="002" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850193.33" duration="15.3239059448" />
+<response cycle="001" cvus="050" thread="049" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850199.41" duration="9.29400396347" />
+<response cycle="001" cvus="050" thread="046" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850199.43" duration="9.31801104546" />
+<response cycle="001" cvus="050" thread="040" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850199.4" duration="9.50386691093" />
+<response cycle="001" cvus="050" thread="011" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850204.17" duration="5.02426791191" />
+<response cycle="001" cvus="050" thread="006" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850193.92" duration="15.3325529099" />
+<response cycle="001" cvus="050" thread="019" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850195.72" duration="13.7262611389" />
+<response cycle="001" cvus="050" thread="000" suite="Critical" name="create_a_close_parties" step="002" number="002" type="get" result="Successful" url="/profiles/18" code="302" description="" time="1417850208.31" duration="1.22607302666" />
+<response cycle="001" cvus="050" thread="010" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Successful" url="//users" code="302" description="Create New User" time="1417850208.72" duration="1.80766916275" />
+<response cycle="001" cvus="050" thread="013" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850194.7" duration="15.9686419964" />
+<response cycle="001" cvus="050" thread="014" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850194.74" duration="16.0839350224" />
+<response cycle="001" cvus="050" thread="004" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850204.8" duration="6.79484796524" />
+<response cycle="001" cvus="050" thread="011" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Successful" url="//users" code="302" description="Create New User" time="1417850209.47" duration="2.30552816391" />
+<response cycle="001" cvus="050" thread="000" suite="Critical" name="create_a_close_parties" step="002" number="003" type="get" result="Successful" url="/profiles/new" code="200" description="" time="1417850209.54" duration="2.25305199623" />
+<response cycle="001" cvus="050" thread="023" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850207.73" duration="4.11824607849" />
+<response cycle="001" cvus="050" thread="027" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850208.35" duration="3.99798417091" />
+<response cycle="001" cvus="050" thread="038" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850208.48" duration="4.16518902779" />
+<response cycle="001" cvus="050" thread="010" suite="Critical" name="create_a_close_parties" step="002" number="002" type="get" result="Successful" url="/profiles/19" code="200" description="" time="1417850210.53" duration="2.20300984383" />
+<response cycle="001" cvus="050" thread="002" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850208.65" duration="4.30814003944" />
+<response cycle="001" cvus="050" thread="044" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850199.36" duration="13.7367999554" />
+<response cycle="001" cvus="050" thread="042" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850199.31" duration="13.8392689228" />
+<response cycle="001" cvus="050" thread="043" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850199.44" duration="13.7159070969" />
+<response cycle="001" cvus="050" thread="021" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850207.44" duration="5.8309481144" />
+<response cycle="001" cvus="050" thread="011" suite="Critical" name="create_a_close_parties" step="002" number="002" type="get" result="Successful" url="/profiles/20" code="302" description="" time="1417850211.78" duration="1.49435997009" />
+<response cycle="001" cvus="050" thread="016" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850194.82" duration="18.5852069855" />
+<response cycle="001" cvus="050" thread="029" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850197.15" duration="16.254971981" />
+<response cycle="001" cvus="050" thread="006" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850209.25" duration="4.29582619667" />
+<response cycle="001" cvus="050" thread="005" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850205.21" duration="8.41944694519" />
+<response cycle="001" cvus="050" thread="000" suite="Critical" name="create_a_close_parties" step="003" number="001" type="get" result="Successful" url="//new" code="200" description="create party page" time="1417850211.97" duration="1.85876202583" />
+<response cycle="001" cvus="050" thread="020" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850195.14" duration="18.7045409679" />
+<response cycle="001" cvus="050" thread="019" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850209.45" duration="4.40839409828" />
+<response cycle="001" cvus="050" thread="001" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850193.42" duration="20.5515899658" />
+<response cycle="001" cvus="050" thread="010" suite="Critical" name="create_a_close_parties" step="003" number="001" type="get" result="Successful" url="//new" code="200" description="create party page" time="1417850212.82" duration="1.56219601631" />
+<response cycle="001" cvus="050" thread="013" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850210.67" duration="4.26831293106" />
+<response cycle="001" cvus="050" thread="011" suite="Critical" name="create_a_close_parties" step="002" number="003" type="get" result="Successful" url="/profiles/new" code="200" description="" time="1417850213.27" duration="2.04440999031" />
+<response cycle="001" cvus="050" thread="048" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850203.86" duration="11.5279409885" />
+<response cycle="001" cvus="050" thread="022" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850196.03" duration="19.5436730385" />
+<response cycle="001" cvus="050" thread="035" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850204.35" duration="11.7981390953" />
+<response cycle="001" cvus="050" thread="006" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Failure" url="//users" code="502" description="Create New User" time="1417850213.66" duration="2.72069907188">
+  <headers>
+    <header name="date" value="Sat, 06 Dec 2014 07:16:56 GMT" />
+    <header name="content-length" value="172" />
+    <header name="content-type" value="text/html" />
+    <header name="connection" value="close" />
+    <header name="server" value="nginx/1.6.2" />
+  </headers>
+  <body><![CDATA[
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.6.2</center>
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="050" thread="006" suite="Critical" name="create_a_close_parties"  time="1417850193.01" result="Failure" steps="2" duration="23.3777809143" connection_duration="23.2622802258" requests="4" pages="1" xmlrpc="0" redirects="0" images="0" links="2" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 69, in create_a_close_parties&#10;    description="Create New User")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //users&#10;HTTP Response 502: Bad Gateway&#10;' />
+<response cycle="001" cvus="050" thread="014" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850210.83" duration="5.66365480423" />
+<response cycle="001" cvus="050" thread="009" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850194.17" duration="22.8052680492" />
+<response cycle="001" cvus="050" thread="012" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850194.26" duration="23.3061490059" />
+<response cycle="001" cvus="050" thread="042" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850213.15" duration="4.53671693802" />
+<response cycle="001" cvus="050" thread="027" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850212.35" duration="5.39442586899" />
+<response cycle="001" cvus="050" thread="018" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850194.99" duration="22.7937610149" />
+<response cycle="001" cvus="050" thread="023" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Successful" url="//users" code="302" description="Create New User" time="1417850211.99" duration="5.80077695847" />
+<response cycle="001" cvus="050" thread="032" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850198.07" duration="19.744890213" />
+<response cycle="001" cvus="050" thread="016" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850213.4" duration="4.77793002129" />
+<response cycle="001" cvus="050" thread="049" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850208.7" duration="9.95075511932" />
+<response cycle="001" cvus="050" thread="020" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850213.84" duration="5.0700340271" />
+<response cycle="001" cvus="050" thread="038" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850212.65" duration="6.44848394394" />
+<response cycle="001" cvus="050" thread="029" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850213.41" duration="5.7046020031" />
+<response cycle="001" cvus="050" thread="017" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850207.89" duration="11.2502579689" />
+<response cycle="001" cvus="050" thread="001" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850213.97" duration="5.19400310516" />
+<response cycle="001" cvus="050" thread="037" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850204.36" duration="14.8975679874" />
+<response cycle="001" cvus="050" thread="046" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850208.75" duration="10.5381350517" />
+<response cycle="001" cvus="050" thread="045" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850199.22" duration="20.2677099705" />
+<response cycle="001" cvus="050" thread="039" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850199.21" duration="20.4713499546" />
+<response cycle="001" cvus="050" thread="048" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850215.39" duration="4.30435776711" />
+<response cycle="001" cvus="050" thread="031" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850197.87" duration="21.8531219959" />
+<response cycle="001" cvus="050" thread="022" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850215.57" duration="4.37464499474" />
+<response cycle="001" cvus="050" thread="015" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850194.89" duration="25.1241788864" />
+<response cycle="001" cvus="050" thread="047" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850208.59" duration="11.4719390869" />
+<response cycle="001" cvus="050" thread="025" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850200.47" duration="19.8222281933" />
+<response cycle="001" cvus="050" thread="024" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850200.51" duration="19.7986319065" />
+<response cycle="001" cvus="050" thread="041" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850208.59" duration="12.0096199512" />
+<response cycle="001" cvus="050" thread="028" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850197.07" duration="23.7988979816" />
+<response cycle="001" cvus="050" thread="009" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850216.98" duration="3.90036392212" />
+<response cycle="001" cvus="050" thread="004" suite="Critical" name="create_a_close_parties" step="002" number="001" type="post" result="Successful" url="//users" code="302" description="Create New User" time="1417850211.77" duration="9.10756921768" />
+<response cycle="001" cvus="050" thread="007" suite="Critical" name="create_a_close_parties" step="001" number="001" type="get" result="Successful" url="//users/sign_up" code="200" description="View the user signup page" time="1417850200.23" duration="20.6553571224" />
+<response cycle="001" cvus="050" thread="034" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850198.62" duration="23.130712986" />
+<response cycle="001" cvus="050" thread="030" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850197.28" duration="24.5824010372" />
+<response cycle="001" cvus="050" thread="044" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850213.09" duration="8.855645895" />
+<response cycle="001" cvus="050" thread="012" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850217.56" duration="4.55232596397" />
+<response cycle="001" cvus="050" thread="042" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850217.68" duration="4.4989361763" />
+<response cycle="001" cvus="050" thread="018" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850217.78" duration="4.46203303337" />
+<response cycle="001" cvus="050" thread="045" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850219.49" duration="3.57441687584" />
+<response cycle="001" cvus="050" thread="032" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850217.81" duration="5.4307038784" />
+<response cycle="001" cvus="050" thread="049" suite="Critical" name="create_a_close_parties" step="001" number="003" type="link" result="Successful" url="/assets/application-61c7d55e81567830684b7378699345b0.css" code="200" description="" time="1417850218.65" duration="4.69207000732" />
+<response cycle="001" cvus="050" thread="039" suite="Critical" name="create_a_close_parties" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1417850219.69" duration="3.82495498657" />
+</funkload>

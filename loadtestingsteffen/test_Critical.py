@@ -24,6 +24,7 @@ class Critical(FunkLoadTestCase):
     	server_url = self.server_url
     	self.get(server_url + "/closeparties", description="Watching the close parties")
     
+
     def join_a_party(self):
         server_url = self.server_url    
         self.get(server_url, description='Get root URL')
@@ -76,7 +77,7 @@ class Critical(FunkLoadTestCase):
         ran=rand/10
         
         lat=34.42
-        
+            
         lon=119.8+ran
         print 'posting a party'
         self.post(self.server_url + "/parties",
@@ -160,8 +161,6 @@ class Critical(FunkLoadTestCase):
 
         print 'all done'
 
-
-       
 
 
     def join_all_parties(self):
@@ -331,6 +330,8 @@ class Critical(FunkLoadTestCase):
 
 
 
+
+
     def test_critical_path(self):
 		server_url = self.server_url
 		self.get(server_url, description='Get root URL')
@@ -394,14 +395,14 @@ class Critical(FunkLoadTestCase):
 
 
     def test_critical_path_readonly(self):
-	server_url = self.server_url
-	self.get(server_url, description='View root URL')
-	self.get(server_url, description='View root URL3')
-	#self.get(server_url + "/users/sign_up", description="View the user signup page")
-	#self.get(server_url + "/communities/", description="View the communities page")
-	#self.get(server_url + "/submissions/", description="View the new submissions page")
-	self.get(server_url + "/past", description="View the past page") 
-	self.get(server_url + "/closeparties", description="View the closeparties")
+    	server_url = self.server_url
+    	self.get(server_url, description='View root URL')
+    	self.get(server_url, description='View root URL3')
+    	#self.get(server_url + "/users/sign_up", description="View the user signup page")
+    	#self.get(server_url + "/communities/", description="View the communities page")
+    	#self.get(server_url + "/submissions/", description="View the new submissions page")
+    	self.get(server_url + "/past", description="View the past page") 
+    	self.get(server_url + "/closeparties", description="View the closeparties")
 
 
 
