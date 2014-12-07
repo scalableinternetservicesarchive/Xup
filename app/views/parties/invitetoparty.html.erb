@@ -4,17 +4,10 @@
  related = JoinMember.where party_id: @party.id
  prel= related.pluck(:user_id)
  prel.push(current_user.id)
- @users = User.all
  
-@currentusers=[]
- @users.each do |u|
+ @inviteusers = User.where('id not in (?)', prel)
+ @inviteusers = @inviteusers.paginate(:page => params[:page], :per_page => 20)
 
-  if !prel.include?(u.id)
-   
-
-    @currentusers.push(u)
-  end
-end
 p 'after'
 
  %>
@@ -33,8 +26,8 @@ p 'after'
     </thead>
 
     <tbody>
-
-      <% @currentusers.each do |u| %>
+      <%= will_paginate @inviteusers %>
+      <% @inviteusers.each do |u| %>
       <tr>
       <td><%=u.name%></td>
       
