@@ -1,16 +1,28 @@
 <h1 id="invites">Do your want to invite someone?</h1>
 
-<% p 'before'
+
+
+<%= form_tag invitetoparty_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search for people", :name => nil %>
+   
+  </p>
+<% end %>
+
+<% 
  related = JoinMember.where party_id: @party.id
  prel= related.pluck(:user_id)
  prel.push(current_user.id)
  
  @inviteusers = User.where('id not in (?)', prel)
+ @inviteusers = @inviteusers.search(params[:search]) if params[:search].present?
  @inviteusers = @inviteusers.paginate(:page => params[:page], :per_page => 20)
 
-p 'after'
 
  %>
+
+ 
 
 <div class="table-responsive">
   <table class="table table-striped">

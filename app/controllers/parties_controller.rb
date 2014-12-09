@@ -33,6 +33,7 @@ class PartiesController < ApplicationController
   end
 
   def invitetoparty
+    @people = User.search(params[:search])
   
   end
 

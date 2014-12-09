@@ -18,6 +18,14 @@ class User < ActiveRecord::Base
 
   after_create :skip_conf!
 
+  def self.search(search)
+  if search
+    self.where("name like ?", "%#{search}%")
+  else
+    self.all
+  end
+end
+
 
   def self.find_for_oauth(auth, signed_in_resource = nil)
     p 'omni'
