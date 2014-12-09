@@ -20,6 +20,16 @@ class ProfilesController < ApplicationController
 
   # GET /profiles/1/edit
   def edit
+    #@profile.user_id == current_user.id
+    respond_to do |format|
+      if (@profile.user_id == current_user.id)
+        format.html { render :edit }
+        format.json { render json: @profile.errors, status: :unprocessable_entity }
+      else
+        format.html { redirect_to @profile, notice: 'Redirectet to profile.' }
+        format.json { render :show, status: :ok, location: @profile }
+      end
+    end
   end
 
   # POST /profiles
