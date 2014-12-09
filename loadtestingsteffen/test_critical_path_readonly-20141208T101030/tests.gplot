@@ -1,0 +1,8 @@
+set output "/Users/steffenfb/programming/xup/loadtestingsteffen/test_critical_path_readonly-20141208T101030/tests.png"
+set title "Successful Tests Per Second"
+set terminal png size 640,540
+set xlabel "Concurrent Users"
+set ylabel "Test/s"
+set grid back
+set xrange [0:11]
+plot "/Users/steffenfb/programming/xup/loadtestingsteffen/test_critical_path_readonly-20141208T101030/tests.data" u 1:2 w linespoints lw 2 lt 2 t "STPS"
