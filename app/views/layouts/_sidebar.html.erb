@@ -13,9 +13,11 @@
             <a href="/myparties" >My Parties</a>
           <% end %>
         </li>
-        <li <%if current_page?(myinvites_path)%> class="active"<%end%>>
-          <a href="/myinvites">My Invitations</a>
-        </li>
+        <% if user_signed_in?  %>
+          <li <%if current_page?(myinvites_path)%> class="active"<%end%>>
+            <a href="/myinvites">My Invitations</a>
+          </li>
+        <% end %>
         <li <%if current_page?(partyrequest_path)%> class="active"<%end%>>
           <a href="/partyrequest">Requests</a>
         </li>
@@ -26,3 +28,5 @@
     </div>
   </div>
 </div>
+
+/myinvites
