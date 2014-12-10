@@ -10,7 +10,7 @@
      <h3>Connect with cool people, and have a good time!</h3> 
      <div class="container">
 	     <div class="col-md-12">
-	     		<%= render "devise/shared/signup" %>
+	     	<%= render "devise/shared/signup" %>
 	     </div> 
      </div> 
 </div> 
@@ -24,13 +24,14 @@
 		
 		<!-- render the javascript that handeles the map -->
 		<div class="col-md-10">
-			<%= render 'mapScript' %>
+            <%= render 'mapScript' %>
 		</div>
 
+        <% cache "image" do %>
       	<div class ="row">
 	        <div class="col-md-3">
 	            <div class="thumbnail">
-	                 <img src="http://harryincali.files.wordpress.com/2013/05/img_1380.jpg" >
+                    <img src="http://harryincali.files.wordpress.com/2013/05/img_1380.jpg" >
 	            </div>
 	            <div class="thumbnail">
 	                 <img src="http://bleuwater.files.wordpress.com/2014/04/maxresdefault.jpg" >
@@ -52,7 +53,8 @@
 	                 <img src="http://media.jrn.com/images/drink.19_1.jpg"  >
 	            </div> 
 	        </div>
-	    </div>
+        </div>
+        <% end %>
 	</div>
 </div>
     <!-- /content, do not want to inherris this-->

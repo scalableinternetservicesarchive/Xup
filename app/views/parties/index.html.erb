@@ -20,8 +20,9 @@
   
     <tbody>
       <%= will_paginate @parties  %>
-      <% @parties.each do |party| 
-        dt = DateTime.new(party.date.year, party.date.month, party.date.day, party.time.hour, party.time.min, party.time.sec, party.date.zone)
+      <% @parties.each do |party| %> 
+      <% cache(party) do %>
+        <%  dt = DateTime.new(party.date.year, party.date.month, party.date.day, party.time.hour, party.time.min, party.time.sec, party.date.zone)
         %>
         <tr>
           <td><%= party.name %></td>
@@ -67,6 +68,7 @@
           <% end %>
         </tr>
       <% end %>
+  <% end %>
     </tbody>
   </table>
 </div>

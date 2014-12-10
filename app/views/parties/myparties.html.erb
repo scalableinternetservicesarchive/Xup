@@ -23,6 +23,7 @@
       <% @ownparties = owners.where(user_id:  current_user.id).pluck(:party_id) %>
       <% @ownparties.each do |ownparty| %>
           <% party = Party.find(ownparty) %>
+          <% cache(party) do %>
           <tr>
             <td><%= party.name %></td>
             <td><%= party.owner %></td>
@@ -37,7 +38,7 @@
             <td><%= link_to 'Edit', edit_party_path(party), class: 'btn btn-warning btn-sm' %></td>
             <td><%= link_to 'Destroy', party, class: 'btn btn-danger btn-sm', method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
-        <%# <% end %1> %>
+        <% end %>
       <% end %>
     </tbody>
   </table>

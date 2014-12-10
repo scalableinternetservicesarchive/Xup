@@ -40,12 +40,14 @@
     <tbody>
       <%= will_paginate @inviteusers %>
       <% @inviteusers.each do |u| %>
+      <% cache(u) do %>
       <tr>
       <td><%=u.name%></td>
       
       <td><%= button_to 'Invite',{ :controller => :join_members, :action => 'createasinvite', :user_id => u.id, :party_id => @party.id}, class: 'btn btn-success' %></td>
       </tr>
       <%end%>
+      <% end %>
 
       </tbody>
   </table>

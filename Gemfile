@@ -73,3 +73,5 @@ gem 'omniauth-facebook'
 gem 'gon'
 
 gem 'will_paginate', '~> 3.0.5'
+
+gem "dalli"
