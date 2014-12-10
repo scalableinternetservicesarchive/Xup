@@ -44,6 +44,7 @@ class JoinMembersController < ApplicationController
     @join_member.status = 2
     @join_member.save
     flash[:notice] = "Successfully joined."
+    Party.find_by(params[:party_id]).touch
     redirect_to :back
   end
 
@@ -70,6 +71,7 @@ class JoinMembersController < ApplicationController
     # status indicate the request, 0 means pending, 1 means invited, 2 means accepted, 3 means rejected, 4 means owner.
     @join_member.status = 0
     @join_member.save
+    Party.find_by(params[:party_id]).touch
     #respond_with(@join_member)
     redirect_to parties_path
   end
