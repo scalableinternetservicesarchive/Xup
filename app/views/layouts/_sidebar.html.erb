@@ -3,25 +3,29 @@
   <div class="row">
     <div class="col-sm-1 col-md-2  sidebar"> <!-- col-lg-1 -->
       <ul class="nav nav-sidebar">
-        <li <%if current_page?(profile_path(:id))%> class="active"<%end%>>
-          <% if user_signed_in?  %>
-              <%= link_to "My Account", profile_path(current_user.profile.id) %>
-          <% end %>
-        </li>
-        <li <%if current_page?(myparties_path)%> class="active"<%end%>>
-          <% if user_signed_in? %>
-            <a href="/myparties" >My Parties</a>
-          <% end %>
-        </li>
-        <li <%if current_page?(myinvites_path)%> class="active"<%end%>>
-          <a href="/myinvites">My Invitations</a>
-        </li>
-        <li <%if current_page?(partyrequest_path)%> class="active"<%end%>>
-          <a href="/partyrequest">Requests</a>
-        </li>
+        <% if user_signed_in?  %>
+          
+          <li <%if current_page?(profile_path(:id))%> class="active"<%end%>>
+            <%= link_to "My Account", profile_path(current_user.profile.id) %>
+          </li>
+    
+          <li <%if current_page?(myparties_path)%> class="active"<%end%>>
+            <a href="/myparties" >My Parties</a> 
+          </li>
+        
+          <li <%if current_page?(myinvites_path)%> class="active"<%end%>>
+            <a href="/myinvites">My Invitations</a>
+          </li>
+      
+          <li <%if current_page?(partyrequest_path)%> class="active"<%end%>>
+            <a href="/partyrequest">Requests</a>
+          </li>
+        <% end %>
+        <!--
         <li>
           <a href="#">Friends</a>
         </li>
+        -->
       </ul>
     </div>
   </div>
