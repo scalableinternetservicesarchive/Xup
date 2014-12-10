@@ -1,5 +1,8 @@
 <h1>Listing parties</h1>
 
+<% button_types = ["btn btn-warning btn-sm", "btn btn-info btn-sm", "btn btn-success btn-sm", "btn btn-dander btn-sm"] %>
+<% button_names = ["Pending", "Invited", "Accepted", "Rejected"] %>
+
 <div class="table-responsive">
   <table class="table table-striped">
     <thead>
@@ -43,7 +46,9 @@
                   <td><%= link_to 'Edit', edit_party_path(party), class: 'btn btn-warning btn-sm' %></td>
                   <td><%= link_to 'Destroy', party, class: 'btn btn-danger btn-sm', method: :delete, data: { confirm: 'Are you sure?' } %></td>
               <% else %>
-                  <% if !current_user.join_members.find_by_party_id(party.id) %>
+                  <% currentjoinmember = current_user.join_members.find_by_party_id(party.id) %>
+                  <%# <% if !current_user.join_members.find_by_party_id(party.id) %1> %>
+                  <% if !currentjoinmember %>
                       <%# current user is not in this party, then we show join. %>
 
                       <% if dt.to_i>seconds %>
@@ -51,24 +56,26 @@
                       <td><%= button_to 'Join', join_members_path(user_id: current_user.id, party_id: party.id), class: 'btn btn-warning btn-sm' %></td>
 
                       <%end%>
-                  <% elsif current_user.join_members.find_by_party_id(party.id).status == 0  %>
-                      <%# current user has joined in this party, but still waiting. %>
-                      <td><button type="button" class="btn btn-warning btn-sm" disabled="disable">Pending</button></td>
-                  <% elsif current_user.join_members.find_by_party_id(party.id).status == 1  %>
-                      <%# current user has been invited to this party. %> 
-                      <td><button type="button" class="btn btn-info btn-sm" disabled="disable">Invited</button></td>
-                  <% elsif current_user.join_members.find_by_party_id(party.id).status == 2  %>
-                      <%# current user has been accepted to this party. %> 
-                      <td><button type="button" class="btn btn-success btn-sm" disabled="disable">Accepted</button></td>
-                  <% elsif current_user.join_members.find_by_party_id(party.id).status == 3  %>
-                      <%# current user has been rejected to this party. %> 
-                      <td><button type="button" class="btn btn-danger btn-sm" disabled="disable">Rejected</button></td>
-                  <% end %>
+                  <% else %>
+                      <td><button type="button" class="<%= "#{button_types[currentjoinmember.status]}" %>" disabled="disable"><%= button_names[currentjoinmember.status]%></button></td>
 
+                  <%# <% elsif currentjoinmember.status == 0  %1> %>
+                      <%# current user has joined in this party, but still waiting. %>
+                      <%# <td><button type="button" class="btn btn-warning btn-sm" disabled="disable">Pending</button></td> %>
+                  <%# <% elsif currentjoinmember.status == 1  %1> %>
+                      <%# current user has been invited to this party. %> 
+                      <%# <td><button type="button" class="btn btn-info btn-sm" disabled="disable">Invited</button></td> %>
+                  <%# <% elsif currentjoinmember.status == 2  %1> %>
+                      <%# current user has been accepted to this party. %> 
+                      <%# <td><button type="button" class="btn btn-success btn-sm" disabled="disable">Accepted</button></td> %>
+                  <%# <% elsif currentjoinmember.status == 3  %1> %>
+                      <%# current user has been rejected to this party. %> 
+                      <%# <td><button type="button" class="btn btn-danger btn-sm" disabled="disable">Rejected</button></td> %>
+                  <% end %>
               <% end %>
           <% end %>
         </tr>
-      <% end %>
+    <% end %>
   <% end %>
     </tbody>
   </table>
