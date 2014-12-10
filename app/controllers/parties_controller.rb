@@ -57,8 +57,23 @@ class PartiesController < ApplicationController
     @party = Party.new
   end
 
-  # GET /parties/1/edit
+# GET /parties/1/edit
   def edit
+     owners = JoinMember.where(status: 4) 
+     ownparties = owners.where(user_id:  current_user.id).pluck(:party_id)
+     # ownparties is a party_id from "join_members"
+
+    respond_to do |format|
+      if(ownparties.include?(@party.id))
+        p "fallthrough"
+        format.html { render :edit }
+        format.json { render json: @profile.errors, status: :unprocessable_entity }
+      else
+        p "jump"
+        format.html { redirect_to party_path, notice: 'Redirectet to parties, you are not owner of this party.' }
+        format.json { render :show, status: :ok, location: @parties }
+      end
+    end
   end
 
   def partyrequest
