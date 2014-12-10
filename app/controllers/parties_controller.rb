@@ -59,8 +59,9 @@ class PartiesController < ApplicationController
 
 # GET /parties/1/edit
   def edit
-     owners = JoinMember.where(status: 4) 
-     ownparties = owners.where(user_id:  current_user.id).pluck(:party_id)
+     # owners = JoinMember.where(status: 4) 
+     # ownparties = owners.where(user_id:  current_user.id).pluck(:party_id)
+     ownparties = JoinMember.where(user_id:  current_user.id, status: 4).pluck(:party_id)
      # ownparties is a party_id from "join_members"
 
     respond_to do |format|

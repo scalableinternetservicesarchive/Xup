@@ -21,24 +21,25 @@
     <tbody>
       <%= will_paginate @parties  %>
       <% @parties.each do |party| %> 
-      <% cache(party) do %>
+      <%# <% cache(party) do %1> %>
         <%  dt = DateTime.new(party.date.year, party.date.month, party.date.day, party.time.hour, party.time.min, party.time.sec, party.date.zone)
         %>
         <tr>
           <td><%= party.name %></td>
-          <td><%= party.owner %></td>
+          <%# <td><%= party.owner %1></td> %>
           <%# It is too slow to link profile here. %>
           <%# <td><%= link_to party.owner, profile_path(User.find_by_name(party.owner).profile.id) %1></td> %>
+          <% partyowner = JoinMember.where(party_id: party.id, status: 4).first.user_id %>
+          <td><%= link_to party.owner, profile_path(partyowner) %></td>
           <%# <td><%= party.date.strftime("%Y-%m-%d") %1></td> %>
           <td><%= party.date.strftime("%Y-%m-%d") %></td>
           <td><%= party.time.strftime("%H:%M") %></td>
-          <%# <td><%= party.time %1></td> %>
           <td><%= party.location %></td>
           <td><%= party.description %></td>
           <td><%#= User.find(party.participants).name %></td>
           <td><%= link_to 'Show', party, class: 'btn btn-info btn-sm' %></td>
           <% if user_signed_in? %>
-              <% if party.owner == current_user.name %>
+              <% if partyowner == current_user.id %>
                   <td><%= link_to 'Edit', edit_party_path(party), class: 'btn btn-warning btn-sm' %></td>
                   <td><%= link_to 'Destroy', party, class: 'btn btn-danger btn-sm', method: :delete, data: { confirm: 'Are you sure?' } %></td>
               <% else %>
@@ -67,7 +68,7 @@
               <% end %>
           <% end %>
         </tr>
-      <% end %>
+      <%# <% end %1> %>
   <% end %>
     </tbody>
   </table>
