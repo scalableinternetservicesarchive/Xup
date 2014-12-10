@@ -22,7 +22,8 @@
       <% @parties.each do |party| %>
         <% @requests = party.join_members.pluck(:user_id) %>
         <% @requests.each do |request| %>
-        <% if JoinMember.find_by(user_id: request, party_id: party.id).status != 1 %>
+        <% currentstatus = JoinMember.find_by(user_id: request, party_id: party.id).status %>
+        <% if currentstatus != 1 && currentstatus != 4 %>
         <tr>
           <td><%= party.name %></td>
           <td><%= User.find(request).name %></td>
@@ -64,14 +65,16 @@
     <tbody>
       <% @party_ids = JoinMember.where(user_id: current_user.id).pluck(:party_id) %>
       <% @party_ids.each do |party_id| %>
-      <% if JoinMember.find_by(user_id: current_user.id, party_id: party_id).status != 1 %>
+      <% currentstatus = JoinMember.find_by(user_id: current_user.id, party_id: party_id).status  %>
+      <% if currentstatus != 1 && currentstatus != 4 %>
       <% party = Party.find(party_id) %>
         <tr>
           <td><%= party.name %></td>
           <td><%= party.owner %></td>
           <td><%= party.location %></td>
           <td><%= party.time %></td>
-          <td><%= status_all[JoinMember.find_by(user_id: current_user.id, party_id: party_id).status] %></td>
+          <%# <td><%= status_all[JoinMember.find_by(user_id: current_user.id, party_id: party_id).status] %1></td> %>
+          <td><%= status_all[currentstatus] %></td>
           <% if JoinMember.find_by(user_id: current_user.id, party_id: party_id).status != 3 %>
             <td><%= link_to 'Remove', JoinMember.find_by(user_id: current_user.id, party_id: party_id), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-danger btn-sm' %></td>
           <% end %>
