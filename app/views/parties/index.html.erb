@@ -21,10 +21,11 @@
     <% current = DateTime.now %>
     <% seconds=current.to_i%>
   
+    <%# <% cache(current_user) do %1> %>
     <tbody>
       <%= will_paginate @parties  %>
       <% @parties.each do |party| %> 
-      <%# <% cache(party) do %1> %>
+      <% cache(party) do %>
         <%  dt = DateTime.new(party.date.year, party.date.month, party.date.day, party.time.hour, party.time.min, party.time.sec, party.date.zone)
         %>
         <tr>
@@ -76,8 +77,8 @@
           <% end %>
         </tr>
     <% end %>
-  <%# <% end %1> %>
     </tbody>
+  <% end %>
   </table>
 </div>
 
