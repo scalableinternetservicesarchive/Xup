@@ -1,0 +1,1200 @@
+<funkload version="1.16.1" time="2014-12-12T12:43:16.647574">
+<config key="sleep_time_min" value="0.0" />
+<config key="node" value="Steffens-MacBook-Pro.local" />
+<config key="startup_delay" value="0.01" />
+<config key="cycles" value="[1]" />
+<config key="cycle_time" value="1.0" />
+<config key="description" value="No test description" />
+<config key="configuration_file" value="/Users/steffenfb/programming/xup/loadtestingsteffen/Critical.conf" />
+<config key="class_title" value="Critical Path FunkLoad tests" />
+<config key="server_url" value="http://localhost:3000" />
+<config key="module" value="test_Critical" />
+<config key="id" value="view_stuff" />
+<config key="class_description" value="Testing the critical path of the lab app" />
+<config key="sleep_time" value="0.01" />
+<config key="sleep_time_max" value="0.5" />
+<config key="duration" value="10" />
+<config key="method" value="view_stuff" />
+<config key="log_xml" value="/Users/steffenfb/programming/xup/loadtestingsteffen/steffreports/critical-bench.xml" />
+<config key="class" value="Critical" />
+<config key="python_version" value="2.7.5" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="001" type="get" result="Successful" url="/upcoming" code="200" description="View the upcoming page" time="1418416996.65" duration="0.156896114349" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1418416996.81" duration="0.534693002701" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1418416997.34" duration="0.00700402259827" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1418416997.35" duration="0.00501799583435" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1418416997.35" duration="0.00490880012512" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1418416997.36" duration="0.00480103492737" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1418416997.36" duration="0.00507807731628" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1418416997.37" duration="0.00540804862976" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1418416997.37" duration="0.00473999977112" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="002" number="001" type="get" result="Successful" url="/index" code="200" description="View the index page" time="1418416997.86" duration="0.174986839294" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="003" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1418416998.27" duration="0.108319997787" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="004" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1418416998.54" duration="0.109434127808" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="004" number="002" type="get" result="Successful" url="/profiles/457" code="200" description="" time="1418416998.65" duration="0.143824100494" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="005" number="001" type="get" result="Successful" url="/new" code="200" description="view party page" time="1418416999.25" duration="0.154419898987" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="006" number="001" type="post" result="Successful" url="/parties" code="302" description="Create New party" time="1418416999.63" duration="0.0213279724121" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="006" number="002" type="get" result="Successful" url="/parties/1710" code="200" description="" time="1418416999.65" duration="0.15009188652" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="007" number="001" type="get" result="Successful" url="/invitetoparty/1710" code="200" description="View invite page " time="1418417000.27" duration="0.109934091568" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="008" number="001" type="post" result="Failure" url="/createasinvite" code="422" description="Inviting user" time="1418417000.56" duration="0.0316269397736">
+  <headers>
+    <header name="content-length" value="16318" />
+    <header name="connection" value="close" />
+    <header name="x-request-id" value="6c4969c8-cce4-4d67-bbb1-ae5abe4a1c28" />
+    <header name="server" value="WEBrick/1.3.1 (Ruby/2.0.0/2014-05-08)" />
+    <header name="x-runtime" value="0.027338" />
+    <header name="date" value="Fri, 12 Dec 2014 20:43:20 GMT" />
+    <header name="content-type" value="text/html; charset=utf-8" />
+  </headers>
+  <body><![CDATA[
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Action Controller: Exception caught</title>
+  <style>
+    body {
+      background-color: #FAFAFA;
+      color: #333;
+      margin: 0px;
+    }
+
+    body, p, ol, ul, td {
+      font-family: helvetica, verdana, arial, sans-serif;
+      font-size:   13px;
+      line-height: 18px;
+    }
+
+    pre {
+      font-size: 11px;
+      white-space: pre-wrap;
+    }
+
+    pre.box {
+      border: 1px solid #EEE;
+      padding: 10px;
+      margin: 0px;
+      width: 958px;
+    }
+
+    header {
+      color: #F0F0F0;
+      background: #C52F24;
+      padding: 0.5em 1.5em;
+    }
+
+    h1 {
+      margin: 0.2em 0;
+      line-height: 1.1em;
+      font-size: 2em;
+    }
+
+    h2 {
+      color: #C52F24;
+      line-height: 25px;
+    }
+
+    .details {
+      border: 1px solid #D0D0D0;
+      border-radius: 4px;
+      margin: 1em 0px;
+      display: block;
+      width: 978px;
+    }
+
+    .summary {
+      padding: 8px 15px;
+      border-bottom: 1px solid #D0D0D0;
+      display: block;
+    }
+
+    .details pre {
+      margin: 5px;
+      border: none;
+    }
+
+    #container {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 1.5em;
+    }
+
+    .source * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .source {
+      border: 1px solid #D9D9D9;
+      background: #ECECEC;
+      width: 978px;
+    }
+
+    .source pre {
+      padding: 10px 0px;
+      border: none;
+    }
+
+    .source .data {
+      font-size: 80%;
+      overflow: auto;
+      background-color: #FFF;
+    }
+
+    .info {
+      padding: 0.5em;
+    }
+
+    .source .data .line_numbers {
+      background-color: #ECECEC;
+      color: #AAA;
+      padding: 1em .5em;
+      border-right: 1px solid #DDD;
+      text-align: right;
+    }
+
+    .line {
+      padding-left: 10px;
+    }
+
+    .line:hover {
+      background-color: #F6F6F6;
+    }
+
+    .line.active {
+      background-color: #FFCCCC;
+    }
+
+    a { color: #980905; }
+    a:visited { color: #666; }
+    a:hover { color: #C52F24; }
+
+    
+  </style>
+
+  <script>
+    var toggle = function(id) {
+      var s = document.getElementById(id).style;
+      s.display = s.display == 'none' ? 'block' : 'none';
+      return false;
+    }
+    var show = function(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+    var hide = function(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+    var toggleTrace = function() {
+      return toggle('blame_trace');
+    }
+    var toggleSessionDump = function() {
+      return toggle('session_dump');
+    }
+    var toggleEnvDump = function() {
+      return toggle('env_dump');
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>
+    ActionController::InvalidAuthenticityToken
+      in JoinMembersController#createasinvite
+  </h1>
+</header>
+
+<div id="container">
+  <h2>ActionController::InvalidAuthenticityToken</h2>
+
+  
+  
+<p><code>Rails.root: /Users/steffenfb/programming/xup</code></p>
+
+<div id="traces">
+    <a href="#" onclick="hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);; return false;">Application Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);; return false;">Framework Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);; return false;">Full Trace</a> 
+
+    <div id="Application-Trace" style="display: block;">
+      <pre><code></code></pre>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+      <pre><code>actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request&#39;
+actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request&#39;
+devise (3.4.1) lib/devise/controllers/helpers.rb:251:in `handle_unverified_request&#39;
+actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:424:in `block in make_lambda&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process&#39;
+actionview (4.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call&#39;
+warden (1.2.3) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `catch&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `call&#39;
+rack (1.5.2) lib/rack/etag.rb:23:in `call&#39;
+rack (1.5.2) lib/rack/conditionalget.rb:35:in `call&#39;
+rack (1.5.2) lib/rack/head.rb:11:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;
+activerecord (4.1.6) lib/active_record/migration.rb:380:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+    <div id="Full-Trace" style="display: none;">
+      <pre><code>actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request&#39;
+actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request&#39;
+devise (3.4.1) lib/devise/controllers/helpers.rb:251:in `handle_unverified_request&#39;
+actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:424:in `block in make_lambda&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process&#39;
+actionview (4.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call&#39;
+warden (1.2.3) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `catch&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `call&#39;
+rack (1.5.2) lib/rack/etag.rb:23:in `call&#39;
+rack (1.5.2) lib/rack/conditionalget.rb:35:in `call&#39;
+rack (1.5.2) lib/rack/head.rb:11:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;
+activerecord (4.1.6) lib/active_record/migration.rb:380:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+</div>
+
+  
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><b>Parameters</b>:</p> <pre>{&quot;party_id&quot;=&gt;&quot;1710&quot;,
+ &quot;user_id&quot;=&gt;&quot;342&quot;,
+ &quot;authenticity_token&quot;=&gt;&quot;lX76WicMlevGQXSy+eHQweBeSboLphRf3X1UzMN3yRA=&quot;,
+ &quot;commit&quot;=&gt;&quot;Sign up&quot;}</pre>
+
+<div class="details">
+  <div class="summary"><a href="#" onclick="return toggleSessionDump()">Toggle session dump</a></div>
+  <div id="session_dump" style="display:none"><pre>_csrf_token: &quot;hqfMtkJStQzA4EA7gh0k+7gjF69o1YXGFD8qI3HwKLs=&quot;
+session_id: &quot;4299bee11b3f521a87fbec6ed482df82&quot;
+warden.user.user.key: [[457], &quot;$2a$10$9TBOJF/PX8tu3BzJe2Ququ&quot;]</pre></div>
+</div>
+
+<div class="details">
+  <div class="summary"><a href="#" onclick="return toggleEnvDump()">Toggle env dump</a></div>
+  <div id="env_dump" style="display:none"><pre>GATEWAY_INTERFACE: &quot;CGI/1.1&quot;
+REMOTE_ADDR: &quot;127.0.0.1&quot;
+REMOTE_HOST: &quot;127.0.0.1&quot;
+SERVER_NAME: &quot;localhost&quot;
+SERVER_PROTOCOL: &quot;HTTP/1.1&quot;</pre></div>
+</div>
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:</p> <pre>None</pre>
+
+</div>
+
+
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff"  time="1418416996.65" result="Failure" steps="8" duration="3.94635605812" connection_duration="1.7325129509" requests="18" pages="7" xmlrpc="0" redirects="2" images="0" links="8" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 71, in view_stuff&#10;    description="Inviting user")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /createasinvite&#10;HTTP Response 422: Unprocessable Entity&#10;' />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="001" type="get" result="Successful" url="/upcoming" code="200" description="View the upcoming page" time="1418417000.61" duration="0.157711982727" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1418417000.76" duration="0.103969812393" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1418417000.87" duration="0.00726103782654" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1418417000.88" duration="0.00500988960266" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1418417000.88" duration="0.00503087043762" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1418417000.89" duration="0.00483703613281" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1418417000.89" duration="0.0051748752594" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1418417000.9" duration="0.00559496879578" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1418417000.9" duration="0.00479698181152" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="002" number="001" type="get" result="Successful" url="/index" code="200" description="View the index page" time="1418417000.95" duration="0.151557922363" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="003" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1418417001.15" duration="0.145700931549" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="004" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1418417001.7" duration="0.106271982193" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="004" number="002" type="get" result="Successful" url="/profiles/458" code="200" description="" time="1418417001.8" duration="0.0914349555969" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="005" number="001" type="get" result="Successful" url="/new" code="200" description="view party page" time="1418417002.21" duration="0.148451805115" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="006" number="001" type="post" result="Successful" url="/parties" code="302" description="Create New party" time="1418417002.48" duration="0.0197010040283" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="006" number="002" type="get" result="Successful" url="/parties/1711" code="200" description="" time="1418417002.5" duration="0.140341043472" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="007" number="001" type="get" result="Successful" url="/invitetoparty/1711" code="200" description="View invite page " time="1418417003.04" duration="0.106260061264" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="008" number="001" type="post" result="Failure" url="/createasinvite" code="422" description="Inviting user" time="1418417003.31" duration="0.0833899974823">
+  <headers>
+    <header name="content-length" value="16318" />
+    <header name="connection" value="close" />
+    <header name="x-request-id" value="d31074f2-f357-424a-912f-1e5e959fdfb9" />
+    <header name="server" value="WEBrick/1.3.1 (Ruby/2.0.0/2014-05-08)" />
+    <header name="x-runtime" value="0.078849" />
+    <header name="date" value="Fri, 12 Dec 2014 20:43:23 GMT" />
+    <header name="content-type" value="text/html; charset=utf-8" />
+  </headers>
+  <body><![CDATA[
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Action Controller: Exception caught</title>
+  <style>
+    body {
+      background-color: #FAFAFA;
+      color: #333;
+      margin: 0px;
+    }
+
+    body, p, ol, ul, td {
+      font-family: helvetica, verdana, arial, sans-serif;
+      font-size:   13px;
+      line-height: 18px;
+    }
+
+    pre {
+      font-size: 11px;
+      white-space: pre-wrap;
+    }
+
+    pre.box {
+      border: 1px solid #EEE;
+      padding: 10px;
+      margin: 0px;
+      width: 958px;
+    }
+
+    header {
+      color: #F0F0F0;
+      background: #C52F24;
+      padding: 0.5em 1.5em;
+    }
+
+    h1 {
+      margin: 0.2em 0;
+      line-height: 1.1em;
+      font-size: 2em;
+    }
+
+    h2 {
+      color: #C52F24;
+      line-height: 25px;
+    }
+
+    .details {
+      border: 1px solid #D0D0D0;
+      border-radius: 4px;
+      margin: 1em 0px;
+      display: block;
+      width: 978px;
+    }
+
+    .summary {
+      padding: 8px 15px;
+      border-bottom: 1px solid #D0D0D0;
+      display: block;
+    }
+
+    .details pre {
+      margin: 5px;
+      border: none;
+    }
+
+    #container {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 1.5em;
+    }
+
+    .source * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .source {
+      border: 1px solid #D9D9D9;
+      background: #ECECEC;
+      width: 978px;
+    }
+
+    .source pre {
+      padding: 10px 0px;
+      border: none;
+    }
+
+    .source .data {
+      font-size: 80%;
+      overflow: auto;
+      background-color: #FFF;
+    }
+
+    .info {
+      padding: 0.5em;
+    }
+
+    .source .data .line_numbers {
+      background-color: #ECECEC;
+      color: #AAA;
+      padding: 1em .5em;
+      border-right: 1px solid #DDD;
+      text-align: right;
+    }
+
+    .line {
+      padding-left: 10px;
+    }
+
+    .line:hover {
+      background-color: #F6F6F6;
+    }
+
+    .line.active {
+      background-color: #FFCCCC;
+    }
+
+    a { color: #980905; }
+    a:visited { color: #666; }
+    a:hover { color: #C52F24; }
+
+    
+  </style>
+
+  <script>
+    var toggle = function(id) {
+      var s = document.getElementById(id).style;
+      s.display = s.display == 'none' ? 'block' : 'none';
+      return false;
+    }
+    var show = function(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+    var hide = function(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+    var toggleTrace = function() {
+      return toggle('blame_trace');
+    }
+    var toggleSessionDump = function() {
+      return toggle('session_dump');
+    }
+    var toggleEnvDump = function() {
+      return toggle('env_dump');
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>
+    ActionController::InvalidAuthenticityToken
+      in JoinMembersController#createasinvite
+  </h1>
+</header>
+
+<div id="container">
+  <h2>ActionController::InvalidAuthenticityToken</h2>
+
+  
+  
+<p><code>Rails.root: /Users/steffenfb/programming/xup</code></p>
+
+<div id="traces">
+    <a href="#" onclick="hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);; return false;">Application Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);; return false;">Framework Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);; return false;">Full Trace</a> 
+
+    <div id="Application-Trace" style="display: block;">
+      <pre><code></code></pre>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+      <pre><code>actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request&#39;
+actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request&#39;
+devise (3.4.1) lib/devise/controllers/helpers.rb:251:in `handle_unverified_request&#39;
+actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:424:in `block in make_lambda&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process&#39;
+actionview (4.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call&#39;
+warden (1.2.3) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `catch&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `call&#39;
+rack (1.5.2) lib/rack/etag.rb:23:in `call&#39;
+rack (1.5.2) lib/rack/conditionalget.rb:35:in `call&#39;
+rack (1.5.2) lib/rack/head.rb:11:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;
+activerecord (4.1.6) lib/active_record/migration.rb:380:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+    <div id="Full-Trace" style="display: none;">
+      <pre><code>actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request&#39;
+actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request&#39;
+devise (3.4.1) lib/devise/controllers/helpers.rb:251:in `handle_unverified_request&#39;
+actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:424:in `block in make_lambda&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process&#39;
+actionview (4.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call&#39;
+warden (1.2.3) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `catch&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `call&#39;
+rack (1.5.2) lib/rack/etag.rb:23:in `call&#39;
+rack (1.5.2) lib/rack/conditionalget.rb:35:in `call&#39;
+rack (1.5.2) lib/rack/head.rb:11:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;
+activerecord (4.1.6) lib/active_record/migration.rb:380:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+</div>
+
+  
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><b>Parameters</b>:</p> <pre>{&quot;party_id&quot;=&gt;&quot;1711&quot;,
+ &quot;user_id&quot;=&gt;&quot;342&quot;,
+ &quot;authenticity_token&quot;=&gt;&quot;lX76WicMlevGQXSy+eHQweBeSboLphRf3X1UzMN3yRA=&quot;,
+ &quot;commit&quot;=&gt;&quot;Sign up&quot;}</pre>
+
+<div class="details">
+  <div class="summary"><a href="#" onclick="return toggleSessionDump()">Toggle session dump</a></div>
+  <div id="session_dump" style="display:none"><pre>_csrf_token: &quot;PEaVQwmxR+n2jrgGRQxklJxDdOGezdpmlOeHORF94yw=&quot;
+session_id: &quot;1a8ab156843d1bb295225d1589c4607b&quot;
+warden.user.user.key: [[458], &quot;$2a$10$k1bSG8IdVY.rZsYWV5ZAae&quot;]</pre></div>
+</div>
+
+<div class="details">
+  <div class="summary"><a href="#" onclick="return toggleEnvDump()">Toggle env dump</a></div>
+  <div id="env_dump" style="display:none"><pre>GATEWAY_INTERFACE: &quot;CGI/1.1&quot;
+REMOTE_ADDR: &quot;127.0.0.1&quot;
+REMOTE_HOST: &quot;127.0.0.1&quot;
+SERVER_NAME: &quot;localhost&quot;
+SERVER_PROTOCOL: &quot;HTTP/1.1&quot;</pre></div>
+</div>
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:</p> <pre>None</pre>
+
+</div>
+
+
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff"  time="1418417000.61" result="Failure" steps="8" duration="2.78769397736" connection_duration="1.29249715805" requests="18" pages="7" xmlrpc="0" redirects="2" images="0" links="8" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 71, in view_stuff&#10;    description="Inviting user")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /createasinvite&#10;HTTP Response 422: Unprocessable Entity&#10;' />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="001" type="get" result="Successful" url="/upcoming" code="200" description="View the upcoming page" time="1418417003.41" duration="0.111248016357" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1418417003.52" duration="0.091863155365" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1418417003.61" duration="0.00723385810852" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1418417003.62" duration="0.00494790077209" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1418417003.62" duration="0.00495600700378" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1418417003.63" duration="0.00480318069458" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1418417003.63" duration="0.00512290000916" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1418417003.64" duration="0.00544500350952" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1418417003.64" duration="0.00530290603638" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="002" number="001" type="get" result="Successful" url="/index" code="200" description="View the index page" time="1418417003.92" duration="0.148116827011" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="003" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1418417004.38" duration="0.148071050644" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="004" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1418417004.75" duration="0.105557918549" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="004" number="002" type="get" result="Successful" url="/profiles/459" code="200" description="" time="1418417004.85" duration="0.0908160209656" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="005" number="001" type="get" result="Successful" url="/new" code="200" description="view party page" time="1418417005.09" duration="0.158342838287" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="006" number="001" type="post" result="Successful" url="/parties" code="302" description="Create New party" time="1418417005.57" duration="0.0202169418335" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="006" number="002" type="get" result="Successful" url="/parties/1712" code="200" description="" time="1418417005.59" duration="0.143738985062" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="007" number="001" type="get" result="Successful" url="/invitetoparty/1712" code="200" description="View invite page " time="1418417005.76" duration="0.165931940079" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="008" number="001" type="post" result="Failure" url="/createasinvite" code="422" description="Inviting user" time="1418417006.4" duration="0.0291850566864">
+  <headers>
+    <header name="content-length" value="16318" />
+    <header name="connection" value="close" />
+    <header name="x-request-id" value="c42737a2-c113-495d-a36e-0f539d06054f" />
+    <header name="server" value="WEBrick/1.3.1 (Ruby/2.0.0/2014-05-08)" />
+    <header name="x-runtime" value="0.024606" />
+    <header name="date" value="Fri, 12 Dec 2014 20:43:26 GMT" />
+    <header name="content-type" value="text/html; charset=utf-8" />
+  </headers>
+  <body><![CDATA[
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Action Controller: Exception caught</title>
+  <style>
+    body {
+      background-color: #FAFAFA;
+      color: #333;
+      margin: 0px;
+    }
+
+    body, p, ol, ul, td {
+      font-family: helvetica, verdana, arial, sans-serif;
+      font-size:   13px;
+      line-height: 18px;
+    }
+
+    pre {
+      font-size: 11px;
+      white-space: pre-wrap;
+    }
+
+    pre.box {
+      border: 1px solid #EEE;
+      padding: 10px;
+      margin: 0px;
+      width: 958px;
+    }
+
+    header {
+      color: #F0F0F0;
+      background: #C52F24;
+      padding: 0.5em 1.5em;
+    }
+
+    h1 {
+      margin: 0.2em 0;
+      line-height: 1.1em;
+      font-size: 2em;
+    }
+
+    h2 {
+      color: #C52F24;
+      line-height: 25px;
+    }
+
+    .details {
+      border: 1px solid #D0D0D0;
+      border-radius: 4px;
+      margin: 1em 0px;
+      display: block;
+      width: 978px;
+    }
+
+    .summary {
+      padding: 8px 15px;
+      border-bottom: 1px solid #D0D0D0;
+      display: block;
+    }
+
+    .details pre {
+      margin: 5px;
+      border: none;
+    }
+
+    #container {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 1.5em;
+    }
+
+    .source * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .source {
+      border: 1px solid #D9D9D9;
+      background: #ECECEC;
+      width: 978px;
+    }
+
+    .source pre {
+      padding: 10px 0px;
+      border: none;
+    }
+
+    .source .data {
+      font-size: 80%;
+      overflow: auto;
+      background-color: #FFF;
+    }
+
+    .info {
+      padding: 0.5em;
+    }
+
+    .source .data .line_numbers {
+      background-color: #ECECEC;
+      color: #AAA;
+      padding: 1em .5em;
+      border-right: 1px solid #DDD;
+      text-align: right;
+    }
+
+    .line {
+      padding-left: 10px;
+    }
+
+    .line:hover {
+      background-color: #F6F6F6;
+    }
+
+    .line.active {
+      background-color: #FFCCCC;
+    }
+
+    a { color: #980905; }
+    a:visited { color: #666; }
+    a:hover { color: #C52F24; }
+
+    
+  </style>
+
+  <script>
+    var toggle = function(id) {
+      var s = document.getElementById(id).style;
+      s.display = s.display == 'none' ? 'block' : 'none';
+      return false;
+    }
+    var show = function(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+    var hide = function(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+    var toggleTrace = function() {
+      return toggle('blame_trace');
+    }
+    var toggleSessionDump = function() {
+      return toggle('session_dump');
+    }
+    var toggleEnvDump = function() {
+      return toggle('env_dump');
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>
+    ActionController::InvalidAuthenticityToken
+      in JoinMembersController#createasinvite
+  </h1>
+</header>
+
+<div id="container">
+  <h2>ActionController::InvalidAuthenticityToken</h2>
+
+  
+  
+<p><code>Rails.root: /Users/steffenfb/programming/xup</code></p>
+
+<div id="traces">
+    <a href="#" onclick="hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);; return false;">Application Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);; return false;">Framework Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);; return false;">Full Trace</a> 
+
+    <div id="Application-Trace" style="display: block;">
+      <pre><code></code></pre>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+      <pre><code>actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request&#39;
+actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request&#39;
+devise (3.4.1) lib/devise/controllers/helpers.rb:251:in `handle_unverified_request&#39;
+actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:424:in `block in make_lambda&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process&#39;
+actionview (4.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call&#39;
+warden (1.2.3) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `catch&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `call&#39;
+rack (1.5.2) lib/rack/etag.rb:23:in `call&#39;
+rack (1.5.2) lib/rack/conditionalget.rb:35:in `call&#39;
+rack (1.5.2) lib/rack/head.rb:11:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;
+activerecord (4.1.6) lib/active_record/migration.rb:380:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+    <div id="Full-Trace" style="display: none;">
+      <pre><code>actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request&#39;
+actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request&#39;
+devise (3.4.1) lib/devise/controllers/helpers.rb:251:in `handle_unverified_request&#39;
+actionpack (4.1.6) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:424:in `block in make_lambda&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process&#39;
+actionview (4.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call&#39;
+warden (1.2.3) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `catch&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `call&#39;
+rack (1.5.2) lib/rack/etag.rb:23:in `call&#39;
+rack (1.5.2) lib/rack/conditionalget.rb:35:in `call&#39;
+rack (1.5.2) lib/rack/head.rb:11:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;
+activerecord (4.1.6) lib/active_record/migration.rb:380:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+</div>
+
+  
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><b>Parameters</b>:</p> <pre>{&quot;party_id&quot;=&gt;&quot;1712&quot;,
+ &quot;user_id&quot;=&gt;&quot;342&quot;,
+ &quot;authenticity_token&quot;=&gt;&quot;lX76WicMlevGQXSy+eHQweBeSboLphRf3X1UzMN3yRA=&quot;,
+ &quot;commit&quot;=&gt;&quot;Sign up&quot;}</pre>
+
+<div class="details">
+  <div class="summary"><a href="#" onclick="return toggleSessionDump()">Toggle session dump</a></div>
+  <div id="session_dump" style="display:none"><pre>_csrf_token: &quot;AYEi9pq10mFeIAoDNZE8r+LNkZxKNqGdUz8ZSIthy5s=&quot;
+session_id: &quot;7cc49c03cc20da06956f380e168a2d66&quot;
+warden.user.user.key: [[459], &quot;$2a$10$pftZfdBWbCn4E4JzDz5QTe&quot;]</pre></div>
+</div>
+
+<div class="details">
+  <div class="summary"><a href="#" onclick="return toggleEnvDump()">Toggle env dump</a></div>
+  <div id="env_dump" style="display:none"><pre>GATEWAY_INTERFACE: &quot;CGI/1.1&quot;
+REMOTE_ADDR: &quot;127.0.0.1&quot;
+REMOTE_HOST: &quot;127.0.0.1&quot;
+SERVER_NAME: &quot;localhost&quot;
+SERVER_PROTOCOL: &quot;HTTP/1.1&quot;</pre></div>
+</div>
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:</p> <pre>None</pre>
+
+</div>
+
+
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff"  time="1418417003.41" result="Failure" steps="8" duration="3.02038311958" connection_duration="1.25090050697" requests="18" pages="7" xmlrpc="0" redirects="2" images="0" links="8" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 71, in view_stuff&#10;    description="Inviting user")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /createasinvite&#10;HTTP Response 422: Unprocessable Entity&#10;' />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="001" type="get" result="Successful" url="/upcoming" code="200" description="View the upcoming page" time="1418417006.44" duration="0.098934173584" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1418417006.54" duration="0.0833299160004" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1418417006.62" duration="0.00733089447021" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1418417006.63" duration="0.00513601303101" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1418417006.63" duration="0.00487208366394" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1418417006.64" duration="0.00481390953064" />
+</funkload>

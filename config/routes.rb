@@ -37,7 +37,7 @@ Rails.application.routes.draw do
   post '/createasinvite' => 'join_members#createasinvite'
   post '/createaspartyowner' => 'join_members#createaspartyowner'
   match '/invitetoparty/:id' => 'parties#invitetoparty' , via: [:get], :as => :invitetoparty
-  
+  get '/count' =>'parties#count'
 
   #when the user scaffold is created, 
   #change parties# to user#, and change the location of the html file myaccount.html.erb

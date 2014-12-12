@@ -3,6 +3,8 @@ class PartiesController < ApplicationController
   before_action :authenticate_user!, only: [:create, :edit, :new, :update, :destroy]
   protect_from_forgery :except => :destroy 
 
+   respond_to :html, :xml, :json
+
   # GET /parties
   # GET /parties.json
   def index
@@ -21,6 +23,13 @@ class PartiesController < ApplicationController
   def myparties
       @parties = Party.order(:time)
       
+  end
+
+  def count
+
+    @pp = Party.count
+    respond_with @pp
+
   end
 
 

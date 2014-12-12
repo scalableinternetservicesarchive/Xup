@@ -34,6 +34,9 @@ class Critical(FunkLoadTestCase):
                   ['authenticity_token', auth_token],
                   ['commit', 'Sign up']],
                 description="Create New User")
+
+        last_url = self.getLastUrl()
+        user_id = last_url.split('/')[-1]
             
 
             #self.get(server_url + "/index", description="View the indexpage2")
@@ -53,13 +56,40 @@ class Critical(FunkLoadTestCase):
                 description="Create New party")
             
         last_url = self.getLastUrl()
-
         created_party_id = last_url.split('/')[-1]
 
-        self.get(server_url + "/invitetoparty/"+created_party_id, description="View invite page ")
+        
         print "watching invite"
+        
+        #self.get(server_url + "/invitetoparty/"+created_party_id, description="View invite page ")
+        #auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+        
+        for i in range (10,13):
+            print 'inviting user to party'
+            self.post(self.server_url + "/createasinvite",
+                    params=[['party_id',created_party_id ],
+                     ['user_id', i],
+                     ['authenticity_token', auth_token],
+                     ['commit', 'Sign up']],
+                     description="Inviting user")
 
 
+
+        self.get(server_url + "/index", description="View index page ")
+        print "watching invite"
+        auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+        
+        for i in range (15,18):
+            print 'joining party'
+
+            self.post(self.server_url + "/join_members",
+                    params=[['party_id',i],
+                     ['user_id', user_id],
+                     ['authenticity_token', auth_token],
+                     ['commit', 'Sign up']],
+                     description="Asking to join")
+
+        print "done with path"
 
 
 
@@ -67,6 +97,7 @@ class Critical(FunkLoadTestCase):
     def setUp(self):
       """Setting up test."""
       self.server_url = self.conf_get('main', 'url')
+
 
     def view_close_parties(self):
     	server_url = self.server_url
@@ -89,8 +120,8 @@ class Critical(FunkLoadTestCase):
                   ['commit', 'Sign up']],
                 description="Create New User")
 
-        last_url = self.getLastUrl()
         party_to_join=1
+        last_url = self.getLastUrl()
         user_id = last_url.split('/')[-1]
         self.get(server_url + "/index", description="watching parties to join")
         auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
@@ -172,7 +203,6 @@ class Critical(FunkLoadTestCase):
                       
                     description="Joining party")
 
-
     def accept_a_invite(self):
         
         server_url = self.server_url
@@ -209,8 +239,6 @@ class Critical(FunkLoadTestCase):
 
         print 'all done'
 
-
-
     def join_all_parties(self):
         
         server_url = self.server_url    
@@ -238,9 +266,6 @@ class Critical(FunkLoadTestCase):
                     params=[['party_id', i],['user_id',user_id],['authenticity_token', auth_token]],
                       
                     description="Joining party")
-
-
-
 
     def invite_a_user(self):
        	server_url = self.server_url	
@@ -286,7 +311,6 @@ class Critical(FunkLoadTestCase):
     		    params=[['party_id', created_party_id],['user_id',userid],['authenticity_token',auth_token]],
     		      
     		    description="Create New party")
-
 
     def create_a_user(self):
         
@@ -346,7 +370,6 @@ class Critical(FunkLoadTestCase):
                   ['commit', 'Sign up']],
                 description="Create New party")
 
-
     def create_and_delete_party(self):
 		
 		server_url = self.server_url
@@ -390,9 +413,7 @@ class Critical(FunkLoadTestCase):
 
 		self.delete(self.server_url + '/parties/'+created_party_id, description="Delete the party",)
 		self.get(server_url + "/", description="Back to index page")
-
-		
-
+	
     def my_test(self):
 
 
@@ -430,10 +451,6 @@ class Critical(FunkLoadTestCase):
 		      ['commit', 'Sign up']],
 		    description="Create New party")
 		self.get(server_url, description="back to indexpage")
-
-
-
-
 
     def test_critical_path(self):
 		server_url = self.server_url

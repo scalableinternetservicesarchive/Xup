@@ -1,0 +1,74 @@
+<funkload version="1.16.1" time="2014-12-12T14:44:19.069548">
+<config key="sleep_time_min" value="0.0" />
+<config key="node" value="169-231-96-126.wireless.ucsb.edu" />
+<config key="startup_delay" value="0.01" />
+<config key="cycles" value="[1]" />
+<config key="cycle_time" value="1.0" />
+<config key="description" value="No test description" />
+<config key="configuration_file" value="/Users/steffenfb/programming/xup/loadtestingsteffen/Critical.conf" />
+<config key="class_title" value="Critical Path FunkLoad tests" />
+<config key="server_url" value="http://localhost:3000" />
+<config key="module" value="test_Critical" />
+<config key="id" value="view_stuff" />
+<config key="class_description" value="Testing the critical path of the lab app" />
+<config key="sleep_time" value="0.01" />
+<config key="sleep_time_max" value="0.5" />
+<config key="duration" value="10" />
+<config key="method" value="view_stuff" />
+<config key="log_xml" value="/Users/steffenfb/programming/xup/loadtestingsteffen/steffreports/critical-bench.xml" />
+<config key="class" value="Critical" />
+<config key="python_version" value="2.7.5" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="001" type="get" result="Successful" url="/upcoming" code="200" description="View the upcoming page" time="1418424259.07" duration="0.11359500885" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1418424259.18" duration="0.48942899704" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1418424259.67" duration="0.00694489479065" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1418424259.68" duration="0.0068690776825" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1418424259.69" duration="0.00512909889221" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1418424259.69" duration="0.00503015518188" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1418424259.7" duration="0.00531196594238" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1418424259.7" duration="0.00579380989075" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1418424259.71" duration="0.053838968277" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="002" number="001" type="get" result="Successful" url="/index" code="200" description="View the index page" time="1418424260.15" duration="0.0966980457306" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="003" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1418424260.3" duration="0.170675992966" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="004" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1418424260.6" duration="0.113177061081" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="004" number="002" type="get" result="Successful" url="/profiles/169" code="200" description="" time="1418424260.72" duration="0.14807009697" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="005" number="001" type="get" result="Successful" url="/new" code="200" description="view party page" time="1418424261.06" duration="0.152237892151" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="006" number="001" type="post" result="Successful" url="/parties" code="302" description="Create New party" time="1418424261.65" duration="0.0218288898468" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="006" number="002" type="get" result="Successful" url="/parties/569" code="200" description="" time="1418424261.67" duration="0.109374046326" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="007" number="001" type="post" result="Successful" url="/createasinvite" code="302" description="Inviting user" time="1418424261.89" duration="0.0168290138245" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="007" number="002" type="get" result="Successful" url="/parties/569" code="200" description="" time="1418424261.91" duration="0.151041984558" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="008" number="001" type="get" result="Successful" url="/index" code="200" description="View index page " time="1418424262.37" duration="0.181771993637" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="009" number="001" type="post" result="Successful" url="/join_members" code="302" description="Asking to join" time="1418424263.02" duration="0.0196449756622" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="009" number="002" type="get" result="Successful" url="/parties" code="200" description="" time="1418424263.04" duration="0.184127807617" />
+<testResult cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff"  time="1418424259.07" result="Successful" steps="9" duration="4.28031206131" connection_duration="2.05741977692" requests="21" pages="9" xmlrpc="0" redirects="4" images="0" links="8" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="001" type="get" result="Successful" url="/upcoming" code="200" description="View the upcoming page" time="1418424263.36" duration="0.163671970367" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1418424263.53" duration="0.390290975571" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1418424263.92" duration="0.00699615478516" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1418424263.92" duration="0.0053129196167" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1418424263.93" duration="0.00511193275452" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1418424263.93" duration="0.00524401664734" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1418424263.94" duration="0.00520396232605" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1418424263.95" duration="0.00599694252014" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1418424263.95" duration="0.00523400306702" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="002" number="001" type="get" result="Successful" url="/index" code="200" description="View the index page" time="1418424264.31" duration="0.170712947845" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="003" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1418424264.64" duration="0.103337049484" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="004" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1418424264.83" duration="0.102929115295" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="004" number="002" type="get" result="Successful" url="/profiles/170" code="200" description="" time="1418424264.94" duration="0.14057803154" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="005" number="001" type="get" result="Successful" url="/new" code="200" description="view party page" time="1418424265.41" duration="0.163964033127" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="006" number="001" type="post" result="Successful" url="/parties" code="302" description="Create New party" time="1418424265.75" duration="0.0234739780426" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="006" number="002" type="get" result="Successful" url="/parties/570" code="200" description="" time="1418424265.77" duration="0.155117034912" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="007" number="001" type="post" result="Successful" url="/createasinvite" code="302" description="Inviting user" time="1418424266.43" duration="0.0179049968719" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="007" number="002" type="get" result="Successful" url="/parties/570" code="200" description="" time="1418424266.45" duration="0.0961270332336" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="008" number="001" type="get" result="Successful" url="/index" code="200" description="View index page " time="1418424266.85" duration="0.182728052139" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="009" number="001" type="post" result="Successful" url="/join_members" code="302" description="Asking to join" time="1418424267.51" duration="0.0176160335541" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="009" number="002" type="get" result="Successful" url="/parties" code="200" description="" time="1418424267.53" duration="0.176202058792" />
+<testResult cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff"  time="1418424263.36" result="Successful" steps="9" duration="4.76597595215" connection_duration="1.94375324249" requests="21" pages="9" xmlrpc="0" redirects="4" images="0" links="8" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="001" type="get" result="Successful" url="/upcoming" code="200" description="View the upcoming page" time="1418424268.14" duration="0.154391050339" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1418424268.29" duration="0.461474895477" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1418424268.76" duration="0.00690793991089" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1418424268.76" duration="0.00507187843323" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1418424268.77" duration="0.00496912002563" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1418424268.77" duration="0.00498294830322" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1418424268.78" duration="0.00507783889771" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1418424268.78" duration="0.00583100318909" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="view_stuff" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1418424268.79" duration="0.00560617446899" />
+</funkload>

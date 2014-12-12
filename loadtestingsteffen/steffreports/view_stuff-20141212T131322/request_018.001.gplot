@@ -1,0 +1,11 @@
+set output "/Users/steffenfb/programming/xup/loadtestingsteffen/steffreports/view_stuff-20141212T131322/request_018.001.png"
+set terminal png size 640,540
+set grid
+set bars 5.0
+set title "Request 018.001 Response time"
+set xlabel "Concurrent Users"
+set ylabel "Duration (s)"
+set grid back
+set style fill solid .25
+#set xrange [0:2]
+plot "/Users/steffenfb/programming/xup/loadtestingsteffen/steffreports/view_stuff-20141212T131322/request_018.001.data" u :8:8:10:9:xticlabels(1) t "med/p90/p95" w candlesticks lt 1 lw 1 whiskerbars 0.5, "" u :7:4:8:8:xticlabels(1) w candlesticks lt 2 lw 1 t "min/p10/med" whiskerbars 0.5, "" u :5:xticlabels(1) t "avg" w lines lt 3 lw 2

@@ -1,0 +1,2276 @@
+<funkload version="1.16.1" time="2014-12-12T12:49:42.017382">
+<config key="sleep_time_min" value="0.0" />
+<config key="node" value="Steffens-MacBook-Pro.local" />
+<config key="startup_delay" value="0.01" />
+<config key="cycles" value="[1]" />
+<config key="cycle_time" value="1.0" />
+<config key="description" value="No test description" />
+<config key="configuration_file" value="/Users/steffenfb/programming/xup/loadtestingsteffen/Critical.conf" />
+<config key="class_title" value="Critical Path FunkLoad tests" />
+<config key="server_url" value="http://localhost:3000" />
+<config key="module" value="test_Critical" />
+<config key="id" value="invite_a_user" />
+<config key="class_description" value="Testing the critical path of the lab app" />
+<config key="sleep_time" value="0.01" />
+<config key="sleep_time_max" value="0.5" />
+<config key="duration" value="10" />
+<config key="method" value="invite_a_user" />
+<config key="log_xml" value="/Users/steffenfb/programming/xup/loadtestingsteffen/steffreports/critical-bench.xml" />
+<config key="class" value="Critical" />
+<config key="python_version" value="2.7.5" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1418417382.02" duration="0.105090856552" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1418417382.12" duration="0.521021842957" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1418417382.65" duration="0.00676703453064" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1418417382.65" duration="0.00521206855774" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1418417382.66" duration="0.00513100624084" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1418417382.66" duration="0.00496792793274" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1418417382.67" duration="0.0053288936615" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1418417382.67" duration="0.00589394569397" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1418417382.68" duration="0.00508594512939" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="002" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1418417382.83" duration="0.109259843826" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="002" number="002" type="get" result="Successful" url="/profiles/466" code="200" description="" time="1418417382.93" duration="0.140377998352" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="003" number="001" type="get" result="Successful" url="/new" code="200" description="create party page" time="1418417383.3" duration="0.150238037109" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="004" number="001" type="post" result="Successful" url="/parties" code="302" description="Create New party" time="1418417383.69" duration="0.020614862442" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="004" number="002" type="get" result="Successful" url="/parties/1719" code="200" description="" time="1418417383.71" duration="0.152194976807" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="005" number="001" type="post" result="Failure" url="/createasinvite/" code="404" description="Create New party" time="1418417384.23" duration="0.0350368022919">
+  <headers>
+    <header name="content-length" value="19563" />
+    <header name="connection" value="close" />
+    <header name="x-request-id" value="4ff7f8d0-8b8a-47c7-bbf8-2c1b42ed9e00" />
+    <header name="server" value="WEBrick/1.3.1 (Ruby/2.0.0/2014-05-08)" />
+    <header name="x-runtime" value="0.030307" />
+    <header name="date" value="Fri, 12 Dec 2014 20:49:44 GMT" />
+    <header name="content-type" value="text/html; charset=utf-8" />
+  </headers>
+  <body><![CDATA[
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Action Controller: Exception caught</title>
+  <style>
+    body {
+      background-color: #FAFAFA;
+      color: #333;
+      margin: 0px;
+    }
+
+    body, p, ol, ul, td {
+      font-family: helvetica, verdana, arial, sans-serif;
+      font-size:   13px;
+      line-height: 18px;
+    }
+
+    pre {
+      font-size: 11px;
+      white-space: pre-wrap;
+    }
+
+    pre.box {
+      border: 1px solid #EEE;
+      padding: 10px;
+      margin: 0px;
+      width: 958px;
+    }
+
+    header {
+      color: #F0F0F0;
+      background: #C52F24;
+      padding: 0.5em 1.5em;
+    }
+
+    h1 {
+      margin: 0.2em 0;
+      line-height: 1.1em;
+      font-size: 2em;
+    }
+
+    h2 {
+      color: #C52F24;
+      line-height: 25px;
+    }
+
+    .details {
+      border: 1px solid #D0D0D0;
+      border-radius: 4px;
+      margin: 1em 0px;
+      display: block;
+      width: 978px;
+    }
+
+    .summary {
+      padding: 8px 15px;
+      border-bottom: 1px solid #D0D0D0;
+      display: block;
+    }
+
+    .details pre {
+      margin: 5px;
+      border: none;
+    }
+
+    #container {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 1.5em;
+    }
+
+    .source * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .source {
+      border: 1px solid #D9D9D9;
+      background: #ECECEC;
+      width: 978px;
+    }
+
+    .source pre {
+      padding: 10px 0px;
+      border: none;
+    }
+
+    .source .data {
+      font-size: 80%;
+      overflow: auto;
+      background-color: #FFF;
+    }
+
+    .info {
+      padding: 0.5em;
+    }
+
+    .source .data .line_numbers {
+      background-color: #ECECEC;
+      color: #AAA;
+      padding: 1em .5em;
+      border-right: 1px solid #DDD;
+      text-align: right;
+    }
+
+    .line {
+      padding-left: 10px;
+    }
+
+    .line:hover {
+      background-color: #F6F6F6;
+    }
+
+    .line.active {
+      background-color: #FFCCCC;
+    }
+
+    a { color: #980905; }
+    a:visited { color: #666; }
+    a:hover { color: #C52F24; }
+
+    
+  </style>
+
+  <script>
+    var toggle = function(id) {
+      var s = document.getElementById(id).style;
+      s.display = s.display == 'none' ? 'block' : 'none';
+      return false;
+    }
+    var show = function(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+    var hide = function(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+    var toggleTrace = function() {
+      return toggle('blame_trace');
+    }
+    var toggleSessionDump = function() {
+      return toggle('session_dump');
+    }
+    var toggleEnvDump = function() {
+      return toggle('env_dump');
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>
+    ActiveRecord::RecordNotFound
+      in JoinMembersController#createasinvite
+  </h1>
+</header>
+
+<div id="container">
+  <h2>Couldn&#39;t find User with &#39;id&#39;=3</h2>
+
+  <div class="source">
+<div class="info">
+  Extracted source (around line <strong>#54</strong>):
+</div>
+<div class="data">
+  <table cellpadding="0" cellspacing="0" class="lines">
+      <tr>
+        <td>
+          <pre class="line_numbers">
+<span>52</span>
+<span>53</span>
+<span>54</span>
+<span>55</span>
+<span>56</span>
+<span>57</span>
+          </pre>
+        </td>
+<td width="100%">
+<pre>
+<div class="line">
+</div><div class="line">  def createasinvite
+</div><div class="line active">    user = User.find(params[:user_id])
+</div><div class="line">    party = Party.find(params[:party_id])
+</div><div class="line">
+</div><div class="line">    @join_member = party.join_members.build(user: user)
+</div>
+</pre>
+</td>
+    </tr>
+  </table>
+</div>
+</div>
+
+  
+<p><code>Rails.root: /Users/steffenfb/programming/xup</code></p>
+
+<div id="traces">
+    <a href="#" onclick="hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);; return false;">Application Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);; return false;">Framework Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);; return false;">Full Trace</a> 
+
+    <div id="Application-Trace" style="display: block;">
+      <pre><code>app/controllers/join_members_controller.rb:54:in `createasinvite&#39;</code></pre>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+      <pre><code>activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:320:in `raise_record_not_found_exception!&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:429:in `find_one&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:413:in `find_with_ids&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:68:in `find&#39;
+activerecord (4.1.6) lib/active_record/querying.rb:3:in `find&#39;
+actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process&#39;
+actionview (4.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call&#39;
+warden (1.2.3) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `catch&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `call&#39;
+rack (1.5.2) lib/rack/etag.rb:23:in `call&#39;
+rack (1.5.2) lib/rack/conditionalget.rb:35:in `call&#39;
+rack (1.5.2) lib/rack/head.rb:11:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;
+activerecord (4.1.6) lib/active_record/migration.rb:380:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+    <div id="Full-Trace" style="display: none;">
+      <pre><code>activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:320:in `raise_record_not_found_exception!&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:429:in `find_one&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:413:in `find_with_ids&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:68:in `find&#39;
+activerecord (4.1.6) lib/active_record/querying.rb:3:in `find&#39;
+app/controllers/join_members_controller.rb:54:in `createasinvite&#39;
+actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process&#39;
+actionview (4.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call&#39;
+warden (1.2.3) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `catch&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `call&#39;
+rack (1.5.2) lib/rack/etag.rb:23:in `call&#39;
+rack (1.5.2) lib/rack/conditionalget.rb:35:in `call&#39;
+rack (1.5.2) lib/rack/head.rb:11:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;
+activerecord (4.1.6) lib/active_record/migration.rb:380:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+</div>
+
+  
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><b>Parameters</b>:</p> <pre>{&quot;party_id&quot;=&gt;&quot;1719&quot;,
+ &quot;user_id&quot;=&gt;&quot;3&quot;,
+ &quot;authenticity_token&quot;=&gt;&quot;h62V8v81b7yxQwjNhxeTQEOiSHpcg1cY9EC5evMxhs4=&quot;}</pre>
+
+<div class="details">
+  <div class="summary"><a href="#" onclick="return toggleSessionDump()">Toggle session dump</a></div>
+  <div id="session_dump" style="display:none"><pre>_csrf_token: &quot;h62V8v81b7yxQwjNhxeTQEOiSHpcg1cY9EC5evMxhs4=&quot;
+flash: {&quot;discard&quot;=&gt;[&quot;notice&quot;], &quot;flashes&quot;=&gt;{&quot;notice&quot;=&gt;&quot;Party was successfully created.&quot;}}
+session_id: &quot;f27ec851af60ecc6ffef76454e8e91e7&quot;
+warden.user.user.key: [[466], &quot;$2a$10$LkWa7o2AWOf6KTcPfpoPOu&quot;]</pre></div>
+</div>
+
+<div class="details">
+  <div class="summary"><a href="#" onclick="return toggleEnvDump()">Toggle env dump</a></div>
+  <div id="env_dump" style="display:none"><pre>GATEWAY_INTERFACE: &quot;CGI/1.1&quot;
+REMOTE_ADDR: &quot;127.0.0.1&quot;
+REMOTE_HOST: &quot;127.0.0.1&quot;
+SERVER_NAME: &quot;localhost&quot;
+SERVER_PROTOCOL: &quot;HTTP/1.1&quot;</pre></div>
+</div>
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:</p> <pre>None</pre>
+
+</div>
+
+
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user"  time="1418417382.02" result="Failure" steps="5" duration="2.24858498573" connection_duration="1.27222204208" requests="15" pages="4" xmlrpc="0" redirects="2" images="0" links="8" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 308, in invite_a_user&#10;    description="Create New party")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /createasinvite/&#10;HTTP Response 404: Not Found&#10;' />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1418417384.28" duration="0.107451915741" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1418417384.39" duration="0.0851900577545" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1418417384.47" duration="0.00728416442871" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1418417384.48" duration="0.00505614280701" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1418417384.48" duration="0.00501680374146" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1418417384.49" duration="0.00490403175354" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1418417384.49" duration="0.05388712883" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1418417384.55" duration="0.00606989860535" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1418417384.56" duration="0.00506401062012" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="002" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1418417384.75" duration="0.113003969193" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="002" number="002" type="get" result="Successful" url="/profiles/467" code="200" description="" time="1418417384.86" duration="0.108122825623" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="003" number="001" type="get" result="Successful" url="/new" code="200" description="create party page" time="1418417385.21" duration="0.152719974518" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="004" number="001" type="post" result="Successful" url="/parties" code="302" description="Create New party" time="1418417385.7" duration="0.0222330093384" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="004" number="002" type="get" result="Successful" url="/parties/1720" code="200" description="" time="1418417385.73" duration="0.144059896469" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="005" number="001" type="post" result="Failure" url="/createasinvite/" code="404" description="Create New party" time="1418417386.0" duration="0.028960943222">
+  <headers>
+    <header name="content-length" value="19563" />
+    <header name="connection" value="close" />
+    <header name="x-request-id" value="15ca9541-c32f-4d09-b402-ded61c11d387" />
+    <header name="server" value="WEBrick/1.3.1 (Ruby/2.0.0/2014-05-08)" />
+    <header name="x-runtime" value="0.024286" />
+    <header name="date" value="Fri, 12 Dec 2014 20:49:46 GMT" />
+    <header name="content-type" value="text/html; charset=utf-8" />
+  </headers>
+  <body><![CDATA[
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Action Controller: Exception caught</title>
+  <style>
+    body {
+      background-color: #FAFAFA;
+      color: #333;
+      margin: 0px;
+    }
+
+    body, p, ol, ul, td {
+      font-family: helvetica, verdana, arial, sans-serif;
+      font-size:   13px;
+      line-height: 18px;
+    }
+
+    pre {
+      font-size: 11px;
+      white-space: pre-wrap;
+    }
+
+    pre.box {
+      border: 1px solid #EEE;
+      padding: 10px;
+      margin: 0px;
+      width: 958px;
+    }
+
+    header {
+      color: #F0F0F0;
+      background: #C52F24;
+      padding: 0.5em 1.5em;
+    }
+
+    h1 {
+      margin: 0.2em 0;
+      line-height: 1.1em;
+      font-size: 2em;
+    }
+
+    h2 {
+      color: #C52F24;
+      line-height: 25px;
+    }
+
+    .details {
+      border: 1px solid #D0D0D0;
+      border-radius: 4px;
+      margin: 1em 0px;
+      display: block;
+      width: 978px;
+    }
+
+    .summary {
+      padding: 8px 15px;
+      border-bottom: 1px solid #D0D0D0;
+      display: block;
+    }
+
+    .details pre {
+      margin: 5px;
+      border: none;
+    }
+
+    #container {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 1.5em;
+    }
+
+    .source * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .source {
+      border: 1px solid #D9D9D9;
+      background: #ECECEC;
+      width: 978px;
+    }
+
+    .source pre {
+      padding: 10px 0px;
+      border: none;
+    }
+
+    .source .data {
+      font-size: 80%;
+      overflow: auto;
+      background-color: #FFF;
+    }
+
+    .info {
+      padding: 0.5em;
+    }
+
+    .source .data .line_numbers {
+      background-color: #ECECEC;
+      color: #AAA;
+      padding: 1em .5em;
+      border-right: 1px solid #DDD;
+      text-align: right;
+    }
+
+    .line {
+      padding-left: 10px;
+    }
+
+    .line:hover {
+      background-color: #F6F6F6;
+    }
+
+    .line.active {
+      background-color: #FFCCCC;
+    }
+
+    a { color: #980905; }
+    a:visited { color: #666; }
+    a:hover { color: #C52F24; }
+
+    
+  </style>
+
+  <script>
+    var toggle = function(id) {
+      var s = document.getElementById(id).style;
+      s.display = s.display == 'none' ? 'block' : 'none';
+      return false;
+    }
+    var show = function(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+    var hide = function(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+    var toggleTrace = function() {
+      return toggle('blame_trace');
+    }
+    var toggleSessionDump = function() {
+      return toggle('session_dump');
+    }
+    var toggleEnvDump = function() {
+      return toggle('env_dump');
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>
+    ActiveRecord::RecordNotFound
+      in JoinMembersController#createasinvite
+  </h1>
+</header>
+
+<div id="container">
+  <h2>Couldn&#39;t find User with &#39;id&#39;=3</h2>
+
+  <div class="source">
+<div class="info">
+  Extracted source (around line <strong>#54</strong>):
+</div>
+<div class="data">
+  <table cellpadding="0" cellspacing="0" class="lines">
+      <tr>
+        <td>
+          <pre class="line_numbers">
+<span>52</span>
+<span>53</span>
+<span>54</span>
+<span>55</span>
+<span>56</span>
+<span>57</span>
+          </pre>
+        </td>
+<td width="100%">
+<pre>
+<div class="line">
+</div><div class="line">  def createasinvite
+</div><div class="line active">    user = User.find(params[:user_id])
+</div><div class="line">    party = Party.find(params[:party_id])
+</div><div class="line">
+</div><div class="line">    @join_member = party.join_members.build(user: user)
+</div>
+</pre>
+</td>
+    </tr>
+  </table>
+</div>
+</div>
+
+  
+<p><code>Rails.root: /Users/steffenfb/programming/xup</code></p>
+
+<div id="traces">
+    <a href="#" onclick="hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);; return false;">Application Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);; return false;">Framework Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);; return false;">Full Trace</a> 
+
+    <div id="Application-Trace" style="display: block;">
+      <pre><code>app/controllers/join_members_controller.rb:54:in `createasinvite&#39;</code></pre>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+      <pre><code>activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:320:in `raise_record_not_found_exception!&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:429:in `find_one&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:413:in `find_with_ids&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:68:in `find&#39;
+activerecord (4.1.6) lib/active_record/querying.rb:3:in `find&#39;
+actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process&#39;
+actionview (4.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call&#39;
+warden (1.2.3) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `catch&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `call&#39;
+rack (1.5.2) lib/rack/etag.rb:23:in `call&#39;
+rack (1.5.2) lib/rack/conditionalget.rb:35:in `call&#39;
+rack (1.5.2) lib/rack/head.rb:11:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;
+activerecord (4.1.6) lib/active_record/migration.rb:380:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+    <div id="Full-Trace" style="display: none;">
+      <pre><code>activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:320:in `raise_record_not_found_exception!&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:429:in `find_one&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:413:in `find_with_ids&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:68:in `find&#39;
+activerecord (4.1.6) lib/active_record/querying.rb:3:in `find&#39;
+app/controllers/join_members_controller.rb:54:in `createasinvite&#39;
+actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process&#39;
+actionview (4.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call&#39;
+warden (1.2.3) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `catch&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `call&#39;
+rack (1.5.2) lib/rack/etag.rb:23:in `call&#39;
+rack (1.5.2) lib/rack/conditionalget.rb:35:in `call&#39;
+rack (1.5.2) lib/rack/head.rb:11:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;
+activerecord (4.1.6) lib/active_record/migration.rb:380:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+</div>
+
+  
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><b>Parameters</b>:</p> <pre>{&quot;party_id&quot;=&gt;&quot;1720&quot;,
+ &quot;user_id&quot;=&gt;&quot;3&quot;,
+ &quot;authenticity_token&quot;=&gt;&quot;r0YTjbQ20tR0ZvjGiocGDzPdYD6lYPnZaVGqp/Ab3JU=&quot;}</pre>
+
+<div class="details">
+  <div class="summary"><a href="#" onclick="return toggleSessionDump()">Toggle session dump</a></div>
+  <div id="session_dump" style="display:none"><pre>_csrf_token: &quot;r0YTjbQ20tR0ZvjGiocGDzPdYD6lYPnZaVGqp/Ab3JU=&quot;
+flash: {&quot;discard&quot;=&gt;[&quot;notice&quot;], &quot;flashes&quot;=&gt;{&quot;notice&quot;=&gt;&quot;Party was successfully created.&quot;}}
+session_id: &quot;b775064dbcc2969e88fd8fe3069ec2a1&quot;
+warden.user.user.key: [[467], &quot;$2a$10$0WGi.uaG5Zik2zaOxXfHUu&quot;]</pre></div>
+</div>
+
+<div class="details">
+  <div class="summary"><a href="#" onclick="return toggleEnvDump()">Toggle env dump</a></div>
+  <div id="env_dump" style="display:none"><pre>GATEWAY_INTERFACE: &quot;CGI/1.1&quot;
+REMOTE_ADDR: &quot;127.0.0.1&quot;
+REMOTE_HOST: &quot;127.0.0.1&quot;
+SERVER_NAME: &quot;localhost&quot;
+SERVER_PROTOCOL: &quot;HTTP/1.1&quot;</pre></div>
+</div>
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:</p> <pre>None</pre>
+
+</div>
+
+
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user"  time="1418417384.28" result="Failure" steps="5" duration="1.74689412117" connection_duration="0.849024772644" requests="15" pages="4" xmlrpc="0" redirects="2" images="0" links="8" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 308, in invite_a_user&#10;    description="Create New party")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /createasinvite/&#10;HTTP Response 404: Not Found&#10;' />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1418417386.04" duration="0.153318881989" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1418417386.19" duration="0.077220916748" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1418417386.27" duration="0.00686502456665" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1418417386.27" duration="0.00541305541992" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1418417386.28" duration="0.00516414642334" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1418417386.29" duration="0.00543999671936" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1418417386.29" duration="0.00527811050415" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1418417386.3" duration="0.00626587867737" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1418417386.3" duration="0.00517511367798" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="002" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1418417386.6" duration="0.116827964783" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="002" number="002" type="get" result="Successful" url="/profiles/468" code="200" description="" time="1418417386.72" duration="0.0921490192413" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="003" number="001" type="get" result="Successful" url="/new" code="200" description="create party page" time="1418417387.19" duration="0.152755022049" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="004" number="001" type="post" result="Successful" url="/parties" code="302" description="Create New party" time="1418417387.54" duration="0.0210778713226" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="004" number="002" type="get" result="Successful" url="/parties/1721" code="200" description="" time="1418417387.56" duration="0.144637107849" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="005" number="001" type="post" result="Failure" url="/createasinvite/" code="404" description="Create New party" time="1418417388.13" duration="0.0292220115662">
+  <headers>
+    <header name="content-length" value="19563" />
+    <header name="connection" value="close" />
+    <header name="x-request-id" value="dc777ad8-58dc-4a3e-958d-431bc0c7efbf" />
+    <header name="server" value="WEBrick/1.3.1 (Ruby/2.0.0/2014-05-08)" />
+    <header name="x-runtime" value="0.024489" />
+    <header name="date" value="Fri, 12 Dec 2014 20:49:48 GMT" />
+    <header name="content-type" value="text/html; charset=utf-8" />
+  </headers>
+  <body><![CDATA[
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Action Controller: Exception caught</title>
+  <style>
+    body {
+      background-color: #FAFAFA;
+      color: #333;
+      margin: 0px;
+    }
+
+    body, p, ol, ul, td {
+      font-family: helvetica, verdana, arial, sans-serif;
+      font-size:   13px;
+      line-height: 18px;
+    }
+
+    pre {
+      font-size: 11px;
+      white-space: pre-wrap;
+    }
+
+    pre.box {
+      border: 1px solid #EEE;
+      padding: 10px;
+      margin: 0px;
+      width: 958px;
+    }
+
+    header {
+      color: #F0F0F0;
+      background: #C52F24;
+      padding: 0.5em 1.5em;
+    }
+
+    h1 {
+      margin: 0.2em 0;
+      line-height: 1.1em;
+      font-size: 2em;
+    }
+
+    h2 {
+      color: #C52F24;
+      line-height: 25px;
+    }
+
+    .details {
+      border: 1px solid #D0D0D0;
+      border-radius: 4px;
+      margin: 1em 0px;
+      display: block;
+      width: 978px;
+    }
+
+    .summary {
+      padding: 8px 15px;
+      border-bottom: 1px solid #D0D0D0;
+      display: block;
+    }
+
+    .details pre {
+      margin: 5px;
+      border: none;
+    }
+
+    #container {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 1.5em;
+    }
+
+    .source * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .source {
+      border: 1px solid #D9D9D9;
+      background: #ECECEC;
+      width: 978px;
+    }
+
+    .source pre {
+      padding: 10px 0px;
+      border: none;
+    }
+
+    .source .data {
+      font-size: 80%;
+      overflow: auto;
+      background-color: #FFF;
+    }
+
+    .info {
+      padding: 0.5em;
+    }
+
+    .source .data .line_numbers {
+      background-color: #ECECEC;
+      color: #AAA;
+      padding: 1em .5em;
+      border-right: 1px solid #DDD;
+      text-align: right;
+    }
+
+    .line {
+      padding-left: 10px;
+    }
+
+    .line:hover {
+      background-color: #F6F6F6;
+    }
+
+    .line.active {
+      background-color: #FFCCCC;
+    }
+
+    a { color: #980905; }
+    a:visited { color: #666; }
+    a:hover { color: #C52F24; }
+
+    
+  </style>
+
+  <script>
+    var toggle = function(id) {
+      var s = document.getElementById(id).style;
+      s.display = s.display == 'none' ? 'block' : 'none';
+      return false;
+    }
+    var show = function(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+    var hide = function(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+    var toggleTrace = function() {
+      return toggle('blame_trace');
+    }
+    var toggleSessionDump = function() {
+      return toggle('session_dump');
+    }
+    var toggleEnvDump = function() {
+      return toggle('env_dump');
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>
+    ActiveRecord::RecordNotFound
+      in JoinMembersController#createasinvite
+  </h1>
+</header>
+
+<div id="container">
+  <h2>Couldn&#39;t find User with &#39;id&#39;=3</h2>
+
+  <div class="source">
+<div class="info">
+  Extracted source (around line <strong>#54</strong>):
+</div>
+<div class="data">
+  <table cellpadding="0" cellspacing="0" class="lines">
+      <tr>
+        <td>
+          <pre class="line_numbers">
+<span>52</span>
+<span>53</span>
+<span>54</span>
+<span>55</span>
+<span>56</span>
+<span>57</span>
+          </pre>
+        </td>
+<td width="100%">
+<pre>
+<div class="line">
+</div><div class="line">  def createasinvite
+</div><div class="line active">    user = User.find(params[:user_id])
+</div><div class="line">    party = Party.find(params[:party_id])
+</div><div class="line">
+</div><div class="line">    @join_member = party.join_members.build(user: user)
+</div>
+</pre>
+</td>
+    </tr>
+  </table>
+</div>
+</div>
+
+  
+<p><code>Rails.root: /Users/steffenfb/programming/xup</code></p>
+
+<div id="traces">
+    <a href="#" onclick="hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);; return false;">Application Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);; return false;">Framework Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);; return false;">Full Trace</a> 
+
+    <div id="Application-Trace" style="display: block;">
+      <pre><code>app/controllers/join_members_controller.rb:54:in `createasinvite&#39;</code></pre>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+      <pre><code>activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:320:in `raise_record_not_found_exception!&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:429:in `find_one&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:413:in `find_with_ids&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:68:in `find&#39;
+activerecord (4.1.6) lib/active_record/querying.rb:3:in `find&#39;
+actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process&#39;
+actionview (4.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call&#39;
+warden (1.2.3) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `catch&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `call&#39;
+rack (1.5.2) lib/rack/etag.rb:23:in `call&#39;
+rack (1.5.2) lib/rack/conditionalget.rb:35:in `call&#39;
+rack (1.5.2) lib/rack/head.rb:11:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;
+activerecord (4.1.6) lib/active_record/migration.rb:380:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+    <div id="Full-Trace" style="display: none;">
+      <pre><code>activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:320:in `raise_record_not_found_exception!&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:429:in `find_one&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:413:in `find_with_ids&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:68:in `find&#39;
+activerecord (4.1.6) lib/active_record/querying.rb:3:in `find&#39;
+app/controllers/join_members_controller.rb:54:in `createasinvite&#39;
+actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process&#39;
+actionview (4.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call&#39;
+warden (1.2.3) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `catch&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `call&#39;
+rack (1.5.2) lib/rack/etag.rb:23:in `call&#39;
+rack (1.5.2) lib/rack/conditionalget.rb:35:in `call&#39;
+rack (1.5.2) lib/rack/head.rb:11:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;
+activerecord (4.1.6) lib/active_record/migration.rb:380:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+</div>
+
+  
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><b>Parameters</b>:</p> <pre>{&quot;party_id&quot;=&gt;&quot;1721&quot;,
+ &quot;user_id&quot;=&gt;&quot;3&quot;,
+ &quot;authenticity_token&quot;=&gt;&quot;trqsKa7rJqyHjT30NvOzYKZnb3t4jBolGfz4edNiAWI=&quot;}</pre>
+
+<div class="details">
+  <div class="summary"><a href="#" onclick="return toggleSessionDump()">Toggle session dump</a></div>
+  <div id="session_dump" style="display:none"><pre>_csrf_token: &quot;trqsKa7rJqyHjT30NvOzYKZnb3t4jBolGfz4edNiAWI=&quot;
+flash: {&quot;discard&quot;=&gt;[&quot;notice&quot;], &quot;flashes&quot;=&gt;{&quot;notice&quot;=&gt;&quot;Party was successfully created.&quot;}}
+session_id: &quot;d06b3b466c3be0ffef02cebbe6e90b4b&quot;
+warden.user.user.key: [[468], &quot;$2a$10$X3vqPXsDIKRb7CZv614Yoe&quot;]</pre></div>
+</div>
+
+<div class="details">
+  <div class="summary"><a href="#" onclick="return toggleEnvDump()">Toggle env dump</a></div>
+  <div id="env_dump" style="display:none"><pre>GATEWAY_INTERFACE: &quot;CGI/1.1&quot;
+REMOTE_ADDR: &quot;127.0.0.1&quot;
+REMOTE_HOST: &quot;127.0.0.1&quot;
+SERVER_NAME: &quot;localhost&quot;
+SERVER_PROTOCOL: &quot;HTTP/1.1&quot;</pre></div>
+</div>
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:</p> <pre>None</pre>
+
+</div>
+
+
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user"  time="1418417386.04" result="Failure" steps="5" duration="2.12193417549" connection_duration="0.826810121536" requests="15" pages="4" xmlrpc="0" redirects="2" images="0" links="8" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 308, in invite_a_user&#10;    description="Create New party")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /createasinvite/&#10;HTTP Response 404: Not Found&#10;' />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1418417388.17" duration="0.145930051804" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1418417388.31" duration="0.081442117691" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1418417388.4" duration="0.00673198699951" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1418417388.4" duration="0.00540494918823" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1418417388.41" duration="0.00513982772827" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1418417388.41" duration="0.00504207611084" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1418417388.42" duration="0.00520491600037" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1418417388.43" duration="0.0065701007843" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1418417388.43" duration="0.00539207458496" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="002" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1418417388.74" duration="0.110788822174" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="002" number="002" type="get" result="Successful" url="/profiles/469" code="200" description="" time="1418417388.85" duration="0.0852518081665" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="003" number="001" type="get" result="Successful" url="/new" code="200" description="create party page" time="1418417389.25" duration="0.153367996216" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="004" number="001" type="post" result="Successful" url="/parties" code="302" description="Create New party" time="1418417389.79" duration="0.0226340293884" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="004" number="002" type="get" result="Successful" url="/parties/1722" code="200" description="" time="1418417389.81" duration="0.149374008179" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="005" number="001" type="post" result="Failure" url="/createasinvite/" code="404" description="Create New party" time="1418417390.18" duration="0.0291130542755">
+  <headers>
+    <header name="content-length" value="19563" />
+    <header name="connection" value="close" />
+    <header name="x-request-id" value="860e8243-5b16-427c-9322-8ab9bb1d080b" />
+    <header name="server" value="WEBrick/1.3.1 (Ruby/2.0.0/2014-05-08)" />
+    <header name="x-runtime" value="0.024465" />
+    <header name="date" value="Fri, 12 Dec 2014 20:49:50 GMT" />
+    <header name="content-type" value="text/html; charset=utf-8" />
+  </headers>
+  <body><![CDATA[
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Action Controller: Exception caught</title>
+  <style>
+    body {
+      background-color: #FAFAFA;
+      color: #333;
+      margin: 0px;
+    }
+
+    body, p, ol, ul, td {
+      font-family: helvetica, verdana, arial, sans-serif;
+      font-size:   13px;
+      line-height: 18px;
+    }
+
+    pre {
+      font-size: 11px;
+      white-space: pre-wrap;
+    }
+
+    pre.box {
+      border: 1px solid #EEE;
+      padding: 10px;
+      margin: 0px;
+      width: 958px;
+    }
+
+    header {
+      color: #F0F0F0;
+      background: #C52F24;
+      padding: 0.5em 1.5em;
+    }
+
+    h1 {
+      margin: 0.2em 0;
+      line-height: 1.1em;
+      font-size: 2em;
+    }
+
+    h2 {
+      color: #C52F24;
+      line-height: 25px;
+    }
+
+    .details {
+      border: 1px solid #D0D0D0;
+      border-radius: 4px;
+      margin: 1em 0px;
+      display: block;
+      width: 978px;
+    }
+
+    .summary {
+      padding: 8px 15px;
+      border-bottom: 1px solid #D0D0D0;
+      display: block;
+    }
+
+    .details pre {
+      margin: 5px;
+      border: none;
+    }
+
+    #container {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 1.5em;
+    }
+
+    .source * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .source {
+      border: 1px solid #D9D9D9;
+      background: #ECECEC;
+      width: 978px;
+    }
+
+    .source pre {
+      padding: 10px 0px;
+      border: none;
+    }
+
+    .source .data {
+      font-size: 80%;
+      overflow: auto;
+      background-color: #FFF;
+    }
+
+    .info {
+      padding: 0.5em;
+    }
+
+    .source .data .line_numbers {
+      background-color: #ECECEC;
+      color: #AAA;
+      padding: 1em .5em;
+      border-right: 1px solid #DDD;
+      text-align: right;
+    }
+
+    .line {
+      padding-left: 10px;
+    }
+
+    .line:hover {
+      background-color: #F6F6F6;
+    }
+
+    .line.active {
+      background-color: #FFCCCC;
+    }
+
+    a { color: #980905; }
+    a:visited { color: #666; }
+    a:hover { color: #C52F24; }
+
+    
+  </style>
+
+  <script>
+    var toggle = function(id) {
+      var s = document.getElementById(id).style;
+      s.display = s.display == 'none' ? 'block' : 'none';
+      return false;
+    }
+    var show = function(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+    var hide = function(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+    var toggleTrace = function() {
+      return toggle('blame_trace');
+    }
+    var toggleSessionDump = function() {
+      return toggle('session_dump');
+    }
+    var toggleEnvDump = function() {
+      return toggle('env_dump');
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>
+    ActiveRecord::RecordNotFound
+      in JoinMembersController#createasinvite
+  </h1>
+</header>
+
+<div id="container">
+  <h2>Couldn&#39;t find User with &#39;id&#39;=3</h2>
+
+  <div class="source">
+<div class="info">
+  Extracted source (around line <strong>#54</strong>):
+</div>
+<div class="data">
+  <table cellpadding="0" cellspacing="0" class="lines">
+      <tr>
+        <td>
+          <pre class="line_numbers">
+<span>52</span>
+<span>53</span>
+<span>54</span>
+<span>55</span>
+<span>56</span>
+<span>57</span>
+          </pre>
+        </td>
+<td width="100%">
+<pre>
+<div class="line">
+</div><div class="line">  def createasinvite
+</div><div class="line active">    user = User.find(params[:user_id])
+</div><div class="line">    party = Party.find(params[:party_id])
+</div><div class="line">
+</div><div class="line">    @join_member = party.join_members.build(user: user)
+</div>
+</pre>
+</td>
+    </tr>
+  </table>
+</div>
+</div>
+
+  
+<p><code>Rails.root: /Users/steffenfb/programming/xup</code></p>
+
+<div id="traces">
+    <a href="#" onclick="hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);; return false;">Application Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);; return false;">Framework Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);; return false;">Full Trace</a> 
+
+    <div id="Application-Trace" style="display: block;">
+      <pre><code>app/controllers/join_members_controller.rb:54:in `createasinvite&#39;</code></pre>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+      <pre><code>activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:320:in `raise_record_not_found_exception!&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:429:in `find_one&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:413:in `find_with_ids&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:68:in `find&#39;
+activerecord (4.1.6) lib/active_record/querying.rb:3:in `find&#39;
+actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process&#39;
+actionview (4.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call&#39;
+warden (1.2.3) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `catch&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `call&#39;
+rack (1.5.2) lib/rack/etag.rb:23:in `call&#39;
+rack (1.5.2) lib/rack/conditionalget.rb:35:in `call&#39;
+rack (1.5.2) lib/rack/head.rb:11:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;
+activerecord (4.1.6) lib/active_record/migration.rb:380:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+    <div id="Full-Trace" style="display: none;">
+      <pre><code>activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:320:in `raise_record_not_found_exception!&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:429:in `find_one&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:413:in `find_with_ids&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:68:in `find&#39;
+activerecord (4.1.6) lib/active_record/querying.rb:3:in `find&#39;
+app/controllers/join_members_controller.rb:54:in `createasinvite&#39;
+actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process&#39;
+actionview (4.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call&#39;
+warden (1.2.3) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `catch&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `call&#39;
+rack (1.5.2) lib/rack/etag.rb:23:in `call&#39;
+rack (1.5.2) lib/rack/conditionalget.rb:35:in `call&#39;
+rack (1.5.2) lib/rack/head.rb:11:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;
+activerecord (4.1.6) lib/active_record/migration.rb:380:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+</div>
+
+  
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><b>Parameters</b>:</p> <pre>{&quot;party_id&quot;=&gt;&quot;1722&quot;,
+ &quot;user_id&quot;=&gt;&quot;3&quot;,
+ &quot;authenticity_token&quot;=&gt;&quot;eSDYozEaiZGuHe33zftfLJhXfyQHsv2SIx659CuqPBc=&quot;}</pre>
+
+<div class="details">
+  <div class="summary"><a href="#" onclick="return toggleSessionDump()">Toggle session dump</a></div>
+  <div id="session_dump" style="display:none"><pre>_csrf_token: &quot;eSDYozEaiZGuHe33zftfLJhXfyQHsv2SIx659CuqPBc=&quot;
+flash: {&quot;discard&quot;=&gt;[&quot;notice&quot;], &quot;flashes&quot;=&gt;{&quot;notice&quot;=&gt;&quot;Party was successfully created.&quot;}}
+session_id: &quot;1d844dd64b2049bc522558d1704eb933&quot;
+warden.user.user.key: [[469], &quot;$2a$10$igwf.A7YiUX1fXvVbnp.ne&quot;]</pre></div>
+</div>
+
+<div class="details">
+  <div class="summary"><a href="#" onclick="return toggleEnvDump()">Toggle env dump</a></div>
+  <div id="env_dump" style="display:none"><pre>GATEWAY_INTERFACE: &quot;CGI/1.1&quot;
+REMOTE_ADDR: &quot;127.0.0.1&quot;
+REMOTE_HOST: &quot;127.0.0.1&quot;
+SERVER_NAME: &quot;localhost&quot;
+SERVER_PROTOCOL: &quot;HTTP/1.1&quot;</pre></div>
+</div>
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:</p> <pre>None</pre>
+
+</div>
+
+
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user"  time="1418417388.17" result="Failure" steps="5" duration="2.04042410851" connection_duration="0.81738781929" requests="15" pages="4" xmlrpc="0" redirects="2" images="0" links="8" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 308, in invite_a_user&#10;    description="Create New party")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /createasinvite/&#10;HTTP Response 404: Not Found&#10;' />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="001" type="get" result="Successful" url="/users/sign_up" code="200" description="View the user signup page" time="1418417390.22" duration="0.151604890823" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="002" type="link" result="Successful" url="/bootstrap/3.2.0/css/bootstrap.min.css" code="200" description="" time="1418417390.37" duration="0.0875289440155" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="003" type="link" result="Successful" url="/assets/bootstrap_and_customization.css?body=1" code="200" description="" time="1418417390.46" duration="0.00739789009094" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="004" type="link" result="Successful" url="/assets/join_members.css?body=1" code="200" description="" time="1418417390.47" duration="0.0052330493927" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="005" type="link" result="Successful" url="/assets/parties.css?body=1" code="200" description="" time="1418417390.47" duration="0.00506591796875" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="006" type="link" result="Successful" url="/assets/profiles.css?body=1" code="200" description="" time="1418417390.48" duration="0.00517797470093" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="007" type="link" result="Successful" url="/assets/scaffolds.css?body=1" code="200" description="" time="1418417390.48" duration="0.00525999069214" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="008" type="link" result="Successful" url="/assets/application.css?body=1" code="200" description="" time="1418417390.49" duration="0.00565195083618" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="001" number="009" type="link" result="Successful" url="/assets/bootstrap-datetimepicker.css?body=1" code="200" description="" time="1418417390.49" duration="0.0049901008606" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="002" number="001" type="post" result="Successful" url="/users" code="302" description="Create New User" time="1418417390.77" duration="0.105628013611" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="002" number="002" type="get" result="Successful" url="/profiles/470" code="200" description="" time="1418417390.87" duration="0.142743110657" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="003" number="001" type="get" result="Successful" url="/new" code="200" description="create party page" time="1418417391.26" duration="0.103023052216" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="004" number="001" type="post" result="Successful" url="/parties" code="302" description="Create New party" time="1418417391.65" duration="0.0193388462067" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="004" number="002" type="get" result="Successful" url="/parties/1723" code="200" description="" time="1418417391.67" duration="0.155420780182" />
+<response cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user" step="005" number="001" type="post" result="Failure" url="/createasinvite/" code="404" description="Create New party" time="1418417391.88" duration="0.0310261249542">
+  <headers>
+    <header name="content-length" value="19563" />
+    <header name="connection" value="close" />
+    <header name="x-request-id" value="45102822-c016-42ce-b519-daf0169ce653" />
+    <header name="server" value="WEBrick/1.3.1 (Ruby/2.0.0/2014-05-08)" />
+    <header name="x-runtime" value="0.026224" />
+    <header name="date" value="Fri, 12 Dec 2014 20:49:51 GMT" />
+    <header name="content-type" value="text/html; charset=utf-8" />
+  </headers>
+  <body><![CDATA[
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Action Controller: Exception caught</title>
+  <style>
+    body {
+      background-color: #FAFAFA;
+      color: #333;
+      margin: 0px;
+    }
+
+    body, p, ol, ul, td {
+      font-family: helvetica, verdana, arial, sans-serif;
+      font-size:   13px;
+      line-height: 18px;
+    }
+
+    pre {
+      font-size: 11px;
+      white-space: pre-wrap;
+    }
+
+    pre.box {
+      border: 1px solid #EEE;
+      padding: 10px;
+      margin: 0px;
+      width: 958px;
+    }
+
+    header {
+      color: #F0F0F0;
+      background: #C52F24;
+      padding: 0.5em 1.5em;
+    }
+
+    h1 {
+      margin: 0.2em 0;
+      line-height: 1.1em;
+      font-size: 2em;
+    }
+
+    h2 {
+      color: #C52F24;
+      line-height: 25px;
+    }
+
+    .details {
+      border: 1px solid #D0D0D0;
+      border-radius: 4px;
+      margin: 1em 0px;
+      display: block;
+      width: 978px;
+    }
+
+    .summary {
+      padding: 8px 15px;
+      border-bottom: 1px solid #D0D0D0;
+      display: block;
+    }
+
+    .details pre {
+      margin: 5px;
+      border: none;
+    }
+
+    #container {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 1.5em;
+    }
+
+    .source * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .source {
+      border: 1px solid #D9D9D9;
+      background: #ECECEC;
+      width: 978px;
+    }
+
+    .source pre {
+      padding: 10px 0px;
+      border: none;
+    }
+
+    .source .data {
+      font-size: 80%;
+      overflow: auto;
+      background-color: #FFF;
+    }
+
+    .info {
+      padding: 0.5em;
+    }
+
+    .source .data .line_numbers {
+      background-color: #ECECEC;
+      color: #AAA;
+      padding: 1em .5em;
+      border-right: 1px solid #DDD;
+      text-align: right;
+    }
+
+    .line {
+      padding-left: 10px;
+    }
+
+    .line:hover {
+      background-color: #F6F6F6;
+    }
+
+    .line.active {
+      background-color: #FFCCCC;
+    }
+
+    a { color: #980905; }
+    a:visited { color: #666; }
+    a:hover { color: #C52F24; }
+
+    
+  </style>
+
+  <script>
+    var toggle = function(id) {
+      var s = document.getElementById(id).style;
+      s.display = s.display == 'none' ? 'block' : 'none';
+      return false;
+    }
+    var show = function(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+    var hide = function(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+    var toggleTrace = function() {
+      return toggle('blame_trace');
+    }
+    var toggleSessionDump = function() {
+      return toggle('session_dump');
+    }
+    var toggleEnvDump = function() {
+      return toggle('env_dump');
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>
+    ActiveRecord::RecordNotFound
+      in JoinMembersController#createasinvite
+  </h1>
+</header>
+
+<div id="container">
+  <h2>Couldn&#39;t find User with &#39;id&#39;=3</h2>
+
+  <div class="source">
+<div class="info">
+  Extracted source (around line <strong>#54</strong>):
+</div>
+<div class="data">
+  <table cellpadding="0" cellspacing="0" class="lines">
+      <tr>
+        <td>
+          <pre class="line_numbers">
+<span>52</span>
+<span>53</span>
+<span>54</span>
+<span>55</span>
+<span>56</span>
+<span>57</span>
+          </pre>
+        </td>
+<td width="100%">
+<pre>
+<div class="line">
+</div><div class="line">  def createasinvite
+</div><div class="line active">    user = User.find(params[:user_id])
+</div><div class="line">    party = Party.find(params[:party_id])
+</div><div class="line">
+</div><div class="line">    @join_member = party.join_members.build(user: user)
+</div>
+</pre>
+</td>
+    </tr>
+  </table>
+</div>
+</div>
+
+  
+<p><code>Rails.root: /Users/steffenfb/programming/xup</code></p>
+
+<div id="traces">
+    <a href="#" onclick="hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);; return false;">Application Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);; return false;">Framework Trace</a> |
+    <a href="#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);; return false;">Full Trace</a> 
+
+    <div id="Application-Trace" style="display: block;">
+      <pre><code>app/controllers/join_members_controller.rb:54:in `createasinvite&#39;</code></pre>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+      <pre><code>activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:320:in `raise_record_not_found_exception!&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:429:in `find_one&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:413:in `find_with_ids&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:68:in `find&#39;
+activerecord (4.1.6) lib/active_record/querying.rb:3:in `find&#39;
+actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process&#39;
+actionview (4.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call&#39;
+warden (1.2.3) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `catch&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `call&#39;
+rack (1.5.2) lib/rack/etag.rb:23:in `call&#39;
+rack (1.5.2) lib/rack/conditionalget.rb:35:in `call&#39;
+rack (1.5.2) lib/rack/head.rb:11:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;
+activerecord (4.1.6) lib/active_record/migration.rb:380:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+    <div id="Full-Trace" style="display: none;">
+      <pre><code>activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:320:in `raise_record_not_found_exception!&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:429:in `find_one&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:413:in `find_with_ids&#39;
+activerecord (4.1.6) lib/active_record/relation/finder_methods.rb:68:in `find&#39;
+activerecord (4.1.6) lib/active_record/querying.rb:3:in `find&#39;
+app/controllers/join_members_controller.rb:54:in `createasinvite&#39;
+actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks&#39;
+actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument&#39;
+actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process&#39;
+actionview (4.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each&#39;
+actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!&#39;
+omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call&#39;
+warden (1.2.3) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `catch&#39;
+warden (1.2.3) lib/warden/manager.rb:34:in `call&#39;
+rack (1.5.2) lib/rack/etag.rb:23:in `call&#39;
+rack (1.5.2) lib/rack/conditionalget.rb:35:in `call&#39;
+rack (1.5.2) lib/rack/head.rb:11:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call&#39;
+activerecord (4.1.6) lib/active_record/migration.rb:380:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.1.6) lib/rails/rack/logger.rb:20:in `call&#39;
+request_store (1.1.0) lib/request_store/middleware.rb:8:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call&#39;
+rack (1.5.2) lib/rack/runtime.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call&#39;
+rack (1.5.2) lib/rack/sendfile.rb:112:in `call&#39;
+railties (4.1.6) lib/rails/engine.rb:514:in `call&#39;
+railties (4.1.6) lib/rails/application.rb:144:in `call&#39;
+rack (1.5.2) lib/rack/lock.rb:17:in `call&#39;
+rack (1.5.2) lib/rack/content_length.rb:14:in `call&#39;
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run&#39;
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread&#39;</code></pre>
+    </div>
+</div>
+
+  
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><b>Parameters</b>:</p> <pre>{&quot;party_id&quot;=&gt;&quot;1723&quot;,
+ &quot;user_id&quot;=&gt;&quot;3&quot;,
+ &quot;authenticity_token&quot;=&gt;&quot;/KxpG8XMYY7Ej8U/AF7RSfZW+YedF0eyWGKXaFODfyE=&quot;}</pre>
+
+<div class="details">
+  <div class="summary"><a href="#" onclick="return toggleSessionDump()">Toggle session dump</a></div>
+  <div id="session_dump" style="display:none"><pre>_csrf_token: &quot;/KxpG8XMYY7Ej8U/AF7RSfZW+YedF0eyWGKXaFODfyE=&quot;
+flash: {&quot;discard&quot;=&gt;[&quot;notice&quot;], &quot;flashes&quot;=&gt;{&quot;notice&quot;=&gt;&quot;Party was successfully created.&quot;}}
+session_id: &quot;c48755956ab0622abd4b764d4fd46072&quot;
+warden.user.user.key: [[470], &quot;$2a$10$Qm505Nto93MtDco2qRq8lu&quot;]</pre></div>
+</div>
+
+<div class="details">
+  <div class="summary"><a href="#" onclick="return toggleEnvDump()">Toggle env dump</a></div>
+  <div id="env_dump" style="display:none"><pre>GATEWAY_INTERFACE: &quot;CGI/1.1&quot;
+REMOTE_ADDR: &quot;127.0.0.1&quot;
+REMOTE_HOST: &quot;127.0.0.1&quot;
+SERVER_NAME: &quot;localhost&quot;
+SERVER_PROTOCOL: &quot;HTTP/1.1&quot;</pre></div>
+</div>
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:</p> <pre>None</pre>
+
+</div>
+
+
+</body>
+</html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="000" cvus="001" thread="000" suite="Critical" name="invite_a_user"  time="1418417390.22" result="Failure" steps="5" duration="1.69504189491" connection_duration="0.835090637207" requests="15" pages="4" xmlrpc="0" redirects="2" images="0" links="8" traceback='Traceback (most recent call last):&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 946, in __call__&#10;    testMethod()&#10;   File "/Users/steffenfb/programming/xup/loadtestingsteffen/test_Critical.py", line 308, in invite_a_user&#10;    description="Create New party")&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 383, in post&#10;    method="post", load_auto_links=load_auto_links)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File "/Users/steffenfb/programming/loadtest/lib/python2.7/site-packages/funkload/FunkLoadTestCase.py", line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /createasinvite/&#10;HTTP Response 404: Not Found&#10;' />
+</funkload>
