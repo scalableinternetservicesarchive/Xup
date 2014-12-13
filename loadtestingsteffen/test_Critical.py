@@ -92,7 +92,12 @@ class Critical(FunkLoadTestCase):
         print "done with path"
 
 
-
+    def cache_test(self):
+        server_url = self.server_url
+        self.get(server_url + "/upcoming", description="View the upcoming page")
+        self.get(server_url + "/upcoming", description="View the upcoming page")
+        self.get(server_url + "/index", description="View the index page")
+        self.get(server_url + "/index", description="View the index page")
 
     def setUp(self):
       """Setting up test."""
