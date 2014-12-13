@@ -1,0 +1,66 @@
+2014-12-11 16:31:50,437 INFO test_critical_path: [test_critical_path] description not found
+2014-12-11 16:31:50,438 DEBUG test_critical_path: Starting -----------------------------------
+	
+2014-12-11 16:31:50,438 DEBUG test_critical_path: GET: http://localhost:3000
+	Page 1: Get root URL ...
+2014-12-11 16:31:50,440 DEBUG test_critical_path:  Failed in 0.002s
+2014-12-11 16:31:50,444 INFO test_critical_path_readonly: [test_critical_path_readonly] description not found
+2014-12-11 16:31:50,444 DEBUG test_critical_path_readonly: Starting -----------------------------------
+	
+2014-12-11 16:31:50,444 DEBUG test_critical_path_readonly: GET: http://localhost:3000
+	Page 1: View root URL ...
+2014-12-11 16:31:50,445 DEBUG test_critical_path_readonly:  Failed in 0.001s
+2014-12-11 16:32:01,911 INFO view_stuff: [view_stuff] description not found
+2014-12-11 16:32:01,912 DEBUG view_stuff: Starting -----------------------------------
+	
+2014-12-11 16:32:01,912 DEBUG view_stuff: GET: http://localhost:3000/upcoming
+	Page 1: View the upcoming page ...
+2014-12-11 16:32:01,913 DEBUG view_stuff:  Failed in 0.001s
+2014-12-11 16:32:44,121 INFO view_stuff: [view_stuff] description not found
+2014-12-11 16:32:44,122 DEBUG view_stuff: Starting -----------------------------------
+	
+2014-12-11 16:32:44,122 DEBUG view_stuff: GET: http://localhost:3000/upcoming
+	Page 1: View the upcoming page ...
+2014-12-11 16:32:44,123 DEBUG view_stuff:  Failed in 0.001s
+2014-12-11 16:35:37,671 INFO view_stuff: [view_stuff] description not found
+2014-12-11 16:35:37,671 DEBUG view_stuff: Starting -----------------------------------
+	
+2014-12-11 16:35:37,672 DEBUG view_stuff: GET: http://localhost:3000/upcoming
+	Page 1: View the upcoming page ...
+2014-12-11 16:35:38,136 DEBUG view_stuff:  Done in 0.464s
+2014-12-11 16:35:38,136 DEBUG view_stuff:  Load css and images...
+2014-12-11 16:36:32,799 DEBUG view_stuff:   Done in 54.650s
+2014-12-11 16:36:32,799 DEBUG view_stuff: GET: http://localhost:3000/index
+	Page 2: View the index page ...
+2014-12-11 16:36:33,012 DEBUG view_stuff:  Done in 0.212s
+2014-12-11 16:36:33,012 DEBUG view_stuff:  Load css and images...
+2014-12-11 16:36:33,022 DEBUG view_stuff:   Done in 0.000s
+2014-12-11 16:36:33,022 DEBUG view_stuff: GET: http://localhost:3000/users/sign_up
+	Page 3: View the user signup page ...
+2014-12-11 16:36:33,285 DEBUG view_stuff:  Done in 0.263s
+2014-12-11 16:36:33,285 DEBUG view_stuff:  Load css and images...
+2014-12-11 16:36:33,289 DEBUG view_stuff:   Done in 0.000s
+2014-12-11 16:36:33,289 DEBUG view_stuff: POST: http://localhost:3000/users [('user[name]', 'madvn28'), ('user[email]', 's7x4ukar@niger.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('authenticity_token', 'DZt5esfaAnO3j2QJsCahVH4xfPlmVS0j7+76aSYObTE='), ('commit', 'Sign up')]
+	Page 4: Create New User ...
+2014-12-11 16:36:34,492 DEBUG view_stuff:  Done in 1.203s
+2014-12-11 16:36:34,492 DEBUG view_stuff:  Load redirect link: http://localhost:3000/profiles/103
+2014-12-11 16:36:34,630 DEBUG view_stuff:  Done in 0.138s
+2014-12-11 16:36:34,630 DEBUG view_stuff:  Load css and images...
+2014-12-11 16:36:34,634 DEBUG view_stuff:   Done in 0.000s
+2014-12-11 16:36:34,635 DEBUG view_stuff: GET: http://localhost:3000/new
+	Page 5: view party page ...
+2014-12-11 16:36:34,782 DEBUG view_stuff:  Done in 0.147s
+2014-12-11 16:36:34,782 DEBUG view_stuff:  Load css and images...
+2014-12-11 16:36:34,787 DEBUG view_stuff:   Done in 0.000s
+2014-12-11 16:36:34,787 DEBUG view_stuff: POST: http://localhost:3000/parties [('party[name]', 'nw3taxp'), ('party[owner]', 'madvn28'), ('party[date]', '2016-12-03'), ('party[time]', '17:00'), ('party[location]', 'a3eto'), ('party[description]', '3te65ywe'), ('authenticity_token', 'DZt5esfaAnO3j2QJsCahVH4xfPlmVS0j7+76aSYObTE='), ('commit', 'Sign up')]
+	Page 6: Create New party ...
+2014-12-11 16:36:34,854 DEBUG view_stuff:  Done in 0.067s
+2014-12-11 16:36:34,855 DEBUG view_stuff:  Load redirect link: http://localhost:3000/parties/504
+2014-12-11 16:36:34,994 DEBUG view_stuff:  Done in 0.140s
+2014-12-11 16:36:34,994 DEBUG view_stuff:  Load css and images...
+2014-12-11 16:36:34,998 DEBUG view_stuff:   Done in 0.000s
+2014-12-11 16:36:34,998 DEBUG view_stuff: GET: http://localhost:3000/invitetoparty/504
+	Page 7: View invite page  ...
+2014-12-11 16:36:35,151 DEBUG view_stuff:  Done in 0.153s
+2014-12-11 16:36:35,151 DEBUG view_stuff:  Load css and images...
+2014-12-11 16:36:35,159 DEBUG view_stuff:   Done in 0.000s
