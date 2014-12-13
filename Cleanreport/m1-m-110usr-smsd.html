@@ -1,0 +1,2975 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0076)file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="Docutils 0.12: http://docutils.sourceforge.net/">
+<title>FunkLoad bench report</title>
+<meta name="date" content="2014-12-13 05:52:41">
+<style type="text/css">
+
+/* funkload doc css */
+/* $Id: nuxeo_doc.css 21596 2005-02-15 10:01:33Z bdelbosc $ */
+
+body {
+  font: 90% 'Lucida Grande', Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: black;
+  margin: 2em;
+  padding: 2em;
+}
+
+a[href] {
+  color: #436976;
+  background-color: transparent;
+}
+
+h1 a[href] {
+  text-decoration: none;
+  color: #fcb100;
+  background-color: transparent;
+}
+
+a.strong {
+  font-weight: bold;
+}
+
+img {
+  margin: 0;
+  border: 0;
+}
+
+p {
+  margin: 0.5em 0 1em 0;
+  line-height: 1.5em;
+}
+p a {
+  text-decoration: underline;
+}
+p a:visited {
+  color: purple;
+  background-color: transparent;
+}
+p a:active {
+  color: red;
+  background-color: transparent;
+}
+a:hover {
+  text-decoration: none;
+}
+p img {
+  border: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #003a6b;
+  background-color: transparent;
+  font: 100% 'Lucida Grande', Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding-top: 0.5em;
+}
+
+h1 {
+  font-size: 160%;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #888;
+  margin-top: 1em;
+}
+
+h1.title {
+  font-size: 200%;
+}
+
+h2 {
+  font-size: 140%;
+  margin-bottom: 0.5em;
+}
+h3 {
+  font-size: 120%;
+  margin-bottom: 0.5em;
+}
+h4 {
+  font-size: 110%;
+  font-weight: bold;
+}
+h5 {
+  font-size: 100%;
+  font-weight: bold;
+}
+h6 {
+  font-size: 80%;
+  font-weight: bold;
+}
+
+ul a, ol a {
+  text-decoration: underline;
+}
+
+dt {
+  font-weight: bold;
+}
+dt a {
+  text-decoration: none;
+}
+
+dd {
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+legend {
+  background: #ffffff;
+  padding: 0.5em;
+}
+
+form {
+  margin: 0;
+}
+
+
+dl.form {
+  margin: 0;
+  padding: 1em;
+}
+
+dl.form dt {
+  width: 30%;
+  float: left;
+  margin: 0;
+  padding: 0 0.5em 0.5em 0;
+  text-align: right;
+}
+
+input {
+  font: 100% 'Lucida Grande', Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: white;
+  vertical-align: middle;
+}
+
+abbr, acronym, .explain {
+  color: black;
+  background-color: transparent;
+}
+
+q, blockquote {
+}
+
+code, pre {
+  font-family: monospace;
+  font-size: 1.2em;
+  display: block;
+  padding: 10px;
+  border: 1px solid #838183;
+  background-color: #eee;
+  color: #000;
+  overflow: auto;
+  margin: 0.5em 1em;
+}
+
+table.docutils {
+  border: 1px solid black;
+  font-size: 0.6em;
+  border-spacing: 0;
+  padding: 0;
+  margin: 1em;
+}
+
+table.docutils td {
+  border: 1px solid #CCC;
+  text-align: right;
+  padding: 0 0.3em;
+  margin: 0;
+}
+
+table.docutils tr {
+ padding: 0;
+ margin: 0;
+}
+
+table.docutils th {
+  border: 1px solid #CCC;
+  border-bottom: 1px solid black;
+  padding: 0.3em;
+  font-weight: bold;
+  margin: 0;
+}
+
+table.docutils td p, table.docutils th p {
+  margin: 0;
+  padding: 0;
+}
+
+table.docutils th.field-name {
+  border: 1px solid #CCC;
+}
+
+div.abstract {
+  padding: 0.5em;
+  background-color: #eef;
+  border: 1px solid #838183;
+  margin: 0.5em 1em;
+}
+
+div.abstract {
+  padding: 0.5em;
+  background-color: #eef;
+  border: 1px solid #838183;
+  margin: 0.5em 1em;
+}
+
+div.warning, div.note {
+  padding: 0.5em;
+  background-color: #fee;
+  border: 1px solid #838183;
+  margin: 0.5em 1em;
+}
+
+div.warning p.admonition-title {
+  color: red ;
+  font-weight: bold ;
+}
+
+div.abstract p.topic-title {
+  font-weight: bold
+}
+
+
+th.field-name {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+td.field-body {
+  font-size: 1.5em;
+}
+
+tr.field {
+  border: none;
+}
+
+
+div.contents p.first a {
+  font-size: 150%;
+  border-bottom: 1px solid #888;
+  color: #fcb100;
+}
+
+div.contents a  { text-decoration: none }
+
+pre.address {
+  display: inline;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+</style>
+</head>
+<body>
+<div class="document" id="funkload-bench-report">
+<h1 class="title"><a class="reference external" href="http://funkload.nuxeo.org/">FunkLoad</a> bench report</h1>
+<table class="docinfo" frame="void" rules="none">
+<colgroup><col class="docinfo-name">
+<col class="docinfo-content">
+</colgroup><tbody valign="top">
+<tr><th class="docinfo-name">Date:</th>
+<td>2014-12-13 05:52:41</td></tr>
+</tbody>
+</table>
+<div class="abstract topic">
+<p class="topic-title first">Abstract</p>
+<p>Testing the critical path of the lab app
+Bench result of <tt class="docutils literal">Critical.view_stuff</tt>:
+No test description</p>
+</div>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of contents</p>
+<ul class="auto-toc simple">
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#bench-configuration" id="id1">1&nbsp;&nbsp;&nbsp;Bench configuration</a></li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#bench-content" id="id2">2&nbsp;&nbsp;&nbsp;Bench content</a></li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#test-stats" id="id3">3&nbsp;&nbsp;&nbsp;Test stats</a></li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#page-stats" id="id4">4&nbsp;&nbsp;&nbsp;Page stats</a></li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#request-stats" id="id5">5&nbsp;&nbsp;&nbsp;Request stats</a></li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#slowest-requests" id="id6">6&nbsp;&nbsp;&nbsp;Slowest requests</a></li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#page-detail-stats" id="id7">7&nbsp;&nbsp;&nbsp;Page detail stats</a><ul class="auto-toc">
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#page-001-view-the-upcoming-page" id="id8">7.1&nbsp;&nbsp;&nbsp;PAGE 001: View the upcoming page</a></li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#page-002-view-the-index-page" id="id9">7.2&nbsp;&nbsp;&nbsp;PAGE 002: View the index page</a></li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#page-003-view-the-user-signup-page" id="id10">7.3&nbsp;&nbsp;&nbsp;PAGE 003: View the user signup page</a></li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#page-004-create-new-user" id="id11">7.4&nbsp;&nbsp;&nbsp;PAGE 004: Create New User</a></li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#page-005-view-party-page" id="id12">7.5&nbsp;&nbsp;&nbsp;PAGE 005: view party page</a></li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#page-006-create-new-party" id="id13">7.6&nbsp;&nbsp;&nbsp;PAGE 006: Create New party</a></li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#page-007-inviting-user" id="id14">7.7&nbsp;&nbsp;&nbsp;PAGE 007: Inviting user</a></li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#page-008-inviting-user" id="id15">7.8&nbsp;&nbsp;&nbsp;PAGE 008: Inviting user</a></li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#page-009-inviting-user" id="id16">7.9&nbsp;&nbsp;&nbsp;PAGE 009: Inviting user</a></li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#page-010-view-index-page" id="id17">7.10&nbsp;&nbsp;&nbsp;PAGE 010: View index page</a></li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#page-011-asking-to-join" id="id18">7.11&nbsp;&nbsp;&nbsp;PAGE 011: Asking to join</a></li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#page-012-asking-to-join" id="id19">7.12&nbsp;&nbsp;&nbsp;PAGE 012: Asking to join</a></li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#page-013-asking-to-join" id="id20">7.13&nbsp;&nbsp;&nbsp;PAGE 013: Asking to join</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#failures-and-errors" id="id21">8&nbsp;&nbsp;&nbsp;Failures and Errors</a><ul class="auto-toc">
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#failures" id="id22">8.1&nbsp;&nbsp;&nbsp;Failures</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#definitions" id="id23">9&nbsp;&nbsp;&nbsp;Definitions</a></li>
+</ul>
+</div>
+<div class="section" id="bench-configuration">
+<h1><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id1">1&nbsp;&nbsp;&nbsp;Bench configuration</a></h1>
+<ul class="simple">
+<li>Launched: 2014-12-13 05:52:41</li>
+<li>From: ip-172-31-13-231</li>
+<li>Test: <tt class="docutils literal">test_critical.py Critical.view_stuff</tt></li>
+<li>Target server: <a class="reference external" href="http://ec2-54-149-151-51.us-west-2.compute.amazonaws.com/">http://ec2-54-149-151-51.us-west-2.compute.amazonaws.com/</a></li>
+<li>Cycles of concurrent users: [70, 90, 100, 110]</li>
+<li>Cycle duration: 270s</li>
+<li>Sleeptime between request: from 0.0s to 0.5s</li>
+<li>Sleeptime between test case: 0.01s</li>
+<li>Startup delay between thread: 0.01s</li>
+<li>Apdex: <sub>1.5</sub></li>
+<li><a class="reference external" href="http://funkload.nuxeo.org/">FunkLoad</a> version: 1.16.1</li>
+</ul>
+</div>
+<div class="section" id="bench-content">
+<h1><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id2">2&nbsp;&nbsp;&nbsp;Bench content</a></h1>
+<p>The test <tt class="docutils literal">Critical.view_stuff</tt> contains:</p>
+<ul class="simple">
+<li>13 page(s)</li>
+<li>8 redirect(s)</li>
+<li>2 link(s)</li>
+<li>0 image(s)</li>
+<li>0 XML RPC call(s)</li>
+</ul>
+<p>The bench contains:</p>
+<ul class="simple">
+<li>34401 tests, 33540 error(s)</li>
+<li>59677 pages, 33540 error(s)</li>
+<li>63967 requests, 33540 error(s)</li>
+</ul>
+</div>
+<div class="section" id="test-stats">
+<h1><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id3">3&nbsp;&nbsp;&nbsp;Test stats</a></h1>
+<p>The number of Successful <strong>Tests</strong> Per Second (STPS) over Concurrent Users (CUs).</p>
+<blockquote>
+<img alt="tests.png" src="./m1-m-110usr-smsd_files/tests.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%">
+<col width="20%">
+<col width="20%">
+<col width="20%">
+<col width="20%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">STPS</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>1.078</td>
+<td>291</td>
+<td>291</td>
+<td>0.00%</td>
+</tr>
+<tr><td>90</td>
+<td>1.000</td>
+<td>270</td>
+<td>270</td>
+<td>0.00%</td>
+</tr>
+<tr><td>100</td>
+<td>1.111</td>
+<td>300</td>
+<td>300</td>
+<td>0.00%</td>
+</tr>
+<tr><td>110</td>
+<td>0.000</td>
+<td>33540</td>
+<td>0</td>
+<td>100.00%</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+</div>
+<div class="section" id="page-stats">
+<h1><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id4">4&nbsp;&nbsp;&nbsp;Page stats</a></h1>
+<p>The number of Successful <strong>Pages</strong> Per Second (SPPS) over Concurrent Users (CUs).
+Note that an XML RPC call count like a page.</p>
+<blockquote>
+<img alt="pages_spps.png" src="./m1-m-110usr-smsd_files/pages_spps.png">
+<img alt="pages.png" src="./m1-m-110usr-smsd_files/pages.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">SPPS</th>
+<th class="head">maxSPPS</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.671</td>
+<td>POOR</td>
+<td>26.648</td>
+<td>73.000</td>
+<td>7195</td>
+<td>7195</td>
+<td>0.00%</td>
+<td>0.749</td>
+<td>2.455</td>
+<td>8.816</td>
+<td>0.980</td>
+<td>2.202</td>
+<td>4.233</td>
+<td>4.823</td>
+</tr>
+<tr><td>90</td>
+<td>0.615</td>
+<td>POOR</td>
+<td>26.911</td>
+<td>75.000</td>
+<td>7266</td>
+<td>7266</td>
+<td>0.00%</td>
+<td>0.998</td>
+<td>3.179</td>
+<td>11.221</td>
+<td>1.276</td>
+<td>2.646</td>
+<td>5.777</td>
+<td>7.045</td>
+</tr>
+<tr><td>100</td>
+<td>0.566</td>
+<td>POOR</td>
+<td>26.341</td>
+<td>74.000</td>
+<td>7112</td>
+<td>7112</td>
+<td>0.00%</td>
+<td>1.189</td>
+<td>3.636</td>
+<td>12.633</td>
+<td>1.425</td>
+<td>3.018</td>
+<td>6.578</td>
+<td>7.978</td>
+</tr>
+<tr><td>110</td>
+<td>0.922</td>
+<td>Good</td>
+<td>16.904</td>
+<td>80.000</td>
+<td>38104</td>
+<td>4564</td>
+<td>88.02%</td>
+<td>1.178</td>
+<td>0.739</td>
+<td>18.883</td>
+<td>2.881</td>
+<td>3.998</td>
+<td>13.328</td>
+<td>15.484</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</div>
+<div class="section" id="request-stats">
+<h1><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id5">5&nbsp;&nbsp;&nbsp;Request stats</a></h1>
+<p>The number of <strong>Requests</strong> Per Second (RPS) successful or not over Concurrent Users (CUs).</p>
+<blockquote>
+<img alt="requests_rps.png" src="./m1-m-110usr-smsd_files/requests_rps.png">
+<img alt="requests.png" src="./m1-m-110usr-smsd_files/requests.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+<col width="7%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating*</th>
+<th class="head">RPS</th>
+<th class="head">maxRPS</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.671</td>
+<td>POOR</td>
+<td>29.070</td>
+<td>86.000</td>
+<td>7849</td>
+<td>7849</td>
+<td>0.00%</td>
+<td>0.010</td>
+<td>2.250</td>
+<td>8.816</td>
+<td>0.881</td>
+<td>1.992</td>
+<td>4.164</td>
+<td>4.726</td>
+</tr>
+<tr><td>90</td>
+<td>0.615</td>
+<td>POOR</td>
+<td>29.348</td>
+<td>79.000</td>
+<td>7924</td>
+<td>7924</td>
+<td>0.00%</td>
+<td>0.009</td>
+<td>2.915</td>
+<td>11.221</td>
+<td>1.158</td>
+<td>2.447</td>
+<td>5.662</td>
+<td>6.722</td>
+</tr>
+<tr><td>100</td>
+<td>0.566</td>
+<td>POOR</td>
+<td>29.081</td>
+<td>83.000</td>
+<td>7852</td>
+<td>7852</td>
+<td>0.00%</td>
+<td>0.009</td>
+<td>3.293</td>
+<td>12.633</td>
+<td>1.283</td>
+<td>2.756</td>
+<td>6.443</td>
+<td>7.767</td>
+</tr>
+<tr><td>110</td>
+<td>0.922</td>
+<td>Good</td>
+<td>149.415</td>
+<td>262.000</td>
+<td>40342</td>
+<td>6802</td>
+<td>83.14%</td>
+<td>0.004</td>
+<td>0.702</td>
+<td>18.883</td>
+<td>0.004</td>
+<td>0.005</td>
+<td>2.909</td>
+<td>4.711</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</div>
+<div class="section" id="slowest-requests">
+<h1><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id6">6&nbsp;&nbsp;&nbsp;Slowest requests</a></h1>
+<p>The 5 slowest average response time during the best cycle with <strong>110</strong> CUs:</p>
+<ul class="simple">
+<li>In page 011, Apdex rating: UNACCEPTABLE, avg response time: 10.41s, post: <tt class="docutils literal">//join_members</tt>
+<cite>Asking to join</cite></li>
+<li>In page 004, Apdex rating: UNACCEPTABLE, avg response time: 8.34s, post: <tt class="docutils literal">//users</tt>
+<cite>Create New User</cite></li>
+<li>In page 006, Apdex rating: UNACCEPTABLE, avg response time: 7.45s, get: <tt class="docutils literal">/parties/7425</tt>
+``</li>
+<li>In page 008, Apdex rating: UNACCEPTABLE, avg response time: 5.02s, post: <tt class="docutils literal">//createasinvite</tt>
+<cite>Inviting user</cite></li>
+<li>In page 009, Apdex rating: POOR, avg response time: 4.77s, post: <tt class="docutils literal">//createasinvite</tt>
+<cite>Inviting user</cite></li>
+</ul>
+</div>
+<div class="section" id="page-detail-stats">
+<h1><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id7">7&nbsp;&nbsp;&nbsp;Page detail stats</a></h1>
+<div class="section" id="page-001-view-the-upcoming-page">
+<h2><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id8">7.1&nbsp;&nbsp;&nbsp;PAGE 001: View the upcoming page</a></h2>
+<ul>
+<li><p class="first">Req: 001, get, url <tt class="docutils literal">//upcoming</tt></p>
+<blockquote>
+<img alt="request_001.001.png" src="./m1-m-110usr-smsd_files/request_001.001.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.537</td>
+<td>POOR</td>
+<td>324</td>
+<td>324</td>
+<td>0.00%</td>
+<td>0.750</td>
+<td>3.106</td>
+<td>5.290</td>
+<td>1.713</td>
+<td>3.333</td>
+<td>4.023</td>
+<td>4.236</td>
+</tr>
+<tr><td>90</td>
+<td>0.523</td>
+<td>POOR</td>
+<td>328</td>
+<td>328</td>
+<td>0.00%</td>
+<td>0.948</td>
+<td>4.126</td>
+<td>7.413</td>
+<td>1.941</td>
+<td>4.558</td>
+<td>5.594</td>
+<td>5.814</td>
+</tr>
+<tr><td>100</td>
+<td>0.449</td>
+<td>UNACCEPTABLE</td>
+<td>370</td>
+<td>370</td>
+<td>0.00%</td>
+<td>1.124</td>
+<td>4.578</td>
+<td>6.975</td>
+<td>2.166</td>
+<td>5.121</td>
+<td>6.407</td>
+<td>6.652</td>
+</tr>
+<tr><td>110</td>
+<td>0.972</td>
+<td>Excellent</td>
+<td>33613</td>
+<td>1118</td>
+<td>96.67%</td>
+<td>0.004</td>
+<td>0.292</td>
+<td>17.824</td>
+<td>0.004</td>
+<td>0.004</td>
+<td>0.008</td>
+<td>0.011</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+<li><p class="first">Req: 002, link, url <tt class="docutils literal">/bootstrap/3.2.0/css/bootstrap.min.css</tt></p>
+<blockquote>
+<img alt="request_001.002.png" src="./m1-m-110usr-smsd_files/request_001.002.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>1.000</td>
+<td>Excellent</td>
+<td>327</td>
+<td>327</td>
+<td>0.00%</td>
+<td>0.034</td>
+<td>0.042</td>
+<td>0.076</td>
+<td>0.036</td>
+<td>0.041</td>
+<td>0.050</td>
+<td>0.054</td>
+</tr>
+<tr><td>90</td>
+<td>1.000</td>
+<td>Excellent</td>
+<td>329</td>
+<td>329</td>
+<td>0.00%</td>
+<td>0.034</td>
+<td>0.042</td>
+<td>0.074</td>
+<td>0.036</td>
+<td>0.040</td>
+<td>0.050</td>
+<td>0.052</td>
+</tr>
+<tr><td>100</td>
+<td>1.000</td>
+<td>Excellent</td>
+<td>370</td>
+<td>370</td>
+<td>0.00%</td>
+<td>0.034</td>
+<td>0.042</td>
+<td>0.105</td>
+<td>0.036</td>
+<td>0.040</td>
+<td>0.050</td>
+<td>0.053</td>
+</tr>
+<tr><td>110</td>
+<td>1.000</td>
+<td>Excellent</td>
+<td>1119</td>
+<td>1119</td>
+<td>0.00%</td>
+<td>0.033</td>
+<td>0.050</td>
+<td>0.307</td>
+<td>0.036</td>
+<td>0.041</td>
+<td>0.060</td>
+<td>0.120</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+<li><p class="first">Req: 003, link, url <tt class="docutils literal"><span class="pre">/assets/application-61c7d55e81567830684b7378699345b0.css</span></tt></p>
+<blockquote>
+<img alt="request_001.003.png" src="./m1-m-110usr-smsd_files/request_001.003.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>1.000</td>
+<td>Excellent</td>
+<td>327</td>
+<td>327</td>
+<td>0.00%</td>
+<td>0.010</td>
+<td>0.015</td>
+<td>0.042</td>
+<td>0.010</td>
+<td>0.012</td>
+<td>0.023</td>
+<td>0.027</td>
+</tr>
+<tr><td>90</td>
+<td>1.000</td>
+<td>Excellent</td>
+<td>329</td>
+<td>329</td>
+<td>0.00%</td>
+<td>0.009</td>
+<td>0.014</td>
+<td>0.043</td>
+<td>0.010</td>
+<td>0.012</td>
+<td>0.022</td>
+<td>0.024</td>
+</tr>
+<tr><td>100</td>
+<td>1.000</td>
+<td>Excellent</td>
+<td>370</td>
+<td>370</td>
+<td>0.00%</td>
+<td>0.009</td>
+<td>0.015</td>
+<td>0.043</td>
+<td>0.010</td>
+<td>0.012</td>
+<td>0.023</td>
+<td>0.027</td>
+</tr>
+<tr><td>110</td>
+<td>1.000</td>
+<td>Excellent</td>
+<td>1119</td>
+<td>1119</td>
+<td>0.00%</td>
+<td>0.009</td>
+<td>0.022</td>
+<td>0.296</td>
+<td>0.010</td>
+<td>0.012</td>
+<td>0.033</td>
+<td>0.067</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="page-002-view-the-index-page">
+<h2><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id9">7.2&nbsp;&nbsp;&nbsp;PAGE 002: View the index page</a></h2>
+<ul>
+<li><p class="first">Req: 001, get, url <tt class="docutils literal">//index</tt></p>
+<blockquote>
+<img alt="request_002.001.png" src="./m1-m-110usr-smsd_files/request_002.001.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.514</td>
+<td>POOR</td>
+<td>350</td>
+<td>350</td>
+<td>0.00%</td>
+<td>0.749</td>
+<td>2.745</td>
+<td>5.665</td>
+<td>1.711</td>
+<td>2.657</td>
+<td>4.002</td>
+<td>4.493</td>
+</tr>
+<tr><td>90</td>
+<td>0.496</td>
+<td>UNACCEPTABLE</td>
+<td>360</td>
+<td>360</td>
+<td>0.00%</td>
+<td>1.199</td>
+<td>3.254</td>
+<td>8.403</td>
+<td>2.245</td>
+<td>2.942</td>
+<td>4.542</td>
+<td>4.855</td>
+</tr>
+<tr><td>100</td>
+<td>0.495</td>
+<td>UNACCEPTABLE</td>
+<td>396</td>
+<td>396</td>
+<td>0.00%</td>
+<td>1.470</td>
+<td>3.553</td>
+<td>7.770</td>
+<td>2.577</td>
+<td>3.259</td>
+<td>5.098</td>
+<td>5.280</td>
+</tr>
+<tr><td>110</td>
+<td>0.516</td>
+<td>POOR</td>
+<td>1151</td>
+<td>1068</td>
+<td>7.21%</td>
+<td>0.004</td>
+<td>3.176</td>
+<td>9.319</td>
+<td>2.590</td>
+<td>3.164</td>
+<td>3.817</td>
+<td>5.375</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="page-003-view-the-user-signup-page">
+<h2><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id10">7.3&nbsp;&nbsp;&nbsp;PAGE 003: View the user signup page</a></h2>
+<ul>
+<li><p class="first">Req: 001, get, url <tt class="docutils literal">//users/sign_up</tt></p>
+<blockquote>
+<img alt="request_003.001.png" src="./m1-m-110usr-smsd_files/request_003.001.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.489</td>
+<td>UNACCEPTABLE</td>
+<td>350</td>
+<td>350</td>
+<td>0.00%</td>
+<td>1.618</td>
+<td>3.123</td>
+<td>7.324</td>
+<td>1.783</td>
+<td>2.740</td>
+<td>4.874</td>
+<td>5.338</td>
+</tr>
+<tr><td>90</td>
+<td>0.429</td>
+<td>UNACCEPTABLE</td>
+<td>360</td>
+<td>360</td>
+<td>0.00%</td>
+<td>2.114</td>
+<td>3.738</td>
+<td>9.211</td>
+<td>2.278</td>
+<td>2.983</td>
+<td>6.689</td>
+<td>7.988</td>
+</tr>
+<tr><td>100</td>
+<td>0.414</td>
+<td>UNACCEPTABLE</td>
+<td>400</td>
+<td>400</td>
+<td>0.00%</td>
+<td>2.417</td>
+<td>4.149</td>
+<td>10.990</td>
+<td>2.634</td>
+<td>3.235</td>
+<td>7.695</td>
+<td>8.806</td>
+</tr>
+<tr><td>110</td>
+<td>0.470</td>
+<td>UNACCEPTABLE</td>
+<td>1060</td>
+<td>1039</td>
+<td>1.98%</td>
+<td>0.004</td>
+<td>3.416</td>
+<td>11.094</td>
+<td>2.813</td>
+<td>3.059</td>
+<td>4.610</td>
+<td>6.622</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="page-004-create-new-user">
+<h2><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id11">7.4&nbsp;&nbsp;&nbsp;PAGE 004: Create New User</a></h2>
+<ul>
+<li><p class="first">Req: 001, post, url <tt class="docutils literal">//users</tt></p>
+<blockquote>
+<img alt="request_004.001.png" src="./m1-m-110usr-smsd_files/request_004.001.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.390</td>
+<td>UNACCEPTABLE</td>
+<td>350</td>
+<td>350</td>
+<td>0.00%</td>
+<td>2.392</td>
+<td>5.079</td>
+<td>8.816</td>
+<td>3.378</td>
+<td>4.983</td>
+<td>7.201</td>
+<td>7.830</td>
+</tr>
+<tr><td>90</td>
+<td>0.163</td>
+<td>UNACCEPTABLE</td>
+<td>360</td>
+<td>360</td>
+<td>0.00%</td>
+<td>3.015</td>
+<td>7.013</td>
+<td>11.221</td>
+<td>4.062</td>
+<td>7.131</td>
+<td>9.681</td>
+<td>10.072</td>
+</tr>
+<tr><td>100</td>
+<td>0.119</td>
+<td>UNACCEPTABLE</td>
+<td>400</td>
+<td>400</td>
+<td>0.00%</td>
+<td>3.311</td>
+<td>7.764</td>
+<td>12.633</td>
+<td>4.406</td>
+<td>7.742</td>
+<td>11.016</td>
+<td>11.650</td>
+</tr>
+<tr><td>110</td>
+<td>0.244</td>
+<td>UNACCEPTABLE</td>
+<td>953</td>
+<td>799</td>
+<td>16.16%</td>
+<td>0.005</td>
+<td>8.342</td>
+<td>18.883</td>
+<td>0.006</td>
+<td>8.013</td>
+<td>15.684</td>
+<td>17.008</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+<li><p class="first">Req: 002, get, url <tt class="docutils literal">/profiles/3015</tt></p>
+<blockquote>
+<img alt="request_004.002.png" src="./m1-m-110usr-smsd_files/request_004.002.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.449</td>
+<td>UNACCEPTABLE</td>
+<td>350</td>
+<td>350</td>
+<td>0.00%</td>
+<td>1.196</td>
+<td>4.182</td>
+<td>7.802</td>
+<td>2.488</td>
+<td>4.120</td>
+<td>6.151</td>
+<td>7.066</td>
+</tr>
+<tr><td>90</td>
+<td>0.249</td>
+<td>UNACCEPTABLE</td>
+<td>360</td>
+<td>360</td>
+<td>0.00%</td>
+<td>1.863</td>
+<td>6.135</td>
+<td>10.586</td>
+<td>3.499</td>
+<td>6.022</td>
+<td>8.687</td>
+<td>9.232</td>
+</tr>
+<tr><td>100</td>
+<td>0.189</td>
+<td>UNACCEPTABLE</td>
+<td>400</td>
+<td>400</td>
+<td>0.00%</td>
+<td>2.421</td>
+<td>6.939</td>
+<td>11.864</td>
+<td>3.991</td>
+<td>6.854</td>
+<td>10.274</td>
+<td>10.877</td>
+</tr>
+<tr><td>110</td>
+<td>0.858</td>
+<td>Good</td>
+<td>799</td>
+<td>140</td>
+<td>82.48%</td>
+<td>0.004</td>
+<td>1.345</td>
+<td>16.727</td>
+<td>0.004</td>
+<td>0.006</td>
+<td>6.380</td>
+<td>8.889</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="page-005-view-party-page">
+<h2><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id12">7.5&nbsp;&nbsp;&nbsp;PAGE 005: view party page</a></h2>
+<ul>
+<li><p class="first">Req: 001, get, url <tt class="docutils literal">//new</tt></p>
+<blockquote>
+<img alt="request_005.001.png" src="./m1-m-110usr-smsd_files/request_005.001.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.507</td>
+<td>POOR</td>
+<td>350</td>
+<td>350</td>
+<td>0.00%</td>
+<td>1.139</td>
+<td>3.164</td>
+<td>6.089</td>
+<td>1.994</td>
+<td>3.168</td>
+<td>4.419</td>
+<td>4.602</td>
+</tr>
+<tr><td>90</td>
+<td>0.482</td>
+<td>UNACCEPTABLE</td>
+<td>360</td>
+<td>360</td>
+<td>0.00%</td>
+<td>1.911</td>
+<td>4.056</td>
+<td>7.398</td>
+<td>2.908</td>
+<td>3.722</td>
+<td>5.474</td>
+<td>5.865</td>
+</tr>
+<tr><td>100</td>
+<td>0.434</td>
+<td>UNACCEPTABLE</td>
+<td>400</td>
+<td>400</td>
+<td>0.00%</td>
+<td>2.252</td>
+<td>4.497</td>
+<td>10.541</td>
+<td>3.003</td>
+<td>4.115</td>
+<td>6.443</td>
+<td>6.763</td>
+</tr>
+<tr><td>110</td>
+<td>0.504</td>
+<td>POOR</td>
+<td>140</td>
+<td>128</td>
+<td>8.57%</td>
+<td>0.004</td>
+<td>3.454</td>
+<td>9.176</td>
+<td>2.845</td>
+<td>3.360</td>
+<td>5.254</td>
+<td>6.672</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="page-006-create-new-party">
+<h2><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id13">7.6&nbsp;&nbsp;&nbsp;PAGE 006: Create New party</a></h2>
+<ul>
+<li><p class="first">Req: 001, post, url <tt class="docutils literal">//parties</tt></p>
+<blockquote>
+<img alt="request_006.001.png" src="./m1-m-110usr-smsd_files/request_006.001.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.574</td>
+<td>POOR</td>
+<td>350</td>
+<td>350</td>
+<td>0.00%</td>
+<td>0.992</td>
+<td>2.172</td>
+<td>3.610</td>
+<td>1.375</td>
+<td>2.098</td>
+<td>3.028</td>
+<td>3.212</td>
+</tr>
+<tr><td>90</td>
+<td>0.506</td>
+<td>POOR</td>
+<td>360</td>
+<td>360</td>
+<td>0.00%</td>
+<td>1.198</td>
+<td>2.856</td>
+<td>4.324</td>
+<td>1.926</td>
+<td>2.942</td>
+<td>3.580</td>
+<td>3.806</td>
+</tr>
+<tr><td>100</td>
+<td>0.500</td>
+<td>POOR</td>
+<td>398</td>
+<td>398</td>
+<td>0.00%</td>
+<td>1.596</td>
+<td>3.161</td>
+<td>5.198</td>
+<td>2.285</td>
+<td>3.109</td>
+<td>3.889</td>
+<td>4.139</td>
+</tr>
+<tr><td>110</td>
+<td>0.480</td>
+<td>UNACCEPTABLE</td>
+<td>123</td>
+<td>118</td>
+<td>4.07%</td>
+<td>0.005</td>
+<td>3.585</td>
+<td>14.875</td>
+<td>2.767</td>
+<td>3.063</td>
+<td>5.657</td>
+<td>7.028</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+<li><p class="first">Req: 002, get, url <tt class="docutils literal">/parties/6542</tt></p>
+<blockquote>
+<img alt="request_006.002.png" src="./m1-m-110usr-smsd_files/request_006.002.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.710</td>
+<td>FAIR</td>
+<td>350</td>
+<td>350</td>
+<td>0.00%</td>
+<td>0.884</td>
+<td>1.650</td>
+<td>3.097</td>
+<td>1.138</td>
+<td>1.556</td>
+<td>2.324</td>
+<td>2.526</td>
+</tr>
+<tr><td>90</td>
+<td>0.546</td>
+<td>POOR</td>
+<td>360</td>
+<td>360</td>
+<td>0.00%</td>
+<td>1.211</td>
+<td>2.100</td>
+<td>3.236</td>
+<td>1.533</td>
+<td>2.055</td>
+<td>2.890</td>
+<td>2.977</td>
+</tr>
+<tr><td>100</td>
+<td>0.523</td>
+<td>POOR</td>
+<td>385</td>
+<td>385</td>
+<td>0.00%</td>
+<td>1.350</td>
+<td>2.339</td>
+<td>3.693</td>
+<td>1.575</td>
+<td>2.292</td>
+<td>3.038</td>
+<td>3.249</td>
+</tr>
+<tr><td>110</td>
+<td>0.299</td>
+<td>UNACCEPTABLE</td>
+<td>112</td>
+<td>94</td>
+<td>16.07%</td>
+<td>0.004</td>
+<td>7.448</td>
+<td>17.781</td>
+<td>0.005</td>
+<td>6.739</td>
+<td>15.448</td>
+<td>16.491</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="page-007-inviting-user">
+<h2><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id14">7.7&nbsp;&nbsp;&nbsp;PAGE 007: Inviting user</a></h2>
+<ul>
+<li><p class="first">Req: 001, post, url <tt class="docutils literal">//createasinvite</tt></p>
+<blockquote>
+<img alt="request_007.001.png" src="./m1-m-110usr-smsd_files/request_007.001.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.917</td>
+<td>Good</td>
+<td>350</td>
+<td>350</td>
+<td>0.00%</td>
+<td>0.766</td>
+<td>1.220</td>
+<td>2.368</td>
+<td>0.907</td>
+<td>1.173</td>
+<td>1.634</td>
+<td>1.720</td>
+</tr>
+<tr><td>90</td>
+<td>0.768</td>
+<td>FAIR</td>
+<td>360</td>
+<td>360</td>
+<td>0.00%</td>
+<td>1.112</td>
+<td>1.528</td>
+<td>2.135</td>
+<td>1.265</td>
+<td>1.474</td>
+<td>1.854</td>
+<td>1.925</td>
+</tr>
+<tr><td>100</td>
+<td>0.729</td>
+<td>FAIR</td>
+<td>351</td>
+<td>351</td>
+<td>0.00%</td>
+<td>1.249</td>
+<td>1.635</td>
+<td>2.515</td>
+<td>1.333</td>
+<td>1.524</td>
+<td>2.144</td>
+<td>2.261</td>
+</tr>
+<tr><td>110</td>
+<td>0.840</td>
+<td>FAIR</td>
+<td>94</td>
+<td>20</td>
+<td>78.72%</td>
+<td>0.005</td>
+<td>1.619</td>
+<td>17.757</td>
+<td>0.005</td>
+<td>0.007</td>
+<td>6.034</td>
+<td>13.874</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+<li><p class="first">Req: 002, get, url <tt class="docutils literal">/parties/6542</tt></p>
+<blockquote>
+<img alt="request_007.002.png" src="./m1-m-110usr-smsd_files/request_007.002.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.979</td>
+<td>Excellent</td>
+<td>350</td>
+<td>350</td>
+<td>0.00%</td>
+<td>0.811</td>
+<td>1.134</td>
+<td>3.030</td>
+<td>0.923</td>
+<td>1.079</td>
+<td>1.375</td>
+<td>1.483</td>
+</tr>
+<tr><td>90</td>
+<td>0.911</td>
+<td>Good</td>
+<td>360</td>
+<td>360</td>
+<td>0.00%</td>
+<td>1.047</td>
+<td>1.362</td>
+<td>1.758</td>
+<td>1.226</td>
+<td>1.324</td>
+<td>1.565</td>
+<td>1.654</td>
+</tr>
+<tr><td>100</td>
+<td>0.861</td>
+<td>Good</td>
+<td>312</td>
+<td>312</td>
+<td>0.00%</td>
+<td>1.260</td>
+<td>1.457</td>
+<td>1.885</td>
+<td>1.331</td>
+<td>1.458</td>
+<td>1.562</td>
+<td>1.606</td>
+</tr>
+<tr><td>110</td>
+<td>0.600</td>
+<td>POOR</td>
+<td>20</td>
+<td>16</td>
+<td>20.00%</td>
+<td>0.004</td>
+<td>2.450</td>
+<td>4.242</td>
+<td>0.007</td>
+<td>2.958</td>
+<td>3.617</td>
+<td>4.242</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="page-008-inviting-user">
+<h2><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id15">7.8&nbsp;&nbsp;&nbsp;PAGE 008: Inviting user</a></h2>
+<ul>
+<li><p class="first">Req: 001, post, url <tt class="docutils literal">//createasinvite</tt></p>
+<blockquote>
+<img alt="request_008.001.png" src="./m1-m-110usr-smsd_files/request_008.001.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.989</td>
+<td>Excellent</td>
+<td>350</td>
+<td>350</td>
+<td>0.00%</td>
+<td>0.807</td>
+<td>1.026</td>
+<td>3.179</td>
+<td>0.870</td>
+<td>0.973</td>
+<td>1.186</td>
+<td>1.252</td>
+</tr>
+<tr><td>90</td>
+<td>0.994</td>
+<td>Excellent</td>
+<td>360</td>
+<td>360</td>
+<td>0.00%</td>
+<td>1.037</td>
+<td>1.257</td>
+<td>3.036</td>
+<td>1.134</td>
+<td>1.242</td>
+<td>1.379</td>
+<td>1.425</td>
+</tr>
+<tr><td>100</td>
+<td>0.912</td>
+<td>Good</td>
+<td>300</td>
+<td>300</td>
+<td>0.00%</td>
+<td>1.227</td>
+<td>1.434</td>
+<td>1.665</td>
+<td>1.305</td>
+<td>1.449</td>
+<td>1.541</td>
+<td>1.599</td>
+</tr>
+<tr><td>110</td>
+<td>0.400</td>
+<td>UNACCEPTABLE</td>
+<td>15</td>
+<td>14</td>
+<td>6.67%</td>
+<td>0.005</td>
+<td>5.016</td>
+<td>12.919</td>
+<td>2.578</td>
+<td>3.926</td>
+<td>9.117</td>
+<td>12.919</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+<li><p class="first">Req: 002, get, url <tt class="docutils literal">/parties/6542</tt></p>
+<blockquote>
+<img alt="request_008.002.png" src="./m1-m-110usr-smsd_files/request_008.002.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.963</td>
+<td>Excellent</td>
+<td>350</td>
+<td>350</td>
+<td>0.00%</td>
+<td>0.845</td>
+<td>1.086</td>
+<td>3.842</td>
+<td>0.908</td>
+<td>0.988</td>
+<td>1.264</td>
+<td>1.869</td>
+</tr>
+<tr><td>90</td>
+<td>0.972</td>
+<td>Excellent</td>
+<td>360</td>
+<td>360</td>
+<td>0.00%</td>
+<td>1.079</td>
+<td>1.366</td>
+<td>5.028</td>
+<td>1.217</td>
+<td>1.305</td>
+<td>1.467</td>
+<td>1.513</td>
+</tr>
+<tr><td>100</td>
+<td>0.843</td>
+<td>FAIR</td>
+<td>300</td>
+<td>300</td>
+<td>0.00%</td>
+<td>1.249</td>
+<td>1.474</td>
+<td>1.900</td>
+<td>1.352</td>
+<td>1.473</td>
+<td>1.612</td>
+<td>1.644</td>
+</tr>
+<tr><td>110</td>
+<td>0.714</td>
+<td>FAIR</td>
+<td>14</td>
+<td>5</td>
+<td>64.29%</td>
+<td>0.004</td>
+<td>3.162</td>
+<td>15.263</td>
+<td>0.004</td>
+<td>0.007</td>
+<td>13.059</td>
+<td>15.263</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="page-009-inviting-user">
+<h2><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id16">7.9&nbsp;&nbsp;&nbsp;PAGE 009: Inviting user</a></h2>
+<ul>
+<li><p class="first">Req: 001, post, url <tt class="docutils literal">//createasinvite</tt></p>
+<blockquote>
+<img alt="request_009.001.png" src="./m1-m-110usr-smsd_files/request_009.001.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.899</td>
+<td>Good</td>
+<td>350</td>
+<td>350</td>
+<td>0.00%</td>
+<td>0.834</td>
+<td>1.269</td>
+<td>3.506</td>
+<td>0.912</td>
+<td>0.987</td>
+<td>2.371</td>
+<td>2.854</td>
+</tr>
+<tr><td>90</td>
+<td>0.933</td>
+<td>Good</td>
+<td>360</td>
+<td>360</td>
+<td>0.00%</td>
+<td>1.083</td>
+<td>1.502</td>
+<td>5.410</td>
+<td>1.205</td>
+<td>1.302</td>
+<td>1.605</td>
+<td>3.349</td>
+</tr>
+<tr><td>100</td>
+<td>0.955</td>
+<td>Excellent</td>
+<td>300</td>
+<td>300</td>
+<td>0.00%</td>
+<td>1.255</td>
+<td>1.471</td>
+<td>5.078</td>
+<td>1.312</td>
+<td>1.396</td>
+<td>1.489</td>
+<td>1.968</td>
+</tr>
+<tr><td>110</td>
+<td>0.600</td>
+<td>POOR</td>
+<td>5</td>
+<td>2</td>
+<td>60.00%</td>
+<td>0.006</td>
+<td>4.766</td>
+<td>15.448</td>
+<td>0.006</td>
+<td>0.009</td>
+<td>15.448</td>
+<td>15.448</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+<li><p class="first">Req: 002, get, url <tt class="docutils literal">/parties/6542</tt></p>
+<blockquote>
+<img alt="request_009.002.png" src="./m1-m-110usr-smsd_files/request_009.002.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.777</td>
+<td>FAIR</td>
+<td>350</td>
+<td>350</td>
+<td>0.00%</td>
+<td>0.898</td>
+<td>1.695</td>
+<td>3.949</td>
+<td>0.962</td>
+<td>1.297</td>
+<td>2.887</td>
+<td>3.122</td>
+</tr>
+<tr><td>90</td>
+<td>0.728</td>
+<td>FAIR</td>
+<td>360</td>
+<td>360</td>
+<td>0.00%</td>
+<td>1.090</td>
+<td>2.157</td>
+<td>6.093</td>
+<td>1.243</td>
+<td>1.525</td>
+<td>4.294</td>
+<td>5.044</td>
+</tr>
+<tr><td>100</td>
+<td>0.740</td>
+<td>FAIR</td>
+<td>300</td>
+<td>300</td>
+<td>0.00%</td>
+<td>1.280</td>
+<td>2.255</td>
+<td>6.559</td>
+<td>1.359</td>
+<td>1.499</td>
+<td>4.365</td>
+<td>5.091</td>
+</tr>
+<tr><td>110</td>
+<td>0.750</td>
+<td>FAIR</td>
+<td>2</td>
+<td>1</td>
+<td>50.00%</td>
+<td>0.005</td>
+<td>1.432</td>
+<td>2.859</td>
+<td>0.005</td>
+<td>2.859</td>
+<td>2.859</td>
+<td>2.859</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="page-010-view-index-page">
+<h2><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id17">7.10&nbsp;&nbsp;&nbsp;PAGE 010: View index page</a></h2>
+<ul>
+<li><p class="first">Req: 001, get, url <tt class="docutils literal">//index</tt></p>
+<blockquote>
+<img alt="request_010.001.png" src="./m1-m-110usr-smsd_files/request_010.001.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.519</td>
+<td>POOR</td>
+<td>349</td>
+<td>349</td>
+<td>0.00%</td>
+<td>1.379</td>
+<td>2.929</td>
+<td>4.711</td>
+<td>1.822</td>
+<td>2.948</td>
+<td>4.071</td>
+<td>4.393</td>
+</tr>
+<tr><td>90</td>
+<td>0.458</td>
+<td>UNACCEPTABLE</td>
+<td>360</td>
+<td>360</td>
+<td>0.00%</td>
+<td>1.686</td>
+<td>4.227</td>
+<td>6.929</td>
+<td>2.286</td>
+<td>4.333</td>
+<td>5.907</td>
+<td>6.250</td>
+</tr>
+<tr><td>100</td>
+<td>0.382</td>
+<td>UNACCEPTABLE</td>
+<td>300</td>
+<td>300</td>
+<td>0.00%</td>
+<td>1.848</td>
+<td>4.772</td>
+<td>7.183</td>
+<td>2.551</td>
+<td>4.946</td>
+<td>6.819</td>
+<td>6.914</td>
+</tr>
+<tr><td>110</td>
+<td>0.500</td>
+<td>POOR</td>
+<td>1</td>
+<td>1</td>
+<td>0.00%</td>
+<td>3.285</td>
+<td>3.285</td>
+<td>3.285</td>
+<td>3.285</td>
+<td>3.285</td>
+<td>3.285</td>
+<td>3.285</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="page-011-asking-to-join">
+<h2><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id18">7.11&nbsp;&nbsp;&nbsp;PAGE 011: Asking to join</a></h2>
+<ul>
+<li><p class="first">Req: 001, post, url <tt class="docutils literal">//join_members</tt></p>
+<blockquote>
+<img alt="request_011.001.png" src="./m1-m-110usr-smsd_files/request_011.001.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.509</td>
+<td>POOR</td>
+<td>348</td>
+<td>348</td>
+<td>0.00%</td>
+<td>1.201</td>
+<td>2.555</td>
+<td>4.225</td>
+<td>1.772</td>
+<td>2.496</td>
+<td>3.603</td>
+<td>3.856</td>
+</tr>
+<tr><td>90</td>
+<td>0.494</td>
+<td>UNACCEPTABLE</td>
+<td>357</td>
+<td>357</td>
+<td>0.00%</td>
+<td>1.684</td>
+<td>3.828</td>
+<td>6.461</td>
+<td>2.418</td>
+<td>3.815</td>
+<td>5.381</td>
+<td>5.659</td>
+</tr>
+<tr><td>100</td>
+<td>0.412</td>
+<td>UNACCEPTABLE</td>
+<td>300</td>
+<td>300</td>
+<td>0.00%</td>
+<td>1.972</td>
+<td>4.368</td>
+<td>6.627</td>
+<td>2.673</td>
+<td>4.407</td>
+<td>6.377</td>
+<td>6.469</td>
+</tr>
+<tr><td>110</td>
+<td>0.000</td>
+<td>UNACCEPTABLE</td>
+<td>1</td>
+<td>1</td>
+<td>0.00%</td>
+<td>10.410</td>
+<td>10.410</td>
+<td>10.410</td>
+<td>10.410</td>
+<td>10.410</td>
+<td>10.410</td>
+<td>10.410</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+<li><p class="first">Req: 002, get, url <tt class="docutils literal">/parties</tt></p>
+<blockquote>
+<img alt="request_011.002.png" src="./m1-m-110usr-smsd_files/request_011.002.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.527</td>
+<td>POOR</td>
+<td>347</td>
+<td>347</td>
+<td>0.00%</td>
+<td>1.161</td>
+<td>2.267</td>
+<td>4.912</td>
+<td>1.656</td>
+<td>2.234</td>
+<td>2.789</td>
+<td>3.168</td>
+</tr>
+<tr><td>90</td>
+<td>0.500</td>
+<td>POOR</td>
+<td>353</td>
+<td>353</td>
+<td>0.00%</td>
+<td>1.572</td>
+<td>2.703</td>
+<td>5.034</td>
+<td>2.066</td>
+<td>2.608</td>
+<td>3.568</td>
+<td>3.663</td>
+</tr>
+<tr><td>100</td>
+<td>0.500</td>
+<td>POOR</td>
+<td>300</td>
+<td>300</td>
+<td>0.00%</td>
+<td>1.910</td>
+<td>2.883</td>
+<td>5.378</td>
+<td>2.141</td>
+<td>2.864</td>
+<td>3.870</td>
+<td>4.084</td>
+</tr>
+<tr><td>110</td>
+<td>1.000</td>
+<td>Excellent</td>
+<td>1</td>
+<td>0</td>
+<td>100.00%</td>
+<td>0.004</td>
+<td>0.004</td>
+<td>0.004</td>
+<td>0.004</td>
+<td>0.004</td>
+<td>0.004</td>
+<td>0.004</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="page-012-asking-to-join">
+<h2><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id19">7.12&nbsp;&nbsp;&nbsp;PAGE 012: Asking to join</a></h2>
+<ul>
+<li><p class="first">Req: 001, post, url <tt class="docutils literal">//join_members</tt></p>
+<blockquote>
+<img alt="request_012.001.png" src="./m1-m-110usr-smsd_files/request_012.001.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.594</td>
+<td>POOR</td>
+<td>341</td>
+<td>341</td>
+<td>0.00%</td>
+<td>1.075</td>
+<td>2.007</td>
+<td>4.104</td>
+<td>1.351</td>
+<td>1.781</td>
+<td>3.278</td>
+<td>3.632</td>
+</tr>
+<tr><td>90</td>
+<td>0.525</td>
+<td>POOR</td>
+<td>339</td>
+<td>339</td>
+<td>0.00%</td>
+<td>1.350</td>
+<td>2.188</td>
+<td>5.699</td>
+<td>1.620</td>
+<td>2.123</td>
+<td>2.675</td>
+<td>3.071</td>
+</tr>
+<tr><td>100</td>
+<td>0.500</td>
+<td>POOR</td>
+<td>300</td>
+<td>300</td>
+<td>0.00%</td>
+<td>1.765</td>
+<td>2.223</td>
+<td>5.456</td>
+<td>1.859</td>
+<td>2.133</td>
+<td>2.686</td>
+<td>2.901</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+<li><p class="first">Req: 002, get, url <tt class="docutils literal">/parties</tt></p>
+<blockquote>
+<img alt="request_012.002.png" src="./m1-m-110usr-smsd_files/request_012.002.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.564</td>
+<td>POOR</td>
+<td>330</td>
+<td>330</td>
+<td>0.00%</td>
+<td>1.259</td>
+<td>2.532</td>
+<td>5.069</td>
+<td>1.454</td>
+<td>2.291</td>
+<td>4.040</td>
+<td>4.177</td>
+</tr>
+<tr><td>90</td>
+<td>0.505</td>
+<td>POOR</td>
+<td>308</td>
+<td>308</td>
+<td>0.00%</td>
+<td>1.430</td>
+<td>2.793</td>
+<td>6.355</td>
+<td>1.699</td>
+<td>2.338</td>
+<td>4.505</td>
+<td>4.823</td>
+</tr>
+<tr><td>100</td>
+<td>0.492</td>
+<td>UNACCEPTABLE</td>
+<td>300</td>
+<td>300</td>
+<td>0.00%</td>
+<td>1.874</td>
+<td>3.013</td>
+<td>6.332</td>
+<td>1.942</td>
+<td>2.356</td>
+<td>5.067</td>
+<td>5.325</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="page-013-asking-to-join">
+<h2><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id20">7.13&nbsp;&nbsp;&nbsp;PAGE 013: Asking to join</a></h2>
+<ul>
+<li><p class="first">Req: 001, post, url <tt class="docutils literal">//join_members</tt></p>
+<blockquote>
+<img alt="request_013.001.png" src="./m1-m-110usr-smsd_files/request_013.001.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.508</td>
+<td>POOR</td>
+<td>315</td>
+<td>315</td>
+<td>0.00%</td>
+<td>1.461</td>
+<td>2.984</td>
+<td>4.862</td>
+<td>1.866</td>
+<td>3.098</td>
+<td>3.886</td>
+<td>4.117</td>
+</tr>
+<tr><td>90</td>
+<td>0.500</td>
+<td>POOR</td>
+<td>271</td>
+<td>271</td>
+<td>0.00%</td>
+<td>1.647</td>
+<td>3.978</td>
+<td>5.823</td>
+<td>2.663</td>
+<td>4.047</td>
+<td>5.421</td>
+<td>5.661</td>
+</tr>
+<tr><td>100</td>
+<td>0.485</td>
+<td>UNACCEPTABLE</td>
+<td>300</td>
+<td>300</td>
+<td>0.00%</td>
+<td>2.125</td>
+<td>4.338</td>
+<td>6.638</td>
+<td>2.662</td>
+<td>4.467</td>
+<td>5.805</td>
+<td>5.949</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+<li><p class="first">Req: 002, get, url <tt class="docutils literal">/parties</tt></p>
+<blockquote>
+<img alt="request_013.002.png" src="./m1-m-110usr-smsd_files/request_013.002.png">
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">CUs</th>
+<th class="head">Apdex*</th>
+<th class="head">Rating</th>
+<th class="head">TOTAL</th>
+<th class="head">SUCCESS</th>
+<th class="head">ERROR</th>
+<th class="head">MIN</th>
+<th class="head">AVG</th>
+<th class="head">MAX</th>
+<th class="head">P10</th>
+<th class="head">MED</th>
+<th class="head">P90</th>
+<th class="head">P95</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>70</td>
+<td>0.500</td>
+<td>POOR</td>
+<td>291</td>
+<td>291</td>
+<td>0.00%</td>
+<td>2.678</td>
+<td>3.908</td>
+<td>5.285</td>
+<td>3.137</td>
+<td>3.962</td>
+<td>4.475</td>
+<td>4.736</td>
+</tr>
+<tr><td>90</td>
+<td>0.417</td>
+<td>UNACCEPTABLE</td>
+<td>270</td>
+<td>270</td>
+<td>0.00%</td>
+<td>3.117</td>
+<td>5.223</td>
+<td>6.436</td>
+<td>4.296</td>
+<td>5.200</td>
+<td>6.087</td>
+<td>6.181</td>
+</tr>
+<tr><td>100</td>
+<td>0.302</td>
+<td>UNACCEPTABLE</td>
+<td>300</td>
+<td>300</td>
+<td>0.00%</td>
+<td>3.726</td>
+<td>5.809</td>
+<td>7.593</td>
+<td>4.792</td>
+<td>5.801</td>
+<td>6.840</td>
+<td>6.976</td>
+</tr>
+</tbody>
+</table>
+<p>* Apdex <sub>1.5</sub></p>
+</blockquote>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="failures-and-errors">
+<h1><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id21">8&nbsp;&nbsp;&nbsp;Failures and Errors</a></h1>
+<div class="section" id="failures">
+<h2><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id22">8.1&nbsp;&nbsp;&nbsp;Failures</a></h2>
+<ul>
+<li><p class="first">33540 time(s), code: 503:</p>
+<pre class="literal-block">No traceback.
+</pre>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="definitions">
+<h1><a class="toc-backref" href="file:///Users/steffenfb/programming/fs/view_stuff-20141213T055241/index.html#id23">9&nbsp;&nbsp;&nbsp;Definitions</a></h1>
+<ul>
+<li><p class="first">CUs: Concurrent users or number of concurrent threads executing tests.</p>
+</li>
+<li><p class="first">Request: a single GET/POST/redirect/xmlrpc request.</p>
+</li>
+<li><p class="first">Page: a request with redirects and resource links (image, css, js) for an html page.</p>
+</li>
+<li><p class="first">STPS: Successful tests per second.</p>
+</li>
+<li><p class="first">SPPS: Successful pages per second.</p>
+</li>
+<li><p class="first">RPS: Requests per second, successful or not.</p>
+</li>
+<li><p class="first">maxSPPS: Maximum SPPS during the cycle.</p>
+</li>
+<li><p class="first">maxRPS: Maximum RPS during the cycle.</p>
+</li>
+<li><p class="first">MIN: Minimum response time for a page or request.</p>
+</li>
+<li><p class="first">AVG: Average response time for a page or request.</p>
+</li>
+<li><p class="first">MAX: Maximmum response time for a page or request.</p>
+</li>
+<li><p class="first">P10: 10th percentile, response time where 10 percent of pages or requests are delivered.</p>
+</li>
+<li><p class="first">MED: Median or 50th percentile, response time where half of pages or requests are delivered.</p>
+</li>
+<li><p class="first">P90: 90th percentile, response time where 90 percent of pages or requests are delivered.</p>
+</li>
+<li><p class="first">P95: 95th percentile, response time where 95 percent of pages or requests are delivered.</p>
+</li>
+<li><p class="first">Apdex T: Application Performance Index,
+this is a numerical measure of user satisfaction, it is based
+on three zones of application responsiveness:</p>
+<ul>
+<li><p class="first">Satisfied: The user is fully productive. This represents the
+time value (T seconds) below which users are not impeded by
+application response time.</p>
+</li>
+<li><p class="first">Tolerating: The user notices performance lagging within
+responses greater than T, but continues the process.</p>
+</li>
+<li><p class="first">Frustrated: Performance with a response time greater than 4*T
+seconds is unacceptable, and users may abandon the process.</p>
+<p>By default T is set to 1.5s this means that response time between 0
+and 1.5s the user is fully productive, between 1.5 and 6s the
+responsivness is tolerating and above 6s the user is frustrated.</p>
+<p>The Apdex score converts many measurements into one number on a
+uniform scale of 0-to-1 (0 = no users satisfied, 1 = all users
+satisfied).</p>
+<p>Visit <a class="reference external" href="http://www.apdex.org/">http://www.apdex.org/</a> for more information.</p>
+</li>
+</ul>
+</li>
+<li><p class="first">Rating: To ease interpretation the Apdex
+score is also represented as a rating:</p>
+<ul class="simple">
+<li>U for UNACCEPTABLE represented in gray for a score between 0 and 0.5</li>
+<li>P for POOR represented in red for a score between 0.5 and 0.7</li>
+<li>F for FAIR represented in yellow for a score between 0.7 and 0.85</li>
+<li>G for Good represented in green for a score between 0.85 and 0.94</li>
+<li>E for Excellent represented in blue for a score between 0.94 and 1.</li>
+</ul>
+</li>
+</ul>
+<p>Report generated with <a class="reference external" href="http://funkload.nuxeo.org/">FunkLoad</a> 1.16.1, more information available on the <a class="reference external" href="http://funkload.nuxeo.org/#benching">FunkLoad site</a>.</p>
+</div>
+</div>
+<div class="footer">
+<hr class="footer">
+Generated on: 2014-12-13 06:24 UTC.
+
+</div>
+
+
+</body></html>
