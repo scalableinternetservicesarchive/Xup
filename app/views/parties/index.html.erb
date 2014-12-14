@@ -30,12 +30,10 @@
         %>
         <tr>
           <td><%= party.name %></td>
-          <%# <td><%= party.owner %1></td> %>
-          <%# It is too slow to link profile here. %>
-          <%# <td><%= link_to party.owner, profile_path(User.find_by_name(party.owner).profile.id) %1></td> %>
           <% partyowner = JoinMember.where(party_id: party.id, status: 4).first.user_id %>
-          <td><%= link_to party.owner, profile_path(partyowner) %></td>
-          <%# <td><%= party.date.strftime("%Y-%m-%d") %1></td> %>
+          <% cache(partyowner) do %>
+            <td><%= link_to party.owner, profile_path(partyowner) %></td>
+          <% end %>
           <td><%= party.date.strftime("%Y-%m-%d") %></td>
           <td><%= party.time.strftime("%H:%M") %></td>
           <td><%= party.location %></td>
@@ -47,8 +45,8 @@
                   <td><%= link_to 'Edit', edit_party_path(party), class: 'btn btn-warning btn-sm' %></td>
                   <td><%= link_to 'Destroy', party, class: 'btn btn-danger btn-sm', method: :delete, data: { confirm: 'Are you sure?' } %></td>
               <% else %>
-                  <% currentjoinmember = current_user.join_members.find_by_party_id(party.id) %>
-                  <%# <% if !current_user.join_members.find_by_party_id(party.id) %1> %>
+                  <%# <% currentjoinmember = current_user.join_members.find_by_party_id(party.id) %1> %>
+                  <% currentjoinmember = JoinMember.where(party_id: party.id, user_id: current_user.id).first %>
                   <% if !currentjoinmember %>
                       <%# current user is not in this party, then we show join. %>
 
@@ -60,18 +58,6 @@
                   <% else %>
                       <td><button type="button" class="<%= "#{button_types[currentjoinmember.status]}" %>" disabled="disable"><%= button_names[currentjoinmember.status]%></button></td>
 
-                  <%# <% elsif currentjoinmember.status == 0  %1> %>
-                      <%# current user has joined in this party, but still waiting. %>
-                      <%# <td><button type="button" class="btn btn-warning btn-sm" disabled="disable">Pending</button></td> %>
-                  <%# <% elsif currentjoinmember.status == 1  %1> %>
-                      <%# current user has been invited to this party. %> 
-                      <%# <td><button type="button" class="btn btn-info btn-sm" disabled="disable">Invited</button></td> %>
-                  <%# <% elsif currentjoinmember.status == 2  %1> %>
-                      <%# current user has been accepted to this party. %> 
-                      <%# <td><button type="button" class="btn btn-success btn-sm" disabled="disable">Accepted</button></td> %>
-                  <%# <% elsif currentjoinmember.status == 3  %1> %>
-                      <%# current user has been rejected to this party. %> 
-                      <%# <td><button type="button" class="btn btn-danger btn-sm" disabled="disable">Rejected</button></td> %>
                   <% end %>
               <% end %>
           <% end %>
