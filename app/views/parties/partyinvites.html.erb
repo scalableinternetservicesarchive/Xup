@@ -20,21 +20,19 @@
     </thead>
 	
     <tbody>
-      <% @party_ids = JoinMember.where(user_id: current_user.id).pluck(:party_id) %>
-      <% @party_ids.each do |party_id| %>
-      <% if JoinMember.find_by(user_id: current_user.id, party_id: party_id).status == 1 %>
-      <% party = Party.find(party_id) %>
+      <% inviteparties = JoinMember.where(user_id: current_user.id, status: 1) %>
+      <% inviteparties.each do |inviteparty| %>
+      <% party = Party.find(inviteparty.party_id) %>
          <tr>
             <td><%= party.name %></td>
             <td><%= party.owner %></td>
             <td><%= party.location %></td>
             <td><%= party.time%></td>
-            <td><%= status_all[JoinMember.find_by(user_id: current_user.id, party_id: party_id).status] %></td>
+            <td><%= status_all[inviteparty.status] %></td>
             <td><%= button_to 'Join', {:controller => :join_members, :action => 'join', :user_id => current_user.id, :party_id => party.id}, class: 'btn btn-info btn-sm' %></td>
             <td><%= button_to 'Reject', { :controller => :join_members, :action => 'reject', :user_id => current_user.id, :party_id => party.id}, class: 'btn btn-danger btn-sm' %></td>
           </tr>
           <%end%>
-        <% end %>
     </tbody>
   </table>
 </div>
@@ -56,21 +54,23 @@
     </thead>
 	
     <tbody>
-      <% @parties = Party.where(owner: current_user.name) %>
-      <% @parties.each do |party| %>
-        <% @requests = party.join_members.pluck(:user_id) %>
-        <% @requests.each do |request| %>
-        <% if JoinMember.find_by(user_id: request, party_id: party.id).status == 1 %>
+      <% myparties = JoinMember.where(user_id: current_user.id, status: 4).pluck(:party_id) %>
+      <% invitemembers = JoinMember.where(party_id: myparties) %>
+      <% invitemembers.each do |invitemember| %>
+      <% currentstatus = invitemember.status %>
+      <% if(currentstatus != 4) %>
         <tr>
+          <% party = Party.find(invitemember.party_id) %>
+          <% user = User.find(invitemember.user_id) %>
           <td><%= party.name %></td>
-          <td><%= User.find(request).name %></td>
-          <td><%= User.find(request).name%> wants to join this party: <%= party.name%></td>
-          <td><%= status_all[party.join_members.find_by_user_id(request).status] %></td>
-          <td><%= link_to 'Remove', JoinMember.find_by(user_id: request, party_id: party.id), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-danger btn-sm' %></td>
+          <td><%= user.name %></td>
+          <td><%= user.name%> wants to join this party: <%= party.name%></td>
+          <td><%= status_all[currentstatus] %></td>
+          <td><%= link_to 'Remove', invitemember, method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-danger btn-sm' %></td>
           </tr>
           <% end %>
         <% end %>
-      <% end %>
+      <%# <% end %1> %>
     </tbody>
   </table>
 </div>
