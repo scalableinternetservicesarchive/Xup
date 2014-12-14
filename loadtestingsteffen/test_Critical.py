@@ -162,7 +162,7 @@ class Critical(FunkLoadTestCase):
         
         lat=34.42
             
-        lon=119.8+ran
+        lon=-119.9+ran
         print 'posting a party'
         self.post(self.server_url + "/parties",
             params=[['party[name]', Lipsum().getUniqWord()],
@@ -170,6 +170,8 @@ class Critical(FunkLoadTestCase):
               ['party[date]', '2016-12-03'],
               ['party[time]', '17:00'],
               ['party[location]',''+str(lat)+', -'+str(lon)],
+              ['party[latitude]',lat],
+              ['party[longitude]',lon],
               ['party[description]',Lipsum().getUniqWord()],
               ['authenticity_token', auth_token],
               ['commit', 'Sign up']],

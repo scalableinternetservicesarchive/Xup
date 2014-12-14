@@ -17,7 +17,56 @@ class PartiesController < ApplicationController
     @parties = Party.order(:time)
     @myloc = request.location
     p 'this is close parties'
-    gon.parties=@parties
+
+
+    @closepartylist=[]
+    latrang=[0.013,0.026,0.1]
+    longrang=[0.016,0.032,0.120]
+
+    lat=34.42
+    long= -119.86
+
+    latlow= lat-latrang[0]
+    lathigh= lat+latrang[0]
+
+    for i in 0..2
+
+      p 'running forloop'
+
+      latlow= lat-latrang[i]
+      lathigh= lat+latrang[i]
+      
+      longlow= long-longrang[i]
+      longhigh= long+longrang[i]
+
+
+      closep=Party.where(:latitude => latlow...lathigh)
+
+      @closepartylist = closep.where(:longitude => longlow...longhigh)
+
+
+      #if (@closepartylist.count >10) then
+       
+      if (@closepartylist.count>10) then
+       
+       p 'its bigger than ten '
+        break
+
+      end
+
+      end
+
+    p @closepartylist
+    p @closepartylist.count
+    gon.parties=@closepartylist
+    gon.latlow=latlow
+    gon.longlow=longlow
+    gon.lathigh=lathigh
+    gon.longhigh=longhigh
+
+
+
+
   end
 
   def myparties

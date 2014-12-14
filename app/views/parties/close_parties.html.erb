@@ -19,16 +19,18 @@
 <h1>you are <%@myloc%></h1>
 <%
 # can use nearbys if we have it in develop server hardcoded ip only
-    @close=[]
+    
+    
+    
+    @close=@closepartylist
+    #@parties.near([34.42, -119.86], 20).each do |party| 
+    #@close.push(party)
 
-    @parties.near([34.42, -119.86], 20).each do |party| 
-     
 
-    	@close.push(party)
  
     #list needs to be sorted
 
-    end 
+    #end 
      %>
 
     <tbody>
@@ -43,7 +45,7 @@
           <td><%= party.location %></td>
           <td><%= party.description %></td>
           <td><%= party.participants %></td>
-          <td><%= party.distance.round(2)%></td>
+          <td><%#= party.distance.round(2)%></td>
           <td><%= link_to 'Show', party, class: 'btn btn-info btn-sm' %></td>
           <td><%= link_to 'Edit', edit_party_path(party), class: 'btn btn-warning btn-sm' %></td>
           <td><%= link_to 'Destroy', party, class: 'btn btn-danger btn-sm', method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -84,12 +86,40 @@ function mapCallback(position, map){
       console.log(gon.parties[i].latitude)
       tlatling=new google.maps.LatLng(gon.parties[i].latitude, gon.parties[i].longitude);
 
+      var image = {
+    url: 'https://cdn3.iconfinder.com/data/icons/snack-time/400/snack_time-17-128.png',
+    // This marker is 20 pixels wide by 32 pixels tall.
+    scaledSize: new google.maps.Size(50, 50),
+    // The origin for this image is 0,0.
+    //origin: new google.maps.Point(0,0),
+    // The anchor for this image is the base of the flagpole at 0,32.
+    //anchor: new google.maps.Point(0, 32)
+  };
 
-       var infowindow = new google.maps.InfoWindow({
-        map: map,
-        position: tlatling,
-        content: "<p style='color:'>"+gon.parties[i].name+"</p>"
+ 
+
+  var marker = new google.maps.Marker({
+      position: tlatling,
+      map: map,
+      title: gon.parties[i].name,
+      icon:image
+  });
+
+  marker.infow=new google.maps.InfoWindow({
+    position: tlatling,
+        content: "<p style='color:'>"+gon.parties[i].description+"</p>"
       });
+
+  google.maps.event.addListener(marker, 'mouseover', function() {
+    this.infow.open(map);
+  });
+  google.maps.event.addListener(marker, 'mouseout', function() {
+    this.infow.close(map);
+  });
+
+  google.maps.event.addListener(marker, 'click', function() {
+    //ask to join
+  });
       
       
     }
@@ -101,8 +131,31 @@ function initialize() {// you location should be center
           zoom: 14
         };
 
+        var triangleCoords = [
+    new google.maps.LatLng(gon.latlow, gon.longlow),
+    new google.maps.LatLng(gon.latlow, gon.longhigh),
+    new google.maps.LatLng(gon.lathigh, gon.longhigh),
+    new google.maps.LatLng(gon.lathigh, gon.longlow)
+    
+  ];
+
+ 
  var map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
+
+  // Construct the polygon.
+  console.log('constructing')
+  bermudaTriangle = new google.maps.Polygon({
+    paths: triangleCoords,
+    strokeColor: '#FF0000',
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: '#FF0000',
+    fillOpacity: 0.35
+  });
+
+  bermudaTriangle.setMap(map);
+
   // gives location as variable pos
  if(navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
