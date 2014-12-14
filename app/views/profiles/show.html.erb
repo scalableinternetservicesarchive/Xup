@@ -1,3 +1,4 @@
+<% cache([current_user, @profile]) do %>
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -49,3 +50,4 @@
 <% end %>
 <%# <%= link_to 'Edit', edit_profile_path(@profile) %1> | %>
 <%# <%= link_to 'Back', profiles_path %1> %>
+<% end %>

@@ -1,4 +1,5 @@
   <%# add sidebar %>    
+<% cache([current_user, "sidebar"]) do %>
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-1 col-md-2  sidebar"> <!-- col-lg-1 -->
@@ -30,3 +31,4 @@
     </div>
   </div>
 </div>
+<% end %>
