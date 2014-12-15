@@ -2,7 +2,7 @@ class JoinMembersController < ApplicationController
   # status indicate the request, 0 means pending, 1 means invited, 2 means accepted, 3 means rejected, 4 means owner.
   respond_to :html, :xml, :json
   before_action :set_join_member, only: [:show, :edit, :update, :destroy]
-  skip_before_action :verify_authenticity_token
+  #skip_before_action :verify_authenticity_token
 
   def index
     @join_members = JoinMember.all

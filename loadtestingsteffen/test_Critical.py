@@ -38,7 +38,7 @@ class Critical(FunkLoadTestCase):
         last_url = self.getLastUrl()
         user_id = last_url.split('/')[-1]
             
-
+        print "hihi"
             #self.get(server_url + "/index", description="View the indexpage2")
             #auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
         self.get(server_url + "/new", description="view party page")
@@ -88,6 +88,9 @@ class Critical(FunkLoadTestCase):
                      ['authenticity_token', auth_token],
                      ['commit', 'Sign up']],
                      description="Asking to join")
+        print "watching my parties"
+        self.get(server_url + "/myparties", description="View my parties page")
+        self.get(server_url + "/partyrequest", description="View requests page")
 
         print "done with path"
 
